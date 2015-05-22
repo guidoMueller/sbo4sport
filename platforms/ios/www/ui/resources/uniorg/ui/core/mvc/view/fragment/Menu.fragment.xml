@@ -1,0 +1,36 @@
+<core:FragmentDefinition
+        xmlns:core="sap.ui.core"
+        xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+        xmlns="sap.m">
+    <ResponsivePopover title="Menu">
+        <content>
+            <List
+                    selectionChange="onMenuItem"
+                    mode="SingleSelectMaster"
+                    items="{
+                    path: 'menu>/items',
+                    sorter: [{
+                        path: 'group',
+                        descending : true,
+                        group: true
+                    },{
+                        path: 'sorter'
+                    
+                    },{
+                        path: 'text'
+                    }],
+                    xgroupHeaderFactory: '.getGroupHeader'
+                }">
+                <StandardListItem
+                        title="{menu>text}"
+                        icon="{menu>icon}"
+                        counter="{menu>number}"
+                        data:group="{menu>group}"
+                        data:route="{menu>route}"
+                        data:key="{menu>key}"
+                        data:filter="{menu>filter}"
+                        />
+            </List>
+        </content>
+    </ResponsivePopover>
+</core:FragmentDefinition>

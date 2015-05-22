@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Title</name>
+  <documentation>Module ui5/types/Title</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="visible" type="sap.ui.core/boolean" defaultValue="false">
+      <documentation>Set the visibility of the main title</documentation>
+    </property>
+    <property name="text" type="sap.ui.core/string" defaultValue="null">
+      <documentation>Set the text of the main title</documentation>
+    </property>
+    <property name="alignment" type="sap.viz/ui5/types/Title_alignment" defaultValue="center">
+      <documentation>Set the alignment of the main title</documentation>
+    </property>
+  </properties>
+  <aggregations>
+    <aggregation name="layout" cardinality="0..1" type="sap.viz/ui5/types/Title_layout">
+      <documentation>Settings for layout of title</documentation>
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+    </aggregation>
+  </aggregations>
+</control>

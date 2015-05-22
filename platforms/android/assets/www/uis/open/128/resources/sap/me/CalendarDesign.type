@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>CalendarDesign</name>
+	<author></author>
+
+	<documentation>Type of Design for the Calendar</documentation>
+	<developmentState state="experimental" since="1.12">API is not yet finished and might change completely</developmentState>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="Action">
+			<documentation>Colors match calendar design for Action</documentation>
+		</value>
+		<value name="Approval">
+			<documentation>Colors match calendar design for Approval</documentation>
+		</value>
+	</enumeration>
+</simple-type>

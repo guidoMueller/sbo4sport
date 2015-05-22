@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/SearchResultApps</name>
+	<documentation>A list containing all app search results</documentation>
+
+	<baseType>sap.m/Table</baseType>
+	<properties>
+		<property group="Misc" name="showGrowingTrigger" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+	</properties>
+	<aggregations>
+		<aggregation cardinality="0..n" name="results" type="sap.ui.core/Control">
+			<documentation>all found Applications </documentation>
+		</aggregation>
+	</aggregations>
+	<methods>
+		<method name="resetGrowing" type="sap.ui.core/void">
+		</method>
+	</methods>
+</control>

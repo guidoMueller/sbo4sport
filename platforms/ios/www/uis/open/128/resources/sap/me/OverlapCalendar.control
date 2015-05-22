@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>OverlapCalendar</name>
+
+	<documentation>A calendar that allows to display events in a grid and show the overlapped events</documentation>
+	<developmentState state="experimental" since="1.12">API is not yet finished and might change completely</developmentState>
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="startDate" type="sap.ui.core/string">
+			<documentation>The first date to display for the calendar</documentation>
+		</property>
+		<property group="Appearance" name="weeksPerRow" type="sap.ui.core/int" defaultValue="2">
+			<documentation>Number of weeks</documentation>
+		</property>
+		<property group="Appearance" type="sap.ui.core/int" name="firstDayOffset" defaultValue="0">
+			<documentation>Indicate how to offset the first day in regards to a Sunday (by default)</documentation>
+		</property>
+		<property group="Appearance" name="showOverlapIndicator" type="sap.ui.core/boolean" defaultValue="false">
+			<documentation>Do we want to display the overlap indicator</documentation>
+		</property>
+		<property group="Appearance" name="visible" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Indicates if we should render this component</documentation>
+		</property>
+		<property group="Behavior" name="swipeToNavigate" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Use swipe gesture to navigate</documentation>
+		</property>
+		<property group="Dimension" name="width" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The width of the calendar</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="endOfData">
+			<documentation>Indicates that we have reach the last week with data</documentation>
+			<parameters>
+				<parameter type="sap.ui.core/boolean" name="before">
+					<documentation>Indicates if the data missing are before the start date or at the end</documentation>
+				</parameter>
+			</parameters>
+		</event>
+		<event name="changeDate">
+			<documentation>Triggered when the displayed dates change</documentation>
+			<parameters>
+				<parameter name="firstDate" type="sap.ui.core/object">
+					<documentation>The first date displayed in the calendar</documentation>
+				</parameter>
+				<parameter name="lastDate" type="sap.ui.core/object">
+					<documentation>The last date that will be displayed</documentation>
+				</parameter>
+			</parameters>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="calendarEvents" type="OverlapCalendarEvent" singularName="calendarEvent">
+			<documentation>The list of events to display in the calendar grid</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="calendar" type="Calendar" visibility="hidden">
+			<documentation>Calendar instance</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" type="sap.m/Label" name="typeLabels" visibility="hidden">
+			<documentation>Hidden aggregation of the label for event type</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="nameLabels" type="sap.m/Label" visibility="hidden">
+			<documentation>Hidden aggregation for the name label</documentation>
+		</aggregation>
+	</aggregations>
+</control>

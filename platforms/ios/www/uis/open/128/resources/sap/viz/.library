@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>sap.viz</name>
+	<vendor>SAP SE</vendor>
+	<copyright>SAP UI development toolkit for HTML5 (SAPUI5)
+
+(c) Copyright 2009-2014 SAP SE. All rights reserved</copyright>
+	<version>1.24.4</version>
+
+	<documentation>Chart controls based on the SAP BI CVOM charting library</documentation>
+
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+		</dependency>
+	</dependencies>
+
+	<appData>
+	<documentation xmlns="http://www.sap.com/ui5/buildext/documentation"
+        indexUrl="../../../test-resources/sap/viz/demokit/docuindex.json"
+        resolve="lib" />
+		<selenium xmlns="http://www.sap.com/ui5/buildext/selenium" package="com.sap.viz.selenium" />
+		<jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc" >
+			<exclude name="sap.viz.libs." />
+			<exclude name="sap.viz.resources." />
+			<exclude name="sap.viz.ui5.controls.libs." />
+		</jsdoc>
+		<!-- excludes for the JSCoverage -->
+		<jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage" >
+			<exclude name="sap.viz.libs." />
+			<exclude name="sap.viz.resources." />
+			<exclude name="sap.viz.ui5.controls.libs." />
+		</jscoverage>
+		<packaging xmlns="http://www.sap.com/ui5/buildext/packaging" version="2.0" >
+			<module-infos>
+				<raw-module name="sap/viz/libs/rgbcolor.js" />
+				<raw-module name="sap/viz/libs/canvg.js" depends="sap/viz/libs/rgbcolor.js" />
+				<raw-module name="sap/viz/libs/sap-common-globalization.js" />
+				<raw-module name="sap/viz/libs/sap-viz.js" />
+				<raw-module name="sap/viz/libs/sap.viz.javafx.patch.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/sap-viz-controls.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/sap-viz-controls-vizcontainer.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/common/libs/rgbcolor/rgbcolor_static.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_ar.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_cs.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_da.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_de.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_en.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_es.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_fi.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_fr.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_he.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_hu.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_is.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_it.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_ja.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_ko.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_nb.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_nl.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_pl.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_pt.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_ro.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_ru.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_sk.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_sl.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_sv.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_th.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_tr.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_zh_CN.js" />
+				<raw-module name="sap/viz/ui5/controls/libs/locale/language_zh_TW.js" />
+			</module-infos>
+			<all-in-one>
+				<exclude name="sap/viz/libs/sap-common-globalization.js" />
+				<exclude name="sap/viz/libs/sap.viz.javafx.patch.js" />
+				<exclude name="sap/viz/libs/sap-viz.js" />
+				<exclude name="sap/viz/ui5/controls/libs/sap-viz-controls.js" />
+				<exclude name="sap/viz/ui5/controls/libs/sap-viz-controls-vizcontainer.js" />
+				<exclude name="sap/viz/ui5/controls/libs/locale/" />
+			</all-in-one>
+		</packaging>
+		<thirdparty xmlns="http://www.sap.com/ui5/buildext/thirdparty" >
+			<lib name="canvg" displayName="Canvg" homepage="http://code.google.com/p/canvg/">
+				<license url="http://opensource.org/licenses/mit-license.php" type="MIT License" file="libs/canvg.js" />
+			</lib>
+			<lib name="RaphaelJS" displayName="RaphaelJS" homepage="http://raphaeljs.com/">
+				<license url="http://raphaeljs.com/license.html" type="MIT License" file="ui5/controls/libs/common/libs/RaphaelJS/license.txt" />
+			</lib>
+			<!--  TODO add entry for libs/rgbcolor.js -->
+			<lib name="rgbcolor_static" displayName="RGBColor Static" homepage="http://www.phpied.com/rgb-color-parser-in-javascript/">
+				<license url="http://www.phpied.com/rgb-color-parser-in-javascript/" type="Use it if you like it" file="ui5/controls/libs/common/libs/rgbcolor/rgbcolor_static.js" />
+			</lib>
+		</thirdparty>
+	</appData>
+
+</library>

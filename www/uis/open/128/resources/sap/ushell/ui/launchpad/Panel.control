@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/Panel</name>
+	<documentation>The Panel control is a container for controls with header text, header controls, or a header bar.</documentation>
+
+	<baseType>sap.m/Panel</baseType>
+	<properties>
+		<property group="Misc" name="translucent" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+	</properties>
+	<aggregations>
+		<aggregation cardinality="0..n" name="headerContent" type="sap.ui.core/Control">
+		</aggregation>
+		<aggregation cardinality="0..1" name="headerBar" type="sap.m/Bar">
+		</aggregation>
+	</aggregations>
+</control>

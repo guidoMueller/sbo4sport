@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>composite/InboxAttachmentsTileContainer</name>
+
+	<documentation>InboxAttachmentsTileContainer</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="uploadUrl" type="sap.ui.core/string">
+			<documentation>URL to upload the selected file</documentation>
+		</property>
+		<property group="Misc" name="fileName" type="sap.ui.core/string">
+			<documentation>name of the selected file for uploading</documentation>
+		</property>
+		<property group="Misc" name="fileType" type="sap.ui.core/string">
+			<documentation>type of the selected file for uploading</documentation>
+		</property>
+		<property group="Misc" type="boolean" name="isFileSelected">
+			<documentation>boolean property to indicate if user has selected a file to upload</documentation>
+		</property>
+		<property group="Misc" name="enteredDescription" type="sap.ui.core/string">
+			<documentation>description string entered by user while uploading a file</documentation>
+		</property>
+		<property group="Misc" name="showAddTile" type="boolean" defaultValue="true">
+			<documentation>boolean value to indicate whether to show Add Attachment tile</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="uploadButtonPress">
+			<documentation>event is fired to add all the header parameters just before uploading a file</documentation>
+		</event>
+		<event name="uploadSuccess">
+			<documentation>event is fired when uploading a file is completed successfully</documentation>
+		</event>
+		<event name="uploadFailed">
+			<documentation>event is fired when uploading a file has failed</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation type="sap.uiext.inbox/composite/InboxAttachmentTile" name="attachments">
+			<documentation>aggregation for attachments tile </documentation>
+		</aggregation>
+		<aggregation type="sap.ui.core/Control" name="firstTile" visibility="hidden" cardinality="0..1">
+			<documentation>aggregation for the first tile in tile container</documentation>
+		</aggregation>
+	</aggregations>
+	<methods>
+		<method name="addUploadHeader" type="sap.ui.core/void">
+			<documentation>method to add a header parameter while uploading a file. This method takes header name and header value as input.</documentation>
+		</method>
+		<method name="removeUploadHeader" type="sap.ui.core/void">
+			<documentation>method to remove a headerParameter of fileUploader</documentation>
+		</method>
+	</methods>
+</control>

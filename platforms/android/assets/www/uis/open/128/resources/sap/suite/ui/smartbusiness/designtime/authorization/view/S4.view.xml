@@ -1,0 +1,82 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	controllerName="sap.suite.ui.smartbusiness.designtime.authorization.view.S4"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:layout="sap.ui.layout">
+	<Page>
+		<IconTabBar class="iconTabBarPaddingTop" id="idIconTabBarMulti" select="onSelectIconTab"
+			expanded="{device>/isNoPhone}">
+			<items>
+				<IconTabFilter icon="sap-icon://person-placeholder" text="{i18n>USERS}" key="users">
+					<content>
+						<List id="userList" mode="MultiSelect" growing="true" updateStarted="onUserListGrow" updateFinished="testFn"
+							selectionChange="onUserItemSelectionChange">
+							<headerToolbar>
+								<Toolbar>
+									<SearchField placeholder="{i18n>SEARCH_USERS}" search="onUserSearch"
+										width="100%" />
+								</Toolbar>
+							</headerToolbar>
+							<infoToolbar>
+								<Toolbar id="userInfoToolbar" visible="false">
+<!-- 								 active="true" press="handleInfobarPress"> -->
+									<Label id="userInfoToolbarLabel" text="{i18n>NO_FILTER_ADDED}" />
+									<ToolbarSpacer />
+									<core:Icon src="sap-icon://undo" press="refreshFilter" />
+								</Toolbar>
+							</infoToolbar>
+						</List>
+					</content>
+				</IconTabFilter>
+				<IconTabFilter icon="sap-icon://group" text="{i18n>ROLES}" key="roles">
+					<List id="roleList" mode="MultiSelect" growing="true"
+						selectionChange="onRoleItemSelectionChange">
+						<headerToolbar>
+							<Toolbar>
+								<SearchField placeholder="{i18n>SEARCH_ROLES}" search="onRoleSearch"
+									width="100%" />
+							</Toolbar>
+						</headerToolbar>
+						<infoToolbar>
+							<Toolbar id="roleInfoToolbar" visible="false">
+								<Label id="roleInfoToolbarLabel" text="{i18n>NO_FILTER_ADDED}" />
+								<ToolbarSpacer />
+								<core:Icon src="sap-icon://undo" press="refreshFilter" />
+							</Toolbar>
+						</infoToolbar>
+					</List>
+				</IconTabFilter>
+				<IconTabFilter id="selectedItemsTab" icon="sap-icon://accept" count="" text="{i18n>SELECTED}" key="selected">
+					<List id="selectedItemsList" items="{selectedItems>/}" headerText="{i18n>SELECTED_USERS_ROLES}"
+					mode="Delete" delete="onSelectedItemDelete">
+						<items>
+							<CustomListItem selected="{selectedItems>selected}">
+								<l:Grid defaultSpan="L12 M12" vSpacing="0">
+									<l:content>
+										<core:Icon src="{path:'selectedItems>TYPE', formatter:'.formatSelectedItemsIcon'}" size="40px" color="#009de0">
+											<core:layoutData>
+												<l:GridData span="L1 M1" />
+											</core:layoutData>
+										</core:Icon>
+										<Label text="{selectedItems>NAME}">
+											<layoutData>
+												<l:GridData span="L6 M6" />
+											</layoutData>
+										</Label>
+										<Link text="{path:'selectedItems>NO_OF_USERS',formatter:'.formatNoOfUsers'}" press="onSelectedRolesLinkSelect">
+											<layoutData>
+												<l:GridData span="L4 M4" />
+											</layoutData>
+										</Link>										
+									</l:content>
+								</l:Grid>
+							</CustomListItem>
+						</items>
+					</List>
+				</IconTabFilter>
+
+			</items>
+		</IconTabBar>
+
+	</Page>
+</core:View> 

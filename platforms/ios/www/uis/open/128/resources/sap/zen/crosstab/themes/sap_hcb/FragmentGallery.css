@@ -1,0 +1,8 @@
+/* =================================================          */
+/* CSS for control sap.ui.commons/FragmentGallery.control     */
+/* HCB                                                        */
+/* =================================================          */
+
+.zenFragmentGallery:not(.fragmentGalleryDual) .sapUiCrslItm {
+	background-color: #404040;
+}

@@ -1,0 +1,31 @@
+<core:View
+        xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+        xmlns:core="sap.ui.core"
+        height="100%"
+        controllerName="uniorg.sapFourSport.controller.Dashboard"
+        xmlns="sap.m"
+
+        >
+    <Page
+            id="page"
+            title="Dashboard"
+            enableScrolling="false"
+            showHeader="false">
+        <TileContainer
+                id="container"
+                tileDelete="handleTileDelete"
+                tiles="{/appCollection}"
+                height="100%">
+            <StandardTile
+                    icon="{icon}"
+                    type="{type}"
+                    number="{number}"
+                    numberUnit="{numberUnit}"
+                    title="{title}"
+                    info="{info}"
+                    infoState="{infoState}"
+                    press="navToContainer"
+                    data:routeName="{routeName}"/>
+        </TileContainer>
+    </Page>
+</core:View>

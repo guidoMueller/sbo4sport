@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SBO4Sport</title>
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
+
+    <link id="paceCss" href="/uniorg/sbo4sport/ui/ui/resources/3rd/pace/theme/center-simple.css" rel="stylesheet"/>
+
+    <script src='/uniorg/sbo4sport/ui/uis/clients/flp/bootstrap/uis_fiori.js'></script>
+    <script id='sap-ui-bootstrap' src='/uniorg/sbo4sport/ui/uis/open/128/resources/sap-ui-core.js'
+            data-sap-ui-xx-bindingSyntax='complex'
+            data-sap-ui-theme='sap_bluecrystal'
+            data-sap-ui-theme-roots='{"bonvendo" : "/uniorg/sbo4sport/ui/ui/themes/bonvendo"}'
+            data-sap-ui-libs='sap.m, sap.apf, sap.ca.ui, sap.ushell, sap.viz'
+            data-sap-ui-resourceroots='{"uniorg" : "/uniorg/sbo4sport/ui/ui/resources/uniorg"}'></script>
+
+    <style>
+        /* Copyright (c) 2013 SAP AG, All Rights Reserved */
+        /*
+        * version: 1.11.0-SNAPSHOT
+        * This is the stylesheet for the Unified Shell's minimal (almost invisible) renderer.
+        *
+        * since: 1.9.0
+        */
+
+        /* TODO Theme Designer Support!! */
+        body {
+            margin: 0;
+        }
+        html, body, .sapUShellFullHeight, .sapUiComponentContainer, .sapUiComponentContainer > div {
+            height: 100%;
+        }
+        .sapMTileContent span.sapUiIcon {
+            font-size: 3rem !important;
+            line-height: 3rem !important;
+        }
+        .sapUShellLogout {
+            background-color: rgb(226, 226, 226); /* sapUiButtonBackground */
+            opacity: 0.75;
+            color: black; /* sapUiButtonTextColor */
+            bottom: 12px;
+            display: inline-block;
+            font-size: 36px;
+            height: 44px;
+            left: auto;
+            position: fixed;
+            right: 12px;
+            text-align: center;
+            vertical-align: middle;
+            width: 44px;
+            z-index: 100;
+        }
+        .sapUShellLogout:hover {
+            background-color: rgb(0, 0, 0); /* sapUiButtonHoverBackground */
+            color: white; /* sapUiButtonHoverTextColor */
+        }
+        html[dir='rtl'] .sapUShellLogout {
+            left: 12px;
+            right: auto;
+        }
+        .pagebuilder_widget_control {
+            background: white;
+        }
+        .pagebuilder .sapUiPanelHdrItem.sapUiPanelTitle.sapUiTvH5 {
+            display: none;
+        }
+        .sapMStdTileIconDiv > img {
+            font-size: 3rem !important;
+            line-height: 3rem !important;
+            height: 5rem !important;
+            width: 5rem !important;
+        }
+        .logo {
+            left: calc(50% - 3rem);
+            position: absolute;
+            top: 0px;
+        }
+        #__xmlview0--shell-cntnt {
+            background: url(/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/background2.jpg) 50% 100% no-repeat;
+            background-size: cover;
+        }
+
+        [id$="--container-0"], [id$="--container-0"].sapMTile.sapMTileActive {
+            background: url(/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Sponsors.png) 0% 0% no-repeat;
+            background-size: contain;
+            border: 0px solid #FFF;
+            box-shadow: none;
+        }
+        [id$="--container-0"] .sapMTileContent {
+            display: none;
+        }
+        [id$="--container-1"], [id$="--container-1"].sapMTile.sapMTileActive {
+            background: url(/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png) 0% 0% no-repeat;
+            background-size: contain;
+            border: 0px solid #FFF;
+            box-shadow: none;
+        }
+        [id$="--container-1"] .sapMTileContent {
+            display: none;
+        }
+        [id$="--container-2"], [id$="--container-2"].sapMTile.sapMTileActive {
+            background: url(/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Matches.png) 0% 0% no-repeat;
+            background-size: contain;
+            border: 0px solid #FFF;
+            box-shadow: none;
+        }
+        [id$="--container-2"] .sapMTileContent {
+            display: none;
+        }
+        [id$="--container-3"], [id$="--container-3"].sapMTile.sapMTileActive {
+            background: url(/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Members.png) 0% 0% no-repeat;
+            background-size: contain;
+            border: 0px solid #FFF;
+            box-shadow: none;
+        }
+        [id$="--container-3"] .sapMTileContent {
+            display: none;
+        }
+        [id$="--container-4"], [id$="--container-4"].sapMTile.sapMTileActive {
+            background: url(/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Players.png) 0% 0% no-repeat;
+            background-size: contain;
+            border: 0px solid #FFF;
+            box-shadow: none;
+        }
+        .sapMTile:focus {
+            outline: 0px dotted #005483;
+        }
+        [id$="--container-4"] .sapMTileContent {
+            display: none;
+        }
+        #__xmlview4--idIconTabBarMulti--header-head .sapMITBText,
+        .sapMITBFilter .sapMITBText{
+            color: #FFF;
+        }
+        .sapUiHLayoutChildWrapper {
+            white-space: normal;
+            display: block;
+            vertical-align: top;
+            float: left;
+        }
+        .v-title.viz-title-label, #__button2 {
+            display: none;
+        }
+        .sapUiLocalBusyIndicator {
+          background-color: rgba(29, 29, 29, 0.72) !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        /**
+         * Main method to be executed once SAPUI5 has been initialized.
+         */
+        sap.ui.getCore().attachInit( function () {
+
+            var oContent = new sap.ui.core.ComponentContainer( {
+                name: "uniorg.sapFourSport"
+            } );
+
+            // remove full page Pace loading indicator
+
+            //jQuery("#canvas").empty();
+            oContent.placeAt( "canvas" );
+
+        } );
+    </script>
+
+</head>
+<body class="sapUiBody sapUShellFullHeight" role="application">
+<div id="canvas" class="sapUShellFullHeight"></div>
+</body>
+</html>

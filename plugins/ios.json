@@ -1,0 +1,201 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "libz.dylib": [
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
+                    "libstdc++.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libc++.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libsqlite3.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Security.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "MessageUI.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CFNetwork.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        },
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ],
+                    "CoreData.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Logging\"><param name=\"ios-package\" value=\"SMPLoggerPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Online\"><param name=\"ios-package\" value=\"SMPOnlinePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CacheManager\"><param name=\"ios-package\" value=\"SMPCacheManagerPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"toolbar\"><param name=\"ios-package\" value=\"SMPToolbarPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"AutoHideSplashScreen\" value=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AuthProxy\"><param name=\"ios-package\" value=\"SMPAuthProxyPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"SAPKapselHandleHttpRequests\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"OData\"><param name=\"ios-package\" value=\"SMPODataPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MAFLogonCoreCDVPluginJS\"><param name=\"ios-package\" value=\"MAFLogonCoreCDVPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SMPPushPlugin\" onload=\"true\" required=\"true\"><param name=\"ios-package\" value=\"SMPPushPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"i18n\"><param name=\"ios-package\" value=\"SMPI18nPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.sap.mp.cordova.plugins.odata": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.logon": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.push": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.cachemanager": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.toolbar": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        }
+    },
+    "dependent_plugins": {
+        "com.sap.mp.cordova.plugins.corelibs": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.authproxy": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.logger": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.settings": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.i18n": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "com.sap.mp.cordova.plugins.online": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "sap.uniorg.sbo4Sport"
+        }
+    }
+}

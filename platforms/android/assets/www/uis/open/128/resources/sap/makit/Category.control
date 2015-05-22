@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>Category</name>
+	<author>SAP SE</author>
+	<documentation>Represents the Category data region of the Chart.</documentation>
+	<since>1.8</since>
+
+	<baseType>sap.ui.core/Element</baseType>
+	<properties>
+		<property group="Misc" name="column" type="sap.ui.core/string">
+			<documentation>Specify the name of the column to be mapped to the Category Axis's value.</documentation>
+		</property>
+		<property group="Misc" name="displayName" type="sap.ui.core/string">
+			<documentation>The text label representing this Category(on value bubble or table's header)</documentation>
+		</property>
+		<property group="Misc" name="format" type="sap.ui.core/string">
+			<documentation>Number formatting for the value. Accepted values:
+number
+currency
+percent
+roundedN - where N represents number of decimal places e.g. rounded4</documentation>
+		</property>
+	</properties>
+</control>

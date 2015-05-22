@@ -1,0 +1,17 @@
+/* ============================================ */
+/* Popup for aad_mobile Theme                   */
+/* ============================================ */
+
+.sapzenpopup{
+	background: #d6dde8; /* Old browsers */
+	
+	border: 1px solid #647b94;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.sapUiShd.sapzenpopup{
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);	
+}

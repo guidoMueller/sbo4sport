@@ -1,0 +1,51 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          xmlns:u="sap.ui.unified"
+          controllerName="uniorg.sapFourSport.controller.Component"
+          xmlns="sap.m"
+          class="viewPadding">
+    <u:Shell
+            id="shell"
+            showPane="false"
+            class="shellHeader"
+            Xicon="{ui>/logo}">
+        <u:headItems>
+            <u:ShellHeadItem
+                    id="menuHeadItem"
+                    styleClass="menuHeadItem"
+                    tooltip="{i18n>Menu}"
+                    icon="sap-icon://menu2"
+                    showSeparator="false"
+                    visible="false"
+                    press="onMenu"/>
+            <u:ShellHeadItem
+                    id="backHeadItem"
+                    tooltip="{i18n>Back}"
+                    icon="sap-icon://navigation-left-arrow"
+                    Xicon="sap-icon://home"
+                    showSeparator="false"
+                    visible="false"
+                    press="onNavBack"/>
+        </u:headItems>
+        <u:search>
+            <Image height="3rem" class="logo" src="{ui>/logo}"/>
+        </u:search>
+        <u:headEndItems>
+        </u:headEndItems>
+        <u:paneContent>
+
+        </u:paneContent>
+        <u:content>
+            <Page id="ShellContent"
+                  enableScrolling="false"
+                  showHeader="false">
+                <content>
+                    <NavContainer
+                            id="navContainer"
+                            defaultTransitionName="show"
+                            width="100%"
+                            height="100%"/>
+                </content>
+            </Page>
+        </u:content>
+    </u:Shell>
+</mvc:View>

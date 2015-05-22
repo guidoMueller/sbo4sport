@@ -1,0 +1,544 @@
+/* ====================================================== */
+/* CSS for control sap.ui.commons/NavigationPanel.control */
+/* Platinum                                               */
+/* ====================================================== */
+
+
+/************************************************************************************/
+/* buttons in segmented control header */
+/************************************************************************************/
+/* to center the header control*/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton{
+		left: 50%;
+		position: absolute;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton span,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton span{
+		right: 50%;
+		position: relative;
+}
+
+/* header area */
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutTop,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutTop{
+		height: 28px !important;
+		background: #E3EBF2;
+		border: 1px solid #96A8C3;
+		padding-top: 3px;
+}
+
+/************************************************************************************/
+/* content area */
+/************************************************************************************/
+
+
+/* adjust the content area to the header  */
+.sapzenfilterpanel-ModeFilteringNavigation > .sapUiBorderLayoutCenter > .sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-ModeNavigation > .sapUiBorderLayoutCenter > .sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutCenter{
+		/*top: 33px !important;*/
+}
+
+/* generally */
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-ColumnsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-ColumnsNavigationButton {
+		margin: 3px 0  0 3px !important;
+		/*padding: 0 15px;*/
+		width: 32px;
+		height: 25px;
+		background-size: auto;
+}
+
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected, 
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiSegButtonSelected,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected, 
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiSegButtonSelected{
+		background: #a3c1d3;
+    background: url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		filter: none;
+		box-shadow: none;
+}
+
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn, 
+
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-UpNavigationButton,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-DownNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-UpNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-DownNavigationButton,
+
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ShowNavigationButton,
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ShowAllButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ShowNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ShowAllButton
+{
+	filter: none !important;
+	box-shadow: none !important;
+}
+
+
+
+/************************************************************************************/
+/* unselected buttons: rows/columns */
+/************************************************************************************/
+
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton {
+    background: #d0dbe9 url("img/row_16.png") no-repeat center center;
+    background: url("img/row_16.png") no-repeat center center;
+    background-color: #d0dbe9;
+    background: url("img/row_16.png") no-repeat center center, url("img/rowcol_btn_background.png") repeat-x left top;
+		background: url("img/row_16.png") no-repeat center center, -moz-linear-gradient(top, #d0dbe9 0%, #ffffff 10%, #dbe1ec 47%, #dbe1ec 85%, #cdd5e4 90%);
+		background: url("img/row_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0dbe9), color-stop(10%,#ffffff), color-stop(47%,#dbe1ec), color-stop(85%,#dbe1ec), color-stop(90%,#cdd5e4));
+		background: url("img/row_16.png") no-repeat center center, -webkit-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/row_16.png") no-repeat center center, -o-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/row_16.png") no-repeat center center, -ms-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/row_16.png") no-repeat center center, linear-gradient(to bottom, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton {
+    background: #d0dbe9 url("img/col_16.png") no-repeat center center;
+    background: url("img/col_16.png") no-repeat center center;
+    background-color: #d0dbe9;
+    background: url("img/col_16.png") no-repeat center center, url("img/rowcol_btn_background.png") repeat-x left top;
+		background: url("img/col_16.png") no-repeat center center, -moz-linear-gradient(top, #d0dbe9 0%, #ffffff 10%, #dbe1ec 47%, #dbe1ec 85%, #cdd5e4 90%);
+		background: url("img/col_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0dbe9), color-stop(10%,#ffffff), color-stop(47%,#dbe1ec), color-stop(85%,#dbe1ec), color-stop(90%,#cdd5e4));
+		background: url("img/col_16.png") no-repeat center center, -webkit-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/col_16.png") no-repeat center center, -o-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/col_16.png") no-repeat center center, -ms-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/col_16.png") no-repeat center center, linear-gradient(to bottom, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+}
+
+
+
+/************************************************************************************/
+/* pressed/hover row botton */
+/************************************************************************************/
+
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn:active,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn:focus{
+		background: #a3c1d3 url("img/row_16.png") no-repeat center center;
+		background: url("img/row_16.png") no-repeat center center;
+		background-color: #a3c1d3;
+		background: url("img/row_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/row_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/row_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/row_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:active,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:focus{
+		background: #a3c1d3 url("img/row_16.png") no-repeat center center;
+		background: url("img/row_16.png") no-repeat center center;
+		background-color: #a3c1d3;
+		background: url("img/row_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/row_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/row_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/row_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+
+
+/************************************************************************************/
+/* pressed/hover col botton */
+/************************************************************************************/
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn:active,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn:focus{
+		background: #a3c1d3 url("img/col_16.png") no-repeat center center;
+		background: url("img/col_16.png") no-repeat center center;
+		background-color: #a3c1d3;
+		background: url("img/col_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/col_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/col_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/col_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:active,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:focus{
+		background: #a3c1d3 url("img/col_16.png") no-repeat center center;
+		background: url("img/col_16.png") no-repeat center center;
+		background-color: #a3c1d3;
+		background: url("img/col_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/col_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/col_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/col_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+
+
+/************************************************************************************/
+/* selected buttons: ROW/COL */
+/************************************************************************************/
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtnPressed,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtnPressed {
+    background: #a3c1d3 url("img/row_selected_16.png") no-repeat center center;
+    background: url("img/row_selected_16.png") no-repeat center center;
+    background-color: #a3c1d3;
+    background: url("img/row_selected_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/row_selected_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/row_selected_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/row_selected_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_selected_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_selected_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/row_selected_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtnPressed,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtnPressed {
+    background: #a3c1d3 url("img/col_selected_16.png") no-repeat center center;
+    background: url("img/col_selected_16.png") no-repeat center center;
+    background-color: #a3c1d3;
+    background: url("img/col_selected_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/col_selected_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/col_selected_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/col_selected_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_selected_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_selected_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/col_selected_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+
+
+/************************************************************************************/
+/* arrow buttons: UP/DOWN */
+/************************************************************************************/
+.sapzenfilterpanel-UpNavigationButton {
+	background: url("img/up_16.png") no-repeat center center !important;
+}
+
+.sapzenfilterpanel-DownNavigationButton {
+	background: url("img/down_16.png") no-repeat center center !important;
+}
+
+/************************************************************************************/
+/*  unselected buttons:  SHOW ALL / NAVIGATION / UP / DOWN */ 
+/************************************************************************************/
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowAllButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowAllButton,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton {
+	width:40px !important;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapzenfilterpanel-UpNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapzenfilterpanel-UpNavigationButton,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapzenfilterpanel-DownNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapzenfilterpanel-DownNavigationButton {
+	width:30px !important;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowAllButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowAllButton {
+    background: #d0dbe9 url("img/list_16.png") no-repeat center center;
+    background: url("img/list_16.png") no-repeat center center;
+    background-color: #d0dbe9;
+    background: url("img/list_16.png") no-repeat center center, url("img/rowcol_btn_background.png") repeat-x left top;
+		background: url("img/list_16.png") no-repeat center center, -moz-linear-gradient(top, #d0dbe9 0%, #ffffff 10%, #dbe1ec 47%, #dbe1ec 85%, #cdd5e4 90%);
+		background: url("img/list_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0dbe9), color-stop(10%,#ffffff), color-stop(47%,#dbe1ec), color-stop(85%,#dbe1ec), color-stop(90%,#cdd5e4));
+		background: url("img/list_16.png") no-repeat center center, -webkit-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/list_16.png") no-repeat center center, -o-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/list_16.png") no-repeat center center, -ms-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/list_16.png") no-repeat center center, linear-gradient(to bottom, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton {
+    background: #d0dbe9 url("img/axisview_16.png") no-repeat center center;
+    background: url("img/axisview_16.png") no-repeat center center;
+    background-color: #d0dbe9;
+    background: url("img/axisview_16.png") no-repeat center center, url("img/rowcol_btn_background.png") repeat-x left top;
+		background: url("img/axisview_16.png") no-repeat center center, -moz-linear-gradient(top, #d0dbe9 0%, #ffffff 10%, #dbe1ec 47%, #dbe1ec 85%, #cdd5e4 90%);
+		background: url("img/axisview_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0dbe9), color-stop(10%,#ffffff), color-stop(47%,#dbe1ec), color-stop(85%,#dbe1ec), color-stop(90%,#cdd5e4));
+		background: url("img/axisview_16.png") no-repeat center center, -webkit-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/axisview_16.png") no-repeat center center, -o-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/axisview_16.png") no-repeat center center, -ms-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+		background: url("img/axisview_16.png") no-repeat center center, linear-gradient(to bottom, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+}
+
+/************************************************************************************/
+/*  pressed/hover buttons:  SHOW ALL  */ 
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:focus {
+	width:40px!important;
+		background: #a3c1d3 url("img/list_16.png") no-repeat center center;
+		background: url("img/list_16.png") no-repeat center center;
+		background-color: #a3c1d3;
+		background: url("img/list_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/list_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/list_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/list_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus {
+		width:40px!important;
+		background: #a3c1d3 url("img/list_16.png") no-repeat center center;
+		background: url("img/list_16.png") no-repeat center center;
+		background-color: #a3c1d3;
+		background: url("img/list_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/list_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/list_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/list_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+
+/************************************************************************************/
+/*  pressed/hover buttons:  NAVIGATION  */ 
+/************************************************************************************/
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:focus {
+	width:40px!important;
+		background: #a3c1d3 url("img/axisview_16.png") no-repeat center center;
+		background: url("img/axisview_16.png") no-repeat center center;
+		background-color: #a3c1d3;
+		background: url("img/axisview_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/axisview_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/axisview_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/axisview_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus {
+		width:40px!important;
+		background: #a3c1d3 url("img/axisview_16.png") no-repeat center center;
+		background: url("img/axisview_16.png") no-repeat center center;
+		background-color: #a3c1d3;
+		background: url("img/axisview_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/axisview_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/axisview_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/axisview_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+
+/************************************************************************************/
+/*  PRESSED buttons:  SHOW ALL / NAVIGATION / UP / DOWN */ 
+/************************************************************************************/
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowAllButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowAllButton {
+	width:40px!important;
+    background: #a3c1d3 url("img/list_selected_16.png") no-repeat center center;
+    background: url("img/list_selected_16.png") no-repeat center center;
+    background-color: #a3c1d3;
+    background: url("img/list_selected_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/list_selected_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/list_selected_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/list_selected_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_selected_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_selected_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/list_selected_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowNavigationButton {
+	width:40px!important;
+    background: #a3c1d3 url("img/axisview_selected_16.png") no-repeat center center;
+    background: url("img/axisview_selected_16.png") no-repeat center center;
+    background-color: #a3c1d3;
+    background: url("img/axisview_selected_16.png") no-repeat center center, url("img/rowcol_btn_background_pressed.png") repeat-x left top;
+		background: url("img/axisview_selected_16.png") no-repeat center center, -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #ffffff 90%, #c7dce7 100%);
+		background: url("img/axisview_selected_16.png") no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#ffffff), color-stop(100%,#c7dce7));
+		background: url("img/axisview_selected_16.png") no-repeat center center, -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_selected_16.png") no-repeat center center, -o-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_selected_16.png") no-repeat center center, -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+		background: url("img/axisview_selected_16.png") no-repeat center center, linear-gradient(to bottom, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#ffffff 90%,#c7dce7 100%);
+}
+
+
+
+/************************************************************************************/
+/*  LABEL CONTENT AREA */ 
+/************************************************************************************/
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter{
+		left: 71px !important; 
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeaterRow.sapzenfilterpanel-DragDropRow .sapUiBorderLayoutCenter,.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeaterRow.sapzenfilterpanel-DragDropRow .sapUiBorderLayoutCenter
+	{
+	left: 0px !important;
+}
+
+/************************************************************************************/
+/*  AXIS HEADERS */ 
+/************************************************************************************/
+
+.sapzenfilterpanel-AxisHeaderTop {
+	border-top: 1px solid #96a8c3;
+}
+
+.sapzenfilterpanel-HeaderCountTop1 {
+	margin-top: -22px;
+	height: 21px !important;
+}
+
+.sapzenfilterpanel-HeaderCountTop2 {
+	margin-top: -44px;
+	height: 42px !important;
+}
+
+.sapzenfilterpanel-HeaderCountTop3 {
+	margin-top: -66px;
+	height: 63px !important;
+}
+
+.sapzenfilterpanel-AxisHeaderFirst {
+	border-top: none;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop1 {
+	margin-top: 21px;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop2 {
+	margin-top: 42px;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderBottom1{
+	margin-bottom: 21px;
+}
+.sapzenfilterpanel-RowRepeaterRowWithHeaderBottom2{
+	margin-bottom: 42px;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop3 {
+	margin-top: 63px;
+}
+
+
+.sapzenfilterpanel-HeaderCountBottom1{
+	margin-top:30px;
+	top:0;
+	height:20px !important;
+}
+.sapzenfilterpanel-HeaderCountBottom2{
+	margin-top:30px;
+	top:0;
+	height:40px !important;
+}
+
+.sapzenfilterpanel-UpDownNavigationButtons {
+	margin-top: 3px;
+}
+
+.sapzenfilterpanel-UpNavigationButton, .sapzenfilterpanel-DownNavigationButton {
+	/*background: none !important;*/
+	-webkit-box-shadow: inset 1px 0 0 0 #bed9ed !important;
+	box-shadow: inset 1px 0 0 0 #bed9ed !important;
+}
+
+.sapzenfilterpanel-MarkedRow {	
+	background: #bed9ed;																																										/*	 width: 50px; funtioniert nicht!!!! */
+}
+
+.sapzenfilterpanel-AxisHeaderTop > span {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.sapzenfilterpanel-AxisHeaderBottom > span {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.sapzenfilterpanel-HeaderBorder {
+	border-top: 1px solid #96a8c3;
+}
+
+.sapUiBorderLayoutCenter > .sapUiSegmentedButton{
+	margin-top:9px;
+}
+
+.sapzenfilterpanel-ModeNavigation > .sapUiBorderLayoutCenter{
+	bottom: 8px !important;
+}
+
+.sapzenfilterpanel-ModeNavigation > .sapUiBorderLayoutBottom{
+	height: 8px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop > * > .sapzenfilterpanel-PopupContainerHeader, .sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop {
+	height: 70px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutCenter {
+	top: 70px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop > .sapUiBorderLayout > .sapUiBorderLayoutTop {
+	top: -2px;
+}
+
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop > .sapUiBorderLayout > .sapUiBorderLayoutBegin {
+	top: 25px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop > .sapUiBorderLayout > .sapUiBorderLayoutCenter {
+	top: 25px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop > .sapUiBorderLayout > .sapUiBorderLayoutEnd {
+	top: 25px !important;
+}

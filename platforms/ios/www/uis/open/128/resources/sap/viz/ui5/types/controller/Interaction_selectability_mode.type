@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/controller/Interaction_selectability_mode</name>
+  <documentation>List (Enum) type ui5/types/controller/Interaction_selectability_mode</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.ui.core/string</baseType>
+  <enumeration>
+    <value name="exclusive">
+      <documentation>Value exclusive</documentation>
+    </value>
+    <value name="inclusive">
+      <documentation>Value inclusive</documentation>
+    </value>
+    <value name="single">
+      <documentation>Value single</documentation>
+    </value>
+    <value name="multiple">
+      <documentation>Value multiple</documentation>
+    </value>
+    <value name="none">
+      <documentation>Value none</documentation>
+    </value>
+  </enumeration>
+</simple-type>

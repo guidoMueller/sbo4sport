@@ -1,0 +1,9 @@
+.kpiPage .parameterList{
+	margin-left : -1rem;
+}
+.languageGrid{
+	margin-top: 15px;
+}
+.kpiPage .propertyEntryGrid > div {
+	margin-right: -1px;
+}

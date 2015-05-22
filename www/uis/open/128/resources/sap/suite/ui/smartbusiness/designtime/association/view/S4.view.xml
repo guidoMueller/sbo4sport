@@ -1,0 +1,156 @@
+<mvc:View height="100%"
+	controllerName="sap.suite.ui.smartbusiness.designtime.association.view.S4"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<Page>
+		<content>
+			<l:Grid class="associationScreenS4" defaultSpan="L12 M12 S12"
+				position="Center" width="auto" defaultIndent="L0 M0 S0" hSpacing="0rem">
+				<l:content>
+				<form:SimpleForm id="associationsForm"
+						maxContainerCols="2" editable="true" minWidth="1024"
+						layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3"
+						emptySpanL="1" emptySpanM="1" columnsL="1" columnsM="1">
+						<form:content>
+					<core:Title id="sourceIndicatorText" text="{i18n>CURRENT_KPI_OPI}"/>
+					<core:Title text="{i18n>ASSOCIATED_KPI_OPI}" />
+					<Label text="{i18n>SELECTED_KPI_OPI}" design="Bold"
+						required="true">
+					</Label>
+					<Input id="selectedKpiOpiId" valueHelpOnly="true"
+						placeholder="{i18n>SELECT_KPI_OPI}" showValueHelp="true"
+						valueHelpRequest="listAllKpis" change="handleKpiOpiChange">
+						<layoutData>
+							<l:GridData span="L6 M6 S6" />
+						</layoutData>
+					</Input>
+
+					<Label text="{i18n>ASSOCIATION_TYPE}" design="Bold"
+						required="true">
+					</Label>
+					<Select id="associationTypeSelect" items="{/ASSOCIATION_TYPES}"
+						selectedItem="{associationSelectModel>/TYPE}" selectedKey="{associationSelectModel>/TYPE}"
+						change="handleAssociationTypeChange">
+						<layoutData>
+							<l:GridData span="L6 M6 S6" />
+						</layoutData>
+						<items>
+							<core:Item text="{TITLE}" key="{TYPE}" />
+						</items>
+					</Select>
+					
+					<core:Title text="{i18n>DIRECTION}" />
+					<VBox id="assoDir" class="associationDirectionClass"
+                                      noDataText=" ">
+                                      <layoutData>
+                                           <l:GridData span="L12 M12" />
+                                      </layoutData>
+                    <l:Grid  class="directionContentClass" defaultSpan="L12 M12 S12"
+							 position="Center" width="auto" defaultIndent="L0 M0 S0">
+                           <l:content>
+						<Panel width="100%">
+							<layoutData>
+								<l:GridData span="L11 M11 S11" />
+							</layoutData>
+							<HBox class="ne-flexbox1" width="100%" justifyContent="SpaceAround"
+								alignItems="Center">
+								<items>
+									<VBox width="auto" id="sourceIndicatorContent" items="">
+										<items>
+											<VBox>
+												<Label design="Bold" text="{i18n>FROM}" />
+												<Text class="associatedPanelClass" text="{sourceIndicator>/INDICATOR/TITLE}" />
+												<Text class="associatedPanelClass" text="{i18n>ID} {sourceIndicator>/INDICATOR/ID}" />
+											</VBox>
+										</items>
+									</VBox>
+									<core:Icon id="directionArrowAssociation" src="sap-icon://feeder-arrow"
+										size="2rem">
+										<core:layoutData>
+											<FlexItemData />
+										</core:layoutData>
+									</core:Icon>
+
+									<VBox width="auto" id="targetIndicatorContent" items="">
+										<items>
+											<VBox>
+												<Label design="Bold" text="{i18n>TO}" />
+												<Text class="associatedPanelClass" text="{targetIndicator>/INDICATOR/TITLE}" />
+												<Text class="associatedPanelClass" text="{i18n>ID} {targetIndicator>/INDICATOR/ID}" />
+											</VBox>
+										</items>
+									</VBox>
+								</items>
+							</HBox>
+						</Panel>
+							<Button icon="sap-icon://journey-change" class="reverseAssociationButtonClass"
+								height="5%" press="handleReverseAssociationDirection">
+								<layoutData>
+									<l:GridData span="L1 M1" />
+								</layoutData>
+							</Button>
+					</l:content>
+					</l:Grid>
+					</VBox>
+					<core:Title text="{i18n>NAME_VALUE}" />
+					<VBox id="propertyNameValueBoxHeader" class="parametersListHeaderAssociation"
+						noDataText=" ">
+						<layoutData>
+							<l:GridData span="L12 M12" />
+						</layoutData>
+						<l:Grid defaultSpan="L12 M12">
+                                      <l:content>
+								<Input id="associationPropertyName" type="Text" liveChange="changeValueState"
+									placeholder="{i18n>NAME}">
+									<layoutData>
+										<l:GridData span="L6 M6" />
+									</layoutData>
+								</Input>
+								<Input id="associationPropertyValue" type="Text" liveChange="changeValueState"
+									placeholder="{i18n>VALUE}">
+									<layoutData>
+										<l:GridData span="L5 M5" />
+									</layoutData>
+								</Input>
+								<Button id="addKpiPropertyButtonHeader" icon="sap-icon://add"
+									press="addNewProperty">
+									<layoutData>
+										<l:GridData span="L1 M1" />
+									</layoutData>
+								</Button>
+								</l:content>
+								</l:Grid>
+					</VBox>
+					<VBox id="propertyNameValueBox" class="parameterList"
+						items="{associationProp>/PROPERTIES}" noDataText=" ">
+						<layoutData>
+							<l:GridData span="L12 M12" />
+						</layoutData>
+						<l:Grid defaultSpan="L12 M12">
+                                      <l:content>
+								<Input value="{associationProp>NAME}" change="inputNameChange">
+									<layoutData>
+										<l:GridData span="L6 M6" />
+									</layoutData>
+								</Input>
+								<Input value="{associationProp>VALUE}" change="inputValueChange">
+									<layoutData>
+										<l:GridData span="L5 M5" />
+									</layoutData>
+								</Input>
+								<core:Icon id="deleteAssociationProp" src="sap-icon://sys-cancel" class="deleteIconForAssociationProperty"
+									size="2rem" press="removeProperty">
+									<core:layoutData>
+										<l:GridData span="L1 M1" />
+									</core:layoutData>
+								</core:Icon>
+								</l:content>
+								</l:Grid>
+					</VBox>
+					</form:content>
+					</form:SimpleForm>
+				</l:content>
+			</l:Grid>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,184 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" controllerName="sap.suite.ui.smartbusiness.designtime.workspace.view.S3">
+	<Page>
+		<content>
+			<ObjectHeader title="{TITLE}" titleActive="true"
+				showMarkers="true" markFavorite="{path:'MANUAL_ENTRY', formatter:'.formatFavoriteMark'}"
+				titlePress=".doSomething">
+				<attributes>
+					<ObjectAttribute
+						text="{parts:[{path:'ID'},{path:'TYPE'}], formatter:'sap.suite.smartbusiness.formatters.kpiID'}" />
+					<ObjectAttribute
+						text="{path:'OWNER_NAME', formatter:'sap.suite.smartbusiness.formatters.kpiOwnerInOH'}" />
+				</attributes>
+				<statuses>
+					<ObjectStatus
+						text="{parts:[{path:'IS_ACTIVE'},{path:'COUNTER'}], formatter:'.formatKpiStatus'}"
+						state="{path:'IS_ACTIVE', formatter:'sap.suite.smartbusiness.formatters.kpiStatusState'}" />
+				</statuses>
+			</ObjectHeader>
+			<IconTabBar id="idWorkspaceDetailTab">
+				<items>
+					<IconTabFilter icon="sap-icon://hint" text="{i18n>INFORMATION}">
+						<form:SimpleForm id="idInfoForm" minWidth="1024"
+							maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
+							labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+							columnsL="1" columnsM="1">
+							<form:content>
+								<Label design="Bold" text="{i18n>DESCRIPTION}" />
+								<Text text="{DESCRIPTION}" />
+								<Label design="Bold" text="{i18n>TAGS}" />
+								<HBox items="{TAGS}" id="tags">
+									<items>
+										<Text text="{path:'TAG', formatter:'.formatTags'}" />
+									</items>
+								</HBox>
+								<Label design="Bold" text="{i18n>PROPERTIES}" />
+								<HBox items="{PROPERTIES}" id="properties">
+									<items>
+										<Text
+											text="{parts:[{path:'NAME'},{path:'VALUE'}], formatter:'.formatProperties'}" />
+									</items>
+								</HBox>
+								<Text text="" />
+								<Label design="Bold" text="{i18n>GOAL_TYPE}" />
+								<Text text="{path:'GOAL_TYPE', formatter:'.formatGoalType'}" />
+							</form:content>
+						</form:SimpleForm>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://database" text="{i18n>DATA_SOURCE}">
+
+						<form:SimpleForm id="idDataSourceForm" minWidth="1024"
+							maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
+							labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+							columnsL="1" columnsM="1">
+							<form:content>
+								<Label design="Bold" text="{i18n>HANA_VIEW}" />
+								<Text text="{VIEW_NAME}" />
+								<Label design="Bold" text="{i18n>ODATA_SERVICE}" />
+								<Text text="{ODATA_URL}" />
+								<Label design="Bold" text="{i18n>ENTITY_SET}" />
+								<Text text="{ODATA_ENTITYSET}" />
+								<Label design="Bold" text="{i18n>VALUE_MEASURE}" />
+								<Text text="{COLUMN_NAME}" />
+								<Label design="Bold" text="{i18n>ADDITIONAL_INFORMATION}" />
+								<Text text="{DATA_SPECIFICATION}" />
+							</form:content>
+						</form:SimpleForm>
+
+					</IconTabFilter>
+					<IconTabFilter id="associationIconTab" icon="sap-icon://chain-link"
+						text="{i18n>ASSOCIATIONS}" count="0">
+
+						<Table id="kpiAssociationTable" inset="false" fixedLayout="false"
+							items="{path:'/ASSOCIATIONS_MODELER', parameters: {'expand':'PROPERTIES'}}">
+							<headerToolbar>
+								<Toolbar>
+									<Label id="associationTableLabel"
+										text="{parts:[{path:'ASSOCIATION_SOURCE_COUNT'},{path:'ASSOCIATION_TARGET_COUNT'}], formatter:'.formatAssociationCount'}"></Label>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column>
+									<Text text="{i18n>TYPE}" />
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="{i18n>DIRECTION}" />
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="{i18n>ASSOCIATED_KPI}" />
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="{i18n>STATUS}" />
+								</Column>
+								<Column>
+									<Text text="{i18n>PROPERTIES}" />
+								</Column>
+								<Column>
+									<Text text="" />
+								</Column>
+								<Column>
+									<Text text="" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem vAlign="Middle">
+									<cells>
+										<Text text="{path:'TYPE', formatter:'.formatAssociationType'}" />
+										<l:Grid vSpacing="0" class="columnListItemGridPadding"
+											width="100%" defaultSpan="L12 M12 S12">
+											<l:content>
+												<core:Icon id="directionArrowAssociation" class="iconsForAssociationTable"
+													src="{path:'SOURCE_INDICATOR', formatter:'.formatArrowDirection'}"
+													size="24px">
+													<core:layoutData>
+														<FlexItemData growFactor="1" />
+													</core:layoutData>
+												</core:Icon>
+											</l:content>
+										</l:Grid>
+										<Text
+											text="{parts:[{path:'SOURCE_INDICATOR'},{path:'TARGET_INDICATOR'},{path:'SOURCE_INDICATOR_TITLE'},{path:'TARGET_INDICATOR_TITLE'}], formatter:'.formatTargetIndicatorText'}" />
+										<!-- <HBox id="targetIndicatorTextBox" -->
+										<!-- items="{TARGET_INDICATOR_WITH_FAVOURITES}"> -->
+										<!-- <items> -->
+										<!-- <Text -->
+										<!-- text="{path:'TITLE', formatter:'.formatTargetIndicatorText'}" 
+											/> -->
+										<!-- </items> -->
+										<!-- </HBox> -->
+										<ObjectNumber
+											number="{parts:[{path:'IS_ACTIVE'},{path:'COUNTER'}], formatter:'.formatStatusOfAssociation'}"
+											state="{path:'IS_ACTIVE', formatter:'sap.suite.smartbusiness.formatters.evalStatus'}" />
+
+										<HBox items="{PROPERTIES}" id="assoProperties">
+											<items>
+												<Text
+													text="{parts:[{path:'NAME'},{path:'VALUE'}], formatter:'.formatProperties'}" />
+											</items>
+										</HBox>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+			<Table id="evaluationTable" inset="false" items="{EVALUATIONS}"
+				itemPress="handleEvaluationSelect">
+				<headerToolbar>
+					<Toolbar>
+						<Label
+							text="{i18n>EVALUATIONS} ({path:'EVALUATION_COUNT', formatter:'.formatEvaluationCount'})"></Label>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>EVALUATION_TITLE}" />
+					</Column>
+					<!-- <Column minScreenWidth="Tablet" demandPopin="true"> -->
+					<!-- <Text text="ID" /> -->
+					<!-- </Column> -->
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="{i18n>STATUS}" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="{i18n>DESCRIPTION}" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation">
+						<cells>
+							<ObjectIdentifier title="{TITLE}" text="{ID}" />
+							<!-- <Text text="{ID}" /> -->
+							<ObjectNumber
+								number="{parts:[{path:'IS_ACTIVE'},{path:'COUNTER'}], formatter:'.formatKpiStatus'}"
+								state="{path:'IS_ACTIVE', formatter:'sap.suite.smartbusiness.formatters.evalStatus'}" />
+							<Text text="{DESCRIPTION}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</core:View>

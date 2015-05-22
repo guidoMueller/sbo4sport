@@ -1,0 +1,153 @@
+{
+  "_version": "1.0.0",
+  "sap.app": {
+    "_version": "1.0.0",
+    "id": "uniorg.sapFourSport",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "ach": "CA-UI5-DOC"
+  },
+  "sap.ui": {
+    "_version": "1.0.0",
+    "technology": "UI5"
+  },
+  "sap.ui5": {
+    "_version": "1.0.0",
+    "rootView": "uniorg.sapFourSport.view.Component",
+    "dependencies": {
+      "minUI5Version": "1.28.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {},
+        "uniorg.m": {}
+      }
+    },
+    "config": {
+      "messageBundle": "uniorg.sapFourSport.i18n.messagebundle",
+      "oDataServiceConfig": {
+        "serviceUrl": "/uniorg/bonvendo/uis/eco/shop/EcoShop.xsodata"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "uniorg.sapFourSport.view",
+        "controlId": "navContainer",
+        "controlAggregation": "pages",
+        "XclearAggregation": false,
+        "bypassed": {
+          "target": ["notFound"]
+        },
+        "transition": "slide"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "dashboard",
+          "target": "dashboard"
+        },
+        {
+          "pattern": "financials/:all*:",
+          "name": "financials",
+          "target": "financials"
+        },
+        {
+          "pattern": "financials/detail",
+          "name": "financialsDetail",
+          "target": "financials"
+        },
+        {
+          "pattern": "games/detail/",
+          "name": "gamesDetail",
+          "target": "games"
+        },
+        {
+          "pattern": "games/:all*:",
+          "name": "games",
+          "target": "games"
+        },
+        {
+          "pattern": "member/:all*:",
+          "name": "member",
+          "target": "member"
+        },
+        {
+          "pattern": "member/detail",
+          "name": "memberDetail",
+          "target": "member"
+        },
+        {
+          "pattern": "players/:all*:",
+          "name": "players",
+          "target": "players"
+        },
+        {
+          "pattern": "players/detail",
+          "name": "playersDetail",
+          "target": "players"
+        },
+        {
+          "pattern": "sponsoring/:all*:",
+          "name": "sponsoring",
+          "target": "sponsoring"
+        },
+        {
+          "pattern": "sponsoring/detail",
+          "name": "sponsoringDetail",
+          "target": "sponsoring"
+        },
+        {
+          "pattern": "ticketing/:all*:",
+          "name": "ticketing",
+          "target": "ticketing"
+        },
+        {
+          "pattern": "ticketing/detail",
+          "name": "ticketingDetail",
+          "target": "ticketing"
+        }
+      ],
+      "targets": {
+        "dashboard": {
+          "viewLevel": 1,
+          "viewName": "Dashboard",
+          "Xtransition": "show"
+        },
+        "financials": {
+          "viewLevel": 2,
+          "viewName": "Financials",
+          "Xtransition": "show"
+        },
+        "games": {
+          "viewLevel": 2,
+          "viewName": "Games",
+          "Xtransition": "show"
+        },
+        "member": {
+          "viewLevel": 2,
+          "viewName": "Member",
+          "Xtransition": "show"
+        },
+        "players": {
+          "viewLevel": 2,
+          "viewName": "Players",
+          "Xtransition": "show"
+        },
+        "sponsoring": {
+          "viewLevel": 2,
+          "viewName": "Sponsoring",
+          "Xtransition": "show"
+        },
+        "ticketing": {
+          "viewLevel": 2,
+          "viewName": "Ticketing",
+          "Xtransition": "show"
+        }
+      }
+    }
+  }
+}

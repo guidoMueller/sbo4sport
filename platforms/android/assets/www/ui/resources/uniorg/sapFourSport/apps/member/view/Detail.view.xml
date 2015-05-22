@@ -1,0 +1,90 @@
+<core:View
+        xmlns:core="sap.ui.core"
+        height="100%"
+        controllerName="uniorg.sapFourSport.apps.member.controller.Detail"
+        xmlns="sap.m"
+        >
+    <Page
+            id="page"
+            title="member"
+            enableScrolling="true"
+            showHeader="false">
+        <Page
+                showHeader="false"
+                class="marginBoxContent">
+            <content>
+                <IconTabBar
+                        class="iconTabBarPaddingTop"
+                        id="idIconTabBarMulti"
+                        expanded="{device>/isNoPhone}"
+                        select="handleIconTabBarTopSelect">
+                    <items>
+                        <IconTabFilter
+                                icon="sap-icon://table-view"
+                                key="1"
+                                text="Mitglieder Tabele">
+                            <Toolbar>
+                                <Select
+                                        autoAdjustWidth="true"
+                                        change="handleSelectTeam"
+                                        id="onSelectRound"
+                                        width="150px"
+                                        items="{
+                                                path: '/MemberS',
+                                                sorter: { path: 'U_NAME' },
+                                                parameters: {
+                                                    select: 'U_NAME'
+                                                }
+                                              }">
+                                    <core:Item
+                                            key="{U_NAME}"
+                                            text="{U_NAME}"/>
+                                </Select>
+                                <Select
+                                        autoAdjustWidth="true"
+                                        change="handleSelectTrainer"
+                                        items="{
+                                path: '/MemberS',
+                                sorter: { path: 'U_TRAINER' },
+                                parameters: {
+                                	select: 'U_TRAINER'
+                                }
+                              }">
+                                    <core:Item key="all" text="All"/>
+                                    <core:Item key="{U_TRAINER}" text="{U_TRAINER}"/>
+                                </Select>
+                                <DateRangeSelection
+                                        id="DP3"
+                                        visible="false"
+                                        change="handleSelectBirthday"
+                                        />
+                                <Button press="onPress" text="Reset"/>
+                            </Toolbar>
+                            <IconTabBar
+                                    id="idIconTabBar"
+                                    select="handleIconTabBarSelect"
+                                    items="{
+                                path: '/MemberS',
+                                sorter: { path: 'U_NATNAME' },
+                                parameters: {
+                                    select: 'U_NATNAME'
+                                }
+                              }">
+                                <items>
+                                    <IconTabFilter
+                                            text="{U_NATNAME}"
+                                            keys="{U_NATNAME}"/>
+                                </items>
+                            </IconTabBar>
+                        </IconTabFilter>
+                    <IconTabFilter
+                            icon="sap-icon://horizontal-bar-chart-2"
+                            key="2"
+                            text="Mitglieder Chart">
+                    </IconTabFilter>
+                    </items>
+                </IconTabBar>
+            </content>
+        </Page>
+    </Page>
+</core:View>

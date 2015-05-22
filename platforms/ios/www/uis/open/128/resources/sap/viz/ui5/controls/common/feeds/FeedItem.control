@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui5/controls/common/feeds/FeedItem</name>
+	<documentation>FeedItem Class</documentation>
+	<since>1.21.0</since>
+
+	<baseType>sap.ui.core/Element</baseType>
+	
+	<properties>
+		<property group="Misc" name="uid" type="sap.ui.core/string">
+			<documentation>Uid of a feed item.</documentation>
+		</property>
+		<property group="Misc" name="type" type="sap.ui.core/string">
+			<documentation>Type of a feed item. Enumeration: Measure, Dimension</documentation>
+		</property>
+		<property group="Misc" name="values" type="sap.ui.core/string[]">
+			<documentation>Value of a feed item.</documentation>
+		</property>
+	</properties>
+	<aggregations>
+	</aggregations>
+</control>

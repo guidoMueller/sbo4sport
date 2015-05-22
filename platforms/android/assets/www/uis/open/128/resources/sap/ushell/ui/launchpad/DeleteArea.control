@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/DeleteArea</name>
+
+	<documentation>Add your documentation for the new ui/launchpad/DeleteArea</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="type" type="DeleteAreaType" defaultValue="Dashboard">
+		</property>
+		<property group="Misc" name="message" type="string" defaultValue="">
+		</property>
+        <property group="Misc" name="icon" type="string" defaultValue="">
+        </property>
+	</properties>
+	<events>
+		<event name="drop">
+		</event>
+		<event name="tileOver">
+		</event>
+		<event name="tileOut">
+		</event>
+	</events>
+</control>

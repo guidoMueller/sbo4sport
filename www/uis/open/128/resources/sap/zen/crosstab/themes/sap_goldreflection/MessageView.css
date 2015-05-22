@@ -1,0 +1,317 @@
+
+/* Message View Component*/
+
+.sapzenmessageview-PopupContainer {
+       background: #000000;
+       
+       border: 1px solid #878787;
+       
+       -webkit-box-shadow: 2px 2px 4px 0px #0b0b0b;
+       box-shadow: 2px 2px 4px 0px #0b0b0b;
+       
+       /*padding: 0 5px 5px 5px;*/
+       
+       width: 280px !important;
+       height: 420px !important;
+}
+
+.sapzenmessageview-PopupContainer .sapUiBorderLayoutTop{
+		height: 40px !important;
+}
+
+.sapzenmessageview-PopupContainer .sapUiBorderLayoutCenter{
+		top: 5px !important;
+}
+
+.sapzenmessageview-PopupContainerHeader {
+       width: 280px !important;
+       height: 28px !important;
+       background: #d9d9d9; /* Old browsers */
+	
+	border-bottom: 1px solid #878787;
+	border-top: 1px solid #fefffe;
+}
+
+.sapzenmessageview-PopupContainerHeader .sapUiTvH1{
+	margin-top: 3px;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.sapzenmessageview-PopupContainerHeader > div > div {
+       padding: 5px;
+}
+
+.sapzenmessageview-PopupContainerHeader > .sapUiBorderLayoutBegin {
+		width: 5px !important;
+}
+.sapzenmessageview-PopupContainerHeader > .sapUiBorderLayoutCenter {
+		left: 10px !important;
+		right: 120px !important;
+		padding-left: 12px;
+}
+.sapzenmessageview-PopupContainerHeader > .sapUiBorderLayoutEnd {
+		width: 125px !important;
+		padding-top: 3px;
+		padding-right: 5px;
+		overflow:none !important;
+}
+
+.sapzenmessageview-HeadLine {
+       margin-top: 15px;
+}
+
+.sapzenmessageview-ExpandImage, .sapzenmessageview-RemoveImage {
+       width:100%;
+       height:100%;
+}
+
+.sapzenmessageview-LevelImage {
+       
+}
+
+
+.sapzenmessageview-HeaderText {
+       width: 170px;
+       overflow: hidden;
+	  text-overflow: ellipsis;
+	  -o-text-overflow: ellipsis;
+	  -webkit-text-overflow: ellipsis;     
+}
+
+.sapzenmessageview-RowRepeaterRow {  
+    border-top: 1px solid #fefffe;
+    border-bottom: 1px solid #b9b9b9;
+    margin-bottom: 0px;
+    
+    height: 26px !important;
+    width: 280px !important;
+}
+
+.sapzenmessageview-RowRepeaterRow .sapUiBorderLayoutCenter{	
+	top: 0px !important;
+	overflow: hidden !important;
+}
+
+.sapzenmessageview-RowRepeaterRow .sapUiTvH2{
+	line-height: 26px; /* = height von .sapzenmessageview-RowRepeaterRow*/
+	font-weight: normal;
+	font-size: 11px;
+	color: #262626;
+}
+
+.sapzenmessageview-RowRepeaterRow.sapzenmessageview-RowRepeaterRowActive .sapUiTvH2{
+	color: #fefffe;
+}
+
+.sapzenmessageview-RowRepeaterRow.sapzenmessageview-RowRepeaterRowActive {
+	height: 90px !important; /*Gesamth�he = height von .sapzenmessageview-RowRepeaterRow + height von .sapUiBorderLayoutBottom*/
+	border-top: 1px solid #007DC0;
+}
+
+.sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutBottom {
+	height: 64px !important;
+	border-top: 1px solid #ffffff;
+	overflow: hidden !important;																																											/*	 width: 50px; funtioniert nicht!!!! */
+}
+
+.sapzenmessageview-RowRepeaterRowActive {
+      
+}
+
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutBegin{
+	background: #eeeeee;		
+	width: 22px !important;		
+	overflow: hidden !important;																																											/*	 width: 50px; funtioniert nicht!!!! */
+}
+
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutCenter {
+	background: #eeeeee;
+	left: 22px !important;
+	right: 65px !important;
+	overflow: hidden !important;																																											/*	 width: 50px; funtioniert nicht!!!! */
+}
+
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutEnd {
+	background: #eeeeee;
+	width: 65px !important;
+	overflow: hidden !important;
+}
+
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutBottom{
+	overflow: hidden !important;																																											/*	 width: 50px; funtioniert nicht!!!! */
+}
+.sapUiBorderLayoutCenter .sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutBegin,
+.sapUiBorderLayoutCenter .sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutCenter,
+.sapUiBorderLayoutCenter .sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutEnd {
+	bottom: 64px !important; /* = height von .sapUiBorderLayoutBottom*/
+	background: #007DC0;
+}
+
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutBottom > .sapUiTv {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;     
+  height: 48px;
+  background: #fefffe;
+  padding: 10px 20px 10px 11px;
+  width:249px;
+	overflow-x: hidden;
+	font-size: 11px;
+}
+
+.sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutBottom > .sapUiTv {
+  line-height: 13px;
+}
+
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutCenter > span {
+  width: 150px;
+}
+
+.sapzenmessageview-Button {
+       /*background-color: blue;*/
+}
+
+/* Clear All Button*/
+
+.sapzenmessageview-PopupContainerHeader .sapUiBtnS { 
+	float: right;
+	color: #222222;
+	font-size: 11px;
+	padding: 0 10px 0 10px;
+	height: 22px;
+	
+}
+
+.sapzenmessageview-PopupContainerHeader .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd { 
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff; 
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff; 
+}
+
+html[data-sap-ui-browser="ie9"] .sapzenmessageview-PopupContainerHeader .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd{ 
+	
+}
+
+/* focus */
+.sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd:focus {
+	background: #E2E2E2;
+	border: 1px solid #A3A3A3;
+	color: #222222;
+}
+
+
+/* hover */
+.sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd:hover{	
+	background: #007DC0;
+	-moz-box-shadow: inset 0px 1px 0px 0px #66b1d9; 
+	-webkit-box-shadow: inset 0px 1px 0px 0px #66b1d9;
+	box-shadow: inset 0px 1px 0px 0px #66b1d9; 
+	color: #ffffff;
+	border-color: #00689E;
+}
+
+html[data-sap-ui-browser="ie8"] .sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd:hover{
+	padding: 0 10px;
+}
+
+
+/* pressed */
+.sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnAct:hover {
+	background: #666666;
+}
+
+html[data-sap-ui-browser="ie8"] .sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnAct:hover{
+	padding: 0 10px;
+}
+html[data-sap-ui-browser="ie9"] .sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnAct:hover{
+	padding: 0 10px;
+}
+/*END OF BUTTON CLEAR ALL*/
+
+
+.sapzenmessageview-ExpandImage {
+	background: url("img/messageview_expand.png") no-repeat 5px center;
+}
+
+.sapzenmessageview-ExpandImageActive {
+	background: url("img/messageview_expand_active.png") no-repeat 5px center;
+}
+
+.sapzenmessageview-RemoveImage {
+	background: url("img/messageview_remove.png") no-repeat center center;
+}
+
+.sapzenmessageview-RowRepeaterRowActive .sapzenmessageview-RemoveImage {
+  background: url("img/messageview_remove_active.png") no-repeat center center;
+}
+
+.sapUiTvH1.sapzenmessageview-NoNotifications{
+	color: #262626;
+	filter:none;
+	text-shadow:none;
+	margin-top: 100px;
+	width:100%;
+	text-align: center !important;
+	font-size: 16px;
+}
+
+.sapzenmessageview-ButtonLevelImageError > img {
+  background: url("img/messageview_error.png") no-repeat center center;
+  width: 25px;
+  height: 100%;
+}
+
+.sapzenmessageview-ButtonLevelImageWarning > img {
+  background: url("img/messageview_warning.png") no-repeat center center;
+  width: 25px;
+  height: 100%;
+}
+
+.sapzenmessageview-ButtonLevelImageInfo > img {
+  background: url("img/messageview_info.png") no-repeat center center;
+  width: 25px;
+  height: 100%;
+}
+
+.sapzenmessageview-LevelImageWarning{
+	background: url("img/messageview_warning.png") no-repeat center left;
+	width: 25px;
+	height: 100%; 
+}
+
+.sapzenmessageview-RowRepeaterRowActive .sapzenmessageview-LevelImageWarning {
+  /*background: url("img/messageview_warning_active.png") no-repeat center left;*/
+}
+
+.sapzenmessageview-LevelImageError{
+	background: url("img/messageview_error.png") no-repeat center left;
+	width: 25px;
+	height: 100%;
+}
+
+.sapzenmessageview-RowRepeaterRowActive .sapzenmessageview-LevelImageError {
+ /* background: url("img/messageview_error_active.png") no-repeat center left;*/
+}
+
+.sapzenmessageview-LevelImageInfo{
+	background: url("img/messageview_info.png") no-repeat center left;
+	width: 25px;
+	height: 100%; 
+}
+
+.sapzenmessageview-RowRepeaterRowActive .sapzenmessageview-LevelImageInfo {
+  /*background: url("img/messageview_info_active.png") no-repeat center left;*/
+}
+
+.sapzenmessageview-PopupContainer > .sapUiBorderLayoutCenter{
+	bottom: 0px !important;
+	top: 30px !important;
+	left: 0px !important;
+	right: 0px !important;
+	background: #e6e6e6;
+}
+
+.sapzenmessageview-AutoHeight {
+	height : auto !important;
+}

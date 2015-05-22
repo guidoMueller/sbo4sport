@@ -1,0 +1,11 @@
+:focus {
+    outline: none;
+    -webkit-focus-ring-color: none;
+}
+
+.sapUiCb > label,
+.sapUiRb > label,
+.sapzenfilterpanel-PopupContainer .sapUiRrDesignBareShell li,
+.sapzenfilterpanel-PopupContainer .sapUiTableColCell{
+	cursor: pointer !important;
+}

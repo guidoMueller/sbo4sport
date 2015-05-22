@@ -1,0 +1,968 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/ca/ui/AddPicture.js",
+      "description" : "Provides control sap.ca.ui.AddPicture.",
+      "size" : 37462,
+      "compressedSize" : 6755,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "sap/ca/ui/utils/resourcebundle.js", "sap/ca/ui/PictureItem.js", "sap/ca/ui/utils/CanvasHelper.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/AddPictureRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 3336,
+      "compressedSize" : 1836,
+      "required" : ["sap/ca/ui/JS/jquery-ui-widget.js", "sap/ca/ui/JS/jquery-iframe-transport.js", "sap/ca/ui/JS/jquery-fileupload.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/AppConfig.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1432,
+      "compressedSize" : 1126,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/CustomerContext.js",
+      "description" : "Provides control sap.ca.ui.CustomerContext.",
+      "size" : 31660,
+      "compressedSize" : 10065,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "sap/m/Dialog.js", "sap/m/List.js", "sap/ca/ui/utils/resourcebundle.js", "sap/ca/ui/CustomerControlListItem.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/CustomerControlListItem.js",
+      "description" : "Provides control sap.ca.ui.CustomerControlListItem.",
+      "size" : 10503,
+      "compressedSize" : 2145,
+      "required" : ["sap/ca/ui/library.js", "sap/m/CustomListItem.js", "sap/m/Label.js", "sap/m/Text.js", "sap/m/ObjectIdentifier.js", "sap/ca/ui/utils/resourcebundle.js", "sap/ca/ui/model/format/FormattingLibrary.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/CustomerControlListItemRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 418,
+      "compressedSize" : 353,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/CustomListItemRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/DatePicker.js",
+      "description" : "Provides control sap.ca.ui.DatePicker.",
+      "size" : 12423,
+      "compressedSize" : 5118,
+      "required" : ["sap/ca/ui/library.js", "sap/m/InputBase.js", "sap/me/Calendar.js", "sap/ca/ui/utils/resourcebundle.js", "sap/ca/ui/model/type/Date.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/DatePickerRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1197,
+      "compressedSize" : 623,
+      "required" : ["sap/m/InputBaseRenderer.js", "sap/ui/core/Renderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/ExpansibleFeedListItem.js",
+      "description" : "Provides control sap.ca.ui.ExpansibleFeedListItem.",
+      "size" : 8816,
+      "compressedSize" : 2646,
+      "required" : ["sap/ca/ui/library.js", "sap/m/FeedListItem.js", "sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/ExpansibleFeedListItemRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 5524,
+      "compressedSize" : 2981,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/FeedListItemRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/FileUpload.js",
+      "description" : "Provides control sap.ca.ui.FileUpload.",
+      "size" : 114443,
+      "compressedSize" : 35619,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "sap/ca/ui/utils/resourcebundle.js", "sap/ca/ui/dialog/factory.js", "sap/ca/ui/model/format/FileSizeFormat.js", "sap/ca/ui/model/type/Date.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/FileUploadRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 2178,
+      "compressedSize" : 1097,
+      "required" : ["sap/m/ListRenderer.js", "sap/ca/ui/JS/jquery-ui-widget.js", "sap/ca/ui/JS/jquery-iframe-transport.js", "sap/ca/ui/JS/jquery-fileupload.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/GrowingTileContainer.js",
+      "description" : "Provides control sap.ca.ui.GrowingTileContainer.",
+      "size" : 24681,
+      "compressedSize" : 9561,
+      "required" : ["sap/ca/ui/library.js", "sap/m/ScrollContainer.js", "sap/ui/layout/Grid.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/GrowingTileContainerRenderer.js",
+      "size" : 2358,
+      "compressedSize" : 1197,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ScrollContainerRenderer.js", "sap/ui/layout/GridRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/HierarchicalSelectDialog.js",
+      "description" : "Provides control sap.ca.ui.HierarchicalSelectDialog.",
+      "size" : 18597,
+      "compressedSize" : 4313,
+      "required" : ["sap/ca/ui/library.js", "sap/m/Dialog.js", "sap/ca/ui/utils/resourcebundle.js", "sap/m/NavContainer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/HierarchicalSelectDialogItem.js",
+      "description" : "Provides control sap.ca.ui.HierarchicalSelectDialogItem.",
+      "size" : 6015,
+      "compressedSize" : 657,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Item.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/HierarchicalSelectDialogRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 426,
+      "compressedSize" : 296,
+      "required" : ["sap/m/DialogRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/Hierarchy.js",
+      "description" : "Provides control sap.ca.ui.Hierarchy.",
+      "size" : 10072,
+      "compressedSize" : 1922,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/HierarchyItem.js",
+      "description" : "Provides control sap.ca.ui.HierarchyItem.",
+      "size" : 13653,
+      "compressedSize" : 2891,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "sap/ui/layout/VerticalLayout.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/HierarchyItemRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 3013,
+      "compressedSize" : 1558,
+      "required" : ["sap/ui/layout/HorizontalLayout.js", "sap/m/Label.js", "sap/m/Link.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/HierarchyRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 2273,
+      "compressedSize" : 1177,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/InPlaceEdit.js",
+      "description" : "Provides control sap.ca.ui.InPlaceEdit.",
+      "size" : 33924,
+      "compressedSize" : 13979,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "sap/m/Input.js", "sap/m/Select.js", "sap/m/Link.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/InPlaceEditRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 4247,
+      "compressedSize" : 1971,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/JS/jquery-fileupload.js",
+      "size" : 57460,
+      "compressedSize" : 17164,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/JS/jquery-iframe-transport.js",
+      "size" : 10088,
+      "compressedSize" : 2452,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/JS/jquery-ui-widget.js",
+      "size" : 15441,
+      "compressedSize" : 6928,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/NavigationHandler.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 5744,
+      "compressedSize" : 3222,
+      "required" : ["jquery.sap.history.js", "sap/m/InstanceManager.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/Notes.js",
+      "description" : "Provides control sap.ca.ui.Notes.",
+      "size" : 15028,
+      "compressedSize" : 4560,
+      "required" : ["sap/ca/ui/library.js", "sap/m/List.js", "sap/m/MessageToast.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/NotesRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1466,
+      "compressedSize" : 699,
+      "required" : ["sap/m/ListRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/OverflowContainer.js",
+      "description" : "Provides control sap.ca.ui.OverflowContainer.",
+      "size" : 11454,
+      "compressedSize" : 3062,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/OverflowContainerRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1665,
+      "compressedSize" : 788,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/Overlay.js",
+      "size" : 2006,
+      "compressedSize" : 1394,
+      "required" : ["sap/ui/core/Popup.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/OverviewTile.js",
+      "description" : "Provides control sap.ca.ui.OverviewTile.",
+      "size" : 22757,
+      "compressedSize" : 7012,
+      "required" : ["sap/ca/ui/library.js", "sap/m/Tile.js", "sap/ui/core/IconPool.js", "sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/OverviewTileRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 4233,
+      "compressedSize" : 2408,
+      "required" : ["sap/m/TileRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/PictureItem.js",
+      "description" : "Provides control sap.ca.ui.PictureItem.",
+      "size" : 17319,
+      "compressedSize" : 3836,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/PictureItemRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1169,
+      "compressedSize" : 534,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/PictureTile.js",
+      "description" : "Provides control sap.ca.ui.PictureTile.",
+      "size" : 10908,
+      "compressedSize" : 2244,
+      "required" : ["sap/ca/ui/library.js", "sap/m/CustomTile.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/PictureTileRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1416,
+      "compressedSize" : 842,
+      "required" : ["sap/m/CustomTileRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/PictureViewer.js",
+      "description" : "Provides control sap.ca.ui.PictureViewer.",
+      "size" : 25534,
+      "compressedSize" : 7257,
+      "required" : ["sap/ca/ui/library.js", "sap/m/TileContainer.js", "sap/ui/core/ResizeHandler.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/PictureViewerItem.js",
+      "description" : "Provides control sap.ca.ui.PictureViewerItem.",
+      "size" : 5425,
+      "compressedSize" : 836,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/PictureViewerRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 952,
+      "compressedSize" : 458,
+      "required" : ["sap/m/TileContainerRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/ZoomableScrollContainer.js",
+      "description" : "Provides control sap.ca.ui.ZoomableScrollContainer.",
+      "size" : 7500,
+      "compressedSize" : 1351,
+      "required" : ["sap/ca/ui/library.js", "sap/m/ScrollContainer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/ZoomableScrollContainerRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 435,
+      "compressedSize" : 355,
+      "required" : ["sap/m/ScrollContainerRenderer.js", "sap/ui/core/Renderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/BarListItem.js",
+      "description" : "Provides control sap.ca.ui.charts.BarListItem.",
+      "size" : 5550,
+      "compressedSize" : 607,
+      "required" : ["sap/ca/ui/library.js", "sap/m/ListItemBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/BarListItemRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1602,
+      "compressedSize" : 908,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ListItemBaseRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/BubbleChart.js",
+      "description" : "Provides control sap.ca.ui.charts.BubbleChart.",
+      "size" : 48841,
+      "compressedSize" : 14744,
+      "required" : ["sap/ca/ui/library.js", "sap/ca/ui/charts/Chart.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/BubbleChartRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 339,
+      "compressedSize" : 275,
+      "required" : ["sap/ca/ui/charts/ChartRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/Chart.js",
+      "description" : "Provides control sap.ca.ui.charts.Chart.",
+      "size" : 134709,
+      "compressedSize" : 42735,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "sap/m/ScrollContainer.js", "sap/ca/ui/charts/ChartType.js", "sap/ca/ui/charts/ChartSelectionMode.js", "sap/ca/ui/charts/ChartSemanticColor.js", "sap/ca/ui/charts/ChartColor.js", "sap/ca/ui/charts/ClusterList.js", "sap/ca/ui/charts/ChartFormatter.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ChartFormatter.js",
+      "size" : 8064,
+      "compressedSize" : 4359,
+      "required" : ["sap/ca/ui/model/format/NumberFormat.js", "sap/ca/ui/model/type/Date.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ChartPopover.js",
+      "size" : 2393,
+      "compressedSize" : 1084,
+      "required" : ["sap/m/Label.js", "sap/m/List.js", "sap/m/ResponsivePopover.js", "sap/m/StandardListItem.js", "sap/ca/ui/utils/resourcebundle.js", "sap/ui/model/json/JSONModel.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ChartRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1339,
+      "compressedSize" : 546,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ChartToolBar.js",
+      "description" : "Provides control sap.ca.ui.charts.ChartToolBar.",
+      "size" : 54550,
+      "compressedSize" : 17451,
+      "required" : ["sap/ca/ui/library.js", "sap/ui/core/Control.js", "sap/m/Popover.js", "sap/m/Button.js", "sap/m/Bar.js", "sap/m/Select.js", "sap/m/Dialog.js", "sap/ca/ui/Overlay.js", "sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ChartToolBarRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 1544,
+      "compressedSize" : 742,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ChartType.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 8013,
+      "compressedSize" : 4692,
+      "required" : ["sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ClusterList.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 14422,
+      "compressedSize" : 8092,
+      "required" : ["sap/m/List.js", "sap/ca/ui/utils/resourcebundle.js", "sap/ui/model/json/JSONModel.js", "sap/ui/core/Element.js", "sap/ca/ui/charts/ClusterListItem.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ClusterListItem.js",
+      "description" : "Provides control sap.ca.ui.charts.ClusterListItem.",
+      "size" : 4964,
+      "compressedSize" : 810,
+      "required" : ["sap/ca/ui/library.js", "sap/m/ListItemBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/ClusterListItemRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 3980,
+      "compressedSize" : 2286,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ListItemBaseRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/CombinedChart.js",
+      "description" : "Provides control sap.ca.ui.charts.CombinedChart.",
+      "size" : 8642,
+      "compressedSize" : 1899,
+      "required" : ["sap/ca/ui/library.js", "sap/ca/ui/charts/Chart.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/CombinedChartRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 334,
+      "compressedSize" : 279,
+      "required" : ["sap/ca/ui/charts/ChartRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/HorizontalBarChart.js",
+      "description" : "Provides control sap.ca.ui.charts.HorizontalBarChart.",
+      "size" : 11806,
+      "compressedSize" : 2923,
+      "required" : ["sap/ca/ui/library.js", "sap/ca/ui/charts/Chart.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/HorizontalBarChartRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 347,
+      "compressedSize" : 289,
+      "required" : ["sap/ca/ui/charts/ChartRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/LineChart.js",
+      "description" : "Provides control sap.ca.ui.charts.LineChart.",
+      "size" : 27715,
+      "compressedSize" : 5782,
+      "required" : ["sap/ca/ui/library.js", "sap/ca/ui/charts/Chart.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/LineChartRenderer.js",
+      "size" : 349,
+      "compressedSize" : 300,
+      "required" : ["sap/ca/ui/charts/ChartRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/StackedHorizontalBarChart.js",
+      "description" : "Provides control sap.ca.ui.charts.StackedHorizontalBarChart.",
+      "size" : 12491,
+      "compressedSize" : 1862,
+      "required" : ["sap/ca/ui/library.js", "sap/ca/ui/charts/Chart.js", "sap/ca/ui/charts/ChartType.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/StackedHorizontalBarChartRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 376,
+      "compressedSize" : 303,
+      "required" : ["sap/ca/ui/charts/ChartRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/StackedVerticalColumnChart.js",
+      "description" : "Provides control sap.ca.ui.charts.StackedVerticalColumnChart.",
+      "size" : 12798,
+      "compressedSize" : 1912,
+      "required" : ["sap/ca/ui/library.js", "sap/ca/ui/charts/Chart.js", "sap/ca/ui/charts/ChartType.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/StackedVerticalColumnChartRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 379,
+      "compressedSize" : 305,
+      "required" : ["sap/ca/ui/charts/ChartRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/VerticalBarChart.js",
+      "description" : "Provides control sap.ca.ui.charts.VerticalBarChart.",
+      "size" : 15345,
+      "compressedSize" : 3010,
+      "required" : ["sap/ca/ui/library.js", "sap/ca/ui/charts/Chart.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/charts/VerticalBarChartRenderer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 341,
+      "compressedSize" : 285,
+      "required" : ["sap/ca/ui/charts/ChartRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/dialog/Confirm.controller.js",
+      "size" : 4778,
+      "compressedSize" : 2351,
+      "required" : ["sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/dialog/Confirm.view.xml",
+      "size" : 2538,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ca/ui/dialog/Confirm.controller.js", "sap/m/Dialog.js", "sap/ui/layout/VerticalLayout.js", "sap/m/Text.js", "sap/ui/layout/form/SimpleForm.js", "sap/m/Label.js", "sap/m/TextArea.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/dialog/Dialog.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 2499,
+      "compressedSize" : 1688,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/dialog/Forward.controller.js",
+      "size" : 5103,
+      "compressedSize" : 2303,
+      "required" : ["sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/dialog/Forward.view.xml",
+      "size" : 1196,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ca/ui/dialog/Forward.controller.js", "sap/m/Dialog.js", "sap/m/Bar.js", "sap/m/SearchField.js", "sap/m/List.js", "sap/m/StandardListItem.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/dialog/SelectItem.controller.js",
+      "size" : 2629,
+      "compressedSize" : 1017,
+      "required" : ["sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/dialog/SelectItem.view.xml",
+      "size" : 856,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ca/ui/dialog/SelectItem.controller.js", "sap/m/Dialog.js", "sap/m/List.js", "sap/m/StandardListItem.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/dialog/factory.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 5839,
+      "compressedSize" : 1926,
+      "required" : ["sap/ca/ui/dialog/Dialog.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n.properties",
+      "size" : 10150,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_ar.properties",
+      "size" : 14987,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_cs.properties",
+      "size" : 10843,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_de.properties",
+      "size" : 10749,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_en.properties",
+      "size" : 10035,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_es.properties",
+      "size" : 10945,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_fr.properties",
+      "size" : 11220,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_hu.properties",
+      "size" : 10888,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_it.properties",
+      "size" : 10310,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_iw.properties",
+      "size" : 13696,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_ja.properties",
+      "size" : 12162,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_no.properties",
+      "size" : 10182,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_pl.properties",
+      "size" : 10708,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_pt.properties",
+      "size" : 10864,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_ru.properties",
+      "size" : 17332,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_tr.properties",
+      "size" : 10785,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_uk.properties",
+      "size" : 16497,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/i18n/i18n_zh_CN.properties",
+      "size" : 11429,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/images/images.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 420,
+      "compressedSize" : 344,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/library.js",
+      "description" : "Initialization Code and shared classes of library sap.ca.ui (1.24.5)",
+      "size" : 7014,
+      "compressedSize" : 2364,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/m/library.js", "jquery.sap.global.js"],
+      "includes" : ["sap/ca/ui/charts/ChartColor.js", "sap/ca/ui/charts/ChartSelectionMode.js", "sap/ca/ui/charts/ChartSemanticColor.js"]
+    },
+    {
+      "name" : "sap/ca/ui/library.properties",
+      "size" : 2478,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/message/MessageBox.controller.js",
+      "size" : 1737,
+      "compressedSize" : 481,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/message/MessageBox.view.xml",
+      "size" : 1081,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ca/ui/message/MessageBox.controller.js", "sap/m/Dialog.js", "sap/ui/layout/VerticalLayout.js", "sap/m/Text.js", "sap/m/HBox.js", "sap/m/Link.js", "sap/m/TextArea.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/message/message.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 4737,
+      "compressedSize" : 1530,
+      "required" : ["sap/ca/ui/dialog/factory.js", "sap/m/MessageToast.js", "sap/ca/ui/utils/resourcebundle.js", "sap/ui/core/library.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/format/AmountFormat.js",
+      "description" : "Provides class sap.ca.ui.model.format.AmountFormat",
+      "size" : 13072,
+      "compressedSize" : 3542,
+      "required" : ["sap/ui/core/LocaleData.js", "sap/ca/ui/model/format/FormatHelper.js", "sap/ca/ui/model/format/NumberFormat.js", "sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/format/DateFormat.js",
+      "description" : "Provides class sap.ca.ui.model.format.DateFormat",
+      "size" : 8889,
+      "compressedSize" : 2479,
+      "required" : ["sap/ui/core/format/DateFormat.js", "sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/format/FileSizeFormat.js",
+      "description" : "Provides class sap.ca.ui.model.format.FileSizeFormat",
+      "size" : 5402,
+      "compressedSize" : 2254,
+      "required" : ["sap/ui/core/LocaleData.js", "sap/ca/ui/model/format/FormatHelper.js", "sap/ca/ui/model/format/NumberFormat.js", "sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/format/FormatHelper.js",
+      "description" : "Provides class sap.ca.ui.model.format.FormatHelper",
+      "size" : 6112,
+      "compressedSize" : 3081,
+      "required" : ["sap/ui/core/format/NumberFormat.js", "sap/ui/core/LocaleData.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/format/FormattingLibrary.js",
+      "description" : "Provides class sap.ca.ui.model.format.FormattingLibrary",
+      "size" : 5618,
+      "compressedSize" : 3499,
+      "required" : ["sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/format/NumberFormat.js",
+      "description" : "Provides class sap.ca.ui.model.format.NumberFormat",
+      "size" : 14440,
+      "compressedSize" : 4226,
+      "required" : ["sap/ui/core/LocaleData.js", "sap/ca/ui/model/format/FormatHelper.js", "sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/format/QuantityFormat.js",
+      "description" : "Provides class sap.ca.ui.model.format.QuantityFormat",
+      "size" : 8022,
+      "compressedSize" : 3226,
+      "required" : ["sap/ca/ui/model/format/NumberFormat.js", "sap/ui/core/format/NumberFormat.js", "sap/ui/core/LocaleData.js", "sap/ca/ui/model/format/FormatHelper.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/type/Date.js",
+      "description" : "Provides the base implementation for all model implementations",
+      "size" : 6529,
+      "compressedSize" : 2519,
+      "required" : ["sap/ui/model/SimpleType.js", "sap/ca/ui/model/format/DateFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/type/DateTime.js",
+      "description" : "Provides the base implementation for all model implementations",
+      "size" : 2684,
+      "compressedSize" : 663,
+      "required" : ["sap/ca/ui/model/type/Date.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/type/FileSize.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 4380,
+      "compressedSize" : 1689,
+      "required" : ["sap/ui/model/SimpleType.js", "sap/ca/ui/model/format/FileSizeFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/type/Number.js",
+      "description" : "Provides the base implementation for all model implementations",
+      "size" : 4445,
+      "compressedSize" : 1663,
+      "required" : ["sap/ui/model/SimpleType.js", "sap/ca/ui/model/format/NumberFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/model/type/Time.js",
+      "description" : "Provides the base implementation for all model implementations",
+      "size" : 2628,
+      "compressedSize" : 639,
+      "required" : ["sap/ca/ui/model/type/Date.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/Company.controller.js",
+      "size" : 960,
+      "compressedSize" : 667,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/Company.view.xml",
+      "size" : 1759,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ca/ui/quickoverview/Company.controller.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/Text.js", "sap/ui/core/Icon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/CompanyLaunch.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 2494,
+      "compressedSize" : 1367,
+      "required" : ["sap/ui/base/Object.js", "sap/ca/ui/quickoverview/Quickoverview.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/Employee.controller.js",
+      "size" : 1803,
+      "compressedSize" : 1210,
+      "required" : ["sap/ca/ui/quickoverview/CompanyLaunch.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/Employee.view.xml",
+      "size" : 1601,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ca/ui/quickoverview/Employee.controller.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Link.js", "sap/ui/core/Icon.js", "sap/m/Text.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/EmployeeLaunch.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 3753,
+      "compressedSize" : 2016,
+      "required" : ["sap/ui/base/Object.js", "sap/ca/ui/quickoverview/Quickoverview.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/Quickoverview.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 11073,
+      "compressedSize" : 4818,
+      "required" : ["sap/ui/base/Object.js", "sap/ca/ui/utils/resourcebundle.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/Quickview.controller.js",
+      "size" : 4963,
+      "compressedSize" : 2112,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/quickoverview/Quickview.view.xml",
+      "size" : 505,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ca/ui/quickoverview/Quickview.controller.js", "sap/m/VBox.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/utils/BinaryUtil.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 2109,
+      "compressedSize" : 1021,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/utils/CanvasHelper.js",
+      "description" : "This file includes large portions of code from canvasResize https://github.com/gokercebeci/canvasResize/blob/master/canvasResize.js which is licensed under MIT license:  ----------------------------------------------------------------------------------------------  The MIT License  Copyright (c) 2012 goker.cebeci, http://gokercebeci.com  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  It requires **binaryajax.js** and **exif.js** (or **jQuery EXIF**) to work which is also under the [**MPL License**](http://www.nihilogic.dk/licenses/mpl-license.txt)  ------------------------------------ ---------------------------------------------------------  However, this modified version doesn't require anymore binaryajax.js",
+      "size" : 11759,
+      "compressedSize" : 5780,
+      "required" : ["sap/ca/ui/utils/exif.js", "sap/ca/ui/utils/BinaryUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/utils/Lessifier.js",
+      "description" : "global less",
+      "size" : 2875,
+      "compressedSize" : 1333,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/utils/TablePersonalizer.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 931,
+      "compressedSize" : 622,
+      "required" : ["sap/ushell/services/Personalization.js", "sap/m/TablePersoController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/utils/busydialog.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 3554,
+      "compressedSize" : 915,
+      "required" : ["sap/ca/ui/images/images.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/utils/exif.js",
+      "size" : 23274,
+      "compressedSize" : 10029,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ca/ui/utils/resourcebundle.js",
+      "description" : "Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved",
+      "size" : 556,
+      "compressedSize" : 450,
+      "required" : ["sap/ui/model/resource/ResourceModel.js", "jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

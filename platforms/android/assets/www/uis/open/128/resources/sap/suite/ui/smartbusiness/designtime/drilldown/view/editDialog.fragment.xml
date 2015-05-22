@@ -1,0 +1,165 @@
+
+<Dialog xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form" xmlns="sap.m" id='editDialog' title="{path:'TYPE',formatter:'.formatType'}:{NAME}" 
+	class="editMeasureDialog"  contentHeight="auto"
+	contentWidth="auto" horizontalScrolling='false' verticalScrolling='true'
+	 resourceBundleName="myBundle"
+     resourceBundleAlias="i18n">
+	<content>
+
+
+		<SegmentedButton class="segmentedButton">
+			<Button text="{i18n>GENERAL}" press="showGeneral" width="50%"></Button>
+			<Button text="{i18n>ADVANCED}" press="showAdvanced" width="50%"></Button>
+
+		</SegmentedButton>
+
+		<f:Form id="FormEditMeasureGeneral" maxContainerCols="2" editable="true"
+			class="editMeasureForm">
+
+			<f:layout>
+				<f:GridLayout/>
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement label="{i18n>TYPE}" class="formLabels" >
+							<f:fields>
+								<Text id="typeOf" text="{parts:[{path:'NAME'},{path:'TYPE'}],formatter:'.formatMeasureNameInList'}"  class="typeLabel" />
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement id="colorButtonLabel" label="{i18n>COLOR}" class="formLabels" visible="{parts:[{path:'TYPE'},{path:'SB_DDACONFIG>/COLOR_SCHEME'}],formatter:'.colorButtonVisiblity'}">
+							<f:fields>
+								<HBox>
+								<core:Icon  press="showColorPopUp" src="sap-icon://color-fill"
+									class="size1" width="5%" color="{path:'COLOR1',formatter:'.formatEditColor'}" 
+									visible="{path:'SB_DDACONFIG>/COLOR_SCHEME',formatter:'.colorButton1Visiblity'}">
+								</core:Icon>
+								<core:Icon press="showColorPopUp" src="sap-icon://color-fill"
+									class="size1" width="5%" color="{path:'COLOR2',formatter:'.formatEditColor'}" 
+									visible="{path:'SB_DDACONFIG>/COLOR_SCHEME',formatter:'.colorButton2Visiblity'}">
+								</core:Icon>
+								</HBox>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="{i18n>SORT_ORDER}" class="formLabels">
+							<f:fields>
+								<Select id="sortOrder" maxWidth="60%" class="dialogComboBoxes" selectedKey="{SORT_ORDER}">
+									<items>
+										<core:Item icon="sap-icon://down" key="desc" text="{i18n>DESCENDING}" />
+										<core:Item icon="sap-icon://up" key="asc" text="{i18n>ASCENDING}" />
+										<core:Item icon="sap-icon://sorting-ranking" key="none" text="{i18n>NO_SORT}" />
+									</items>
+								</Select>
+
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="{i18n>SORT_BY}" class="formLabels" visible="{path:'TYPE',formatter:'.sortByMeasureVisibility'}">
+							<f:fields>
+								<Select id="allMeasures" maxWidth="60%" class="dialogComboBoxes" selectedKey="{SORT_BY}"
+									items="{SB_DDACONFIG>/ALL_MEASURES}" >
+									<core:Item text="{path:'SB_DDACONFIG>'}" key="{path:'SB_DDACONFIG>'}" />
+								</Select>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="{i18n>SORT_BY}" class="formLabels" visible="{path:'TYPE',formatter:'.sortByDimensionVisibility'}">
+							<f:fields>
+								<Select id="allDimensions" maxWidth="60%" class="dialogComboBoxes" selectedKey="{SORT_BY}"
+									items="{SB_DDACONFIG>/ALL_DIMENSIONS}" >
+									<core:Item text="{path:'SB_DDACONFIG>'}" key="{path:'SB_DDACONFIG>'}" />
+								</Select>
+							</f:fields>
+						</f:FormElement>
+
+
+
+
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+		
+		<f:Form id="FormEditMeasureAdvanced" maxContainerCols="2" editable="true" visible="false"
+			class="editMeasureForm">
+
+			<f:layout>
+				<f:ResponsiveGridLayout labelSpanL="3"
+					labelSpanM="3" columnsL="1" columnsM="1" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>						
+						<f:FormElement>
+							<f:fields>
+								<CheckBox id="hideInTable" text="{i18n>HIDE_IN_TABLE}"></CheckBox>
+							</f:fields>							
+						</f:FormElement>	
+						<f:FormElement>
+								<CheckBox id="useAsThreshold" width="100%" text="{i18n>MSG_CHOOSE_THRESHOLD_MEASURE}" visible="false"></CheckBox>
+						</f:FormElement>
+						<f:FormElement>
+							<f:fields>
+								<VBox id="Dual_config_1" visible="false">
+									<Label text="{i18n>DUAL_AXIS}" design="Bold" class="formLabels"/>
+									<HBox>
+										<Label id="axis_1_label_edit" design="Bold" class="axis_label_edit" />
+										<Select id="AxisMsr1_edit" class="dialogComboBoxes" items="{DUAL_MODEL>/DATA}" change="setStackMsrs_edit">
+											<items>
+												<core:ListItem key="{DUAL_MODEL>name}" text="{DUAL_MODEL>name}" />					
+											</items>
+										</Select>
+									</HBox>
+									<HBox>
+										<Label id="axis_2_label_edit" design="Bold" class="axis_label_edit" />
+										<Select id="AxisMsr2_edit" class="dialogComboBoxes" items="{DUAL_MODEL>/DATA}" change="setStackMsrs_edit">
+											<items>
+												<core:ListItem key="{DUAL_MODEL>name}" text="{DUAL_MODEL>name}" />					
+											</items>
+										</Select>
+									</HBox>
+								</VBox>
+							</f:fields>
+						</f:FormElement>						
+						<f:FormElement>
+							<f:fields>
+								<VBox>
+									<CheckBox id="enableStacking" text="{i18n>ENABLE_STACKING}" select="onEnableStacking"></CheckBox>
+								</VBox>
+							</f:fields>	
+						</f:FormElement>							
+						<f:FormElement>
+							<f:fields>
+								<VBox id="stackingOptions" visible="false">
+							      <RadioButton groupName="GroupA" id="addMsrToStack" text="{i18n>STACK_ALL_MEASURES}" select="onMsrStacking" selected="true"/>
+							      <RadioButton groupName="GroupA" id="dimStack" text="{i18n>CHOOSE_STACK_DIMENSION}" select="onDimStacking"/>
+							      <Select id="dimsToStack" width="45%" visible="false" class="dialogComboBoxes" />
+							    </VBox>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement>
+							<f:fields>
+								<VBox id="Dual_config_2" visible="false">
+									<Button text="{i18n>SELECT_MEASUES_FOR_STACK_1}" icon="sap-icon://slim-arrow-right" iconFirst="false" press="openMsrDialogForStack1"/>
+									<Label id="In_stack1_label_edit" design="Bold" class="formLabels"/>
+									<Text id="stack1MsrsLabel_edit"/>
+									<Label text="{i18n>MSG_REMAINING_MEASURES}" design="Bold" class="formLabels"/>
+									<Text id="stack2MsrsLabel_edit"/>
+								</VBox>
+							</f:fields>
+						</f:FormElement>												
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+		
+		
+		
+		
+	</content>
+	<beginButton>
+		<Button text="{i18n>OK}" press="onEditDialogOk" />
+	</beginButton>
+	<endButton>
+		<Button text="{i18n>CANCEL}" press="onEditDialogCancel" />
+	</endButton>
+</Dialog>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright (c) 2013 SAP AG, All Rights Reserved -->
+<core:View
+        controllerName="sap.ushell.components.tiles.action.Configuration"
+        xmlns:core="sap.ui.core"
+        xmlns:form="sap.ui.layout.form"
+        xmlns:layout="sap.ui.commons.layout"
+        xmlns="sap.m"
+        xmlns:table="sap.ui.table"
+        xmlns:common="sap.ui.commons"
+     >
+    <form:SimpleForm id="configuration" maxContainerCols="2" minWidth="1024" editable="true">
+        <form:content>
+
+            <core:Title id="categoryChipConfiguration"
+                        text="{i18n>configuration.category.action_chip_configuration}"></core:Title>
+
+            <Label text="{i18n>configuration.semantic_object}"></Label>
+            <Input id="semantic_objectInput" width="100%" tooltip="{i18n>configuration.semantic_object.tooltip}" maxLength="30"
+                   liveChange="onConfigurationInputChange" valueHelpRequest="onValueHelpRequest" showValueHelp="true" showSuggestion="true"
+                   value="{/value}" enabled="true"/>
+            <Label text="{i18n>configuration.semantic_action}"></Label>
+            <Input id="semantic_actionInput" liveChange="onConfigurationInputChange" value="{/config/semantic_action}" maxLength="30"
+                   width="100%" tooltip="{i18n>configuration.semantic_action.tooltip}"/>
+
+            <core:Title id="categoryTargetApplication"
+                        text="{i18n>configuration.category.target_application}"></core:Title>
+
+            <Label text="{i18n>configuration.target_applicationType}"></Label>
+            <RadioButton id="typeSapui5" groupName="applicationType" text="{i18n>configuration.target_application.sapui5}" selected="true"
+            tooltip="{i18n>configuration.target_application.sapui5.tooltip}" select="onApplicationTypeChange"></RadioButton>
+            <RadioButton id="typeLpd_cust" groupName="applicationType" text="{i18n>configuration.target_application.lpd_cust}"
+            tooltip="{i18n>configuration.target_application.lpd_cust.tooltip}" select="onApplicationTypeChange"></RadioButton>
+            <Label />
+
+            <Label id="application_description" text="{i18n>configuration.target_application.description}"></Label>
+            <Input id="target_application_descriptionInput" value="{/config/display_title_text}" liveChange="onConfigurationInputChange"
+                   width="100%" tooltip="{i18n>configuration.target_application.description.tooltip}" />
+            <Label id="application_url" text="{i18n>configuration.target_application.url}"></Label>
+            <Input id="target_application_urlInput" value="{/config/url}" maxLength="512" liveChange="onConfigurationInputChange"
+                   width="100%" tooltip="{i18n>configuration.target_application.url.tooltip}" />
+            <Label id="application_component" text="{i18n>configuration.target_application.component}"></Label>
+            <Input id="target_application_componentInput" value="{/config/ui5_component}" liveChange="onConfigurationInputChange"
+                   width="100%" tooltip="{i18n>configuration.target_application.component.tooltip}" />
+
+            <Label id="navigation_provider_role" text="{i18n>configuration.navigation_provider_role}"></Label>
+            <Input id="navigation_provider_roleInput" value="{/config/navigation_provider_role}" width="100%" maxLength="10"
+                   tooltip="{i18n>configuration.navigation_provider_role.tooltip}" liveChange="onConfigurationInputChange" />
+            <Label id="navigation_provider_instance" text="{i18n>configuration.navigation_provider_instance}"></Label>
+            <Input id="navigation_provider_instanceInput" value="{/config/navigation_provider_instance}" width="100%" maxLength="32"
+                   tooltip="{i18n>configuration.navigation_provider_instance.tooltip}" liveChange="onConfigurationInputChange" />
+
+            <Label id="target_application_alias" text="{i18n>configuration.target_application_alias}"></Label>
+            <Input id="target_application_aliasInput" value="{/config/target_application_alias}" width="100%"
+                   tooltip="{i18n>configuration.target_application_alias.tooltip}" liveChange="onConfigurationInputChange"/>
+            <Label id="target_application_id" text="{i18n>configuration.target_application_id}"></Label>
+            <Input id="target_application_idInput" value="{/config/target_application_id}" width="100%" maxLength="32"
+                   tooltip="{i18n>configuration.target_application_id.tooltip}" liveChange="onConfigurationInputChange" />
+
+            <core:Title id="categoryGeneral" text="{i18n>configuration.category.general}"></core:Title>
+            <Label text="{i18n>configuration.display_info_text}"></Label>
+            <Input id="additionalInfo" value="{/config/display_info_text}" width="100%" liveChange="onConfigurationInputChange" />
+
+            <Label text="{i18n>configuration.form_factor}" tooltip="{i18n>configuration.form_factor.tooltip}"></Label>
+            <CheckBox id="desktopCB"  text="{i18n>configuration.form_factor_desktop}" select="onFormFactorChange"  selected="{/config/desktopChecked}" enabled="{/config/manualFormFactor}"/>
+            <CheckBox id="tabletCB"  text="{i18n>configuration.form_factor_tablet}" select="onFormFactorChange" selected="{/config/tabletChecked}" enabled="{/config/manualFormFactor}"/>
+            <CheckBox id="phoneCB"  text="{i18n>configuration.form_factor_phone}" select="onFormFactorChange" selected="{/config/phoneChecked}" enabled="{/config/manualFormFactor}"/>
+            <Label/>
+            <Label text="{i18n>configuration.signature.table.title}" tooltip="{i18n>configuration.mapping_signature.tooltip}"></Label>
+            <table:Table id="mappingSignatureTable"
+              rows="{/config/rows}"
+              selectionBehavior="Row"
+              selectionMode="Multi"
+              visibleRowCount="5"
+              enableColumnReordering="false"
+              rowHeight="30px"
+              >
+              <table:Column id="nameCol" width="82px">
+                <Label text="{i18n>configuration.signature.table.name}"/>
+                <table:template>
+                  <common:TextField value="{name}" editable="true" placeholder="{i18n>configuration.signature.table.nameFieldLbl}" change="checkDuplicateNames"></common:TextField>
+                </table:template>
+              </table:Column>
+
+              <table:Column id="mandatoryCol" width="92px" hAlign="Center">
+                <Label text="{i18n>configuration.signature.table.mandatory}"/>
+                <table:template>
+                  <common:CheckBox checked="{mandatory}" change="handleMandatoryChange"></common:CheckBox>
+                </table:template>
+              </table:Column>
+
+              <table:Column id="valueCol" width="85px">
+                <Label text="{i18n>configuration.signature.table.value}"/>
+                <table:template>
+                  <common:TextField value="{value}" enabled="{valEnabled}"></common:TextField>
+                </table:template>
+              </table:Column>
+
+              <table:Column id="isRegExCol" width="162px" hAlign="Center">
+                <Label text="{i18n>configuration.signature.table.isRegEx}"/>
+                <table:template>
+                  <common:CheckBox checked="{isRegularExpression}" enabled="{valEnabled}"></common:CheckBox>
+                </table:template>
+              </table:Column>
+
+              <table:Column id="defValueCol" width="110px">
+                <Label text="{i18n>configuration.signature.table.defaultValue}"/>
+                <table:template>
+                  <common:TextField value="{defaultValue}" enabled="{defValEnabled}"></common:TextField>
+                </table:template>
+              </table:Column>
+            </table:Table>
+            <Label/>
+            
+            <layout:MatrixLayout>
+                <layout:MatrixLayoutRow>
+                    <layout:MatrixLayoutCell>
+                        <common:CheckBox id="isUnknownAllowed" class="" text="{i18n>configuration.signature.table.allowUndefined}" checked="{/config/isUnknownAllowed}" width="400px"/>
+                    </layout:MatrixLayoutCell>
+                </layout:MatrixLayoutRow>
+                <layout:MatrixLayoutRow>
+                    <layout:MatrixLayoutCell hAlign="Right">
+                        <common:Button id="addRow" text="{i18n>configuration.signature.table.add}" press="addRow" width="100px"/>
+                        <common:Button id="deleteRow" text="{i18n>configuration.signature.table.delete}" press="deleteRow" width="100px"/>
+                    </layout:MatrixLayoutCell>
+                </layout:MatrixLayoutRow>
+            </layout:MatrixLayout>
+            
+            </form:content>
+    </form:SimpleForm>
+</core:View>

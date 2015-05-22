@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/tile/StaticTile</name>
+	<documentation>An applauncher tile for simple, static apps, displaying title, subtitle, an icon and additional information</documentation>
+
+	<baseType>TileBase</baseType>
+</control>

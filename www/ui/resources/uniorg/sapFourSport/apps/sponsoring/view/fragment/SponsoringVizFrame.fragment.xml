@@ -1,0 +1,30 @@
+<core:FragmentDefinition
+        xmlns:viz="sap.viz.ui5.controls"
+        xmlns:layout="sap.ui.layout"
+        xmlns:core="sap.ui.core"
+        xmlns="sap.suite.ui.commons">
+
+    <layout:Splitter width="100%" height="800px">
+        <layout:contentAreas>
+            <ChartContainer
+                    id="idChartContainer"
+                    showFullScreen="true"
+                    showPersonalization="false"
+                    autoAdjustHeight="false"
+                    showLegend="true">
+
+                <content>
+                    <ChartContainerContent
+                            icon="sap-icon://horizontal-bar-chart-2"
+                            title="Sponsoringeinnahmen">
+                        <content>
+                            <viz:Popover id="idPopOver"></viz:Popover>
+                            <viz:VizFrame id="idVizFrameStackedBar" vizTitle="" uiConfig="{applicationSet:'fiori'}" vizType="combination">
+                            </viz:VizFrame>
+                        </content>
+                    </ChartContainerContent>
+                </content>
+            </ChartContainer>
+        </layout:contentAreas>
+    </layout:Splitter>
+</core:FragmentDefinition>

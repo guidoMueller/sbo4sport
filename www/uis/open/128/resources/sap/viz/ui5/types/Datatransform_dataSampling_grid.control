@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Datatransform_dataSampling_grid</name>
+  <documentation>Structured Type ui5/types/Datatransform_dataSampling_grid</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="row" type="sap.ui.core/int" defaultValue="3">
+      <documentation>Set the number of rows in the grid.</documentation>
+    </property>
+    <property name="column" type="sap.ui.core/int" defaultValue="3">
+      <documentation>Set the number of columns in the grid.</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

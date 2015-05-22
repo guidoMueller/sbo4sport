@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>TileState</name>
+	<documentation>The tile state control that displays loading indicator, while tile view is loading and failed status in case tile view is not available.</documentation>
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+        <property group="Misc" name="state" type="sap.ui.core/string" defaultValue="Loaded">
+            <documentation>The load status.</documentation>
+        </property>
+	</properties>
+	<events>
+	</events>
+	<aggregations>
+	</aggregations>
+</control>

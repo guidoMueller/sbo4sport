@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/StackedVerticalBar_animation</name>
+  <documentation>Settings for animations in the plot area</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="dataLoading" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set whether the data loading animation is enabled</documentation>
+    </property>
+    <property name="dataUpdating" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set whether the data updating animation is enabled</documentation>
+    </property>
+    <property name="resizing" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set whether the resizing animation is enabled</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

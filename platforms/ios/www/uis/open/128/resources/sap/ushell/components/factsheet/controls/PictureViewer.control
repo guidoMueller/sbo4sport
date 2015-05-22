@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>components/factsheet/controls/PictureViewer</name>
+
+	<documentation>Picture viewer control relying on the TileContainer control</documentation>
+
+	<baseType>sap.m/TileContainer</baseType>
+    <properties>
+        <property group="Misc" name="tileScaling" type="sap.ui.core/float" defaultValue="0.95">
+            <documentation>Percentage of the space occupied by the image in the picture viewer control. Please note that if the factor is too close to 1, the navigation arrows usually displayed in desktop mode will not be available</documentation>
+        </property>
+        <property group="Misc" name="removable" type="sap.ui.core/boolean" defaultValue="false">
+        	<documentation>Defines whether or not you can remove a picture
+</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="pictureDeleted">
+            <documentation>Thrown when user delete an image</documentation>
+        </event>
+    </events>
+    <aggregations default="items">
+        <aggregation cardinality="0..n" name="items" type="PictureViewerItem">
+            <documentation>Aggregation of PictureViewerItem that contains either a picture URI or the actual Image control.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

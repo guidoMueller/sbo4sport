@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/DashboardGroupsContainer</name>
+	<documentation>Add your documentation for the newui/launchpad/DashboardGroupsContainer</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property name="accessibilityLabel" type="sap.ui.core/string">
+			<documentation>An value for an optional accessibility label</documentation>
+		</property>
+	</properties>
+	<aggregations>
+		<aggregation cardinality="0..n" name="groups" type="sap.ui.core/Control">
+		</aggregation>
+	</aggregations>
+	<events>
+		<event name="afterRendering">
+		</event>
+	</events>
+</control>

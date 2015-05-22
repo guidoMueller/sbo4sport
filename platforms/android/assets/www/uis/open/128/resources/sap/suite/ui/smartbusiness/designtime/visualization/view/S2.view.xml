@@ -1,0 +1,36 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m"
+	controllerName="sap.suite.ui.smartbusiness.designtime.visualization.view.S2">
+	<Page id="page" title="{i18n>MASTER_TITLE}">
+		<content>
+			<List id="list" 
+			items="{
+				path: '/EVALUATIONS_CHIP',
+				sorter: {
+	        		path: 'INDICATOR',
+	        		descending: false,
+	        		group: '.formatIndicatorId'
+	      		}
+	      	}" 
+			mode="{device>/listMode}" 
+			select="_handleSelect">
+				<infoToolbar>
+						<Toolbar id="filterToolbar" active="false" visible="false">
+							<content>
+								<Label id="visualizationInfo"/>
+								<ToolbarSpacer/>
+								<core:Icon src="sap-icon://building"/>
+							</content>
+						</Toolbar>
+					</infoToolbar>
+				<ObjectListItem id="MAIN_LIST_ITEM" press="_handleItemPress"
+					title="{ path:'TITLE', formatter:'.formatTitle'}"
+                    number="{ path:'CHIPS_COUNT', formatter:'.formatChipCount'}"
+                    numberUnit="{i18n>TILE}">
+					<attributes>
+						<ObjectAttribute id="ATTR1" text="ID: {path:'ID'}" />
+					</attributes>
+				</ObjectListItem>
+			</List>
+		</content>
+	</Page>
+</core:View>

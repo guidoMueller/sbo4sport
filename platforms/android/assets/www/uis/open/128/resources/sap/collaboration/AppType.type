@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>AppType</name>
+	<author></author>
+	<documentation>Application Type (Mode)</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="split">
+			<documentation>Fiori Split App</documentation>
+		</value>
+		<value name="widget">
+			<documentation>SAP Jam Feed Widget Wrapper</documentation>
+		</value>
+	</enumeration>
+</simple-type>

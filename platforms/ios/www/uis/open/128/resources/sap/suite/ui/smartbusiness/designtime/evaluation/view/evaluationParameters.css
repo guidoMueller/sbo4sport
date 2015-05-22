@@ -1,0 +1,26 @@
+.evaluationViewS1 .parameterList{
+	margin-left : -1rem;
+}
+.evaluationViewS1 .propertyEntryGrid > div {
+	margin-right: -1px;
+}
+
+.languageGrid{
+	margin-top: 15px;
+}
+.evaluationViewS1 .sapUiFormM .sapUiRGLContainerCont{
+	padding-bottom:0;
+}
+.evaluationViewS1 .sapUiRGLContainerCont{
+	padding-bottom:0;
+}
+.evaluationViewS1 .sapUiRGLContainer>.sapUiFormTitle{
+	margin-bottom:0;
+}
+.evaluationViewS1 .sapMPanelContent {
+	padding: 0 1rem 0 1rem;
+	border-bottom: 0; 
+}
+.evaluationViewS1 .sapUiFormResLayout>div {
+	padding: 0 16px 16px 16px;
+}

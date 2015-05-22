@@ -1,0 +1,6 @@
+<core:View controllerName="sap.suite.ui.smartbusiness.drilldown.view.AddToHome"
+	xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:layout="sap.ui.layout"  xmlns:suite="sap.suite.ui.commons" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<VBox id="container"></VBox>
+</core:View>

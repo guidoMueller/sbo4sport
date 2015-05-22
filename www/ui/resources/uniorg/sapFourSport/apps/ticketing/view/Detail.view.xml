@@ -1,0 +1,101 @@
+<core:View
+        xmlns:core="sap.ui.core"
+        xmlns:viz="sap.viz.ui5.controls"
+        xmlns:l="sap.ui.layout"
+        xmlns:co="sap.suite.ui.commons"
+        height="100%"
+        controllerName="uniorg.sapFourSport.apps.ticketing.controller.Detail"
+        xmlns="sap.m"
+        >
+    <Page
+            id="page"
+            title="ticketing"
+            enableScrolling="true"
+            showHeader="false">
+        <IconTabBar
+                class="iconTabBarPaddingTop"
+                id="idIconTabBarMulti"
+                expanded="{device>/isNoPhone}"
+                select="handleIconTabBarTopSelect">
+            <items>
+                <IconTabFilter
+                        icon="sap-icon://table-view"
+                        key="1">
+                    <IconTabBar
+                            id="idIconTabBar"
+                            select="handleIconTabBarSelect">
+                        <items>
+                            <IconTabFilter
+                                    showAll="true"
+                                    count="{/games/MatchDateTime}"
+                                    text="Alle Tickets"
+                                    keys="All"/>
+                            <IconTabSeparator/>
+                            <IconTabFilter
+                                    icon="/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png"
+                                    iconColor="Positive"
+                                    text="Preiskat. 1"
+                                    key="1"/>
+                            <IconTabFilter
+                                    icon="/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png"
+                                    iconColor="Positive"
+                                    text="Preiskat. 2"
+                                    key="2"/>
+                            <IconTabFilter
+                                    icon="/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png"
+                                    iconColor="Positive"
+                                    text="Preiskat. 3"
+                                    key="3"/>
+                            <IconTabFilter
+                                    icon="/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png"
+                                    iconColor="Positive"
+                                    text="Preiskat. 4"
+                                    key="4"/>
+                            <IconTabFilter
+                                    icon="/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png"
+                                    iconColor="Positive"
+                                    text="Preiskat. 5"
+                                    key="5"/>
+                            <IconTabFilter
+                                    icon="/uniorg/sbo4sport/ui/ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png"
+                                    iconColor="Positive"
+                                    text="Preiskat. 6"
+                                    key="6"/>
+                        </items>
+                    </IconTabBar>
+                </IconTabFilter>
+                <IconTabFilter
+                        icon="sap-icon://horizontal-bar-chart-2"
+                        key="2">
+                         <l:Splitter width="100%" height="800px">
+                                    <l:contentAreas>
+                                        <co:ChartContainer
+                                                id="idChartContainer3"
+                                                showFullScreen="true"
+                                                showPersonalization="false"
+                                                autoAdjustHeight="true"
+                                                showLegend="true">
+                            
+                                            <co:content>
+                                                <co:ChartContainerContent
+                                                        icon="sap-icon://horizontal-bar-chart-2"
+                                                        title="Ticketverkauf">
+                                                    <co:content>
+                                                    <viz:Popover id="idPopOver"></viz:Popover>
+                                                    <viz:VizFrame id="idVizFrameStackedBar" uiConfig="{applicationSet:'fiori'}" vizType="stacked_bar" width="100%" height="700px">
+                                                    </viz:VizFrame>    
+                                                    </co:content>
+                                                </co:ChartContainerContent> 
+                                            </co:content>
+                                        </co:ChartContainer>
+                                    </l:contentAreas>
+                                </l:Splitter>
+                </IconTabFilter>
+                <IconTabFilter
+                        icon="sap-icon://area-chart"
+                        key="3">
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+    </Page>
+</core:View>

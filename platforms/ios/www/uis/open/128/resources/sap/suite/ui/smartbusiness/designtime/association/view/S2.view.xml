@@ -1,0 +1,21 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m"
+	controllerName="sap.suite.ui.smartbusiness.designtime.association.view.S2">
+	<Page id="page" title="{i18n>MASTER_TITLE}">
+		<content>
+			<List id="list" items="{ path:'/INDICATORS_MODELER',  sorter: { path:'MANUAL_ENTRY', descending: true, group: '.formatGroupName'}}" mode="{device>/listMode}" select="_handleSelect">
+				<ObjectListItem id="MAIN_LIST_ITEM" type="{device>/listItemType}" press="_handleItemPress"
+					title="{ path:'TITLE', formatter:'.formatTitle'}"
+                    number="{parts:[{path:'ASSOCIATION_SOURCE_COUNT'},{path:'ASSOCIATION_TARGET_COUNT'}], formatter:'.formatAssociationCount'}"
+                    numberUnit="{i18n>ASSOCIATIONS}">
+<!--                     dependents="{path:'TAGS'}"> -->
+					<attributes>
+						<ObjectAttribute id="ATTR1" text="{ parts:[{path:'ID'},{path:'TYPE'}], formatter:'.formatID'}" />
+					</attributes>
+<!-- 					<dependents> -->
+<!-- 						<Label text="{ path:'TAG'}" /> -->
+<!-- 					</dependents> -->
+				</ObjectListItem>
+			</List>
+		</content>
+	</Page>
+</core:View> 

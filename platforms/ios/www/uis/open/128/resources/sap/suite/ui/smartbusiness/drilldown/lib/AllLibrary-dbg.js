@@ -1,0 +1,10 @@
+jQuery.sap.declare("sap.suite.ui.smartbusiness.drilldown.lib.AllLibrary");
+jQuery.sap.require("sap.suite.ui.smartbusiness.drilldown.lib.Configuration");
+jQuery.sap.require("sap.suite.ui.smartbusiness.lib.Util");
+jQuery.sap.require("sap.suite.ui.smartbusiness.lib.Chip");
+jQuery.sap.require("sap.suite.ui.smartbusiness.drilldown.lib.Hash");
+jQuery.sap.require("sap.suite.ui.smartbusiness.drilldown.lib.CustomTable");
+jQuery.sap.require("sap.suite.ui.smartbusiness.drilldown.lib.Navigation");
+jQuery.sap.require("sap.suite.ui.smartbusiness.drilldown.lib.MiniChartManager");
+jQuery.sap.require("sap.ca.ui.model.format.NumberFormat");
+jQuery.sap.require("sap.ca.ui.model.type.Date");

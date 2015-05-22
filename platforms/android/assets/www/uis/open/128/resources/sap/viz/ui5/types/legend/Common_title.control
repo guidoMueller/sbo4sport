@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/legend/Common_title</name>
+  <documentation>Settings for the legend title</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="visible" type="sap.ui.core/boolean" defaultValue="false">
+      <documentation>Set the visibility of the legend title</documentation>
+    </property>
+    <property name="text" type="sap.ui.core/string" defaultValue="null">
+      <documentation>Set the text of the legend title</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

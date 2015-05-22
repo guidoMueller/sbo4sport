@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/CatalogListItem</name>
+	<documentation>The CatalogListItem is a list item providing image, titel and description.</documentation>
+
+	<baseType>sap.m/ListItemBase</baseType>
+	<properties>
+		<property group="Misc" name="title" type="sap.ui.core/string">
+			<documentation>ListItem title.</documentation>
+		</property>
+		<property group="Misc" type="sap.ui.core/string" name="description">
+			<documentation>Description.</documentation>
+		</property>
+		<property group="Misc" name="info" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="groupId" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="infoState" type="sap.ui.core/ValueState" defaultValue="None">
+		</property>
+		<property group="Misc" name="icon" type="sap.ui.core/URI">
+		</property>
+		<property group="Misc" name="activeIcon" type="sap.ui.core/URI">
+		</property>
+		<property group="Misc" name="iconInset" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="iconDensityAware" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="headerLevel" type="sap.m/HeaderLevel" defaultValue="H6">
+		</property>
+		<property group="Misc" name="editMode" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+		<property group="Misc" name="allowEditMode" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="markChange" type="sap.ui.core/int" defaultValue="0">
+			<documentation>Time in ms the item is marked when changed. Disabled if set to 0.</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="drop">
+			<documentation>Event triggered if another sap.ui.core/Control is dropped on this element</documentation>
+		</event>
+		<event name="afterRendering">
+		</event>
+		<event name="press">
+		</event>
+		<event name="dblPress">
+		</event>
+		<event name="sapEnter">
+		</event>
+		<event name="sapEscape">
+		</event>
+		<event name="focusOut">
+		</event>
+	</events>
+</control>

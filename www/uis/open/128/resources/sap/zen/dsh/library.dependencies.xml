@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.zen.dsh">
+  <module name="sap/zen/dsh/LumiraLaunchpadViewer.js" size="3358" compressedSize="980">
+    <description>jshint unused: false</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/dsh/dsh.js" size="19193" compressedSize="4535">
+    <description>Provides control sap.zen.dsh.dsh.</description>
+    <requires>
+      <module name="sap/zen/dsh/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/zen/crosstab/Crosstab.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/dsh/dshRenderer.js" size="1184" compressedSize="524">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/dsh/library.js" size="995" compressedSize="295">
+    <description>Initialization Code and shared classes of library sap.zen.dsh (14.0.1-SNAPSHOT)</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/dsh/library.properties" size="124">
+  </module>
+</library>

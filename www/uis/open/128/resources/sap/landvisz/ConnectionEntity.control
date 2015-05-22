@@ -1,0 +1,36 @@
+<!-- <?xml version="1.0" ?> -->
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ConnectionEntity</name>
+
+	<documentation>Connection Entity of Dependency view</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="connectionId" type="sap.ui.core/string">
+			<documentation>id of connection Entity</documentation>
+		</property>
+		<property group="Identification" name="type" type="ConnectionType">
+			<documentation>type of a connection Entity</documentation>
+		</property>
+		<property group="Data" name="linkId" type="sap.ui.core/string">
+			<documentation>ID which links the entities</documentation>
+		</property>
+		<property group="Data" name="linkedHeader" type="sap.ui.core/string">
+			<documentation>link header data that is shared with in the entities</documentation>
+		</property>
+		<property group="Data" name="dependencyTooltip" type="sap.ui.core/string">
+		<documentation>tooltip for dependency type icon</documentation>
+		</property>
+		<property group="Data" type="sap.ui.core/boolean" name="showOverlay" defaultValue="true">
+			<documentation>to show the overlay for highlightig </documentation>
+		</property>
+
+		
+	</properties>
+	<aggregations>
+		<aggregation cardinality="0..n" name="connectionData" type="sap.landvisz/internal/LinearRowField">
+			<documentation>Linear row field renderer for connection Entity</documentation>
+		</aggregation>
+	</aggregations>
+</control>

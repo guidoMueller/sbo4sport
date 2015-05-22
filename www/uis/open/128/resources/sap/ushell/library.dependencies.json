@@ -1,0 +1,1667 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/ushell/System.js",
+      "description" : "global jQuery, sap",
+      "size" : 4042,
+      "compressedSize" : 694,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/User.js",
+      "description" : "global jQuery, sap",
+      "size" : 9677,
+      "compressedSize" : 1755,
+      "required" : ["sap/ushell/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/UserActivityLog.js",
+      "description" : "global jQuery, sap",
+      "size" : 19349,
+      "compressedSize" : 6191,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/ApplicationContainer.js",
+      "description" : "Do not use the variables so that UI5 optimizers recognize this declaration",
+      "size" : 47616,
+      "compressedSize" : 12147,
+      "required" : ["sap/ushell/utils.js", "sap/ushell/library.js", "sap/ui/core/UIComponent.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources.properties",
+      "size" : 640,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_ar.properties",
+      "size" : 764,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_bg.properties",
+      "size" : 806,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_ca.properties",
+      "size" : 562,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_cs.properties",
+      "size" : 545,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_da.properties",
+      "size" : 514,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_de.properties",
+      "size" : 519,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_el.properties",
+      "size" : 732,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_en.properties",
+      "size" : 499,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_es.properties",
+      "size" : 556,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_et.properties",
+      "size" : 521,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_fi.properties",
+      "size" : 530,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_fr.properties",
+      "size" : 544,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_hi.properties",
+      "size" : 710,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_hr.properties",
+      "size" : 528,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_hu.properties",
+      "size" : 546,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_it.properties",
+      "size" : 548,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_iw.properties",
+      "size" : 715,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_ja.properties",
+      "size" : 634,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_ko.properties",
+      "size" : 589,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_lt.properties",
+      "size" : 522,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_lv.properties",
+      "size" : 553,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_nl.properties",
+      "size" : 519,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_no.properties",
+      "size" : 525,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_pl.properties",
+      "size" : 528,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_pt.properties",
+      "size" : 540,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_ro.properties",
+      "size" : 524,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_ru.properties",
+      "size" : 871,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_sh.properties",
+      "size" : 522,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_sk.properties",
+      "size" : 537,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_sl.properties",
+      "size" : 529,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_sv.properties",
+      "size" : 514,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_th.properties",
+      "size" : 778,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_tr.properties",
+      "size" : 546,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_uk.properties",
+      "size" : 830,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_vi.properties",
+      "size" : 635,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_zh_CN.properties",
+      "size" : 562,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/container/resources/resources_zh_TW.properties",
+      "size" : 574,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 1782,
+      "compressedSize" : 1023,
+      "required" : ["sap/ui/core/UIComponent.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/annotation/Mapping.js",
+      "description" : "global sap, jQuery, window, XMLHttpRequest, ActiveXObject, XPathResult",
+      "size" : 33051,
+      "compressedSize" : 9549,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/controls/PictureTile.js",
+      "description" : "Provides control sap.ushell.components.factsheet.controls.PictureTile.",
+      "size" : 11940,
+      "compressedSize" : 2371,
+      "required" : ["sap/ushell/library.js", "sap/m/CustomTile.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/controls/PictureTileRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP AG. All rights reserved",
+      "size" : 1547,
+      "compressedSize" : 965,
+      "required" : ["sap/m/CustomTileRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/controls/PictureViewer.js",
+      "description" : "Provides control sap.ushell.components.factsheet.controls.PictureViewer.",
+      "size" : 27087,
+      "compressedSize" : 7779,
+      "required" : ["sap/ushell/library.js", "sap/m/TileContainer.js", "sap/ui/core/ResizeHandler.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/controls/PictureViewerItem.js",
+      "description" : "Provides control sap.ushell.components.factsheet.controls.PictureViewerItem.",
+      "size" : 5834,
+      "compressedSize" : 884,
+      "required" : ["sap/ushell/library.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/controls/PictureViewerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP AG. All rights reserved",
+      "size" : 1065,
+      "compressedSize" : 564,
+      "required" : ["sap/m/TileContainerRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/factory/ThingInspector.js",
+      "description" : "global sap, jQuery, $, setTimeout, window, console, history",
+      "size" : 188874,
+      "compressedSize" : 63217,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/tools/ODataUrlTemplating.js",
+      "size" : 1908,
+      "compressedSize" : 803,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/views/ThingViewer.controller.js",
+      "size" : 198,
+      "compressedSize" : 160,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/factsheet/views/ThingViewer.view.js",
+      "size" : 3173,
+      "compressedSize" : 1169,
+      "required" : ["sap/ushell/components/factsheet/tools/ODataUrlTemplating.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/perf/monitor.js",
+      "size" : 7970,
+      "compressedSize" : 2754,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/action/ActionTile.controller.js",
+      "size" : 15582,
+      "compressedSize" : 6698,
+      "required" : ["sap/ui/core/IconPool.js", "sap/ushell/components/tiles/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/action/ActionTile.view.xml",
+      "size" : 469,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ushell/components/tiles/action/ActionTile.controller.js", "sap/ushell/ui/tile/TileBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/action/Configuration.controller.js",
+      "size" : 7140,
+      "compressedSize" : 3286,
+      "required" : ["sap/ushell/components/tiles/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/action/Configuration.view.xml",
+      "size" : 8987,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ushell/components/tiles/action/Configuration.controller.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Input.js", "sap/m/RadioButton.js", "sap/m/CheckBox.js", "sap/ui/commons/TextField.js", "sap/ui/commons/CheckBox.js", "sap/ui/commons/layout/MatrixLayout.js", "sap/ui/commons/layout/MatrixLayoutRow.js", "sap/ui/commons/layout/MatrixLayoutCell.js", "sap/ui/commons/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/applauncher/Configuration.controller.js",
+      "size" : 3339,
+      "compressedSize" : 1617,
+      "required" : ["sap/ushell/components/tiles/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/applauncher/Configuration.view.xml",
+      "size" : 4668,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ushell/components/tiles/applauncher/Configuration.controller.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Input.js", "sap/m/CheckBox.js", "sap/m/HBox.js", "sap/m/Dialog.js", "sap/ui/layout/ResponsiveFlowLayout.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/applauncher/StaticTile.controller.js",
+      "size" : 11760,
+      "compressedSize" : 4628,
+      "required" : ["sap/ui/core/IconPool.js", "sap/ushell/components/tiles/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/applauncher/StaticTile.view.js",
+      "size" : 1207,
+      "compressedSize" : 715,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/applauncherdynamic/Configuration.controller.js",
+      "size" : 3252,
+      "compressedSize" : 1624,
+      "required" : ["sap/ushell/components/tiles/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/applauncherdynamic/Configuration.view.xml",
+      "size" : 4952,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/ushell/components/tiles/applauncherdynamic/Configuration.controller.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Input.js", "sap/m/CheckBox.js", "sap/m/HBox.js", "sap/m/Dialog.js", "sap/ui/layout/ResponsiveFlowLayout.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/applauncherdynamic/DynamicTile.controller.js",
+      "size" : 20197,
+      "compressedSize" : 7800,
+      "required" : ["sap/ui/core/IconPool.js", "sap/ui/thirdparty/datajs.js", "sap/ushell/components/tiles/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/applauncherdynamic/DynamicTile.view.js",
+      "size" : 1631,
+      "compressedSize" : 1000,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorArea/AreaChartTile.controller.js",
+      "size" : 37685,
+      "compressedSize" : 16479,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorArea/AreaChartTile.view.js",
+      "size" : 7232,
+      "compressedSize" : 2085,
+      "required" : ["sap/ushell/components/tiles/indicatorTileUtils/smartBusinessUtil.js", "sap/ushell/components/tiles/indicatorTileUtils/oData4Analytics.js", "sap/ca/ui/model/format/NumberFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorTileUtils/indicatorTileHelper.js",
+      "size" : 2318,
+      "compressedSize" : 1999,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorTileUtils/oData4Analytics.js",
+      "description" : "Module declaration",
+      "size" : 156064,
+      "compressedSize" : 44470,
+      "required" : ["sap/ui/core/Core.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorTileUtils/smartBusinessUtil.js",
+      "size" : 39368,
+      "compressedSize" : 15391,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorcomparison/ComparisonTile.controller.js",
+      "size" : 15214,
+      "compressedSize" : 8524,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorcomparison/ComparisonTile.view.js",
+      "size" : 3889,
+      "compressedSize" : 1699,
+      "required" : ["sap/ushell/components/tiles/indicatorTileUtils/smartBusinessUtil.js", "sap/ushell/components/tiles/indicatorTileUtils/oData4Analytics.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorcontribution/ContributionTile.controller.js",
+      "size" : 15718,
+      "compressedSize" : 8350,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatorcontribution/ContributionTile.view.js",
+      "size" : 3960,
+      "compressedSize" : 1765,
+      "required" : ["sap/ushell/components/tiles/indicatorTileUtils/smartBusinessUtil.js", "sap/ushell/components/tiles/indicatorTileUtils/oData4Analytics.js", "sap/ca/ui/model/format/NumberFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatordeviation/DeviationTile.controller.js",
+      "size" : 25302,
+      "compressedSize" : 13096,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatordeviation/DeviationTile.view.js",
+      "size" : 3792,
+      "compressedSize" : 1715,
+      "required" : ["sap/ushell/components/tiles/indicatorTileUtils/smartBusinessUtil.js", "sap/ushell/components/tiles/indicatorTileUtils/oData4Analytics.js", "sap/ca/ui/model/format/NumberFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatornumeric/NumericTile.controller.js",
+      "size" : 22724,
+      "compressedSize" : 11576,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/indicatornumeric/NumericTile.view.js",
+      "size" : 3186,
+      "compressedSize" : 1534,
+      "required" : ["sap/ushell/components/tiles/indicatorTileUtils/smartBusinessUtil.js", "sap/ushell/components/tiles/indicatorTileUtils/oData4Analytics.js", "sap/ca/ui/model/format/NumberFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/components/tiles/utils.js",
+      "description" : "global document, jQuery, sap, OData",
+      "size" : 65456,
+      "compressedSize" : 24569,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/functionBindPrototype.js",
+      "description" : "ensure that sap.ushell exists",
+      "size" : 1161,
+      "compressedSize" : 553,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/iconfonts.js",
+      "size" : 18361,
+      "compressedSize" : 11503,
+      "required" : ["sap/ui/core/IconPool.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/library.js",
+      "description" : "Initialization Code and shared classes of library sap.ushell (1.24.5)",
+      "size" : 7016,
+      "compressedSize" : 2395,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/ui/layout/library.js", "sap/m/library.js", "jquery.sap.global.js"],
+      "includes" : ["sap/ushell/ui/launchpad/DeleteAreaType.js", "sap/ushell/ui/tile/State.js", "sap/ushell/ui/tile/StateArrow.js"]
+    },
+    {
+      "name" : "sap/ushell/library.properties",
+      "size" : 3173,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/loader.js",
+      "size" : 1284,
+      "compressedSize" : 416,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/override.js",
+      "description" : "ensure that sap.ushell exists",
+      "size" : 6768,
+      "compressedSize" : 2040,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/AccessKeysHandler.js",
+      "size" : 30399,
+      "compressedSize" : 13038,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/History.js",
+      "description" : "jslint nomen: true",
+      "size" : 2406,
+      "compressedSize" : 1354,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/Navigation.js",
+      "description" : "jslint nomen: true",
+      "size" : 4398,
+      "compressedSize" : 2517,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/Renderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 2407,
+      "compressedSize" : 807,
+      "required" : ["sap/ui/core/UIComponent.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/Shell.controller.js",
+      "size" : 47968,
+      "compressedSize" : 19995,
+      "required" : ["sap/ui/core/IconPool.js", "sap/ushell/services/Message.js", "sap/ushell/services/ShellNavigation.js", "sap/ushell/services/AppConfiguration.js", "sap/ushell/renderers/fiori2/History.js", "sap/ushell/ui/launchpad/LoadingDialog.js", "sap/ushell/renderers/fiori2/AccessKeysHandler.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/Shell.view.js",
+      "size" : 29879,
+      "compressedSize" : 16906,
+      "required" : ["sap/ushell/renderers/fiori2/Navigation.js", "sap/ushell/renderers/fiori2/launchpad/DashboardManager.js", "sap/ushell/renderers/fiori2/search/SearchModel.js", "sap/ushell/renderers/fiori2/search/SearchBox.js", "sap/ushell/touchSupport.js", "sap/ushell/UserActivityLog.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/launchpad/DashboardManager.js",
+      "description" : "jslint plusplus: true, nomen: true, bitwise: true",
+      "size" : 66839,
+      "compressedSize" : 25749,
+      "required" : ["sap/ushell/services/Message.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-sortable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-effect.js", "sap/ui/thirdparty/jqueryui/jquery-ui-effect-shake.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/launchpad/PagingManager.js",
+      "description" : "jslint plusplus: true, nomen: true, bitwise: true",
+      "size" : 2817,
+      "compressedSize" : 1332,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/launchpad/catalog/Catalog.controller.js",
+      "size" : 42298,
+      "compressedSize" : 14995,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/launchpad/catalog/Catalog.view.js",
+      "size" : 10040,
+      "compressedSize" : 4171,
+      "required" : ["sap/ui/core/IconPool.js", "sap/ushell/ui/launchpad/Tile.js", "sap/ushell/ui/launchpad/TileContainer.js", "sap/ushell/ui/launchpad/Panel.js", "sap/ushell/ui/launchpad/CatalogListItem.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/launchpad/dashboard/DashboardContent.controller.js",
+      "size" : 31591,
+      "compressedSize" : 13478,
+      "required" : ["sap/ushell/ui/launchpad/TileContainer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/launchpad/dashboard/DashboardContent.view.js",
+      "size" : 15474,
+      "compressedSize" : 7280,
+      "required" : ["sap/ushell/ui/launchpad/TileContainer.js", "sap/ushell/ui/launchpad/Tile.js", "sap/ushell/override.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/launchpad/group_list/GroupList.controller.js",
+      "size" : 25174,
+      "compressedSize" : 11099,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/launchpad/group_list/GroupList.view.js",
+      "size" : 17770,
+      "compressedSize" : 7610,
+      "required" : ["sap/ushell/ui/launchpad/GroupListItem.js", "sap/ui/core/IconPool.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources.properties",
+      "size" : 20885,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_ar.properties",
+      "size" : 52644,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_bg.properties",
+      "size" : 65279,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_ca.properties",
+      "size" : 23257,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_cs.properties",
+      "size" : 25068,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_da.properties",
+      "size" : 21356,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_de.properties",
+      "size" : 22751,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_el.properties",
+      "size" : 60554,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_en.properties",
+      "size" : 20694,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_en_US.properties",
+      "size" : 11381,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_es.properties",
+      "size" : 23460,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_et.properties",
+      "size" : 21998,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_fi.properties",
+      "size" : 23376,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_fr.properties",
+      "size" : 24165,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_hi.properties",
+      "size" : 53910,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_hr.properties",
+      "size" : 22672,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_hu.properties",
+      "size" : 26310,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_it.properties",
+      "size" : 22492,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_iw.properties",
+      "size" : 45396,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_ja.properties",
+      "size" : 36951,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_ko.properties",
+      "size" : 32075,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_lt.properties",
+      "size" : 24786,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_lv.properties",
+      "size" : 25974,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_nl.properties",
+      "size" : 21466,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_no.properties",
+      "size" : 21173,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_pl.properties",
+      "size" : 24391,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_pt.properties",
+      "size" : 23868,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_ro.properties",
+      "size" : 23666,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_ru.properties",
+      "size" : 59350,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_sh.properties",
+      "size" : 22730,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_sk.properties",
+      "size" : 25736,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_sl.properties",
+      "size" : 22774,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_sv.properties",
+      "size" : 22108,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_th.properties",
+      "size" : 55301,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_tr.properties",
+      "size" : 24259,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_uk.properties",
+      "size" : 59411,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_vi.properties",
+      "size" : 36185,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_zh_CN.properties",
+      "size" : 27270,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/resources/resources_zh_TW.properties",
+      "size" : 27084,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/DataSourceList.js",
+      "size" : 6604,
+      "compressedSize" : 2127,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/HistoryScreen.controller.js",
+      "size" : 14101,
+      "compressedSize" : 3581,
+      "required" : ["sap/ushell/ui/launchpad/Tile.js", "sap/ushell/ui/launchpad/TileContainer.js", "sap/ushell/services/LaunchPage.js", "sap/ushell/services/Search.js", "sap/ushell/services/UserRecents.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/HistoryScreen.view.js",
+      "size" : 7131,
+      "compressedSize" : 2778,
+      "required" : ["sap/ushell/ui/launchpad/TileContainer.js", "sap/ushell/ui/launchpad/Tile.js", "sap/ushell/ui/launchpad/SearchResultApps.js", "sap/ushell/ui/launchpad/SearchResultAppItem.js", "sap/ushell/renderers/fiori2/search/SearchLayout.js", "sap/ushell/renderers/fiori2/search/DataSourceList.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/ResultFilterInfo.controller.js",
+      "size" : 2610,
+      "compressedSize" : 1489,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/ResultFilterInfo.view.js",
+      "size" : 1870,
+      "compressedSize" : 879,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/Search.controller.js",
+      "size" : 2026,
+      "compressedSize" : 694,
+      "required" : ["sap/ushell/renderers/fiori2/search/SearchModel.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/Search.view.js",
+      "size" : 24102,
+      "compressedSize" : 9337,
+      "required" : ["sap/ushell/renderers/fiori2/search/SearchResultListItem.js", "sap/ushell/renderers/fiori2/search/SearchResultListItemDetail.js", "sap/ushell/renderers/fiori2/search/SearchLayout.js", "sap/ushell/ui/launchpad/SearchResultApps.js", "sap/ushell/ui/launchpad/SearchResultAppItem.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchBox.js",
+      "size" : 2905,
+      "compressedSize" : 1311,
+      "required" : ["sap/m/SearchField.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchFilter.controller.js",
+      "size" : 2397,
+      "compressedSize" : 53,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchFilter.view.js",
+      "size" : 5034,
+      "compressedSize" : 52,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchLayout.js",
+      "size" : 11365,
+      "compressedSize" : 5060,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchModel.js",
+      "size" : 61997,
+      "compressedSize" : 22997,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchResultListItem.js",
+      "size" : 13768,
+      "compressedSize" : 4954,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchResultListItemDetail.js",
+      "size" : 8324,
+      "compressedSize" : 2385,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchSuggestionControls.js",
+      "size" : 6024,
+      "compressedSize" : 2283,
+      "required" : ["sap/ushell/override.js", "sap/ui/core/delegate/ItemNavigation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchSuggestions.controller.js",
+      "size" : 17723,
+      "compressedSize" : 6145,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/SearchSuggestions.view.js",
+      "size" : 12317,
+      "compressedSize" : 5220,
+      "required" : ["sap/ushell/ui/launchpad/SearchSuggestionList.js", "sap/ushell/ui/launchpad/SearchSuggestionListItem.js", "sap/ushell/renderers/fiori2/search/SearchSuggestionControls.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/container/App.controller.js",
+      "size" : 3200,
+      "compressedSize" : 1362,
+      "required" : ["sap/m/MessageToast.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/container/App.view.js",
+      "size" : 15924,
+      "compressedSize" : 9233,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/container/Component-preload.js",
+      "size" : 0,
+      "compressedSize" : 0,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/renderers/fiori2/search/container/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 1122,
+      "compressedSize" : 529,
+      "required" : ["sap/ui/core/UIComponent.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/resources.js",
+      "description" : "ensure that sap.ushell exists",
+      "size" : 1029,
+      "compressedSize" : 630,
+      "required" : ["sap/ui/model/resource/ResourceModel.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/AppConfiguration.js",
+      "description" : "global jQuery, sap",
+      "size" : 11256,
+      "compressedSize" : 2880,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/Bookmark.js",
+      "description" : "global jQuery, sap",
+      "size" : 14824,
+      "compressedSize" : 1967,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/Container.js",
+      "description" : "global close, document, jQuery, localStorage, OData, sap, setTimeout, window",
+      "size" : 47511,
+      "compressedSize" : 7674,
+      "required" : ["sap/ushell/utils.js", "sap/ushell/System.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/CrossApplicationNavigation.js",
+      "description" : "global jQuery, sap, location, hasher",
+      "size" : 11922,
+      "compressedSize" : 2176,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/LaunchPage.js",
+      "description" : "global jQuery, sap",
+      "size" : 38462,
+      "compressedSize" : 5634,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/Message.js",
+      "description" : "global jQuery, sap",
+      "size" : 5559,
+      "compressedSize" : 871,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/NavTargetResolution.js",
+      "description" : "jslint nomen: true",
+      "size" : 23781,
+      "compressedSize" : 6525,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/PageBuilding.js",
+      "description" : "global jQuery, sap",
+      "size" : 2218,
+      "compressedSize" : 521,
+      "required" : ["sap/ui2/srvc/factory.js", "sap/ui2/srvc/page.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/Personalization.js",
+      "description" : "global jQuery, sap, setTimeout, clearTimeout",
+      "size" : 107840,
+      "compressedSize" : 35500,
+      "required" : ["sap/ushell/utils.js", "sap/ui/core/format/DateFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/Search.js",
+      "description" : "global jQuery, sap",
+      "size" : 10321,
+      "compressedSize" : 2740,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/ShellNavigation.js",
+      "size" : 24469,
+      "compressedSize" : 5930,
+      "required" : ["sap/ui/thirdparty/signals.js", "sap/ui/thirdparty/hasher.js", "sap/ui/core/routing/HashChanger.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/SupportTicket.js",
+      "description" : "global jQuery, sap, localStorage, window",
+      "size" : 3115,
+      "compressedSize" : 320,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/URLParsing.js",
+      "description" : "global jQuery, sap",
+      "size" : 21152,
+      "compressedSize" : 3669,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/URLShortening.js",
+      "description" : "global jQuery, sap, location, hasher",
+      "size" : 14086,
+      "compressedSize" : 3438,
+      "required" : ["jquery.sap.storage.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/UserInfo.js",
+      "description" : "global jQuery, sap",
+      "size" : 3184,
+      "compressedSize" : 710,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/services/UserRecents.js",
+      "description" : "global jQuery, sap, console",
+      "size" : 20340,
+      "compressedSize" : 5492,
+      "required" : ["sap/ushell/services/Personalization.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/touchSupport.js",
+      "size" : 27482,
+      "compressedSize" : 10407,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/AboutButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.AboutButton.",
+      "size" : 6736,
+      "compressedSize" : 2295,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ui/layout/form/SimpleForm.js", "sap/m/ObjectHeader.js", "sap/m/VBox.js", "sap/m/Dialog.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/AboutButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 907,
+      "compressedSize" : 326,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/AddBookmarkButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.AddBookmarkButton.",
+      "size" : 14961,
+      "compressedSize" : 6081,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ui/layout/form/SimpleForm.js", "sap/m/Label.js", "sap/m/Input.js", "sap/m/Dialog.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/AddBookmarkButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 930,
+      "compressedSize" : 338,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/ContactSupportButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.ContactSupportButton.",
+      "size" : 12399,
+      "compressedSize" : 6386,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/ContactSupportButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 932,
+      "compressedSize" : 344,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/HideGroupsButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.HideGroupsButton.",
+      "size" : 11801,
+      "compressedSize" : 4758,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/HideGroupsButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 950,
+      "compressedSize" : 336,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/JamDiscussButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.JamDiscussButton.",
+      "size" : 8374,
+      "compressedSize" : 2174,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/JamDiscussButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 926,
+      "compressedSize" : 336,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/JamShareButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.JamShareButton.",
+      "size" : 8652,
+      "compressedSize" : 2344,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/JamShareButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 918,
+      "compressedSize" : 332,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/LoginDetailsButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.LoginDetailsButton.",
+      "size" : 14020,
+      "compressedSize" : 5531,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ui/layout/form/SimpleForm.js", "sap/m/Label.js", "sap/m/Text.js", "sap/m/Input.js", "sap/m/Dialog.js", "sap/ushell/resources.js", "sap/ushell/services/Container.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/LoginDetailsButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 934,
+      "compressedSize" : 340,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/LogoutButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.LogoutButton.",
+      "size" : 7387,
+      "compressedSize" : 2597,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/LogoutButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 910,
+      "compressedSize" : 328,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/SettingsButton.js",
+      "description" : "Provides control sap.ushell.ui.footerbar.SettingsButton.",
+      "size" : 5091,
+      "compressedSize" : 1605,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/footerbar/SettingsButtonRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 923,
+      "compressedSize" : 332,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/CatalogListItem.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.CatalogListItem.",
+      "size" : 35476,
+      "compressedSize" : 5026,
+      "required" : ["sap/ushell/library.js", "sap/m/ListItemBase.js", "sap/ui/core/EnabledPropagator.js", "sap/ui/core/IconPool.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/CatalogListItemRenderer.js",
+      "size" : 5964,
+      "compressedSize" : 3849,
+      "required" : ["sap/ushell/resources.js", "sap/ui/core/Renderer.js", "sap/m/ListItemBaseRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/DashboardGroupsContainer.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.DashboardGroupsContainer.",
+      "size" : 10243,
+      "compressedSize" : 985,
+      "required" : ["sap/ushell/library.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/DashboardGroupsContainerRenderer.js",
+      "size" : 1572,
+      "compressedSize" : 710,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/DeleteArea.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.DeleteArea.",
+      "size" : 22880,
+      "compressedSize" : 7163,
+      "required" : ["sap/ushell/library.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/DeleteAreaRenderer.js",
+      "size" : 2713,
+      "compressedSize" : 1433,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/EmbeddedSupportErrorMessage.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.EmbeddedSupportErrorMessage.",
+      "size" : 8800,
+      "compressedSize" : 2081,
+      "required" : ["sap/ushell/library.js", "sap/m/Dialog.js", "sap/m/Button.js", "sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/EmbeddedSupportErrorMessageRenderer.js",
+      "description" : "global jQuery, sap",
+      "size" : 886,
+      "compressedSize" : 358,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/DialogRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/GroupListItem.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.GroupListItem.",
+      "size" : 34810,
+      "compressedSize" : 6464,
+      "required" : ["sap/ushell/library.js", "sap/m/ListItemBase.js", "sap/m/Input.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/GroupListItemRenderer.js",
+      "size" : 2107,
+      "compressedSize" : 1040,
+      "required" : ["sap/ushell/resources.js", "sap/m/ListItemBaseRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/HeaderTile.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.HeaderTile.",
+      "size" : 4921,
+      "compressedSize" : 590,
+      "required" : ["sap/ushell/library.js", "sap/ushell/ui/launchpad/Tile.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/HeaderTileRenderer.js",
+      "size" : 1399,
+      "compressedSize" : 757,
+      "required" : ["sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/LoadingDialog.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.LoadingDialog.",
+      "size" : 6546,
+      "compressedSize" : 2055,
+      "required" : ["sap/ushell/library.js", "sap/m/BusyDialog.js", "sap/ui/core/Icon.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/LoadingDialogRenderer.js",
+      "description" : "jslint nomen: true",
+      "size" : 4949,
+      "compressedSize" : 2222,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/Panel.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.Panel.",
+      "size" : 7780,
+      "compressedSize" : 737,
+      "required" : ["sap/ushell/library.js", "sap/m/Panel.js", "sap/ushell/override.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/PanelRenderer.js",
+      "description" : "Copyright (c) 2013 SAP AG, All Rights Reserved",
+      "size" : 2468,
+      "compressedSize" : 1197,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/PlusTile.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.PlusTile.",
+      "size" : 7369,
+      "compressedSize" : 1218,
+      "required" : ["sap/ushell/library.js", "sap/ushell/ui/launchpad/Tile.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/PlusTileRenderer.js",
+      "size" : 1407,
+      "compressedSize" : 594,
+      "required" : ["sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/SearchResultAppItem.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.SearchResultAppItem.",
+      "size" : 6152,
+      "compressedSize" : 1394,
+      "required" : ["sap/ushell/library.js", "sap/m/Button.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/SearchResultAppItemRenderer.js",
+      "description" : "global jQuery, sap, window",
+      "size" : 1385,
+      "compressedSize" : 543,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ButtonRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/SearchResultApps.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.SearchResultApps.",
+      "size" : 12021,
+      "compressedSize" : 3532,
+      "required" : ["sap/ushell/library.js", "sap/m/Table.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/SearchResultAppsRenderer.js",
+      "description" : "jslint nomen: true",
+      "size" : 680,
+      "compressedSize" : 515,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/TableRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/SearchSuggestionList.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.SearchSuggestionList.",
+      "size" : 13557,
+      "compressedSize" : 3413,
+      "required" : ["sap/ushell/library.js", "sap/m/List.js", "sap/ushell/override.js", "sap/ui/core/delegate/ItemNavigation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/SearchSuggestionListItem.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.SearchSuggestionListItem.",
+      "size" : 18996,
+      "compressedSize" : 2437,
+      "required" : ["sap/ushell/library.js", "sap/m/ListItemBase.js", "sap/ushell/override.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/SearchSuggestionListItemRenderer.js",
+      "description" : "global jQuery, sap, window",
+      "size" : 4478,
+      "compressedSize" : 3060,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ListItemBaseRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/SearchSuggestionListRenderer.js",
+      "description" : "jslint nomen: true",
+      "size" : 624,
+      "compressedSize" : 478,
+      "required" : ["sap/ui/core/Renderer.js", "sap/m/ListRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/Tile.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.Tile.",
+      "size" : 34406,
+      "compressedSize" : 6008,
+      "required" : ["sap/ushell/library.js", "sap/ui/core/Control.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ushell/override.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/TileContainer.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.TileContainer.",
+      "size" : 38546,
+      "compressedSize" : 7722,
+      "required" : ["sap/ushell/library.js", "sap/ui/core/Control.js", "sap/ushell/override.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/TileContainerRenderer.js",
+      "size" : 4508,
+      "compressedSize" : 1989,
+      "required" : ["sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/TileRenderer.js",
+      "size" : 3060,
+      "compressedSize" : 1525,
+      "required" : ["sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/TileState.js",
+      "description" : "Provides control sap.ushell.ui.launchpad.TileState.",
+      "size" : 4398,
+      "compressedSize" : 1022,
+      "required" : ["sap/ushell/library.js", "sap/ui/core/Control.js", "sap/m/Text.js", "sap/ui/core/IconPool.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/launchpad/TileStateRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP AG. All rights reserved",
+      "size" : 2270,
+      "compressedSize" : 1266,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/tile/DynamicTile.js",
+      "description" : "Provides control sap.ushell.ui.tile.DynamicTile.",
+      "size" : 8456,
+      "compressedSize" : 898,
+      "required" : ["sap/ushell/library.js", "sap/ushell/ui/tile/TileBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/tile/DynamicTileRenderer.js",
+      "size" : 4043,
+      "compressedSize" : 1899,
+      "required" : ["sap/ushell/ui/tile/TileBaseRenderer.js", "sap/ushell/ui/tile/State.js", "sap/ui/core/format/NumberFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/tile/ImageTile.js",
+      "description" : "Provides control sap.ushell.ui.tile.ImageTile.",
+      "size" : 4021,
+      "compressedSize" : 483,
+      "required" : ["sap/ushell/library.js", "sap/ushell/ui/tile/TileBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/tile/ImageTileRenderer.js",
+      "size" : 1158,
+      "compressedSize" : 492,
+      "required" : ["sap/ushell/ui/tile/TileBaseRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/tile/StaticTile.js",
+      "description" : "Provides control sap.ushell.ui.tile.StaticTile.",
+      "size" : 3352,
+      "compressedSize" : 405,
+      "required" : ["sap/ushell/library.js", "sap/ushell/ui/tile/TileBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/tile/StaticTileRenderer.js",
+      "size" : 1164,
+      "compressedSize" : 465,
+      "required" : ["sap/ushell/ui/tile/TileBaseRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/tile/TileBase.js",
+      "description" : "Provides control sap.ushell.ui.tile.TileBase.",
+      "size" : 18389,
+      "compressedSize" : 3097,
+      "required" : ["sap/ushell/library.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/ui/tile/TileBaseRenderer.js",
+      "size" : 5817,
+      "compressedSize" : 2315,
+      "required" : ["sap/ushell/resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ushell/utils.js",
+      "description" : "ensure that sap.ushell exists",
+      "size" : 18852,
+      "compressedSize" : 5453,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

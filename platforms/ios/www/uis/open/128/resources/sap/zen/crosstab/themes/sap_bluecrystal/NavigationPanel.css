@@ -1,0 +1,425 @@
+/* ====================================================== */
+/* CSS for control sap.ui.commons/NavigationPanel.control */
+/* Platinum                                               */
+/* ====================================================== */
+
+/************************************************************************************/
+/* buttons in segmented control header */
+/************************************************************************************/
+/* to center the header control*/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton
+	{
+	left: 50%;
+	position: absolute;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton span,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton span
+	{
+	right: 50%;
+	position: relative;
+}
+
+/* header area */
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeater>.sapUiBorderLayoutTop,.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeater>.sapUiBorderLayoutTop
+	{
+	height: 28px !important;
+	background: #E3EBF2;
+	border: 1px solid #96A8C3;
+	padding-top: 3px;
+}
+
+/************************************************************************************/
+/* content area */
+/************************************************************************************/
+
+/* adjust the content area to the header  */
+.sapzenfilterpanel-ModeFilteringNavigation>.sapUiBorderLayoutCenter>.sapzenfilterpanel-RowRepeater>.sapUiBorderLayoutCenter,.sapzenfilterpanel-ModeNavigation>.sapUiBorderLayoutCenter>.sapzenfilterpanel-RowRepeater>.sapUiBorderLayoutCenter
+	{
+	/*top: 33px !important;*/
+	
+}
+
+/* generally */
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-ColumnsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-ColumnsNavigationButton {
+	margin: 3px 0 0 3px !important;
+	/*padding: 0 15px;*/
+	width: 32px;
+	height: 25px;
+	background-size: auto;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapUiSegButtonSelected,.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnAct.sapUiSegButtonSelected,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapUiSegButtonSelected,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnAct.sapUiSegButtonSelected
+	{
+	background: #007cc0;
+	filter: none;
+	box-shadow: none;
+}
+
+html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-UpNavigationButton,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-DownNavigationButton,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-UpNavigationButton,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-DownNavigationButton,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ShowNavigationButton,html[data-sap-ui-browser="ie9"] .sapzenfilterpanel-ShowAllButton,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ShowNavigationButton,html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ShowAllButton
+	{
+	filter: none !important;
+	box-shadow: none !important;
+}
+
+/************************************************************************************/
+/* unselected buttons: rows/columns */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton
+	{
+	background-image: url("img/row_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton
+	{
+	background-image: url("img/col_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/**************** HOVER ******************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:hover, .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:hover
+	{
+	background-image: url("img/row_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:hover, .sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:hover
+	{
+	background-image: url("img/col_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/************************************************************************************/
+/* pressed/hover row botton */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn:active,.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn:focus,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn:active,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn:focus
+	{
+	background-image: url("img/row_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:active,.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:focus,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:active,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:focus
+	{
+	background-image: url("img/row_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/************************************************************************************/
+/* pressed/hover col botton */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn:active,.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn:focus,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn:active,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn:focus
+	{
+	background-image: url("img/col_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:active,.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:focus,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:active,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnAct.sapUiBtnFoc.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtn.sapUiToggleBtnPressed:focus
+	{
+	background-image: url("img/col_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/************************************************************************************/
+/* selected buttons: ROW/COL */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtnPressed,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton.sapUiToggleBtnPressed
+	{
+	background-color: #007cc0 !important;
+	background-image: url("img/row_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtnPressed,.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnStd.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton.sapUiToggleBtnPressed
+	{
+	background-color: #007cc0 !important;
+	background-image: url("img/col_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/************************************************************************************/
+/* arrow buttons: UP/DOWN */
+/************************************************************************************/
+.sapzenfilterpanel-UpNavigationButton {	
+	background-image: url("img/up_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	outline: none !important;
+	border-top-left-radius: 3px;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.sapzenfilterpanel-DownNavigationButton {	
+	background-image: url("img/down_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+/**************** HOVER ******************/
+.sapzenfilterpanel-UpNavigationButton:hover {
+	background-color: #007cc0 !important;
+	background-image: url("img/up_selected_16.png") !important;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.sapzenfilterpanel-DownNavigationButton:hover {
+	background-color: #007cc0 !important;
+	background-image: url("img/down_selected_16.png") !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/************************************************************************************/
+/*  unselected buttons:  SHOW ALL / NAVIGATION / UP / DOWN */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowAllButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowAllButton,.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton
+{
+	width: 40px !important;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapzenfilterpanel-UpNavigationButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapzenfilterpanel-UpNavigationButton,.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapzenfilterpanel-DownNavigationButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapzenfilterpanel-DownNavigationButton
+{
+	width: 30px !important;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowAllButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowAllButton
+{
+	background-image: url("img/list_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	outline: none !important;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton
+{
+	background-image: url("img/axisview_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	outline: none !important;
+}
+
+/**************** HOVER ******************/
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowAllButton:hover, .sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowAllButton:hover{
+	background-image: url("img/list_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #007cc0 !important;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton:hover, .sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton:hover{
+	background-image: url("img/axisview_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #007cc0 !important;
+}
+
+/************************************************************************************/
+/*  pressed/hover buttons:  SHOW ALL  */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:active,.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:focus,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:active,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:focus
+	{
+	width: 40px !important;
+	background-image: url("img/list_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus
+	{
+	width: 40px !important;
+	background-image: url("img/list_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/************************************************************************************/
+/*  pressed/hover buttons:  NAVIGATION  */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:active,.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:focus,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:active,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:focus
+	{
+	width: 40px !important;
+	background-image: url("img/axisview_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtn.sapUiBtnS.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus
+	{
+	width: 40px !important;
+	background-image: url("img/axisview_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/************************************************************************************/
+/*  PRESSED buttons:  SHOW ALL / NAVIGATION / UP / DOWN */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowAllButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowAllButton
+	{
+	width: 40px !important;
+	background-image: url("img/list_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowNavigationButton,.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton>span>.sapUiBtnS.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowNavigationButton
+	{
+	width: 40px !important;
+	background-image: url("img/axisview_selected_16.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/************************************************************************************/
+/*  LABEL CONTENT AREA */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter,.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter
+	{
+	left: 71px !important;
+}
+
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeaterRow.sapzenfilterpanel-DragDropRow .sapUiBorderLayoutCenter,.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeaterRow.sapzenfilterpanel-DragDropRow .sapUiBorderLayoutCenter
+	{
+	left: 0px !important;
+}
+
+/************************************************************************************/
+/*  AXIS HEADERS */
+/************************************************************************************/
+.sapzenfilterpanel-AxisHeaderTop {
+	border-top: 1px solid@sapList_BorderColor;
+}
+
+.sapzenfilterpanel-HeaderCountTop1 {
+	margin-top: -22px;
+	height: 21px !important;
+}
+
+.sapzenfilterpanel-HeaderCountTop2 {
+	margin-top: -44px;
+	height: 42px !important;
+}
+
+.sapzenfilterpanel-HeaderCountTop3 {
+	margin-top: -66px;
+	height: 63px !important;
+}
+
+.sapzenfilterpanel-AxisHeaderFirst {
+	border-top: none;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop1 {
+	margin-top: 21px;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop2 {
+	margin-top: 42px;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderBottom1 {
+	margin-bottom: 21px;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderBottom2 {
+	margin-bottom: 42px;
+}
+
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop3 {
+	margin-top: 63px;
+}
+
+.sapzenfilterpanel-HeaderCountBottom1 {
+	margin-top: 30px;
+	top: 0;
+	height: 20px !important;
+}
+
+.sapzenfilterpanel-HeaderCountBottom2 {
+	margin-top: 30px;
+	top: 0;
+	height: 40px !important;
+}
+
+.sapzenfilterpanel-UpDownNavigationButtons {
+	margin-top: 3px;
+}
+
+
+.sapzenfilterpanel-MarkedRow {
+	background: #bed9ed; /*	 width: 50px; funtioniert nicht!!!! */
+}
+
+.sapzenfilterpanel-AxisHeaderTop>span {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.sapzenfilterpanel-AxisHeaderBottom>span {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.sapzenfilterpanel-HeaderBorder {
+	border-top: 1px solid #96a8c3;
+}
+
+.sapUiBorderLayoutCenter>.sapUiSegmentedButton {
+	margin-top: 9px;
+}
+
+.sapzenfilterpanel-ModeNavigation>.sapUiBorderLayoutCenter {
+	bottom: 8px !important;
+}
+
+.sapzenfilterpanel-ModeNavigation>.sapUiBorderLayoutBottom {
+	height: 8px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop>*>.sapzenfilterpanel-PopupContainerHeader,.sapzenfilterpanel-TitleOnTop>.sapUiBorderLayoutTop
+	{
+	height: 70px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop>.sapUiBorderLayoutCenter {
+	top: 70px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop>.sapUiBorderLayoutTop>.sapUiBorderLayout>.sapUiBorderLayoutTop
+	{
+	top: -2px;
+}
+
+.sapzenfilterpanel-TitleOnTop>.sapUiBorderLayoutTop>.sapUiBorderLayout>.sapUiBorderLayoutBegin
+	{
+	top: 25px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop>.sapUiBorderLayoutTop>.sapUiBorderLayout>.sapUiBorderLayoutCenter
+	{
+	top: 25px !important;
+}
+
+.sapzenfilterpanel-TitleOnTop>.sapUiBorderLayoutTop>.sapUiBorderLayout>.sapUiBorderLayoutEnd
+	{
+	top: 25px !important;
+}

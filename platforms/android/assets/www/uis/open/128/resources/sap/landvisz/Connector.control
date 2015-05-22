@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>Connector</name>
+
+	<documentation>Connector of the entities</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="source" type="sap.ui.core/string">
+			<documentation>source of a connection to be drawn</documentation>
+		</property>
+		<property group="Data" name="target" type="sap.ui.core/string">
+			<documentation>destination of the connection</documentation>
+		</property>
+	</properties>
+</control>

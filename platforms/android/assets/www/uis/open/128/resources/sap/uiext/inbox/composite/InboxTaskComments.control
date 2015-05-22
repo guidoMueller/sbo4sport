@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>composite/InboxTaskComments</name>
+
+	<documentation>InboxTaskComments</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="feederSender" type="sap.ui.core/string">
+			<documentation>Sender for the comment feeder</documentation>
+		</property>
+		<property group="Data" name="feederThumbnailSrc" type="sap.ui.core/URI">
+			<documentation>URL to the thumbnail image for the comment feeder.</documentation>
+		</property>
+		<property group="Data" name="showFeeder" type="boolean" defaultValue="true">
+			<documentation>Boolean value for visibilty of comment feeder</documentation>
+		</property>
+		<property group="Misc" name="showHeader" type="boolean" defaultValue="false">
+			<documentation>Boolean value for visibility of header</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="commentSubmit">
+			<documentation>Event is raised when submit on the feeder is pressed.</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="comments" type="sap.uiext.inbox/composite/InboxComment">
+			<documentation>URL to the thumbnail image.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="busyIndicator" visibility="hidden" type="sap.uiext.inbox/composite/InboxBusyIndicator">
+			<documentation>aggregation for busy indicator</documentation>
+		</aggregation>
+	</aggregations>
+</control>

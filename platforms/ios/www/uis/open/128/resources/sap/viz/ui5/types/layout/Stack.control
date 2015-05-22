@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/layout/Stack</name>
+  <documentation>Module ui5/types/layout/Stack</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

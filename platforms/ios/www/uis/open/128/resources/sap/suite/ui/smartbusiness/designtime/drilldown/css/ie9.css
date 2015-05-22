@@ -1,0 +1,22 @@
+._ie9viewOptionBox {
+	text-align: right;
+}
+
+._ie9viewOptionBox .sapMFlexItem {
+	display: inline-block;
+}
+
+._ie9tileContainerBox {
+	top: -13rem;
+	position: relative;
+}
+
+._ie9viewOptionBox0 {
+	text-align: right;
+	top: -2rem;
+	position: relative;
+}
+
+._ie9viewOptionBox0 .sapMFlexItem {
+	display: inline-block;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/tile/State</name>
+	<author></author>
+
+	<documentation>Denotes states for control parts and translates into standard SAP color codes</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="Neutral">
+			<documentation>Alias for &quot;None&quot;</documentation>
+		</value>
+		<value name="None">
+			<documentation>Indicates a state that is neutral, e.g. for standard display (Grey color)</documentation>
+		</value>
+		<value name="Negative">
+			<documentation>Alias for &quot;Error&quot;</documentation>
+		</value>
+		<value name="Error">
+			<documentation>Indicates a state that is negative, e.g. marking an element that has to get attention urgently or indicates negative values (Red color)</documentation>
+		</value>
+		<value name="Positive">
+			<documentation>Alias for &quot;Success&quot;</documentation>
+		</value>
+		<value name="Success">
+			<documentation>Indicates a state that is positive, e.g. marking a task successfully executed or a state where all is good (Green color)</documentation>
+		</value>
+		<value name="Critical">
+			<documentation>Alias for &quot;Warning&quot;</documentation>
+		</value>
+		<value name="Warning">
+			<documentation>Indicates a state that is critical, e.g. marking an element that needs attention (Orange color)</documentation>
+		</value>
+	</enumeration>
+</simple-type>

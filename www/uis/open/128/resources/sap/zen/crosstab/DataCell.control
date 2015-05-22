@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>DataCell</name>
+
+	<documentation>Add your documentation for the new DataCell</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="text" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="area" type="sap.ui.core/object">
+		</property>
+		<property group="Misc" name="row" type="sap.ui.core/int">
+		</property>
+		<property group="Misc" name="col" type="sap.ui.core/int">
+		</property>
+		<property group="Misc" type="sap.ui.core/int" name="tableRow">
+		</property>
+		<property group="Misc" name="tableCol" type="sap.ui.core/int">
+		</property>
+	</properties>
+	<methods>
+		<method name="addStyle" type="sap.ui.core/void">
+			<parameters>
+				<parameter name="sStyle" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+	</methods>
+</control>

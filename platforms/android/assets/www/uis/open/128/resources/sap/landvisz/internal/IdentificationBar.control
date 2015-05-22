@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+	<name>internal/IdentificationBar</name>
+	<documentation>Acontrol to render identification bar of a system</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="text" type="sap.ui.core/string">
+			<documentation>text that identifies a system</documentation>
+		</property>
+		<!-- <property group="Data" name="tooltip" type="sap.ui.core/string">
+			<documentation>Identification Text to be displayed in the central of
+				the region
+			</documentation>
+		</property>-->
+		<property group="Data" name="type" type="sap.ui.core/string">
+			<documentation>type of system rendered</documentation>
+		</property>
+		<property group="Data" name="qualifierText" type="sap.ui.core/string">
+			<documentation>text that identifies the server</documentation>
+		</property>
+		<property group="Data" name="qualifierTooltip" type="sap.ui.core/string">
+			<documentation>tooltip to identify the server</documentation>
+		</property>
+		<property group="Data" name="qualifierType" type="sap.ui.core/string">
+			<documentation>icon to identify the server</documentation>
+		</property>
+		<!-- <property group="Identification" name="id" type="sap.ui.core/ID">
+		</property>-->
+		<property group="Dimension" name="renderingSize" type="EntityCSSSize"
+			defaultValue="sap.landvisz.EntityCSSSize.Regular">
+			<documentation>rendering size of the control</documentation>
+		</property>
+		<property group="Misc" name="defaultState" type="sap.ui.core/string">
+			<documentation>determines the default state of the control</documentation>
+		</property>
+		<property group="Data" name="description" type="sap.ui.core/string">
+			<documentation>despriction of the identification region of a control</documentation>
+		</property>
+		<property name="componentType" type="ComponentType" group="Identification">
+			<documentation>Component type of the entity</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="select">
+			<documentation>fires click event on selection</documentation>
+		</event>
+	</events>
+	<methods>
+		<method name="getIdentificationProperties" type="sap.ui.core/void">
+			<documentation>returns identification properties</documentation>
+		</method>
+	</methods>
+</control>

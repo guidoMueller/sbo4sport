@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ValueBubblePosition</name>
+	<developmentState state="experimental" since="1.8">API is not yet finished and might change completely</developmentState>
+	<author>SAP SE</author>
+	<documentation>Position for Value Bubble only applies to Pie/Donut Chart.</documentation>
+	<since>1.8</since>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="Top">
+			<documentation>Value Bubble position set to above the chart</documentation>
+		</value>
+		<value name="Side">
+			<documentation>Value Bubble position set to beside the chart</documentation>
+		</value>
+	</enumeration>
+</simple-type>

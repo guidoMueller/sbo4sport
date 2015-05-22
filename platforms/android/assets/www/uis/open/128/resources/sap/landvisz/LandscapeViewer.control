@@ -1,0 +1,151 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+	<name>LandscapeViewer</name>
+
+	<documentation>Visualize the landscape objects in a new user experience
+	</documentation>
+
+	<baseType>Option</baseType>
+	<properties>
+		<property group="Identification" type="DependencyType" name="defaultDependencyView"
+			defaultValue="sap.landvisz.DependencyType.NETWORK_VIEW">
+			<documentation>View type of landscape view</documentation>
+		</property>
+		<property group="Dimension" name="height" type="sap.ui.core/int">
+			<documentation>Height of Viewer container</documentation>
+		</property>
+		<property group="Dimension" type="sap.ui.core/int" name="width">
+			<documentation>width of the Viewer container</documentation>
+		</property>
+		<property group="Data" type="sap.ui.core/string" name="title">
+			<documentation>Header of the rendered view</documentation>
+		</property>
+		<property group="Data" name="networkDependencyLabel" type="sap.ui.core/string"
+			defaultValue='Network View'>
+			<documentation>Label of the network view</documentation>
+		</property>
+		<property group="Data" name="boxDependencyLabel" type="sap.ui.core/string"
+			defaultValue='Box View'>
+			<documentation>Label of box view</documentation>
+		</property>
+		<property group="Data" name="boxDependencyLevels" type="sap.ui.core/string[]">
+			<documentation>Levels information in Box dependency view</documentation>
+		</property>
+		<property group="Identification" name="showDependencyNavigator" type="sap.ui.core/boolean"
+			defaultValue="true">
+			<documentation>Navigator for dependency views</documentation>
+		</property>
+		<property group="Identification" name="visibleDependency" type="DependencyVisibility"
+			defaultValue="sap.landvisz.DependencyVisibility.BOTH">
+			<documentation>Dependency View Visibility</documentation>
+		</property>
+		<property group="Identification" name="viewType" type="ViewType">
+			<documentation>View type of landscape view	</documentation>
+		</property>
+		<property group="Data" name="navigationPath" type="sap.ui.core/string">
+			<documentation>Text displayed in the dependency view</documentation>
+		</property>
+		<property group="Misc" name="hasParent" type="sap.ui.core/boolean"
+			defaultValue="true">
+			<documentation>control has to be added in the container or directly in the window.</documentation>
+		</property>
+		<property group="Identification" name="selectionViewPosition" type="SelectionViewPosition"
+			defaultValue="sap.landvisz.SelectionViewPosition.CENTER">
+			<documentation>positions for selection view entity</documentation>
+		</property>
+		<property group="Identification" name="showClose" type="sap.ui.core/boolean"
+			defaultValue="true">
+			<documentation>close button visibility</documentation>
+		</property>
+		<property group="Data" type="sap.ui.core/string" name="componentViewLabel"
+			defaultValue="Component View">
+			<documentation>Label for the component view</documentation>
+		</property>
+		<property group="Data" name="deploymentViewLabel" type="sap.ui.core/string"
+			defaultValue="Deployment View">
+			<documentation>Label for deployment view.</documentation>
+		</property>
+		<property group="Identification" name="solutionOptionType" type="OptionType">
+			<documentation>determines whether the option is rendered on view or entity</documentation>
+		</property>
+		<property group="Identification" name="solutionType" type="SolutionType">
+			<documentation>Type of solution rendered</documentation>
+		</property>
+		<property group="Identification" name="showDeploymentTypeSection" type="sap.ui.core/boolean"
+			defaultValue="false">
+			<documentation>Deployment type section</documentation>
+		</property>
+		<property group="Data" name="deploymentOptionsLabel" type="sap.ui.core/string"
+			defaultValue="Deployment Options :">
+			<documentation>Label for the options</documentation>
+		</property>
+		<property group="Data" name="deploymentOptionsTooltip" type="sap.ui.core/string">
+			<documentation>tooltip of label for the options</documentation>
+		</property>
+		<property group="Data" name="componentViewTooltip" type="sap.ui.core/string">
+			<documentation>tooltip for component view button</documentation>
+		</property>
+		<property group="Data" name="deploymentViewTooltip" type="sap.ui.core/string">
+			<documentation>tooltip for deployment view button</documentation>
+		</property>
+		<property group="Data" name="closeButtonTooltip" type="sap.ui.core/string">
+			<documentation>tooltip for close button</documentation>
+		</property>
+		<property group="Misc" name="plugContentHeight" type="sap.ui.core/int" defaultValue="0">
+			<documentation>Specify the height of plugged content</documentation>
+		</property>
+
+
+	</properties>
+	<events>
+		<event name="close">
+			<documentation>closes the view</documentation>
+		</event>
+		<event name="loadSolutionView">
+			<documentation>load the solution view either deployment or component
+			</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" type="LandscapeEntity"
+			name="systems">
+			<documentation>Systems to be rendered in the landscape viewer
+			</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="connectionEntities"
+			type="ConnectionEntity">
+			<documentation>Optional: connection Entity between two systems.
+			</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="connectors" type="Connector">
+			<documentation>connector contains from and to information
+			</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="solutionOptions"
+			type="sap.landvisz/Option">
+			<documentation>Options for the solution</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="plugContent" type="sap.ui.core/Control">
+			<documentation>a control which can be plugged into this control and can be only plugged in top section.</documentation>
+		</aggregation>
+	</aggregations>
+	<methods>
+		<method name="appendNavigationPath" type="sap.ui.core/void">
+			<documentation>Append the text in the navigation path</documentation>
+			<parameters>
+				<parameter name="navigationText" type="sap.ui.core/string">
+					<documentation>text to be appended in the navigation path
+					</documentation>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="getSelectedOption" type="sap.ui.core/object">
+			<documentation>returns an object of the internal connection entity
+			</documentation>
+		</method>
+		<method name="getCurrentSolutionView" type="sap.ui.core/string">
+			<documentation>return the current solution loaded.</documentation>
+		</method>
+	</methods>
+</control>

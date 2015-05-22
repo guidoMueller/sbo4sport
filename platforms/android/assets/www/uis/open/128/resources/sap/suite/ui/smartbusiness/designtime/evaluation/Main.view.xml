@@ -1,0 +1,5 @@
+<core:View xmlns:core="sap.ui.core"
+           xmlns="sap.m" controllerName="sap.suite.ui.smartbusiness.designtime.evaluation.Main"  displayBlock="true" height="100%">
+        <App id="fioriContent" showHeader="false">
+        </App>
+</core:View>

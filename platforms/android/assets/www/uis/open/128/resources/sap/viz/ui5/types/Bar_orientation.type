@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Bar_orientation</name>
+  <documentation>List (Enum) type ui5/types/Bar_orientation</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.ui.core/string</baseType>
+  <enumeration>
+    <value name="horizontal">
+      <documentation>Value horizontal</documentation>
+    </value>
+    <value name="vertical">
+      <documentation>Value vertical</documentation>
+    </value>
+  </enumeration>
+</simple-type>

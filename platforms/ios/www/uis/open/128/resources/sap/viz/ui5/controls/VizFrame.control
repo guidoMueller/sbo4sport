@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+	<name>ui5/controls/VizFrame</name>
+	<documentation>VizFrame is a viz control that manages a visualization’s initialization, layout, feeding, customization and interactions.</documentation>
+	<since>1.22.0</since>
+	<baseType>sap.viz/ui5/controls/common/BaseControl</baseType>
+	<properties>
+        <property group="Misc" name="vizType" type="sap.ui.core/string">
+            <documentation>Type for viz frame. Supported chart type: bubble, combination, column, bar, line, stacked_bar, stacked_column, bullet, timebubble.
+            User can pass 'chartType' or 'info/chartType'. For example both 'bar' and 'info/bar' will create a info bar chart.</documentation>
+        </property>
+		<property group="Misc" name="vizProperties" type="sap.ui.core/string">
+			<documentation>Chart properties, refer chart property doc for more details.</documentation>
+		</property>
+    </properties>
+    <aggregations>
+        <aggregation cardinality="0..1" name="dataset" type="sap.viz/ui5/data/Dataset">
+            <documentation>Dataset for chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" name="feeds" type="sap.viz/ui5/controls/common/feeds/FeedItem">
+            <documentation>All feeds for chart.</documentation>
+        </aggregation>
+    </aggregations>
+	<methods>
+        <method name="getVizUid" type="sap.ui.core/string">
+           <documentation>Uid for viz frame. It supports other controls to connect to a viz instance.</documentation>
+        </method>
+		<method name="vizUpdate" type="sap.ui.core/void">
+            <documentation>Update viz frame according to a JSON object, it can update css, properties, feeds and data model.</documentation>
+            <parameters>
+                <parameter name="oJson" type="sap.ui.core/object">
+                    <documentation>A JSON object contains combination of css, properties, feeds and data model.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="vizSelection" type="sap.ui.core/object">
+            <documentation>Selections for the chart instance of the viz frame.</documentation>
+            <parameters>
+                <parameter name="aPoints" type="sap.ui.core/object[]">
+                    <documentation>Some data points of the chart</documentation>
+                </parameter>
+                <parameter name="oAction" type="sap.ui.core/object">
+                    <documentation>A flag 'clearSelection', whether to clear previous selection, by default the selection will be incremental selection</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="getResponsiveLegend" type="sap.ui.core/void">
+            <documentation>Get ResponsiveLegend Control. (For fiori application set only.)</documentation>
+        </method>
+	</methods>
+    <events>
+        <event name="renderComplete">
+              <documentation>Event fires when the rendering ends.</documentation>
+        </event>
+        <event name="selectData">
+            <documentation>Event fires when certain data point(s) is(are) selected, data context of selected item(s) would be passed in.
+            </documentation>
+        </event>
+        <event name="deselectData">
+            <documentation>Event fires when certain data point(s) is(are) deselected, data context of deselected item(s) would be passed in
+            </documentation>
+        </event>
+    </events>
+</control>

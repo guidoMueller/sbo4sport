@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Dialog title="Select Option" class='dialog'
+		horizontalScrolling='false' verticalScrolling='false'>
+		<content>
+			<List>
+				<CustomListItem  type="Active" press="addTile">
+					<VBox width="70%" justifyContent="Center"  class="itemList">
+						<items>
+							<Label text="{i18n>CURRENT_EVALUATION_MINI_CHARTS}" design="Bold" ></Label>
+							<Label text="{i18n>MSG_SELECT_CURRENT_MINI_CHARTS}"></Label>
+						</items>
+					</VBox>
+				</CustomListItem>
+				<CustomListItem  type="Active" press="openEvaluationsDialog">
+					<VBox width="70%" justifyContent="Center"  class="itemList">
+						<items class="itemList">
+							<Label text="{i18n>RELATED_EVALUATION_MINI_CHARTS}" design="Bold" ></Label>
+							<Label
+								text="{i18n>MSG_SELECT_RELATED_MINI_CHARTS}"></Label>
+						</items>
+					</VBox>
+				</CustomListItem>
+			</List>
+			
+      
+    
+		</content>
+		<endButton>
+		<Button text="Cancel" press="openMinichartsCancel" />
+	</endButton>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>SortOrder</name>
+	<author>SAP SE</author>
+	<since>1.8</since>
+
+	<documentation>Enumeration for sort order</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="Ascending">
+			<documentation>Ascending sort</documentation>
+		</value>
+		<value name="Descending">
+			<documentation>Descending sort</documentation>
+		</value>
+		<value name="Partial">
+			<documentation>Partially sort</documentation>
+		</value>
+		<value name="None">
+			<documentation>No sorting</documentation>
+		</value>
+	</enumeration>
+</simple-type>

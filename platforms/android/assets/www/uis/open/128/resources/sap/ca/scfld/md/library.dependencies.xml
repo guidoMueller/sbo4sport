@@ -1,0 +1,242 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ca.scfld.md">
+  <module name="sap/ca/scfld/md/ApplicationFacade.js" size="5124" compressedSize="1056">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/ComponentBase.js" size="11776" compressedSize="3787">
+    <description>define a root UIComponent which exposes the main view</description>
+    <requires>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ca/scfld/md/ConfigurationBase.js"/>
+      <module name="sap/ui/core/routing/Router.js"/>
+      <module name="sap/ui/core/routing/History.js"/>
+      <module name="sap/m/routing/RouteMatchedHandler.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/ConfigurationBase.js" size="4144" compressedSize="1023">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/scfld/md/ApplicationFacade.js"/>
+      <module name="sap/ca/scfld/md/app/ConnectionManager.js"/>
+      <module name="sap/ca/scfld/md/app/ApplicationImplementation.js"/>
+      <module name="sap/ca/scfld/md/app/Application.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/Startup.js" size="1233" compressedSize="773">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/Application.js" size="2884" compressedSize="1667">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/scfld/md/ApplicationFacade.js"/>
+      <module name="sap/ca/scfld/md/app/ApplicationImplementation.js"/>
+      <module name="sap/ui/app/Application.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/ApplicationImplementation.js" size="11585" compressedSize="6623">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/scfld/md/app/ConnectionManager.js"/>
+      <module name="sap/ca/scfld/md/app/MasterHeaderFooterHelper.js"/>
+      <module name="sap/ca/scfld/md/app/DetailHeaderFooterHelper.js"/>
+      <module name="sap/ca/scfld/md/app/FullScreenHeaderFooterHelper.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/BarOverflow.js" size="10564" compressedSize="3435">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ca/scfld/md/app/BarOverflowLayoutData.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/BarOverflowLayoutData.js" size="626" compressedSize="415">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/LayoutData.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/ButtonListHelper.js" size="20538" compressedSize="9653">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/dialog/Dialog.js"/>
+      <module name="sap/ca/scfld/md/app/BarOverflow.js"/>
+      <module name="sap/ca/scfld/md/app/BarOverflowLayoutData.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/CommonHeaderFooterHelper.js" size="24506" compressedSize="13978">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ushell/ui/footerbar/JamShareButton.js"/>
+      <module name="sap/ushell/ui/footerbar/JamDiscussButton.js"/>
+      <module name="sap/ushell/ui/footerbar/AddBookmarkButton.js"/>
+      <module name="sap/ca/scfld/md/app/ButtonListHelper.js"/>
+      <module name="sap/ushell/services/AppConfiguration.js"/>
+      <module name="sap/ca/scfld/md/app/BarOverflow.js"/>
+      <module name="sap/ca/scfld/md/app/BarOverflowLayoutData.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/ConnectionManager.js" size="14932" compressedSize="6536">
+    <description>declare unusual global vars for JSLint/SAPUI5 validation</description>
+    <requires>
+      <module name="sap/ca/ui/message/message.js"/>
+      <module name="sap/ca/ui/utils/busydialog.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/DetailHeaderFooterHelper.js" size="6424" compressedSize="3634">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/scfld/md/app/CommonHeaderFooterHelper.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/FullScreenHeaderFooterHelper.js" size="6355" compressedSize="3825">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ushell/ui/footerbar/JamShareButton.js"/>
+      <module name="sap/ushell/ui/footerbar/JamDiscussButton.js"/>
+      <module name="sap/ushell/ui/footerbar/AddBookmarkButton.js"/>
+      <module name="sap/ca/scfld/md/app/ButtonListHelper.js"/>
+      <module name="sap/ca/scfld/md/app/CommonHeaderFooterHelper.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/app/MasterHeaderFooterHelper.js" size="16828" compressedSize="9045">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/controller/BaseDetailController.js" size="9099" compressedSize="2106">
+    <requires>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ca/scfld/md/app/CommonHeaderFooterHelper.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/controller/BaseFullscreenController.js" size="12032" compressedSize="2188">
+    <requires>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ca/scfld/md/app/FullScreenHeaderFooterHelper.js"/>
+      <module name="sap/ca/scfld/md/app/CommonHeaderFooterHelper.js"/>
+      <module name="sap/ca/scfld/md/app/Application.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/controller/BaseMasterController.js" size="17691" compressedSize="6306">
+    <requires>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ca/scfld/md/app/CommonHeaderFooterHelper.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/controller/ScfldMasterController.js" size="35228" compressedSize="10101">
+    <requires>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ca/scfld/md/app/CommonHeaderFooterHelper.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n.properties" size="884">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_ar.properties" size="1966">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_cs.properties" size="992">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_de.properties" size="920">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_en.properties" size="830">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_es.properties" size="929">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_fr.properties" size="985">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_hu.properties" size="1075">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_it.properties" size="865">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_iw.properties" size="1633">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_ja.properties" size="1510">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_no.properties" size="867">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_pl.properties" size="916">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_pt.properties" size="916">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_ru.properties" size="2351">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_tr.properties" size="900">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_uk.properties" size="2300">
+  </module>
+  <module name="sap/ca/scfld/md/i18n/i18n_zh_CN.properties" size="1112">
+  </module>
+  <module name="sap/ca/scfld/md/library.js" size="1282" compressedSize="557">
+    <description>Initialization Code and shared classes of library sap.ca.scfld.md (1.24.5)</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/viz/library.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/library.properties" size="104">
+  </module>
+  <module name="sap/ca/scfld/md/view/App.controller.js" size="198" compressedSize="183" raw="true">
+  </module>
+  <module name="sap/ca/scfld/md/view/App.view.xml" size="298">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/scfld/md/view/App.controller.js"/>
+      <module name="sap/m/App.js"/>
+      <module name="sap/m/Page.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/view/MainSplitContainer.controller.js" size="280" compressedSize="270" raw="true">
+  </module>
+  <module name="sap/ca/scfld/md/view/MainSplitContainer.view.xml" size="386">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/scfld/md/view/MainSplitContainer.controller.js"/>
+      <module name="sap/m/SplitApp.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/view/empty.controller.js" size="2626" compressedSize="1856">
+    <requires>
+      <module name="sap/ca/scfld/md/controller/BaseDetailController.js"/>
+      <module name="sap/ca/ui/images/images.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/scfld/md/view/empty.view.xml" size="638">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/scfld/md/view/empty.controller.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Text.js"/>
+    </requires>
+  </module>
+</library>

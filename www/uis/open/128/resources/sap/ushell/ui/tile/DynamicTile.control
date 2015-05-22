@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/tile/DynamicTile</name>
+	<documentation>An applauncher for apps that need to display dynamically updated information</documentation>
+
+	<baseType>TileBase</baseType>
+	<properties>
+		<property group="Data" name="numberValue" type="sap.ui.core/string" defaultValue="0.0">
+			<documentation>a number to be formatted with numberDigits decimal digits. Can be sap.ui.core.string as well.</documentation>
+		</property>
+		<property group="Appearance" name="numberState" type="State" defaultValue="Neutral">
+			<documentation>The state of the number, indicating positive or negative conditions</documentation>
+		</property>
+		<property group="Data" name="numberUnit" type="sap.ui.core/string">
+			<documentation>The unit in which numberValue is measured</documentation>
+		</property>
+		<property group="Appearance" name="numberDigits" type="sap.ui.core/int" defaultValue="0">
+			<documentation>the number of fractional decimal digits</documentation>
+		</property>
+		<property group="Appearance" name="stateArrow" type="StateArrow" defaultValue="None">
+			<documentation>the state of the trend indicator</documentation>
+		</property>
+		<property group="Data" name="numberFactor" type="sap.ui.core/string">
+			<documentation>defines a scaling factor (like &quot;%&quot;, &quot;M&quot; or &quot;k&quot;) right to a scaled number</documentation>
+		</property>
+	</properties>
+</control>

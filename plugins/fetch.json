@@ -1,0 +1,92 @@
+{
+    "com.sap.mp.cordova.plugins.odata": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/odata"
+        }
+    },
+    "com.sap.mp.cordova.plugins.corelibs": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/corelibs"
+        }
+    },
+    "com.sap.mp.cordova.plugins.authproxy": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/authproxy"
+        }
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        }
+    },
+    "org.apache.cordova.inappbrowser": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/inappbrowser"
+        }
+    },
+    "com.sap.mp.cordova.plugins.logon": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/logon"
+        }
+    },
+    "com.sap.mp.cordova.plugins.push": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/push"
+        }
+    },
+    "com.sap.mp.cordova.plugins.logger": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/logger"
+        }
+    },
+    "com.sap.mp.cordova.plugins.settings": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/settings"
+        }
+    },
+    "com.sap.mp.cordova.plugins.cachemanager": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/cachemanager"
+        }
+    },
+    "com.sap.mp.cordova.plugins.i18n": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/i18n"
+        }
+    },
+    "com.sap.mp.cordova.plugins.online": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/online"
+        }
+    },
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.dialogs"
+        }
+    },
+    "com.sap.mp.cordova.plugins.toolbar": {
+        "source": {
+            "type": "local",
+            "path": "/Users/guido/SAP/MobileSDK3/KapselSDK/plugins/toolbar"
+        }
+    },
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.network-information"
+        }
+    }
+}

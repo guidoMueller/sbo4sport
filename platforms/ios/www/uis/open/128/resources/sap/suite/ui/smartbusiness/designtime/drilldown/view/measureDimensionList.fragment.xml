@@ -1,0 +1,61 @@
+
+<List id="measureDimensionsList" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	items="{SB_DDACONFIG>/items}" width="100%" class='dimnsnMrsContainer'>
+	<items>
+		<CustomListItem class='measureDimensionListItem'>
+			<content>
+				<HBox width="100%" justifyContent="SpaceAround"
+					class='measureDimensionListItemTemplate'>
+					<items>
+						<HBox width="94%" justifyContent="SpaceBetween" alignItems="Center">
+							<items>
+								<VBox width="70%" justifyContent="Center">
+									<items>
+										<Label text="{path:'SB_DDACONFIG>NAME',formatter:'.displayLabelsFormatter'}" design="Bold"></Label>
+										<Label text="{parts:[{path:'SB_DDACONFIG>NAME'},{path:'SB_DDACONFIG>TYPE'}],formatter:'.formatMeasureNameInList'}" ></Label>
+									</items>
+								</VBox>
+								<HBox width="30%" justifyContent="SpaceBetween">
+									<items>
+										<core:Icon src="sap-icon://color-fill"
+											color="{
+						path:'SB_DDACONFIG>COLOR1',formatter:'.formatcolor'
+						}" visible="{path:'SB_DDACONFIG>/COLOR_SCHEME',formatter:'.colorButton1Visiblity'}"></core:Icon>
+											<core:Icon src="sap-icon://color-fill"
+											color="{
+						path:'SB_DDACONFIG>COLOR2',formatter:'.formatcolor'
+						}" visible="{path:'SB_DDACONFIG>/COLOR_SCHEME',formatter:'.colorButton2Visiblity'}"></core:Icon>
+										<core:Icon src="{path:'SB_DDACONFIG>SORT_ORDER',formatter:'.formatSortOrder'}"></core:Icon>
+										<core:Icon src="sap-icon://settings" press="onEditIconPress"></core:Icon>
+
+									</items>
+								</HBox>
+							</items>
+
+						</HBox>
+					</items>
+				</HBox>
+			</content>
+		</CustomListItem>
+	</items>
+	<headerToolbar>
+		<Toolbar class='measureAndDimensionListHeader'>
+			<HBox width="100%" justifyContent="SpaceAround">
+				<items>
+					<HBox width="94%" justifyContent="SpaceBetween" alignItems="Center">
+						<items>
+							<HBox width="69%">
+								<items>
+									<Label text="{i18n>MEASURES_AND_DIMENSIONS}" design="Bold"></Label>
+								</items>
+							</HBox>
+							<Button icon="sap-icon://sort" type="Transparent" press="sortDimensionsAndMeasures"></Button>
+							<Button icon="sap-icon://edit" type="Transparent" press="openAllMeasuresDimension"></Button>
+						</items>
+
+					</HBox>
+				</items>
+			</HBox>
+		</Toolbar>
+	</headerToolbar>
+</List>

@@ -1,0 +1,346 @@
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script src="js/datajs-1.1.2.min.js"></script>
+
+	<script src='uis/clients/flp/bootstrap/uis_fiori.js'></script>
+	<script type="text/javascript" src="smp/logon/ui/resources/sap/ui/thirdparty/jquery/jquery-1.10.2.js"></script>
+	<script id='sap-ui-bootstrap' src='uis/open/128/resources/sap-ui-core-nojQuery.js'
+			data-sap-ui-xx-bindingSyntax='complex'
+			data-sap-ui-theme='sap_bluecrystal'
+			data-sap-ui-theme-roots='{"bonvendo" : "ui/themes/bonvendo"}'
+			data-sap-ui-libs='sap.m, sap.apf, sap.ca.ui, sap.ushell, sap.viz'
+			data-sap-ui-resourceroots='{"uniorg" : "ui/resources/uniorg"}'></script>
+	<script>
+		var appId = "sapUniorgSbo4Sports"; // Change this to app id on server
+		var applicationContext = null;
+		var smpServerProtocol = "http";
+		var smpServerHost = "mobile-a6bac0da3.hana.ondemand.com";
+		var smpServerPort = "443";
+		var authStr = "";
+		var store = null; //Offline OData store
+		var startTime = null;
+		var online = navigator.onLine;
+
+		// Optional initial connection context
+		var context = {
+			"serverHost": smpServerHost, //Place your SMP 3.0 server name here
+			"https": smpServerProtocol == "https",
+			"serverPort": smpServerPort,
+			"user": "s0013961857",       //user name for registration
+			"password": "Guido75#",   //password for registration
+
+			"communicatorId": "REST",
+			"passcode": "password",
+			"unlockPasscode": "password",
+			"passcode_CONFIRM": "password",
+			"ssoPasscode": "Password1"
+		};
+
+		window.onerror = onError;
+
+		function onError( msg, url, line ) {
+			var idx = url.lastIndexOf( "/" );
+			var file = "unknown";
+			if ( idx > -1 ) {
+				file = url.substring( idx + 1 );
+			}
+			alert( "An error occurred in " + file + " (at line # " + line + "): " + msg );
+			return false; //suppressErrorAlert;
+		}
+
+		function init() {
+			if ( sap.Logger ) {
+				sap.Logger.setLogLevel( sap.Logger.DEBUG );  //enables the display of debug log messages from the Kapsel plugins.
+				sap.Logger.debug( "Log level set to DEBUG" );
+			}
+			register();
+		}
+
+		function register() {
+			sap.Logon.init( logonSuccessCallback, logonErrorCallback, appId, context );
+		}
+
+		function logonSuccessCallback( result ) {
+			applicationContext = result;
+			//alternatively the authproxy and logon plugincan provide this if SAPKapselHandleHttpRequests=true, (it is by default on iOS)
+			authStr = "Basic " + btoa( applicationContext.registrationContext.user + ":" + applicationContext.registrationContext.password );
+
+			sap.ui.getCore().attachInit( function() {
+
+				var oContent = new sap.ui.core.ComponentContainer( {
+					name: "uniorg.sapFourSport"
+				} );
+
+				// remove full page Pace loading indicator
+
+				//jQuery("#canvas").empty();
+
+				oContent.placeAt( "canvas" );
+
+			} );
+			openStore();
+		}
+
+		function openStore() {
+			if ( !haveAppId() ) {
+				return;
+			}
+			startTime = new Date();
+			var properties = {
+				"name": "TicketSOfflineStore",
+				"host": applicationContext.registrationContext.serverHost,
+				"port": applicationContext.registrationContext.serverPort,
+				"https": applicationContext.registrationContext.https,
+				"serviceRoot" :  "https://mobile-a6bac0da3.hana.ondemand.com/sapUniorgSbo4Sports",  //appId,
+				"definingRequests": {
+					"TicketS": "/TicketS",
+					"RoundS": "/RoundS"
+				}
+			};
+
+			store = sap.OData.createOfflineStore( properties );
+
+			//var options = {};
+			store.open( openStoreSuccessCallback, errorCallback/*, options*/ );
+		}
+
+		function openStoreSuccessCallback() {
+			sap.OData.applyHttpClient();  //Offline OData calls can now be made against datajs.
+		}
+
+		function logonErrorCallback( error ) {   //this method is called if the user cancels the registration.
+			if ( device.platform == "Android" ) {  //Not supported on iOS
+				navigator.app.exitApp();
+			}
+		}
+
+		function unRegister() {
+			sap.Logon.core.deleteRegistration( logonUnregisterSuccessCallback, errorCallback );
+		}
+
+		function logonUnregisterSuccessCallback( result ) {
+			applicationContext = null;
+		}
+
+		function errorCallback( e ) {
+			alert( "An error occurred " + JSON.stringify( e ) );
+		}
+
+		function closeStoreSuccessCallback() {
+			sap.OData.removeHttpClient();
+			var endTime = new Date();
+			var duration = (endTime - startTime) / 1000;
+		}
+
+		//Removes the physical store from the filesystem
+		function clearStore() {
+			if ( !store ) {
+				return;
+			}
+			store.clear( clearStoreSuccessCallback, errorCallback );
+		}
+
+		function clearStoreSuccessCallback() {
+			store = null;
+		}
+
+		function haveAppId() {
+			if ( !applicationContext ) {
+				alert( "Please register with the SMP Server before proceeding" );
+				return false;
+			}
+			return true;
+		}
+
+		function addZero( input ) {
+			if ( input < 10 ) {
+				return "0" + input;
+			}
+			return input;
+		}
+
+		function getDeviceStatusString() {
+			if ( online ) {
+				return "Device is ONLINE";
+			}
+			else {
+				return "Device is OFFLINE";
+			}
+		}
+
+		function deviceOnline() {
+			online = true;
+		}
+
+		function deviceOffline() {
+			online = false;
+		}
+
+		document.addEventListener( "deviceready", init, false );
+		document.addEventListener( "online", deviceOnline, false );
+		document.addEventListener( "offline", deviceOffline, false );
+	</script>
+
+	<style>
+		/* Copyright (c) 2013 SAP AG, All Rights Reserved */
+		/*
+		* version: 1.11.0-SNAPSHOT
+		* This is the stylesheet for the Unified Shell's minimal (almost invisible) renderer.
+		*
+		* since: 1.9.0
+		*/
+
+		/* TODO Theme Designer Support!! */
+		body {
+			margin: 0;
+		}
+
+		html, body, .sapUShellFullHeight, .sapUiComponentContainer, .sapUiComponentContainer > div {
+			height: 100%;
+		}
+
+		.sapMTileContent span.sapUiIcon {
+			font-size: 3rem !important;
+			line-height: 3rem !important;
+		}
+
+		.sapUShellLogout {
+			background-color: rgb(226, 226, 226); /* sapUiButtonBackground */
+			opacity: 0.75;
+			color: black; /* sapUiButtonTextColor */
+			bottom: 12px;
+			display: inline-block;
+			font-size: 36px;
+			height: 44px;
+			left: auto;
+			position: fixed;
+			right: 12px;
+			text-align: center;
+			vertical-align: middle;
+			width: 44px;
+			z-index: 100;
+		}
+
+		.sapUShellLogout:hover {
+			background-color: rgb(0, 0, 0); /* sapUiButtonHoverBackground */
+			color: white; /* sapUiButtonHoverTextColor */
+		}
+
+		html[dir='rtl'] .sapUShellLogout {
+			left: 12px;
+			right: auto;
+		}
+
+		.pagebuilder_widget_control {
+			background: white;
+		}
+
+		.pagebuilder .sapUiPanelHdrItem.sapUiPanelTitle.sapUiTvH5 {
+			display: none;
+		}
+
+		.sapMStdTileIconDiv > img {
+			font-size: 3rem !important;
+			line-height: 3rem !important;
+			height: 5rem !important;
+			width: 5rem !important;
+		}
+
+		.logo {
+			left: calc(50% - 3rem);
+			position: absolute;
+			top: 0px;
+		}
+
+		#__xmlview0--shell-cntnt {
+			background: url(ui/resources/uniorg/sapFourSport/mimes/background2.jpg) 50% 100% no-repeat;
+			background-size: cover;
+		}
+
+		[id$="--container-0"], [id$="--container-0"].sapMTile.sapMTileActive {
+			background: url(ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Sponsors.png) 0% 0% no-repeat;
+			background-size: contain;
+			border: 0px solid #FFF;
+			box-shadow: none;
+		}
+
+		[id$="--container-0"] .sapMTileContent {
+			display: none;
+		}
+
+		[id$="--container-1"], [id$="--container-1"].sapMTile.sapMTileActive {
+			background: url(ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png) 0% 0% no-repeat;
+			background-size: contain;
+			border: 0px solid #FFF;
+			box-shadow: none;
+		}
+
+		[id$="--container-1"] .sapMTileContent {
+			display: none;
+		}
+
+		[id$="--container-2"], [id$="--container-2"].sapMTile.sapMTileActive {
+			background: url(ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Matches.png) 0% 0% no-repeat;
+			background-size: contain;
+			border: 0px solid #FFF;
+			box-shadow: none;
+		}
+
+		[id$="--container-2"] .sapMTileContent {
+			display: none;
+		}
+
+		[id$="--container-3"], [id$="--container-3"].sapMTile.sapMTileActive {
+			background: url(ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Members.png) 0% 0% no-repeat;
+			background-size: contain;
+			border: 0px solid #FFF;
+			box-shadow: none;
+		}
+
+		[id$="--container-3"] .sapMTileContent {
+			display: none;
+		}
+
+		[id$="--container-4"], [id$="--container-4"].sapMTile.sapMTileActive {
+			background: url(ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Players.png) 0% 0% no-repeat;
+			background-size: contain;
+			border: 0px solid #FFF;
+			box-shadow: none;
+		}
+
+		.sapMTile:focus {
+			outline: 0px dotted #005483;
+		}
+
+		[id$="--container-4"] .sapMTileContent {
+			display: none;
+		}
+
+		#__xmlview4--idIconTabBarMulti--header-head .sapMITBText,
+		.sapMITBFilter .sapMITBText {
+			color: #FFF;
+		}
+
+		.sapUiHLayoutChildWrapper {
+			white-space: normal;
+			display: block;
+			vertical-align: top;
+			float: left;
+		}
+
+		.v-title.viz-title-label, #__button2 {
+			display: none;
+		}
+
+		.sapUiLocalBusyIndicator {
+			background-color: rgba(29, 29, 29, 0.72) !important;
+		}
+	</style>
+</head>
+<body class="sapUiBody sapUShellFullHeight" role="application">
+<div id="canvas" class="sapUShellFullHeight"></div>
+</body>
+</html>
+
+

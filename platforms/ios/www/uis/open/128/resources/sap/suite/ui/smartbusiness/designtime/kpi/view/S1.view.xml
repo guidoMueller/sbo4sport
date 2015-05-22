@@ -1,0 +1,194 @@
+<core:View xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" xmlns="sap.m"
+	controllerName="sap.suite.ui.smartbusiness.designtime.kpi.view.S1">
+
+	<Page id="page" class="kpiPage">
+		<content>
+			<l:Grid defaultSpan="L12 M12 S12" width="auto">
+				<l:content>
+					<form:SimpleForm id="kpiParameterInputForm"
+						maxContainerCols="2" editable="true" minWidth="1024"
+						layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4"
+						emptySpanL="1" emptySpanM="1" columnsL="1" columnsM="1">
+						<form:content>
+							<core:Title text="{i18n>PARAMETERS}" />
+							<Label text="{i18n>ID}" required="true" />
+							<Input id="kpiId" type="Text" placeholder="{i18n>KPI_ID_PLACEHOLDER}"
+								value="{/ID}" change="validateKpiId">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</Input>
+							<Label text="{i18n>TITLE}" />
+							<Input id="kpiTitle" type="Text" value="{/TITLE}">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</Input>
+							<Link
+								text="{ path:'/NO_OF_ADDITIONAL_LANGUAGES', formatter:'.formatAdditionalLanguageLink'}"
+								press="addAdditionalLanguageDialog">
+								<layoutData>
+									<l:GridData span="L2 M2" />
+								</layoutData>
+							</Link>
+							<Label text="{i18n>DESCRIPTION}" />
+							<TextArea id="kpiDescription" type="Text" value="{/DESCRIPTION}">
+								<layoutData>
+									<l:GridData span="L5 M5" />
+								</layoutData>
+							</TextArea>
+							<Label text="{i18n>TYPE}" />
+							<VBox>
+								<items>
+									<RadioButton text='{i18n>KEY_PERFORMANCE_INDICATOR}'
+										groupName='indicator' select="kpiOpiRadioButtonChange" id="KPI"
+										selected="{/KPITYPE}">
+										<customData>
+											<core:CustomData key="indicatorType" value="KPI" />
+										</customData>
+									</RadioButton>
+									<RadioButton text='{i18n>OPERATIONAL_PERFORMANCE_INDICATOR}'
+										groupName='indicator' select="kpiOpiRadioButtonChange" id="OPI"
+										selected="{/OPITYPE}">
+										<customData>
+											<core:CustomData key="indicatorType" value="OPI" />
+										</customData>
+									</RadioButton>
+								</items>
+							</VBox>
+							<Label text="{i18n>GOAL_TYPE}" />
+							<Select id="kpiGoalTypeSelect" selectedKey="{/GOAL_TYPE}">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+								<items>
+									<core:Item text="{i18n>MAXIMIZING_HIGHER_IS_BETTER}"
+										key="MA" />
+									<core:Item text="{i18n>RANGE_CLOSER_TO_TARGET_IS_BETTER}"
+										key="RA" />
+									<core:Item text="{i18n>MINIMIZING_LOWER_IS_BETTER}"
+										key="MI" />
+								</items>
+							</Select>
+							<Label text="{i18n>TAGS}" />
+							<Input id="kpiTag" type="Text" value="{/TAG}"
+								placeholder="{i18n>TAGS_PLACEHOLDER}">
+								<layoutData>
+									<l:GridData span="L5 M5" />
+								</layoutData>
+							</Input>
+							<Label text="{i18n>OWNER_NAME}" />
+							<Input id="kpiOwner" type="Text" value="{/OWNER_NAME}">
+								<layoutData>
+									<l:GridData span="L5 M5" />
+								</layoutData>
+							</Input>
+							<Label text="{i18n>OWNER_ID_EMAIL}" />
+							<Input id="kpiOwnerId" type="Text" value="{/OWNER_ID}">
+								<layoutData>
+									<l:GridData span="L2 M2" />
+								</layoutData>
+							</Input>
+							<Input id="kpiOwnerEmail" type="Email" value="{/OWNER_E_MAIL}"
+								change="validateEmailAddress">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</Input>
+							<Label text="{i18n>PROPERTY_NAME_VALUE}" />
+							<VBox id="propertyNameValueBoxHeader" class="parameterList"
+								noDataText=" ">
+								<layoutData>
+									<l:GridData span="L8 M8" />
+								</layoutData>
+								<l:Grid defaultSpan="L12 M12 S12" class="propertyEntryGrid">
+									<l:content>
+										<Input id="kpiPropertyName" type="Text" placeholder="{i18n>NAME}">
+											<layoutData>
+												<l:GridData span="L4 M4" />
+											</layoutData>
+										</Input>
+										<Input id="kpiPropertyValue" type="Text" placeholder="{i18n>VALUE}">
+											<layoutData>
+												<l:GridData span="L4 M4" />
+											</layoutData>
+										</Input>
+										<Button id="addKpiPropertyButtonHeader" icon="sap-icon://add"
+											press="addNewProperty">
+											<layoutData>
+												<l:GridData span="L2 M2" />
+											</layoutData>
+										</Button>
+									</l:content>
+								</l:Grid>
+							</VBox>
+							<Label />
+							<VBox defaultSpan="L12 M12 S12" id="propertyNameValueBox" class="parameterList"
+								noDataText=" ">
+								<layoutData>
+									<l:GridData span="L8 M8" />
+								</layoutData>
+							</VBox>
+
+							<core:Title text="{i18n>DATA_SOURCE}" />
+							<Label text="{i18n>HANA_VIEW}" />
+							<Input id="viewInput" placeholder="{i18n>SELECT_HANA_VIEW}"
+								change="handleHanaViewInputChange" showValueHelp="true" value="{/VIEW_NAME}"
+								valueHelpRequest="handleHanaViewValueHelp">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</Input>
+							<Label text="{i18n>ODATA_SERVICE}" />
+							<Input id="odataServiceInput" type="Text" value="{/ODATA_URL}"
+								placeholder="{i18n>SELECT_ODATA_SERVICE}" showValueHelp="true"
+								valueHelpRequest="handleOdataServiceValueHelp">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</Input>
+
+							<Label text="{i18n>ENTITY_SET}" />
+							<Input id="entitySetInput" type="Text" showValueHelp="true"
+								placeholder="{i18n>SELECT_ENTITY_SET}" valueHelpRequest="handleEntitySetValueHelp"
+								value="{/ODATA_ENTITYSET}">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</Input>
+
+							<Label text="{i18n>VALUE_MEASURE}" />
+							<Input id="valueMeasureInput" type="Text" showValueHelp="true"
+								placeholder="{i18n>SELECT_VALUE_MEASURE}" valueHelpRequest="handleMeasureValueHelp"
+								value="{/COLUMN_NAME}">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</Input>
+
+							<Label text="{i18n>ADDITIONAL_INFORMATION}" />
+							<TextArea id="additionalInfoId" placeholder="{i18n>ENTER_THE_DETAILS_ABOUT_THE_SOURCE}"
+								value="{/DATA_SPECIFICATION}" change="handleChangeAdditionalInfo">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</TextArea>
+							<Label text="{path:'i18n>SEMANTIC_OBJECT', formatter:'.formatSemanticActionLabel'}"/>
+							<Input id="semanticObject" type="Text" value="{/SEMANTIC_OBJECT}">
+								<layoutData>
+									<l:GridData span="L2 M2" />
+								</layoutData>
+							</Input>
+							<Input id="action" type="Text" value="{/ACTION}">
+								<layoutData>
+									<l:GridData span="L3 M3" />
+								</layoutData>
+							</Input>
+						</form:content>
+					</form:SimpleForm>
+				</l:content>
+			</l:Grid>
+		</content>
+	</Page>
+</core:View>

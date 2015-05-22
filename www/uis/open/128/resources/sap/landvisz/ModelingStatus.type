@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+	<name>ModelingStatus</name>
+	<author>SAP AG</author>
+	<documentation>sampl doc</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="ERROR">
+			<documentation>sample doc for types - ABAP</documentation>
+		</value>
+		<value name="WARNING">
+			<documentation>sample doc</documentation>
+		</value>
+		<value name="NORMAL">
+			<documentation>sample doc</documentation>
+		</value>
+	</enumeration>
+</simple-type>

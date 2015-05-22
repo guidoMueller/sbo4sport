@@ -1,0 +1,6 @@
+.sapUiCb > label,
+.sapUiRb > label,
+.sapzenfilterpanel-PopupContainer .sapUiRrDesignBareShell li,
+.sapzenfilterpanel-PopupContainer .sapUiTableColCell{
+	cursor: pointer !important;
+}

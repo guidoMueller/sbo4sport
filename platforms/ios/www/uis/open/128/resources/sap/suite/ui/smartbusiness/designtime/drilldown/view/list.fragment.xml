@@ -1,0 +1,17 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+<List items="{path:'/items'}">
+<CustomListItem>
+<content>
+<HBox width="94%"  alignItems="Center">
+<CheckBox selected="{SELECTED}"/>
+<Label text="{ path:'NAME', formatter:'.formatMeasureName' }"/>
+</HBox>
+</content>
+
+</CustomListItem>
+
+</List>
+</core:FragmentDefinition>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Management</title>
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta charset="UTF-8">
+
+    <link id="paceCss" href="/~guido/sport_app/ui/resources/3rd/pace/theme/center-simple.css" rel="stylesheet"/>
+    <script src="/~guido/sport_app/ui/resources/3rd/pace/pace.min.js"></script>
+
+    <script id='sap-ui-bootstrap' src='/~guido/sport_app/uis/open/126/resources/sap-ui-core-all.js'
+            data-sap-ui-xx-bindingSyntax='complex'
+            data-sap-ui-theme='bonvendo'
+            data-sap-ui-theme-roots='{"bonvendo" : "/~guido/sport_app/ui/themes/bonvendo"}'
+            data-sap-ui-libs='sap.m'
+            data-sap-ui-resourceroots='{"uniorg" : "/~guido/sport_app/ui/resources/uniorg"}'></script>
+
+    <script>
+        sap.ui.getCore().attachInit( function () {
+            // remove full page Pace loading indicator
+            jQuery( "#paceCss" ).remove();
+            jQuery.sap.includeStyleSheet( "/~guido/sport_app/ui/resources/3rd/pace/theme/ui5.css" );
+
+            new sap.m.Shell( {
+                app: new sap.ui.core.ComponentContainer( {
+                    height: "100%",
+                    name:   "uniorg.sapFourSport.apps.financials"
+                } )
+            } ).placeAt( "root" );
+        } );
+    </script>
+
+</head>
+<body class='sapUiBody' id="root" role="application"></body>
+</html>

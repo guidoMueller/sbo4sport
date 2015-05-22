@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/SearchSuggestionList</name>
+
+	<documentation>Add your documentation for the newui/launchpad/SearchSuggestionList</documentation>
+
+	<baseType>sap.m/List</baseType>
+	<properties>
+		<property group="Misc" name="disableKeyboardNavigation" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+	</properties>
+	<events>
+		<event name="pressEsc">
+		</event>
+		<event name="pressUpFirstItem">
+		</event>
+	</events>
+</control>

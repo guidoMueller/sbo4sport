@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>Row</name>
+	<author>SAP SE</author>
+	<documentation>The data row of the Chart's data table</documentation>
+	<since>1.8</since>
+
+	<baseType>sap.ui.core/Element</baseType>
+	<aggregations>
+		<aggregation cardinality="0..n" type="Column" name="cells">
+			<documentation>Representing the cells of the row. User should not add individual cells. The cells will be added automatically via Column mapping.</documentation>
+		</aggregation>
+	</aggregations>
+</control>

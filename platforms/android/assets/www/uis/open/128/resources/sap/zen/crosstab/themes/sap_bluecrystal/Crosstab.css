@@ -1,0 +1,1150 @@
+/*******************************************/
+/* Base styles                             */
+/*******************************************/
+.sapzencrosstab-Crosstab {
+	border-spacing: 0;
+	font-family: @sapUiFontFamily;
+	border-collapse: separate;
+	line-height: normal;
+}
+
+.sapzencrosstab-ResizeDiv {
+	background-color: LightGray;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	border-color: LightGray;
+	border-style: solid;
+	border-width: 1px;
+	position: absolute;
+}
+
+.sapzencrosstab-RenderSizeDiv {
+	position: absolute;
+	border-color: LightGray;
+	border-style: solid;
+	border-width: 0px 1px 1px 0px;
+	overflow: hidden;
+}
+
+/* We need this separately applied with the TableDiv style because the resize visualization must not
+   have a background color. Otherwise, the resize visualization will be opaque */
+.sapzencrosstab-TableDivBackground {
+	background-color: #FFFFFF;
+}
+
+.sapzencrosstab-TableDiv {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	border-color: #bfbfbf;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	overflow: hidden;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.sapzencrosstab-MobileHeaderSeparator
+	{
+	border-style: solid;
+	border-width: 0px 1px 0px 0px;
+	border-color: #D2DAE8;
+}
+
+.sapzencrosstab-DimensionHeaderArea,.sapzencrosstab-RowHeaderArea,.sapzencrosstab-ColumnHeaderArea,.sapzencrosstab-DataArea
+	{
+	border-spacing: 0;
+	border-collapse: separate;
+}
+
+/**********************************/
+/* Crosstab Loading Visualization */
+/**********************************/
+.sapzencrosstab-TableDivLoading {
+	outline: none;
+	border-color: #9ecaed;
+	box-shadow: 0 0 10px #9ecaed;
+}
+
+.sapzencrosstab-loadingAnimationDiv {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	visibility: visible;
+	width: 50px;
+	height: 50px;
+	background-color: lightgray;
+	vertical-align: middle;
+	horizontal-align: center;
+}
+
+.sapzencrosstab-loadingAnimation {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url("img/loading.gif");
+	width: 100%;
+	height: 100%;
+}
+
+/*******************************************/
+/* Cell styles                             */
+/*******************************************/
+.sapzencrosstab-DataCellDefault,.sapzencrosstab-HeaderCellDefault {
+	border-color: @sapList_BorderColor;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	height: 21px;
+	overflow: hidden;
+	padding: 0 8px;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+	padding: 0 8px;
+	
+	background-color: transparent !important; 
+	border-bottom-color: @sapList_BorderColor !important; 
+	border-bottom-style: solid !important;
+	border-left-color: @sapList_BorderColor !important;  
+	border-left-style: none !important;
+	border-right-color: @sapList_BorderColor !important; 
+	/*border-right-style: none !important;*/
+	border-bottom-width: 1px !important; 
+}
+
+.sapzencrosstab-DataCellDefault,
+.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellDefault{
+	/*border-width: 0 1px 0 0;	*/
+}
+
+.sapzencrosstab-HeaderCellDefault {
+	/*border-color: #FFFFFF #96a8c3 #96a8c3 #FFFFFF;*/
+	border-color: @sapUiMediumLine;
+	border-width: 0 1px 1px 0; /* nicht aendern! */
+	text-align: left;
+}
+
+.sapzencrosstab-DataCellTotal,.sapzencrosstab-HeaderCellTotal {
+	font-weight: bold;
+}
+
+.sapzencrosstab-DataCellEmphasized,.sapzencrosstab-HeaderCellEmphasized {
+	font-weight: bold;
+}
+
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-HeaderCellDefault,.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellDefault
+	{
+	background-color: #E5EAF3; /* Old browsers */
+ }
+
+.sapzencrosstab-HeaderCellFirstInRow,.sapzencrosstab-DataCellFirstInRow
+	{
+	border-left-width: 1px;
+	border-left-color: #FFFFFF;
+}
+
+.sapzencrosstab-DataArea .sapzencrosstab-DataCellLastInRow,.sapzencrosstab-HeaderCellLastInRow
+	{
+	border-right-color: #FFFFFF;
+}
+
+.sapzencrosstab-HeaderCellLastInCol,.sapzencrosstab-DataCellLastInCol {
+	border-bottom-width: 0px;
+	background-color: transparent !important; 
+	border-bottom-color: silver !important; 
+	border-bottom-style: solid !important;
+	border-left-color: white !important;  
+	border-left-style: none !important;
+	border-right-color: @sapList_BorderColor !important; 
+	/*border-right-style: none !important;*/
+	border-bottom-width: 1px !important; 
+}
+
+.sapzencrosstab-HeaderCellFirstInCol {
+	border-top-width: 1px;
+	border-top-color: #FFFFFF;
+}
+
+/* Alternation in DataArea */
+.sapzencrosstab-DataCellAlternating,
+/* Alternation in RowHeader*/
+.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellAlternating{
+	background: #f6f6f6 !important;
+
+}
+
+.sapzencrosstab-DataCellLoading,.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellLoading
+	{
+	background-color: #E9E9E9;
+}
+
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellLoading {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.sapzencrosstab-LoadingCellContentDiv {
+	width: 50px;
+}
+
+.sapzencrosstab-DataCellContentDiv,.sapzencrosstab-HeaderCellContentDiv
+	{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	vertical-align: middle;
+}
+
+.sapzencrosstab-DataArea .sapzencrosstab-DataCellHighlighted, .sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellHighlighted {
+	background-color: #ffea0c !important;
+}
+
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-HeaderCellHighlighted, .sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellHighlighted {
+background: #ffea0c !important; /* Old browsers */
+
+}
+
+/*******************************************/
+/* Scrolling                               */
+/*******************************************/
+.sapzencrosstab-LowerMiddleScrollPad {
+	background-color: @sapBackgroundColor;
+	overflow: hidden;
+}
+
+.sapzencrosstab-upperScrollHeaderSeparator {
+	border-right-style: solid;
+	border-right-color: #bfbfbf;
+	border-right-width: 1px;
+}
+
+.sapzencrosstab-lowerScrollHeaderSeparator {
+	border-right-style: solid;
+	border-right-color: #bfbfbf;
+	border-right-width: 1px;
+}
+
+.sapzencrosstab-removeRightBorder {
+	border-right-width: 0px !important;
+}
+
+.sapzencrosstab-HScrollCellWithHeaderScrollRightBorder {
+	border-right-style: solid;
+	border-right-color: #bfbfbf;
+	border-right-width: 1px;
+}
+
+.sapzencrosstab-UpperRightScrollPad {
+	background-color: @sapBackgroundColor;
+	overflow: hidden;
+}
+
+.sapzencrosstab-VScrollTable {
+	border-collapse: collapse;
+	border-color: #bfbfbf;
+	border-spacing: 0;
+	border-style: solid;
+	border-width: 0 0 0 1px;
+	margin: 0;
+	padding: 0;
+}
+
+.sapzencrosstab-VScrollCell {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.sapzencrosstab-LowerLeftScrollPad {
+	background-color: @sapBackgroundColor;
+	overflow: hidden;
+}
+
+.sapzencrosstab-LowerRightScrollPad {
+	background-color: @sapBackgroundColor;
+	overflow: hidden;
+}
+
+.sapzencrosstab-HScrollTable {
+	border-collapse: collapse;
+	border-color: #bfbfbf;
+	border-spacing: 0;
+	border-style: solid;
+	border-width: 1px 0 0 0px;
+	margin: 0;
+	padding: 0;
+}
+
+.sapzencrosstab-HScrollCell {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.sapzencrosstab-ScrollPopup {
+	margin-top: 2px;
+	padding: 5px;
+	background-color: @sapBaseColor;
+	border: 1px solid #009de0;
+	font-family: @sapUiFontFamily;
+	font-size: @sapUiFontSmallSize;
+}
+
+.sapzencrosstab-VerticalCutOff-RowHeaderArea {
+	background-repeat: repeat-x;
+	background-image: url("img/VTornEffect.png");
+}
+
+.sapzencrosstab-VerticalCutOff-DataArea {
+	background-repeat: repeat-x;
+	background-image: url("img/VTornEffect.png");
+}
+
+.sapzencrosstab-HorizontalCutOff-DataArea {
+	background-repeat: repeat-y;
+	background-image: url("img/HTornEffectData.png");
+}
+
+.sapzencrosstab-HorizontalCutOff-ColumnHeaderArea {
+	background-repeat: repeat-y;
+	background-image: url("img/HTornEffectData.png");
+}
+
+.sapzencrosstab-VerticalCutOffSpacer {
+	height: 40px;
+}
+
+.sapzencrosstab-HorizontalCutOffSpacer {
+	width: 40px;
+}
+
+.sapzencrosstab-CutOffCorner {
+	background-repeat: no-repeat;
+	background-image: url("img/CornerTornEffect.png");
+}
+
+/*******************************************/
+/* Sorting                                 */
+/*******************************************/
+
+.sapzencrosstab-HeaderCellDivSortable {
+	height: 12px;
+	width: 12px;
+	padding-left: 5px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.sapzencrosstab-HeaderCellSortAsc {
+	background-image: url("img/sort_asc.gif");
+}
+
+.sapzencrosstab-HeaderCellSortDesc {
+	background-image: url("img/sort_desc.gif");
+}
+
+.sapzencrosstab-HeaderCellSortNone {
+	background-image: url("img/sort_none.gif");
+}
+
+/*******************************************/
+/* Hierarchies                             */
+/*******************************************/
+.sapzencrosstab-HeaderCellDivHierarchy {
+	height: 12px;
+	width: 12px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.sapzencrosstab-PointerCursor {
+	cursor: pointer;
+}
+
+.sapzencrosstab-ExpandNode {
+	background-image: url("img/treenode_expand.gif");
+}
+
+.sapzencrosstab-CollapseNode {
+	background-image: url("img/treenode_collapse.gif");
+}
+
+.sapzencrosstab-HierarchyIndent {
+	width: 10px;
+	height: 21px;
+}
+
+/*******************************************/
+/* Resize of Columns                       */
+/*******************************************/
+.sapzencrosstab-columnResizeHandle {
+	position: absolute;
+	top: -5000px;
+	right: -8px;
+	width: 5px;
+	height: 10000px;
+}
+
+.sapzencrosstab-columnResizeHandle:hover {
+	cursor: pointer;
+	background-color: lightgrey;
+}
+
+.sapzencrosstab-cellLayoutDiv {
+	position: relative;
+	width: 100%;
+	display: block;
+	vertical-align: middle;
+	overflow: visible;
+}
+
+/*******************************************/
+/* Hovering and Selection                  */
+/*******************************************/
+
+.sapzencrosstab-HeaderCellDefault.sapzencrosstab-HoverRowHeaderCell,
+.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellAlternating.sapzencrosstab-HoverRowHeaderCell,
+.sapzencrosstab-HoverDataCell{	
+	background: #f6f6f6 !important;
+}
+
+.sapzencrosstab-HeaderCellDefault.sapzencrosstab-SelectRowHeaderCell,
+.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellAlternating.sapzencrosstab-SelectRowHeaderCell,
+.sapzencrosstab-SelectDataCell{
+	background: #bfdeef !important;
+}
+
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HoverColHeaderCell {
+	background: lightgrey; /* Old browsers */
+}
+
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-SelectColHeaderCellOrig {
+background: #009de0; /* Old browsers */
+ }
+
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-SelectColHeaderCell {
+background: #009de0; /* Old browsers */
+ }
+
+.sapzencrosstab-ToolbarDiv {
+	background-color: @sapBaseColor;
+	width: 100%;
+	height: 25px;
+}
+
+.sapzenfilterpanel-Tabstrip .sapUiTableCtrlCol th:nth-child(3){
+	width: 39px !important;
+}
+
+/*******************************************/
+/* Alert Visualization Dimensions          */
+/*******************************************/
+
+
+.sapzencrosstab-SymbolAlertDimensions {
+	width: 16px;
+}
+
+/**********************************************/
+/* Alert Symbol visualization cell background */
+/**********************************************/
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-HeaderCellSymbolAlertBackground, .sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellSymbolAlertBackground {
+    background-color: #E5EAF3 !important;
+}
+
+/*******************************************/
+/* Alert Background Styles                 */
+/*******************************************/
+
+.sapzencrosstab-DataCellAlert1Background,.sapzencrosstab-HeaderCellAlert1Background {
+	background: none !important;
+    filter: none !important;
+	background-color: #87C958 !important;
+}
+
+.sapzencrosstab-DataCellAlert2Background,.sapzencrosstab-HeaderCellAlert2Background {
+    background: none !important;
+    filter: none !important;	
+    background-color: #9AD272 !important;
+}
+
+.sapzencrosstab-DataCellAlert3Background,.sapzencrosstab-HeaderCellAlert3Background {
+    background: none !important;
+    filter: none !important;	
+    background-color: #AEDA8E !important;
+}
+
+.sapzencrosstab-DataCellAlert4Background,.sapzencrosstab-HeaderCellAlert4Background {
+    background: none !important;
+    filter: none !important;	
+    background-color: #C2E3A9 !important;
+}
+
+.sapzencrosstab-DataCellAlert5Background,.sapzencrosstab-HeaderCellAlert5Background {
+    background: none !important;
+    filter: none !important;	
+    background-color: #FEEDC1 !important;
+}
+
+.sapzencrosstab-DataCellAlert6Background,.sapzencrosstab-HeaderCellAlert6Background {
+    background: none !important;
+    filter: none !important;	
+    background-color: #FCDCDA !important;
+}
+
+.sapzencrosstab-DataCellAlert7Background,.sapzencrosstab-HeaderCellAlert7Background {
+    background: none !important;
+    filter: none !important;	
+    background-color: #F9BFBB !important;
+}
+
+.sapzencrosstab-DataCellAlert8Background,.sapzencrosstab-HeaderCellAlert8Background {
+    background: none !important;
+    filter: none !important;	
+    background-color: #F6A09B !important;
+}
+
+.sapzencrosstab-DataCellAlert9Background,.sapzencrosstab-HeaderCellAlert9Background {
+	background: none !important;
+	filter: none !important;
+    background-color: #F3827B !important;
+}
+
+/*******************************************/
+/* Alert Font Color Styles                 */
+/*******************************************/
+
+.sapzencrosstab-DataCellAlert1FontColor,.sapzencrosstab-HeaderCellAlert1FontColor {
+	color: #457324 !important;
+}
+
+.sapzencrosstab-DataCellAlert2FontColor,.sapzencrosstab-HeaderCellAlert2FontColor {
+	color: #56902D !important;
+}
+
+.sapzencrosstab-DataCellAlert3FontColor,.sapzencrosstab-HeaderCellAlert3FontColor {
+	color: #67AC36 !important;
+}
+
+.sapzencrosstab-DataCellAlert4FontColor,.sapzencrosstab-HeaderCellAlert4FontColor {
+	color: #73C03C !important;
+}
+
+.sapzencrosstab-DataCellAlert5FontColor,.sapzencrosstab-HeaderCellAlert5FontColor {
+	color: #F9821B !important;
+}
+
+.sapzencrosstab-DataCellAlert6FontColor,.sapzencrosstab-HeaderCellAlert6FontColor {
+	color: #F1635A !important;
+}
+
+.sapzencrosstab-DataCellAlert7FontColor,.sapzencrosstab-HeaderCellAlert7FontColor {
+	color: #EE453B !important;
+}
+
+.sapzencrosstab-DataCellAlert8FontColor,.sapzencrosstab-HeaderCellAlert8FontColor {
+	color: #EB271B !important;
+}
+
+.sapzencrosstab-DataCellAlert9FontColor,.sapzencrosstab-HeaderCellAlert9FontColor {
+	color: #D12318 !important;
+}
+
+/*******************************************/
+/* Alert StatusSymbol Styles               */
+/*******************************************/
+
+.sapzencrosstab-DataCellAlert1StatusSymbol {
+	background-position: left !important;
+	background-repeat: no-repeat !important;
+	background-image: url("img/exceptions/status_1.gif") !important;
+	filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert1StatusSymbol {
+	background-position: right !important;
+	background-repeat: no-repeat !important;
+	background-image: url("img/exceptions/status_1.gif") !important;
+	filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert2StatusSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_2.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert2StatusSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_2.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert3StatusSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_3.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert3StatusSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_3.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert4StatusSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_4.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert4StatusSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_4.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert5StatusSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_5.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert5StatusSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_5.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert6StatusSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_6.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert6StatusSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_6.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert7StatusSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_7.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert7StatusSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_7.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert8StatusSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_8.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert8StatusSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_8.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert9StatusSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_9.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert9StatusSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/status_9.gif") !important;
+    filter: none !important;
+}
+
+/*******************************************/
+/* Alert TrendAscending Styles             */
+/*******************************************/
+
+.sapzencrosstab-DataCellAlert1TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_1.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert1TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_1.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert2TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_2.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert2TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_2.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert3TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_3.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert3TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_3.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert4TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_4.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert4TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_4.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert5TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_5.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert5TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_5.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert6TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_6.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert6TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_6.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert7TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_7.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert7TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_7.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert8TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_8.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert8TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_8.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert9TrendAscendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_9.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert9TrendAscendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_asc_9.gif") !important;
+    filter: none !important;
+}
+
+/*******************************************/
+/* Alert TrendDescending Styles            */
+/*******************************************/
+
+.sapzencrosstab-DataCellAlert1TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_1.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert1TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_1.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert2TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_2.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert2TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_2.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert3TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_3.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert3TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_3.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert4TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_4.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert4TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_4.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert5TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_5.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert5TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_5.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert6TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_6.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert6TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_6.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert7TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_7.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert7TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_7.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert8TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_8.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert8TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_8.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert9TrendDescendingSymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_9.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert9TrendDescendingSymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_desc_9.gif") !important;
+    filter: none !important;
+}
+
+/*******************************************/
+/* Alert TrendGrey Styles                  */
+/*******************************************/
+
+.sapzencrosstab-DataCellAlert1TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_1.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert1TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_1.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert2TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_2.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert2TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_2.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert3TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_3.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert3TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_3.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert4TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_4.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert4TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_4.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert5TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_5.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert5TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_5.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert6TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_6.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert6TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_6.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert7TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_7.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert7TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_7.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert8TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_8.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert8TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_8.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-DataCellAlert9TrendGreySymbol {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_9.gif") !important;
+    filter: none !important;
+}
+
+.sapzencrosstab-HeaderCellAlert9TrendGreySymbol {
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/exceptions/trend_grey_9.gif") !important;
+    filter: none !important;
+}
+	
+/*******************************************/
+/* SDK Highlighting                        */
+/*******************************************/
+.sapzencrosstab-HighlightDataCell {
+	background: lightgreen !important;
+}
+
+.sapzencrosstab-HighlightRowHeaderCell {
+	background: lightgreen !important;
+}
+
+.sapzencrosstab-HighlightColHeaderCell {
+	background: lightgreen !important;
+}
+
+/*******************************************/
+/* Planning					                       */
+/*******************************************/
+
+.sapzencrosstab-DataCellEntryEnabled, .sapzencrosstab-HeaderCellEntryEnabled {
+	cursor: text;
+}
+
+.sapzencrosstab-DataCellEntryEnabled > .sapzencrosstab-DataCellContentDiv,.sapzencrosstab-HeaderCellEntryEnabled  > .sapzencrosstab-cellLayoutDiv  .sapzencrosstab-HeaderCellContentDiv {
+	border: 1px solid #bfbfbf;
+	height: 13px;
+	background-color: white;
+	font-size: 11px;
+}
+
+.sapzencrosstab-DataCellEntryEnabled > .sapzencrosstab-DataCellContentDiv:hover,.sapzencrosstab-HeaderCellEntryEnabled  > .sapzencrosstab-cellLayoutDiv  .sapzencrosstab-HeaderCellContentDiv:hover {
+	border: 1px solid #007cc0;
+}
+
+.sapzencrosstab-DataCellInvalidValue > .sapzencrosstab-DataCellContentDiv,.sapzencrosstab-HeaderCellInvalidValue .sapzencrosstab-HeaderCellContentDiv {
+	border-color: red !important;
+}
+
+.sapzencrosstab-EntryEnabledInput {
+	width:95%;
+	height:95%;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: right;
+	border: 0px;
+}
+
+.sapzencrosstab-HeaderCellDivValueHelp {
+	height: 13px;
+	width: 13px;
+	padding-left: 5px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.sapzencrosstab-HeaderCellValueHelp {
+	background-image: url("img/ValueHelp.gif");
+}
+
+.sapzencrosstab-DataCellLocked {
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-image: url("img/locked.gif") !important;
+    filter: none !important;
+}
+
+/*******************************************/
+/* Keyboard navigation stuff
+/*******************************************/
+.sapzencrosstab-CellFocus {
+	background-color: lightgray !important;
+}

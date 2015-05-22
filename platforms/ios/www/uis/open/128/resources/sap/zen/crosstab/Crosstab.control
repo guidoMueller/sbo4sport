@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>Crosstab</name>
+
+	<documentation>Add your documentation for the new Crosstab</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="width" type="sap.ui.core/CSSSize">
+		</property>
+		<property group="Misc" name="height" type="sap.ui.core/CSSSize">
+		</property>
+	</properties>
+
+</control>

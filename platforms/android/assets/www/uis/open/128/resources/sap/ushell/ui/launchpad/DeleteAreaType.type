@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/DeleteAreaType</name>
+	<author></author>
+	<documentation>...
+@private</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="Dashboard">
+			<documentation>...</documentation>
+		</value>
+		<value name="GroupList">
+			<documentation>...</documentation>
+		</value>
+	</enumeration>
+</simple-type>

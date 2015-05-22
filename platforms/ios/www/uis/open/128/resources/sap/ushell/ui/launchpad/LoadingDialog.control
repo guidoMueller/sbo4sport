@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/LoadingDialog</name>
+	<documentation>Displays a loading dialog with an indicator that an app is loading</documentation>
+
+	<baseType>sap.m/BusyDialog</baseType>
+	<properties>
+		<property group="Appearance" name="iconUri" type="sap.ui.core/URI">
+			<documentation>the sap-icon://-style URI of an icon</documentation>
+		</property>
+	</properties>
+</control>

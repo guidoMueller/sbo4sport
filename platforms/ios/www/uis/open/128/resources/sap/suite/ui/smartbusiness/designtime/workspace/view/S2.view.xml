@@ -1,0 +1,30 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m"
+	controllerName="sap.suite.ui.smartbusiness.designtime.workspace.view.S2">
+	<Page id="page" title="{i18n>MASTER_TITLE}">
+		<content>
+			<List id="list" items="{ path:'/INDICATORS_MODELER', parameters: {'expand':'TAGS'}, sorter: { path:'MANUAL_ENTRY', descending: true, group: '.formatGroupName'}}" mode="SingleSelectMaster" selectionChange="_handleSelect">
+				<infoToolbar>
+						<Toolbar id="filterToolbar" active="false" visible="false">
+							<content>
+								<Label id="workspaceInfo"/>
+								<ToolbarSpacer/>
+								<core:Icon src="sap-icon://building"/>
+							</content>
+						</Toolbar>
+					</infoToolbar>
+				<ObjectListItem id="MAIN_LIST_ITEM" press="_handleItemPress"
+					title="{ path:'TITLE', formatter:'.formatTitle'}"
+                    number="{ path:'EVALUATION_COUNT', formatter:'.formatEvaluationCount'}"
+                    numberUnit="{i18n>EVALUATIONS}"
+                    dependents="{path:'TAGS'}">
+					<attributes>
+						<ObjectAttribute id="ATTR1" text="{ parts:[{path:'ID'},{path:'TYPE'}], formatter:'sap.suite.smartbusiness.formatters.kpiID'}" />
+					</attributes>
+					<dependents>
+						<Label text="{ path:'TAG'}" />
+					</dependents>
+				</ObjectListItem> 
+			</List>
+		</content>
+	</Page>
+</core:View>

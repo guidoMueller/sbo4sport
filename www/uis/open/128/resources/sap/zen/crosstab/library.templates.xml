@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Library name="sap.zen.crosstab" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
+<Template name="sap.zen.crosstab.Crosstab" alias="Crosstab">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.Crosstab({
+	id: "${id}", // sap.ui.core.ID
+	width: undefined, // sap.ui.core.CSSSize
+	height: undefined, // sap.ui.core.CSSSize
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [] // sap.ui.core.Control, since 1.19
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Crosstab xmlns="sap.zen.crosstab"
+	id="${id}"
+	width=""
+	height="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</Crosstab>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.zen.crosstab.DataCell" alias="DataCell,Cell">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.DataCell({
+	id: "${id}", // sap.ui.core.ID
+	text: undefined, // string
+	area: undefined, // object
+	row: undefined, // int
+	col: undefined, // int
+	tableRow: undefined, // int
+	tableCol: undefined, // int
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [] // sap.ui.core.Control, since 1.19
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<DataCell xmlns="sap.zen.crosstab"
+	id="${id}"
+	text=""
+	area=""
+	row=""
+	col=""
+	tableRow=""
+	tableCol="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</DataCell>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.zen.crosstab.HeaderCell" alias="HeaderCell,Cell">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.HeaderCell({
+	id: "${id}", // sap.ui.core.ID
+	rowSpan: undefined, // int
+	colSpan: undefined, // int
+	text: undefined, // string
+	mergeKey: undefined, // string
+	sort: undefined, // string
+	sortAction: undefined, // string
+	area: undefined, // object
+	effectiveColSpan: undefined, // int
+	effectiveRowSpan: undefined, // int
+	row: undefined, // int
+	col: undefined, // int
+	level: undefined, // int
+	drillState: undefined, // string
+	hierarchyAction: undefined, // string
+	hierarchyTooltip: undefined, // string
+	htmlIE8RowSpan: 1, // int
+	sortTextIndex: undefined, // int
+	tableRow: undefined, // int
+	tableCol: undefined, // int
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [] // sap.ui.core.Control, since 1.19
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<HeaderCell xmlns="sap.zen.crosstab"
+	id="${id}"
+	rowSpan=""
+	colSpan=""
+	text=""
+	mergeKey=""
+	sort=""
+	sortAction=""
+	area=""
+	effectiveColSpan=""
+	effectiveRowSpan=""
+	row=""
+	col=""
+	level=""
+	drillState=""
+	hierarchyAction=""
+	hierarchyTooltip=""
+	htmlIE8RowSpan="1"
+	sortTextIndex=""
+	tableRow=""
+	tableCol="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</HeaderCell>
+]]></xmlTemplate>
+</Template>
+</Library>

@@ -1,0 +1,16 @@
+<mvc:View
+        xmlns:core="sap.ui.core"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m">
+    <Page showHeader="false">
+        <content>
+            <core:ComponentContainer
+                    height="100%"
+                    name="uniorg.sapFourSport.apps.ticketing"
+                    settings="{
+                    launchPadId: 'ticketing'
+                }"
+                    />
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<result>
+    <item>
+        <goalGetterID>518</goalGetterID>
+        <goalGetterName>Meier</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>19</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1478</goalGetterID>
+        <goalGetterName>Lewandowski</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>15</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11397</goalGetterID>
+        <goalGetterName>Aubameyang</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>14</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>181</goalGetterID>
+        <goalGetterName>Robben</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>13</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1208</goalGetterID>
+        <goalGetterName>Okazaki</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>12</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7021</goalGetterID>
+        <goalGetterName>di Santo</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>12</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1379</goalGetterID>
+        <goalGetterName>Bellarabi</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>11</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>6795</goalGetterID>
+        <goalGetterName>Dost</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>11</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>185</goalGetterID>
+        <goalGetterName>Werner</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>10</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>60</goalGetterID>
+        <goalGetterName>Raffael</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>9</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>356</goalGetterID>
+        <goalGetterName>Bobadilla</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>9</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>657</goalGetterID>
+        <goalGetterName>Choupo-Moting</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>9</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1056</goalGetterID>
+        <goalGetterName>Aigner</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>9</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1439</goalGetterID>
+        <goalGetterName>Herrmann</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>9</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>3272</goalGetterID>
+        <goalGetterName>Ujah</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>9</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>114</goalGetterID>
+        <goalGetterName>Kießling</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>8</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>762</goalGetterID>
+        <goalGetterName>Müller</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>8</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>891</goalGetterID>
+        <goalGetterName>Kruse</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>8</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7277</goalGetterID>
+        <goalGetterName>de Bruyne</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>8</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14260</goalGetterID>
+        <goalGetterName>Seferovic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>8</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>150</goalGetterID>
+        <goalGetterName>Schieber</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>7</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>357</goalGetterID>
+        <goalGetterName>Reus</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>7</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>637</goalGetterID>
+        <goalGetterName>Stindl</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>7</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>860</goalGetterID>
+        <goalGetterName>Harnik</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>7</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1442</goalGetterID>
+        <goalGetterName>Götze</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>7</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2006</goalGetterID>
+        <goalGetterName>Joselu</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>7</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2292</goalGetterID>
+        <goalGetterName>Heung-Min Son</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>7</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14445</goalGetterID>
+        <goalGetterName>Selke</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>7</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>116</goalGetterID>
+        <goalGetterName>Olic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>310</goalGetterID>
+        <goalGetterName>Naldo</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1207</goalGetterID>
+        <goalGetterName>Huntelaar</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1211</goalGetterID>
+        <goalGetterName>Kalou</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1395</goalGetterID>
+        <goalGetterName>Petersen</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1531</goalGetterID>
+        <goalGetterName>Ginczek</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1769</goalGetterID>
+        <goalGetterName>Volland</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1964</goalGetterID>
+        <goalGetterName>Firmino</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>6557</goalGetterID>
+        <goalGetterName>Calhanoglu</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11344</goalGetterID>
+        <goalGetterName>Modeste</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>6</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>514</goalGetterID>
+        <goalGetterName>T. Müller</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1026</goalGetterID>
+        <goalGetterName>Polanski</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1521</goalGetterID>
+        <goalGetterName>Malli</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1678</goalGetterID>
+        <goalGetterName>Caligiuri</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1925</goalGetterID>
+        <goalGetterName>Verhaegh</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2607</goalGetterID>
+        <goalGetterName>Kachunga</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2701</goalGetterID>
+        <goalGetterName>Junuzovic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11540</goalGetterID>
+        <goalGetterName>Drmic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12471</goalGetterID>
+        <goalGetterName>Darida</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>5</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>189</goalGetterID>
+        <goalGetterName>Bartels</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>355</goalGetterID>
+        <goalGetterName>Lehmann</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>873</goalGetterID>
+        <goalGetterName>Gentner</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>875</goalGetterID>
+        <goalGetterName>Madlung</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1092</goalGetterID>
+        <goalGetterName>Ben-Hatira</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1133</goalGetterID>
+        <goalGetterName>Szalai</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1452</goalGetterID>
+        <goalGetterName>Kagawa</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1757</goalGetterID>
+        <goalGetterName>Lasogga</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1794</goalGetterID>
+        <goalGetterName>Rudy</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1876</goalGetterID>
+        <goalGetterName>Arjen Robben</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>4918</goalGetterID>
+        <goalGetterName>Koo</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>6436</goalGetterID>
+        <goalGetterName>van der Vaart</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7276</goalGetterID>
+        <goalGetterName>Kiyotake</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>10505</goalGetterID>
+        <goalGetterName>Arnold</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>10603</goalGetterID>
+        <goalGetterName>Geis</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11847</goalGetterID>
+        <goalGetterName>Ribéry</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12113</goalGetterID>
+        <goalGetterName>Rodriguez</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>4</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7</goalGetterID>
+        <goalGetterName>Schweinsteiger</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>280</goalGetterID>
+        <goalGetterName>Barnetta</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>302</goalGetterID>
+        <goalGetterName>Schipplock</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>763</goalGetterID>
+        <goalGetterName>Stieber</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>856</goalGetterID>
+        <goalGetterName>Klein</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>880</goalGetterID>
+        <goalGetterName>Hofmann</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>936</goalGetterID>
+        <goalGetterName>Soto</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1107</goalGetterID>
+        <goalGetterName>Prödl</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1473</goalGetterID>
+        <goalGetterName>Risse</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1582</goalGetterID>
+        <goalGetterName>Son</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1818</goalGetterID>
+        <goalGetterName>Ronny</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1921</goalGetterID>
+        <goalGetterName>Marcelo</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2261</goalGetterID>
+        <goalGetterName>Meha</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2588</goalGetterID>
+        <goalGetterName>Perisic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7002</goalGetterID>
+        <goalGetterName>Immobile</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7523</goalGetterID>
+        <goalGetterName>Hahn</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>9131</goalGetterID>
+        <goalGetterName>Kramer</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12318</goalGetterID>
+        <goalGetterName>Sané</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14189</goalGetterID>
+        <goalGetterName>Brandt</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14482</goalGetterID>
+        <goalGetterName>Jedvaj</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14567</goalGetterID>
+        <goalGetterName>Max Meyer</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14755</goalGetterID>
+        <goalGetterName>Stendera</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14757</goalGetterID>
+        <goalGetterName>Bell</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>3</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>32</goalGetterID>
+        <goalGetterName>Didavi</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>45</goalGetterID>
+        <goalGetterName>Jansen</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>64</goalGetterID>
+        <goalGetterName>Allagui</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>67</goalGetterID>
+        <goalGetterName>Schmidt</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>78</goalGetterID>
+        <goalGetterName>Gündogan</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>102</goalGetterID>
+        <goalGetterName>Höwedes</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>108</goalGetterID>
+        <goalGetterName>Matip</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>382</goalGetterID>
+        <goalGetterName>Alaba</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>389</goalGetterID>
+        <goalGetterName>Meyer</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>433</goalGetterID>
+        <goalGetterName>Lukimya</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>528</goalGetterID>
+        <goalGetterName>Rode</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>651</goalGetterID>
+        <goalGetterName>Salihovic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>721</goalGetterID>
+        <goalGetterName>Russ</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>777</goalGetterID>
+        <goalGetterName>Ramos</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1120</goalGetterID>
+        <goalGetterName>castro</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1338</goalGetterID>
+        <goalGetterName>Halil Altintop</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1343</goalGetterID>
+        <goalGetterName>Lakic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1547</goalGetterID>
+        <goalGetterName>Hünemeier</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1603</goalGetterID>
+        <goalGetterName>Lahm</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1774</goalGetterID>
+        <goalGetterName>Draxler</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1943</goalGetterID>
+        <goalGetterName>Klaus</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1960</goalGetterID>
+        <goalGetterName>Nordtveit</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>3358</goalGetterID>
+        <goalGetterName>Papadopoulos</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>4121</goalGetterID>
+        <goalGetterName>Schmid</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>4302</goalGetterID>
+        <goalGetterName>Vestergaard</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>4304</goalGetterID>
+        <goalGetterName>sobiech</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7275</goalGetterID>
+        <goalGetterName>Xhaka</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7405</goalGetterID>
+        <goalGetterName>Kevin De Bruyne</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>8310</goalGetterID>
+        <goalGetterName>Wendt</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>8667</goalGetterID>
+        <goalGetterName>Vieirinha</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>9415</goalGetterID>
+        <goalGetterName>Knoche</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>10370</goalGetterID>
+        <goalGetterName>Maxim</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>10559</goalGetterID>
+        <goalGetterName>Stocker</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>10871</goalGetterID>
+        <goalGetterName>Hrgota</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11002</goalGetterID>
+        <goalGetterName>Brooks</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11637</goalGetterID>
+        <goalGetterName>Mkhitaryan</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11759</goalGetterID>
+        <goalGetterName>Mehmedi</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>13897</goalGetterID>
+        <goalGetterName>Klavan</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14243</goalGetterID>
+        <goalGetterName>Alonso</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14306</goalGetterID>
+        <goalGetterName>Mario Götze</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14421</goalGetterID>
+        <goalGetterName>Beerens</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14443</goalGetterID>
+        <goalGetterName>Elyounoussi</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14476</goalGetterID>
+        <goalGetterName>Matavz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14544</goalGetterID>
+        <goalGetterName>Kempf</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14547</goalGetterID>
+        <goalGetterName>Moritz Stoppelkamp</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14555</goalGetterID>
+        <goalGetterName>Ricardo Rodriguez</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14564</goalGetterID>
+        <goalGetterName>Tarik Elyounoussi</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14565</goalGetterID>
+        <goalGetterName>Mike Frantz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14595</goalGetterID>
+        <goalGetterName>Piazon</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14738</goalGetterID>
+        <goalGetterName>Briand</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14740</goalGetterID>
+        <goalGetterName>Olkowski</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14795</goalGetterID>
+        <goalGetterName>Bas Dost</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>2</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>46</goalGetterID>
+        <goalGetterName>Bungert</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>55</goalGetterID>
+        <goalGetterName>Busch</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>69</goalGetterID>
+        <goalGetterName>Ndjeng</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>85</goalGetterID>
+        <goalGetterName>Sahin</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>93</goalGetterID>
+        <goalGetterName>Halfar</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>123</goalGetterID>
+        <goalGetterName>Brouwers</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>137</goalGetterID>
+        <goalGetterName>Wagner</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>198</goalGetterID>
+        <goalGetterName>M. Lehmann</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>222</goalGetterID>
+        <goalGetterName>Valdez</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>299</goalGetterID>
+        <goalGetterName>Stoppelkamp</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>363</goalGetterID>
+        <goalGetterName>Johnson</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>458</goalGetterID>
+        <goalGetterName>Wolf</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>511</goalGetterID>
+        <goalGetterName>Rolfes</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>512</goalGetterID>
+        <goalGetterName>Hummels</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>513</goalGetterID>
+        <goalGetterName>Ribery</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>517</goalGetterID>
+        <goalGetterName>Franz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>540</goalGetterID>
+        <goalGetterName>Saglik</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>636</goalGetterID>
+        <goalGetterName>Langkamp</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>648</goalGetterID>
+        <goalGetterName>Prib</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>654</goalGetterID>
+        <goalGetterName>Ya Konan</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>656</goalGetterID>
+        <goalGetterName>Schürrle</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>767</goalGetterID>
+        <goalGetterName>Altintop</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>768</goalGetterID>
+        <goalGetterName>Fuchs</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>771</goalGetterID>
+        <goalGetterName>Hunt</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>823</goalGetterID>
+        <goalGetterName>Beck</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>877</goalGetterID>
+        <goalGetterName>Schulz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>902</goalGetterID>
+        <goalGetterName>Subotic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>935</goalGetterID>
+        <goalGetterName>Bender</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>938</goalGetterID>
+        <goalGetterName>Reinartz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>988</goalGetterID>
+        <goalGetterName>Schwegler</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1050</goalGetterID>
+        <goalGetterName>Kadlec</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1083</goalGetterID>
+        <goalGetterName>Niemeyer</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1094</goalGetterID>
+        <goalGetterName>Caiuby</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1114</goalGetterID>
+        <goalGetterName>Andreasen</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1128</goalGetterID>
+        <goalGetterName>Frantz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1174</goalGetterID>
+        <goalGetterName>Bendtner</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1258</goalGetterID>
+        <goalGetterName>Vrancic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1363</goalGetterID>
+        <goalGetterName>Höger</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1367</goalGetterID>
+        <goalGetterName>Baier</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1369</goalGetterID>
+        <goalGetterName>Hegeler</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1424</goalGetterID>
+        <goalGetterName>Esswein</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1457</goalGetterID>
+        <goalGetterName>N. Müller</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1503</goalGetterID>
+        <goalGetterName>Wemmer</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1563</goalGetterID>
+        <goalGetterName>Niedermeier</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1600</goalGetterID>
+        <goalGetterName>Hermann</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1626</goalGetterID>
+        <goalGetterName>Rupp</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1652</goalGetterID>
+        <goalGetterName>Clemens</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1675</goalGetterID>
+        <goalGetterName>Gustavo</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1754</goalGetterID>
+        <goalGetterName>Neustädter</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>1792</goalGetterID>
+        <goalGetterName>Callsen-Bracker</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2125</goalGetterID>
+        <goalGetterName>Bittencourt</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2163</goalGetterID>
+        <goalGetterName/>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2206</goalGetterID>
+        <goalGetterName>Toprak</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2254</goalGetterID>
+        <goalGetterName>Inui</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>2663</goalGetterID>
+        <goalGetterName>Feulner</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>3568</goalGetterID>
+        <goalGetterName>Sokratis</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>3878</goalGetterID>
+        <goalGetterName>Maroh</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>3879</goalGetterID>
+        <goalGetterName>Ginter</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>4501</goalGetterID>
+        <goalGetterName>Zoller</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>5749</goalGetterID>
+        <goalGetterName>Vogt</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>5750</goalGetterID>
+        <goalGetterName>Jantschke</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>6854</goalGetterID>
+        <goalGetterName>Shaqiri</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>6882</goalGetterID>
+        <goalGetterName>Gebre Selassie</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7038</goalGetterID>
+        <goalGetterName>Kohr</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7446</goalGetterID>
+        <goalGetterName>Rudnevs</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7759</goalGetterID>
+        <goalGetterName>Bicakcic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7961</goalGetterID>
+        <goalGetterName>S. Jung</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>7963</goalGetterID>
+        <goalGetterName>D. Caligiuri</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>8225</goalGetterID>
+        <goalGetterName>Klaas-Jan Huntelaar</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>8478</goalGetterID>
+        <goalGetterName>Christian Fuchs</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>8548</goalGetterID>
+        <goalGetterName>Elias Kachunga</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>8959</goalGetterID>
+        <goalGetterName>C. Schulz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>9692</goalGetterID>
+        <goalGetterName>Djurdjic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>10173</goalGetterID>
+        <goalGetterName>Weiser</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>10348</goalGetterID>
+        <goalGetterName>Schwaab</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>10762</goalGetterID>
+        <goalGetterName>Sakai</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11319</goalGetterID>
+        <goalGetterName>Anthony Ujah</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11343</goalGetterID>
+        <goalGetterName>Ducksch</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11541</goalGetterID>
+        <goalGetterName>Sorg</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>11852</goalGetterID>
+        <goalGetterName>Süle</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12111</goalGetterID>
+        <goalGetterName>Hazard</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12118</goalGetterID>
+        <goalGetterName>Günter</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12511</goalGetterID>
+        <goalGetterName>Hector</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12852</goalGetterID>
+        <goalGetterName>Spahic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12862</goalGetterID>
+        <goalGetterName>Wimmer</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>12863</goalGetterID>
+        <goalGetterName>Bargfrede</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>13044</goalGetterID>
+        <goalGetterName>Son Heung-Min</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>13083</goalGetterID>
+        <goalGetterName>Sane</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>13579</goalGetterID>
+        <goalGetterName>Leitner</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>13647</goalGetterID>
+        <goalGetterName>Aycicek</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>13706</goalGetterID>
+        <goalGetterName>Yuya Osako</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>13902</goalGetterID>
+        <goalGetterName>Heitinga</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14016</goalGetterID>
+        <goalGetterName>Bakalorz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14175</goalGetterID>
+        <goalGetterName>Hitz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14179</goalGetterID>
+        <goalGetterName>Finne</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14205</goalGetterID>
+        <goalGetterName>Osako</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14217</goalGetterID>
+        <goalGetterName>Ayhan</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14422</goalGetterID>
+        <goalGetterName>Haraguchi</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14463</goalGetterID>
+        <goalGetterName>Sanmartin</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14479</goalGetterID>
+        <goalGetterName>Galvez</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14551</goalGetterID>
+        <goalGetterName>T. Werner</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14556</goalGetterID>
+        <goalGetterName>Josip Drmic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14557</goalGetterID>
+        <goalGetterName>Aaron Hunt</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14563</goalGetterID>
+        <goalGetterName>Robert Lewandowski</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14566</goalGetterID>
+        <goalGetterName>Roman Neustädter</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14616</goalGetterID>
+        <goalGetterName>Vladimir Darida</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14617</goalGetterID>
+        <goalGetterName>Süleyman Koc</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14618</goalGetterID>
+        <goalGetterName>Franco di Santo</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14624</goalGetterID>
+        <goalGetterName>Marcel Risse</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14625</goalGetterID>
+        <goalGetterName>Jonas Hector</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14655</goalGetterID>
+        <goalGetterName>Kerk</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14656</goalGetterID>
+        <goalGetterName>Jairo</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14671</goalGetterID>
+        <goalGetterName>Kutschke</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14700</goalGetterID>
+        <goalGetterName>Gülselam</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14756</goalGetterID>
+        <goalGetterName>Díaz</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14775</goalGetterID>
+        <goalGetterName>Gruezo</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14791</goalGetterID>
+        <goalGetterName>Gundogan</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14799</goalGetterID>
+        <goalGetterName>Cléber</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14800</goalGetterID>
+        <goalGetterName>Caldirola</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14819</goalGetterID>
+        <goalGetterName>Benatia</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14820</goalGetterID>
+        <goalGetterName>Lorenzen</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14821</goalGetterID>
+        <goalGetterName>Kostic</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14824</goalGetterID>
+        <goalGetterName>Rafa</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14848</goalGetterID>
+        <goalGetterName>Juan Bernat</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14853</goalGetterID>
+        <goalGetterName>De Blasis</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14861</goalGetterID>
+        <goalGetterName>Berens</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14877</goalGetterID>
+        <goalGetterName>Selassie</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14878</goalGetterID>
+        <goalGetterName>Philipp</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14884</goalGetterID>
+        <goalGetterName>Höhn</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14939</goalGetterID>
+        <goalGetterName>Deyverson</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>14955</goalGetterID>
+        <goalGetterName>Wendell</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>15000</goalGetterID>
+        <goalGetterName>Höjberg</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+    <item>
+        <goalGetterID>15001</goalGetterID>
+        <goalGetterName>Guilavogui</goalGetterName>
+        <goalGetterBirthday ist="true"/>
+        <goalGetterGoalCount>1</goalGetterGoalCount>
+    </item>
+</result>

@@ -1,0 +1,11 @@
+# TRANSLATE
+#XMSG
+ERR_LOGIN=Error on login to database with user {0}
+#XTIT
+DBD_ACTIVE_SESSIONS=Active Sessions
+
+LEISTUNG_MASTER_TITLE=Leistungen
+LEISTUNG_MASTER_NO_DATA=Keine Leistungsarten vorhanden
+LEISTUNG_MASTER_SEARCH_QUERY_ERROR=RÃ¼ckmeldenummer "{0}" ist unbekannt!
+LEISTUNG_DETAIL_TITLE=Leistung (Periode II)
+LEISTUNG_DETAIL_NO_DATA=Keine Leistungen vorhanden

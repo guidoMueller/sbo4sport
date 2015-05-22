@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui5/controls/common/BaseControl</name>
+
+	<documentation>An abstract base class for all VIZ controls</documentation>
+	<since>1.22.0</since>
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="uiConfig" type="sap.ui.core/object">
+			<documentation>Configuration for initialization to VizControl. This property could only set via settings parameter in Constructor.</documentation>
+		</property>
+		<property group="Misc" name="width" type="sap.ui.core/CSSSize" defaultValue="640px">
+			<documentation>Width of the VizControl as a CSS size.</documentation>
+		</property>
+		<property group="Misc" name="height" type="sap.ui.core/CSSSize" defaultValue="480px">
+			<documentation>Height of the VizControl as a CSS size.</documentation>
+		</property>
+	</properties>
+	<events>
+	</events>
+	<aggregations>
+	</aggregations>
+	<methods>
+	</methods>
+</control>

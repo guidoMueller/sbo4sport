@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>components/factsheet/controls/PictureTile</name>
+
+	<documentation>Tile control embedding an image and allowing custom sizing</documentation>
+
+	<baseType>sap.m/CustomTile</baseType>
+	<properties>
+        <property group="Dimension" name="height" type="sap.ui.core/CSSSize" defaultValue="32px">
+            <documentation>height (in pixels) of the picture viewer control.</documentation>
+        </property>
+        <property group="Dimension" name="width" type="sap.ui.core/CSSSize" defaultValue="32px">
+            <documentation>width (in pixels) of the picture viewer control.</documentation>
+        </property>
+	</properties>
+	<events>
+		<event name="pictureDelete">
+			<documentation>Fired when the user deletes a picture</documentation>
+		</event>
+	</events>
+	<associations>
+        <association cardinality="0..1" name="tileContent" type="PictureViewerItem">
+            <documentation>Reference to one PictureViewerItem coming from the PictureViewer.</documentation>
+        </association>
+    </associations>
+</control>

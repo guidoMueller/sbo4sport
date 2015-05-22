@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>sap.suite.ui.smartbusiness</name>
+  <vendor>SAP SE</vendor>
+  <version>1.24.3</version>
+  <copyright>SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP SE. All rights reserved</copyright>
+  
+  <documentation>SAP UI library: sap.suite.ui.smartbusiness</documentation>
+  
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+    <dependency>
+      <libraryName>sap.m</libraryName>
+    </dependency>
+  </dependencies>
+  
+  <appData>
+    <!-- package name for selenium -->
+    <selenium xmlns="http://www.sap.com/ui5/buildext/selenium" package="com.sap.suite.ui.smartbusiness" />
+    <!-- excludes for the JSDoc -->
+    <jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc" >
+        <exclude name="com.sap.suite.ui.smartbusiness.js." />
+    </jsdoc>
+    <!-- excludes for the JSCoverage -->
+    <jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage" >
+        <exclude name="com.sap.suite.ui.smartbusiness.js." />
+    </jscoverage>
+  </appData>
+  
+</library>

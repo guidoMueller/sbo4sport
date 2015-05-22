@@ -1,0 +1,461 @@
+/* ====================================================== */
+/* CSS for control sap.ui.commons/VariablesDialog.control */
+/* Platinum                                               */
+/* ====================================================== */
+
+.zenDialogLayout {
+	background: #DBE1EC;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #96a8c3 #7f8ea5 #7f8ea5 #96a8c3;
+  -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.zenDialogContentArea{
+	background: none;
+}
+
+.zenDialogTitleArea {
+  background: #E5EAF3; 
+	
+	border-bottom: 1px solid #96a8c3;
+}
+
+html[data-sap-ui-browser="ie8"] .zenDialogTitleArea,
+html[data-sap-ui-browser="ie9"] .zenDialogTitleArea {
+	border-bottom: 2px solid #96a8c3;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiRrPage{
+	border-bottom: 1px solid #96A8C3;
+}
+	
+.zenDialogTitleArea {
+  height: 25px;
+}
+
+.zenDialogTitleArea .zenDialogTextView{
+	font-size: 10px;
+	font-weight: normal;
+	line-height: 26px;
+}
+
+.zenDialogCloseCell {
+    width: 14px;
+}
+
+.zenDialogContentArea .sapzenfilterpanel-PopupContainer{
+	border: none;
+	height: 100%;
+}
+
+.zenDialogContentArea .sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutCenter{
+	left: 1px !important;
+    right: 1px !important;
+}
+
+.zenDialogContentArea .sapzenfilterpanel-DialogContainer.sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutCenter{
+	top: 1px !important;
+	bottom: 1px !important;
+}
+
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageError,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageWarning,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageInfo{
+	height: 21px !important;
+	min-height: 21px !important;
+	width: auto !important;
+	float: left;
+}
+
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageError > img,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageWarning > img,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageInfo > img {
+   height: 18px;
+   margin-right: 5px;
+   width: 16px;
+   float: left;
+   margin-left: 1px;
+   background-position: center 2px; 
+}
+
+.zenDialogOkButton{
+	margin-right: 10px;
+	min-width: 80px;
+}
+
+.zenDialogMsgButton{
+	min-width: 80px;
+}
+
+.zenDialogCancelButton{
+	min-width: 80px;
+}
+
+.zenDialogInplaceMode .zenDialogOkButton{
+	margin-right: 0px;
+	margin-bottom: 7px;
+}
+
+.sapUiMltPadRight {
+    padding: 1px;
+}
+
+.zenDialogResizeCell{
+	height: 13px;
+    width: 11px;
+	background: url("img/ResizeDialog.png") 0 0  no-repeat;
+}
+
+.zenDialogCloseCell{
+	background: transparent url("img/VariablenDialogClose.png") no-repeat 0 4px;
+	width: 26px;
+}
+
+
+html[data-sap-ui-browser="ie9"] .zenDialogResizeCell{
+    width: 11px;
+    height: 11px;
+}
+
+html[data-sap-ui-browser="ie8"] .zenDialogResizeCell{
+    width: 10px;
+    height: 11px;
+    padding-top: 2px;
+}
+
+.zenDialogResizeArea{
+	background-color: rgb(219, 225, 236);
+}
+
+.zenDialogOnePage * .zenDialogTitleArea {
+    background-color: #ffffff;
+    height: 43px;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.zenDialogOnePage * .zenDialogTitleArea .zenDialogTextView{
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	display: inline-block;
+	vertical-align: top;
+	width: 100px !important;
+}
+
+.zenDialogOnePage * .zenDialogLogo {
+	width: 24px;
+	height: 24px;
+	background: transparent url("img/havana-vxtab-sprite.png") no-repeat center center;
+	background-position: 0px 0px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.zenDialogOnePage * .zenDialogContentArea {
+	background-color: #fafafa !important;
+}
+
+.zenDialogOnePage * .zenDialogButtonArea {
+	background-color: #fafafa;
+}
+
+.zenDialogOnePage * .zenDialogResizeArea {
+	background-color: #fafafa;
+}
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*        WORK ON THE DIALOG, THAT MIGHT BE REMOVED            */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/* Dialog Title 
+.sapzenfilterpanel-SFinPrompt {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.sapzenfilterpanel-SFinPrompt { 
+	border: solid 1px #D8D8D8 !important;	
+}
+.sapzenfilterpanel-SFinPrompt .zenDialogTitleRow {
+  height: 50px !important;
+  border-top: solid 4px #009CE0 !important;
+}
+.sapzenfilterpanel-SFinPrompt .zenDialogTitleRow .sapUiMltCell span {
+  color: #999999 !important;
+  text-align: center !important;
+  font-size: 1rem !important;
+  font-weight: normal !important;
+}
+.sapzenfilterpanel-SFinPrompt .zenDialogTitleRow .sapUiMltCell {
+  background-color: #F2F2F2 !important !important;
+}
+.sapzenfilterpanel-SFinPrompt .zenDialogContentArea {
+  padding: 0px !important !important;
+}
+/* Dialog Footer */
+/*
+.sapzenfilterpanel-SFinPrompt .zenDialogButtonRow .zenDialogButtonArea {
+  margin: 0px !important !important;
+  padding: 0px !important !important;
+  background-color: #333C42 !important;
+}
+.sapzenfilterpanel-SFinPrompt .zenDialogResizeRow .zenDialogResizeArea {
+  background-color: #333C42 !important;
+  height: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.sapzenfilterpanel-SFinPrompt .zenDialogButtonRow .sapUiBtn {
+  margin: 10px 25px 5px 20px !important;
+  height: 30px !important;
+  padding: 5px !important;
+  padding-bottom: 10px !important;
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  color: #ffffff !important;
+  font-size: 16px;
+}
+.sapzenfilterpanel-SFinPrompt .zenDialogButtonRow .sapUiBtn:hover {
+  background-color: #009CE0 !important;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* LISTS */
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-RowRepeater .sapUiBorderLayoutCenter {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-RowRepeater .sapzenfilterpanel-RowRepeaterRow {
+  height: 35px !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-RowRepeater .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutBegin{
+	visibility: hidden !important;	
+}
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-RowRepeater .sapzenfilterpanel-RowRepeaterRow span {
+  font-size: 14px !important;
+  color: #666666 !important;
+  padding-top: 5px !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-RowRepeater .sapzenfilterpanel-RowRepeaterRow {
+  /*border-bottom: solid 1px #e0e0e0 !important;	*/
+  cursor: pointer !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-RowRepeater .sapzenfilterpanel-RowRepeaterRow:hover {
+  background-color: #f0f0f0;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* TABS! */
+.sapzenfilterpanel-SFinPrompt .sapUiTabBar .sapUiTabBarCnt {
+  background-color: #DCEEF1 !important;
+  border-bottom: solid 4px #e0e0e0 !important;
+}
+/*
+.sapzenfilterpanel-SFinPrompt .sapUiTabBar {
+	height: 50px !important;
+}*/
+.sapzenfilterpanel-SFinPrompt .sapUiTabBar .sapUiTab,
+.sapzenfilterpanel-SFinPrompt .sapUiTabBar .sapUiTabSel {
+  margin: 12px !important;
+  padding: 4px 0px 12px 0px  !important;
+  background: none !important;
+  border: none !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  outline: none !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapUiTabBar .sapUiTab {
+  color: #666666;
+  border-bottom: solid 4px #DCEEF1 !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapUiTabBar .sapUiTabSel {
+  color: #009CE0;
+  border-bottom: solid 4px #009CE0 !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapUiTabBar .tablist {
+  height: 49px !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapUiTabBar .sapUiTabBarCnt {
+  height: 49px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapUiTabPanel {
+  top: 50px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none !important;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* SearchField */
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutTop {
+  background-color: #ffffff !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-SearchField,
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-SearchField:hover{
+  box-sizing: border-box;
+  background: none !important;
+  border: solid  3px #f0f0f0;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-SearchField .sapUiSearchFieldTf{    
+  width: 100% !important;
+}
+
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-SearchField input{  
+  background: none !important;
+  padding-top: 10px !important;
+  border: none !important;
+}
+
+.sapzenfilterpanel-SFinPrompt input.sapzenfilterpanel-SearchField{
+  background: none !important;
+  padding-left: 10px !important;
+}
+
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-LiveSearchField{
+	width: 100% !important;
+    height: 100% !important;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-LiveSearchField .sapUiHLayoutChildWrapper{
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+	padding: 0px !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-SearchField .sapUiSearchFieldIco{  
+  border: none !important;
+  background-image: none !important;
+  margin: 0px !important;
+  padding: 3px !important;  
+  text-align: right !important;
+  width: 22px !important;
+  height: 20px !important;
+  border-radius: 0px !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-SearchField .sapUiSearchFieldIco:before{
+    color: #ccc;
+  	font-size: 18px;    
+	font-family: 'SAP-icons';              
+	content: "\e00d";         
+	speak: none;    
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-SearchField .sapUiSearchFieldIco:hover{
+    
+}
+
+.sapzenfilterpanel-SFinPrompt .sapUiSearchFieldTf .sapUiTf {
+  border: none;
+  background: none !important;
+}
+
+
+/* Table headers */
+
+
+.sapzenfilterpanel-SFinPrompt .sapUiTableColHdr,
+.sapzenfilterpanel-SFinPrompt .sapUiTableColHdr label {
+  cursor: pointer !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-ExclusionContainer{
+  height: 35px !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-FromToLayout{  
+  width: 100% !important;  
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-FromToLayout tr span{
+  border: none !important;  
+  width: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 28px !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-FromToLayout tr:not(:first-of-type) .sapUiMltCell {
+  box-sizing: border-box;
+  border: solid  3px #f0f0f0;    
+  height: 30px !important;
+  background-color: #ffffff !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-FromToLayout tr{
+  background-color: #f0f0f0;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapUiTableColHdrScr,
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-FromToLayout tr:first-of-type {
+  background-color: #E5E5E5;
+}
+
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-AddImage{
+  margin: 5px 5px 10px 10px !important;  
+}
+
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-FromToLayout tr td{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.sapzenfilterpanel-SFinPrompt .sapUiTableColHdrScr .sapUiLbl {
+  font-weight: normal;
+}
+.sapzenfilterpanel-SFinPrompt :focus {
+  outline: none;
+  -webkit-focus-ring-color: none;
+}
+.sapzenfilterpanel-SFinPrompt .sapUiCb > label,
+.sapzenfilterpanel-SFinPrompt .sapUiRb > label,
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-PopupContainer .sapUiRrDesignBareShell li,
+.sapzenfilterpanel-SFinPrompt .sapzenfilterpanel-PopupContainer .sapUiTableColCell {
+  cursor: pointer !important;
+}
+.sapzenfilterpanel-SFinPrompt .sapUiTab {
+  cursor: pointer;
+}
+:focus {
+  outline: none;
+  -webkit-focus-ring-color: none;
+}
+.sapUiCb > label,
+.sapUiRb > label,
+.sapzenfilterpanel-PopupContainer .sapUiRrDesignBareShell li,
+.sapzenfilterpanel-PopupContainer .sapUiTableColCell {
+  cursor: pointer !important;
+}
+.sapUiTab {
+  cursor: pointer;
+}

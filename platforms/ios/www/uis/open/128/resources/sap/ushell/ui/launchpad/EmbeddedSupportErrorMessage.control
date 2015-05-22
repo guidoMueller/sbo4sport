@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/EmbeddedSupportErrorMessage</name>
+
+	<documentation>Add your documentation for the newui/launchpad/EmbeddedSupportErrorMessage</documentation>
+
+	<baseType>sap.m/Dialog</baseType>
+	<events>
+		<event name="afterClose"></event>
+	</events>
+
+</control>

@@ -1,0 +1,350 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.landvisz">
+  <module name="sap/landvisz/ConnectionEntity.js" size="15981" compressedSize="4815">
+    <description>Provides control sap.landvisz.ConnectionEntity.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/landvisz/internal/LinearRowField.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/ux3/ToolPopup.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/ConnectionEntityRenderer.js" size="5607" compressedSize="3577">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/Connector.js" size="4354" compressedSize="526">
+    <description>Provides control sap.landvisz.Connector.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/ConnectorRenderer.js" size="766" compressedSize="259">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/EntityConstants.js" size="362" compressedSize="351">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/LandscapeEntity.js" size="39539" compressedSize="7942">
+    <description>Provides control sap.landvisz.LandscapeEntity.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/landvisz/internal/IdentificationBarRenderer.js"/>
+      <module name="sap/landvisz/EntityConstants.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/LandscapeEntityRenderer.js" size="54461" compressedSize="35471">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/Label.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/LandscapeViewer.js" size="95816" compressedSize="26501">
+    <description>Provides control sap.landvisz.LandscapeViewer.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/landvisz/Option.js"/>
+      <module name="sap/landvisz/internal/Connection.js"/>
+      <module name="sap/landvisz/libs/lvsvg.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/LandscapeViewerRenderer.js" size="77315" compressedSize="32087">
+    <requires>
+      <module name="sap/ui/commons/layout/ResponsiveFlowLayout.js"/>
+      <module name="sap/ui/commons/layout/ResponsiveFlowLayoutData.js"/>
+      <module name="sap/landvisz/internal/Connection.js"/>
+      <module name="sap/landvisz/libs/lvsvg.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/LongTextField.js" size="4904" compressedSize="835">
+    <description>Provides control sap.landvisz.LongTextField.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/LongTextFieldRenderer.js" size="1885" compressedSize="1061">
+    <description>*/</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/Option.js" size="7464" compressedSize="641">
+    <description>Provides control sap.landvisz.Option.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/OptionEntity.js" size="12885" compressedSize="1747">
+    <description>Provides control sap.landvisz.OptionEntity.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/landvisz/OptionSource.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/OptionEntityRenderer.js" size="2095" compressedSize="1229">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/OptionRenderer.js" size="713" compressedSize="250">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/OptionSource.js" size="3680" compressedSize="479">
+    <description>Provides control sap.landvisz.OptionSource.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/OptionSourceRenderer.js" size="732" compressedSize="268">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/ActionBar.js" size="18838" compressedSize="3411">
+    <description>Provides control sap.landvisz.internal.ActionBar.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/commons/MenuButton.js"/>
+      <module name="sap/ui/commons/Menu.js"/>
+      <module name="sap/ui/commons/MenuItem.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/ActionBarRenderer.js" size="5256" compressedSize="3318">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/Connection.js" size="18570" compressedSize="9972" raw="true">
+  </module>
+  <module name="sap/landvisz/internal/DataContainer.js" size="12931" compressedSize="1832">
+    <description>Provides control sap.landvisz.internal.DataContainer.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/DataContainerRenderer.js" size="3502" compressedSize="2114">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/DeploymentType.js" size="4441" compressedSize="1049">
+    <description>Provides control sap.landvisz.internal.DeploymentType.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/DeploymentTypeRenderer.js" size="4134" compressedSize="2761">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/EntityAction.js" size="8500" compressedSize="1282">
+    <description>Provides control sap.landvisz.internal.EntityAction.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/EntityActionRenderer.js" size="1836" compressedSize="1075">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/EntityCustomAction.js" size="8034" compressedSize="1170">
+    <description>Provides control sap.landvisz.internal.EntityCustomAction.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/EntityCustomActionRenderer.js" size="1199" compressedSize="632">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/EntityRenderer.js" size="845" compressedSize="373">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/EntityUtils.js" size="346" compressedSize="288">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/HeaderList.js" size="9580" compressedSize="1508">
+    <description>Provides control sap.landvisz.internal.HeaderList.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/HeaderListRenderer.js" size="1858" compressedSize="1140">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/IdentificationBar.js" size="16495" compressedSize="3434">
+    <description>Provides control sap.landvisz.internal.IdentificationBar.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/IdentificationBarRenderer.js" size="14108" compressedSize="10514">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/commons/Callout.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/LinearRowField.js" size="12016" compressedSize="2155">
+    <description>Provides control sap.landvisz.internal.LinearRowField.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/LinearRowFieldRenderer.js" size="6440" compressedSize="4321">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/ModelingStatus.js" size="7399" compressedSize="1330">
+    <description>Provides control sap.landvisz.internal.ModelingStatus.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/ModelingStatusRenderer.js" size="3479" compressedSize="2215">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/NestedRowField.js" size="13617" compressedSize="1868">
+    <description>Provides control sap.landvisz.internal.NestedRowField.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/NestedRowFieldRenderer.js" size="3422" compressedSize="2328">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/SingleDataContainer.js" size="11499" compressedSize="1497">
+    <description>Provides control sap.landvisz.internal.SingleDataContainer.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/SingleDataContainerRenderer.js" size="2277" compressedSize="1366">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/TreeField.js" size="9051" compressedSize="1262">
+    <description>Provides control sap.landvisz.internal.TreeField.</description>
+    <requires>
+      <module name="sap/landvisz/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/TreeFieldRenderer.js" size="3856" compressedSize="2827">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/commons/Tree.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/landvisz/internal/types/TechnicalSystemTypes.js" size="255" compressedSize="181" raw="true">
+  </module>
+  <module name="sap/landvisz/library.js" size="18108" compressedSize="4004">
+    <description>Initialization Code and shared classes of library sap.landvisz (1.24.0)</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+    <includes>
+      <module name="sap/landvisz/ActionType.js"/>
+      <module name="sap/landvisz/ComponentType.js"/>
+      <module name="sap/landvisz/ConnectionType.js"/>
+      <module name="sap/landvisz/DependencyType.js"/>
+      <module name="sap/landvisz/DependencyVisibility.js"/>
+      <module name="sap/landvisz/EntityCSSSize.js"/>
+      <module name="sap/landvisz/LandscapeObject.js"/>
+      <module name="sap/landvisz/ModelingStatus.js"/>
+      <module name="sap/landvisz/OptionType.js"/>
+      <module name="sap/landvisz/SelectionViewPosition.js"/>
+      <module name="sap/landvisz/SolutionType.js"/>
+      <module name="sap/landvisz/TechnicalSystemType.js"/>
+      <module name="sap/landvisz/ViewType.js"/>
+      <module name="sap/landvisz/internal/ContainerType.js"/>
+    </includes>
+  </module>
+  <module name="sap/landvisz/library.properties" size="2470">
+  </module>
+  <module name="sap/landvisz/messagebundle.properties" size="2100">
+  </module>
+</library>

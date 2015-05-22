@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Axis_title</name>
+  <documentation>Settings for the axis title</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="visible" type="sap.ui.core/boolean" defaultValue="false">
+      <documentation>Set the visibility of the axis title</documentation>
+    </property>
+    <property name="text" type="sap.ui.core/string" defaultValue="null">
+      <documentation>Set the text of the axis title</documentation>
+    </property>
+    <property name="applyAxislineColor" type="sap.ui.core/boolean" defaultValue="false">
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Set the title color to match the color of the axis line</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

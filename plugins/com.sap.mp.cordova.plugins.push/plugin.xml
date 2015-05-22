@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.sap.mp.cordova.plugins.push" version="3.7.1">
+
+	<name>Push</name>
+	
+	<dependency id="com.sap.mp.cordova.plugins.corelibs" />
+    <dependency id="org.apache.cordova.inappbrowser" />	
+	<dependency id="com.sap.mp.cordova.plugins.logon" />	
+    <dependency id="com.sap.mp.cordova.plugins.logger" />
+   	<dependency id="com.sap.mp.cordova.plugins.settings" />
+    <dependency id="org.apache.cordova.device" />
+    
+    <js-module name="Push" src="www/push.js">
+        <clobbers target="sap.Push"/>
+    </js-module>
+    
+	<platform name="android">
+        
+		<config-file target="res/xml/config.xml" parent="/widget">
+			<feature name="SMPPushPlugin" required="true" onload="true">
+			  <param name="android-package" value="com.sap.mp.push.PushPlugin"/>
+			</feature>
+		</config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.VIBRATE"/>
+			<uses-permission android:name="android.permission.GET_TASKS" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+			<uses-permission android:name="android.permission.WAKE_LOCK" />
+			<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+			<permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+			<uses-permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" />
+  		</config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<activity android:name="com.sap.mp.push.PushHandlerActivity"/>
+ 			<receiver android:name="com.sap.mp.push.PushGCMBroadCastReciever" android:permission="com.google.android.c2dm.permission.SEND" >
+ 				<intent-filter>
+ 					<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+ 					<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+ 					<category android:name="$PACKAGE_NAME" />
+ 				</intent-filter>
+ 			</receiver>
+ 			<service android:name="com.sap.mp.push.PushIntentService" />
+		</config-file>
+
+
+    	<source-file src="android/libs/push-android-3.7.1.jar" target-dir="libs"/>
+
+  	</platform>
+    <platform name="ios">
+        
+		<config-file target="config.xml" parent="/widget">
+			<feature name="SMPPushPlugin" required="true" onload="true">
+			  <param name="ios-package" value="SMPPushPlugin"/>
+			  <param name="onload" value="true"/>
+			</feature>
+		</config-file>
+
+        <source-file framework="true" src="ios/libs/libSMPPushPlugin.a"/> 
+    </platform>
+    
+   <!-- windows8.1/Windows Phone 8.1 -->
+    <platform name="windows">
+        <js-module name="PushModule" src="windows81/src/SMPPushPlugin.js">
+            <clobbers target="sap.PushModule"/>
+        </js-module>
+        <!-- We probably dont need this. Check !
+         <asset src="www/BackgroundPush.js" target="windows81/src/BackgroundPush.js" /> 
+         -->
+         <config-file target="package.appxmanifest" parent="/Package/Applications/Application">
+           <Extensions>
+            <Extension Category="windows.backgroundTasks" StartPage="windows81/src/BackgroundPush.js">
+              <BackgroundTasks>
+                <Task Type="pushNotification" />
+              </BackgroundTasks>
+            </Extension>
+          </Extensions>
+         </config-file>
+         <config-file target="package.appxmanifest" parent="/Package/Applications/Application/VisualElements">
+            <LockScreen Notification="badge" BadgeLogo="images\logo-lockscreen.png" />
+         </config-file>      
+    </platform>
+
+</plugin>

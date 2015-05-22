@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>composite/InboxUploadAttachmentTile</name>
+
+	<documentation>InboxUploadAttachmentTile</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="fileName" type="sap.ui.core/string">
+			<documentation>name of the selected file</documentation>
+		</property>
+		<property group="Misc" name="fileTypeIcon" type="sap.ui.core/URI">
+			<documentation>icon URI of the selected file type</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="uploadSelectedFile">
+			<documentation>event is fired when upload for selected file is requested</documentation>
+		</event>
+	</events>
+</control>

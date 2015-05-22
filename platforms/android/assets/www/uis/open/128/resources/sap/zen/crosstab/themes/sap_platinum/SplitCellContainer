@@ -1,0 +1,26 @@
+/* ================================================== */
+/* CSS for control sap.ui.commons/SplitCellContainer */
+/* Platinum                                     */
+/* ================================================== */
+
+.zenSplitContainerCellTop{
+	box-shadow: inset 0px 4px 0px 0px #c3dbed;
+}
+.zenSplitContainerCellRight{
+	box-shadow: inset -4px 0px 0px 0px #c3dbed;
+}
+.zenSplitContainerCellBottom{
+	box-shadow: inset 0px -4px 0px 0px #c3dbed;
+}
+.zenSplitContainerCellLeft{
+	box-shadow: inset 4px 0px 0px 0px #c3dbed;
+}
+.zenSplitContainerCellCenter{
+	box-shadow: inset 0 0 0px 4px #c3dbed;
+}
+
+.zenSplitcellOverlay{
+	background-color: #dbe1ec;
+	opacity: 0.7;
+}
+

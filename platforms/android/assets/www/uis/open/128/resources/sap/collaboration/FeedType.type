@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>FeedType</name>
+	<author></author>
+	<documentation>Feed Types</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="follows">
+			<documentation>Follows feed type</documentation>
+		</value>
+		<value name="company">
+			<documentation>Company feed type</documentation>
+		</value>
+		<value name="group">
+			<documentation>Group feed type</documentation>
+		</value>
+		<value name="objectGroup">
+			<documentation>Object group feed type</documentation>
+		</value>
+		<value name="object">
+			<documentation>Oject feed type</documentation>
+		</value>
+	</enumeration>
+</simple-type>

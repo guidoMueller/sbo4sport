@@ -1,0 +1,31 @@
+<VBox xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	width="100%" class='chartNameAndDataInfoContainer'>
+	<items>
+		<Label text="{i18n>VIEW_ID}" required='true' class='chartInfoLabels' design='Bold'></Label>
+		<Input id="chartIdInput" class="chartInfoInputs" value="{SB_DDACONFIG>/ID}"
+			editable="{SB_DDACONFIG>/ID_EDITABLE}" change="validateChartId"></Input>
+
+		<Label text="{i18n>VIEW_NAME}" required='true'  class='chartInfoLabels' design='Bold'></Label>
+		<Input class="chartInfoInputs" value="{SB_DDACONFIG>/TITLE}"></Input>
+
+		<Link text="{i18n>ADDITIONAL_LANGUAGE}" class='chartInfoLabels'
+			press="openAdditionalLanguagesDialog"></Link>
+
+		<CheckBox id="limitData" text="{i18n>SET_DATA_LIMIT}" class='chartInfoLabels'
+			design='Bold'  selected="{SB_DDACONFIG>/DATA_LIMITATIONS}"></CheckBox>
+		<Label id="limitDataLabel" class='chartInfoLabels' text="{i18n>LIMIT_DATA_RECORDS}"
+			design="Bold" visible="{SB_DDACONFIG>/DATA_LIMITATIONS}"></Label>
+		<Input id="limitDataValue" class="chartInfoInputs" value="{SB_DDACONFIG>/DATA_LIMIT}"
+			visible="{SB_DDACONFIG>/DATA_LIMITATIONS}" 
+             change="validateDataLimit"></Input>
+
+		<Label text="{i18n>DATA}" class='chartInfoLabels' design='Bold'></Label>
+		<Select class="chartInfoInputs" items="{SB_DDACONFIG>/DATA_MODES}" selectedKey="{SB_DDACONFIG>/DATA_MODE}"
+				change="onDataModeChange">
+			<items>
+				<core:ListItem key="{SB_DDACONFIG>key}" text="{SB_DDACONFIG>text}" />
+
+			</items>
+		</Select>
+	</items>
+</VBox>

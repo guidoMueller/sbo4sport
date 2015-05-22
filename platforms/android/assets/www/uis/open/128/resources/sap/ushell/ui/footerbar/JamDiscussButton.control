@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/footerbar/JamDiscussButton</name>
+
+	<documentation>Add your documentation for the newui/footerbar/JamDiscussButton</documentation>
+
+	<baseType>sap.m/Button</baseType>
+	
+    <properties>
+		<property group="Misc" name="beforePressHandler" type="sap.ui.core/any">
+		</property>
+		<property group="Misc" name="afterPressHandler" type="sap.ui.core/any">
+		</property>
+		<property group="Misc" name="jamData" type="sap.ui.core/object">
+		</property>
+	</properties>
+
+</control>

@@ -1,0 +1,17 @@
+<mvc:View xmlns:core="sap.ui.core"
+          xmlns:mvc="sap.ui.core.mvc"
+          controllerName="uniorg.ui.core.mvc.view.NotFound"
+          xmlns="sap.m">
+    <Page
+            title="Not Found"
+            showNavButton="{device>/isPhone}"
+            navButtonPress="onNavBack"
+            enableScrolling="false"
+            class="titlesSpace">
+        <content>
+            <core:HTML
+                    id="msgHtml"
+                    sanitizeContent="true"/>
+        </content>
+    </Page>
+</mvc:View>

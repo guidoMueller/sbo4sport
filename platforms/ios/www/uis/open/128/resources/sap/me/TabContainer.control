@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+	<name>TabContainer</name>
+	<author>SAP SE</author>
+
+	<documentation>The TabContainer allow to stack 1 to 4 contents in a
+		view with corresponding icons</documentation>
+	<baseType>sap.ui.core/Control</baseType>
+	<deprecation since="1.15.0">The functionality of this control is merged with the sap.m.IconTabBar.
+Please use the sap.m.IconTabBar instead!
+This control will not be supported anymore.</deprecation>
+	<properties>
+		<property group="Data" name="selectedTab" type="int">
+			<documentation>Return the index of the selected tab</documentation>
+		</property>
+		<property group="Data" name="badgeInfo" type="int">
+			<documentation>The number to display in the badge for the info tab</documentation>
+		</property>
+		<property group="Data" name="badgeNotes" type="int">
+			<documentation>The number to display in the badge for the notes tab</documentation>
+		</property>
+		<property group="Data" name="badgeAttachments" type="int">
+			<documentation>The number to display in the badge for the attachments tab</documentation>
+		</property>
+		<property group="Data" name="badgePeople" type="int">
+			<documentation>The number to display in the badge for the people tab</documentation>
+		</property>
+		<property group="Misc" name="expandable" type="boolean"
+			defaultValue="true">
+			<documentation>Indicates if the tab can be collapsed and expanded
+			</documentation>
+		</property>
+		<property group="Misc" name="expanded" type="boolean"
+			defaultValue="true">
+			<documentation>Indicates if the actual tab is expanded or not
+			</documentation>
+		</property>
+		<property group="Misc" name="visible" type="boolean" defaultValue="true">
+			<documentation>setter for  visible property</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="select" allowPreventDefault="true">
+			<documentation>Indicates that the selected tab has changed
+			</documentation>
+		</event>
+		<event name="expand">
+			<documentation>Indicates that the tab will expand</documentation>
+		</event>
+		<event name="collapse">
+			<documentation>Indicates that the tab will collapse</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="tabs" type="sap.ui.core/Icon"
+			singularName="tab" visibility="hidden">
+			<documentation>The tab icons in order</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" type="sap.ui.core/Control"
+			name="contentInfo">
+			<documentation>The info tab</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="contentAttachments"
+			type="sap.ui.core/Control">
+			<documentation>The attachments tab</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="contentNotes" type="sap.ui.core/Control">
+			<documentation>The notes tab</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="contentPeople"
+			type="sap.ui.core/Control">
+			<documentation>The people tab</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="badges" type="sap.ui.core/Control" visibility="hidden">
+		</aggregation>
+	</aggregations>
+</control>

@@ -1,0 +1,32 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <Dialog 
+    title="{i18n>ADD_THRESHOLD_MEASURE}" id='dialogRef'
+      class='thresholdDialog' horizontalScrolling='false' verticalScrolling='false'>
+    <content>
+    <VBox>
+    <items>
+    
+    <Label text="{i18n>MSG_ADD_THRESHOLD_MEASURE}" class='labelThreshold'/>
+    
+    <Label text="{i18n>THRESHOLD_MEASURE}" class='labelThreshold'></Label>
+    
+    
+    <Select  id= "thresholdMeasure" items="{SB_DDACONFIG>/items}">
+   
+    <core:Item text="{path:'SB_DDACONFIG>NAME'}" key="{path:'SB_DDACONFIG>NAME'}" />
+    
+    </Select>
+    
+    </items>
+    </VBox>
+    </content>
+    <beginButton>
+      <Button text="{i18n>OK}" press="onThresholdMeasureAdded" />
+    </beginButton>
+    <endButton>
+      <Button text="{i18n>CANCEL}" press="onThresholdMeasureCancel" />
+    </endButton>
+  </Dialog>
+</core:FragmentDefinition>

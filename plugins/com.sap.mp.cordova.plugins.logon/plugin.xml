@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.sap.mp.cordova.plugins.logon"
+    version="3.7.1">
+    
+    <name>Logon</name>
+    <dependency id="com.sap.mp.cordova.plugins.corelibs" />
+    <!-- TODO: Only Android has a dependency on AuthProxy. Consider moving this dependency to the Android section -->
+    <dependency id="com.sap.mp.cordova.plugins.authproxy" />
+    <dependency id="org.apache.cordova.inappbrowser"/>
+    <dependency id="org.apache.cordova.device"/>
+    
+    <js-module name="LogonCore" src="www/common/modules/MAFLogonCorePlugin.js">
+        <clobbers target="sap.logon.Core"/>
+	</js-module>
+    <js-module name="LogonI18n" src="www/common/modules/i18n.js">
+        <clobbers target="sap.logon.i18n"/>
+    </js-module>
+    <js-module name="LogonUtils" src="www/common/modules/Utils.js">
+        <clobbers target="sap.logon.Utils"/>
+    </js-module>
+    <js-module name="LogonStaticScreens" src="www/common/modules/StaticScreens.js">
+        <clobbers target="sap.logon.StaticScreens"/>
+    </js-module>
+    <js-module name="LogonDynamicScreens" src="www/common/modules/DynamicScreens.js">
+        <clobbers target="sap.logon.DynamicScreens"/>
+    </js-module>
+    <js-module name="Logon" src="www/common/modules/LogonController.js">
+        <clobbers target="sap.Logon"/>
+    </js-module>
+    <js-module name="LogonIabUi" src="www/common/modules/InAppBrowserUI.js">
+        <clobbers target="sap.logon.IabUi"/>
+    </js-module>
+    <js-module name="LogonJsView" src="www/common/modules/LogonJsView.js">
+        <clobbers target="sap.logon.LogonJsView"/>
+    </js-module>
+    <platform name="android">
+        
+        <asset target="smp/logon" src="www/common/assets"/>
+      
+        <source-file target-dir="libs" src="android/libs/maflogger-1.207.0.jar" />
+        <source-file target-dir="libs" src="android/libs/maflogoncore-1.207.0.jar" />
+        <source-file target-dir="libs" src="android/libs/maflogoncorecdvplugin-3.7.1.jar" />
+        
+        <config-file target="res/xml/config.xml" parent="/widget">
+            <feature name="MAFLogonCoreCDVPluginJS" required="true">
+                <param name="android-package" value="com.sap.maf.html5.android.MAFLogonCoreCDVPlugin"/>
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+			    <uses-permission android:name="com.sap.mobile.clientHub.CLIENTHUB_ACCESS_PERMISSION" />
+  		</config-file>
+        
+    </platform>
+
+    <platform name="ios">
+        <asset target="smp/logon" src="www/common/assets"/>
+      
+        <source-file src="ios/libs/libMAFLogger.a" framework="true"/>
+        <source-file src="ios/libs/libMAFLogonCoreCDVPlugin.a" framework="true"/>
+        <source-file src="ios/libs/libMAFLogonManagerNG.a" framework="true"/>
+        <header-file src="ios/headers/CertificateProvider.h" />
+        
+        <resource-file src="ios/bundles/MAFLogonManagerNG.bundle" />
+        
+		<config-file target="config.xml" parent="/widget">
+            <feature name="MAFLogonCoreCDVPluginJS">
+                <param name="ios-package" value="MAFLogonCoreCDVPlugin"/>
+            </feature>
+        </config-file>
+    </platform>
+	
+    <!-- windows8.1/Windows Phone 8.1 -->
+    <platform name="windows">
+        <asset target="smp/logon" src="www/common/assets"/>
+        
+        <js-module name="logon_proxy_win8" src="windows81/src/logon_proxy_win8.js">
+            <merges target=""/>
+        </js-module>
+
+        <!-- copy the native components -->
+        <framework src="windows81/bin/SAP.Logon.winmd" custom="true"/>
+        <framework src="windows81/bin/SAP.Logon.Core.winmd" custom="true"/>
+        <framework src="windows81/bin/SAP.SecureStore.winmd" custom="true"/>
+        <framework src="windows81/bin/SAP.Supportability.winmd" custom="true"/>
+        <framework src="windows81/bin/SAP.Net.Http.dll" custom="true"/>
+        
+        <!-- Add capabilities to the manifest file -->
+        <config-file target="package.appxmanifest" parent="/Package/Capabilities">
+            <!-- access the internet -->
+            <Capability Name="internetClient" />
+            <!-- access intranet -->
+            <Capability Name="privateNetworkClientServer" />
+            <!-- Used for x.509 certificate challenge -->
+            <Capability Name="sharedUserCertificates" />
+        </config-file>
+        
+    </platform>
+</plugin>
+

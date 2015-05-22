@@ -1,0 +1,222 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns="sap.m"
+	controllerName="sap.suite.ui.smartbusiness.designtime.evaluation.view.createEvalTargetThresholdTrendInput"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="false" height="100%">
+	<form:SimpleForm>
+		<form:content>
+			<core:Title text="{i18n>TARGET_THRESHOLDS_AND_TRENDS}" />
+			<l:Grid defaultIndent="L1 M1 S1" defaultSpan="L6 M6 S10">
+				<l:content>
+
+					<Text text="" design="Bold" id="kpiGoalTypeLabel" />
+
+					<form:SimpleForm id="EvaluationTargetThresholdTrendInputForm1"
+						class="EvaluationTargetThresholdTrendInputForm" editable="true"
+						layout="ResponsiveGridLayout" maxContainerCols="3" emptySpanL="2"
+						emptySpanM="2" columnsL="1" columnsM="1" labelSpanL="4"
+						labelSpanM="4">
+						<form:content>
+
+							<Label text="{i18n>VALUE_TYPE}" design="Bold" id="valueTypeLabel">
+								<layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+							<Select id="valueTypeSelect" change="valueTypeSelectChange"
+								selectedKey="{/VALUES_SOURCE}">
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+								<items>
+									<core:Item text="{i18n>FIXED_VALUE}" key="FIXED" />
+									<core:Item text="{i18n>MEASURE}" key="MEASURE" />
+								</items>
+							</Select>
+
+							<Label text="" />
+
+							<Image id="kpiGoalTypeImage">
+								<layoutData>
+									<l:GridData span="L6 M6" linebreakL="true"
+										linebreakM="true" linebreakS="true" />
+								</layoutData>
+							</Image>
+
+						</form:content>
+					</form:SimpleForm>
+
+
+					<Text text="{i18n>TARGET_AND_THRESHOLDS}" design="Bold" />
+
+					<form:SimpleForm id="EvaluationTargetThresholdTrendInputForm2"
+						class="EvaluationTargetThresholdTrendInputForm" editable="true"
+						layout="ResponsiveGridLayout" maxContainerCols="3" emptySpanL="2"
+						emptySpanM="2" columnsL="1" columnsM="1" labelSpanL="4"
+						labelSpanM="4">
+						<form:content>
+
+							<!-- REFERENCE VALUE CONDITION STARTS HERE -->
+							<Label text="{i18n>REFERENCE_VALUE}" design="Bold"
+								id="referenceValueLabel">
+								<layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+
+							<Input id="evaluationReferenceValue" type="Text" enabled="true" valueHelpRequest="openMeasureSelectDialog"
+								value="{/REFERENCE_VALUE}" editable="true">
+								<customData>
+									<core:CustomData key="REFERENCE_VALUE" value="REFERENCE_VALUE" />
+								</customData>
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+							</Input>
+
+							<!-- CRITICAL LOW CONDITION STARTS HERE -->
+							<Label text="{i18n>CRITICAL_LOW}" design="Bold" id="criticalLowLabel">
+								<layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+
+							<Input id="evaluationCriticalLow" type="Text" valueState="Error" valueHelpRequest="openMeasureSelectDialog"
+								showValueStateMessage="false" enabled="true" value="{/CRITICALLOW}"
+								editable="true">
+								<customData>
+									<core:CustomData key="CRITICALLOW" value="CRITICALLOW" />
+								</customData>
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+							</Input>
+
+							<!-- WARNING LOW CONDITION STARTS HERE -->
+
+							<Label text="{i18n>WARNING_LOW}" design="Bold" id="warningLowLabel">
+								<layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+
+							<Input id="evaluationWarningLow" type="Text" valueState="Warning" valueHelpRequest="openMeasureSelectDialog"
+								showValueStateMessage="false" enabled="true" value="{/WARNINGLOW}"
+								editable="true">
+								<customData>
+									<core:CustomData key="WARNINGLOW" value="WARNINGLOW" />
+								</customData>
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+							</Input>
+
+							<!-- TARGET CONDIITON STARTS HERE -->
+							<Label text="{i18n>TARGET}" design="Bold" id="targetLabel">
+								<layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+
+							<Input id="evaluationTarget" type="Text" valueState="Success" valueHelpRequest="openMeasureSelectDialog"
+								showValueStateMessage="false" enabled="true" value="{/TARGET}"
+								editable="true">
+								<customData>
+									<core:CustomData key="TARGET" value="TARGET" />
+								</customData>
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+							</Input>
+
+							<!-- WARNING HIGH CONDITION STARTS HERE -->
+
+							<Label text="{i18n>WARNING_HIGH}" design="Bold" id="warningHighLabel">
+								<layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+
+							<Input id="evaluationWarningHigh" type="Text" valueState="Warning" valueHelpRequest="openMeasureSelectDialog"
+								showValueStateMessage="false" enabled="true" value="{/WARNINGHIGH}"
+								editable="true">
+								<customData>
+									<core:CustomData key="WARNINGHIGH" value="WARNINGHIGH" />
+								</customData>
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+							</Input>
+
+							<!-- CRITICAL HIGH CONDITION STARTS HERE -->
+
+							<Label text="{i18n>CRITICAL_HIGH}" design="Bold"
+								id="criticalHighLabel">
+								<layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+
+							<Input id="evaluationCriticalHigh" type="Text" valueState="Error" valueHelpRequest="openMeasureSelectDialog"
+								enabled="true" value="{/CRITICALHIGH}" editable="true">
+								<customData>
+									<core:CustomData key="CRITICALHIGH" value="CRITICALHIGH" />
+								</customData>
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+							</Input>
+
+						</form:content>
+					</form:SimpleForm>
+
+					<Text text="{i18n>TREND}" design="Bold" />
+
+					<form:SimpleForm id="EvaluationTargetThresholdTrendInputForm3"
+						class="EvaluationTargetThresholdTrendInputForm" maxContainerCols="2"
+						editable="true" minWidth="1024" layout="ResponsiveGridLayout"
+						labelSpanL="2" labelSpanM="2" emptySpanL="4" emptySpanM="4"
+						columnsL="2" columnsM="2">
+						<form:content>
+							<!-- Trend starts here -->
+
+							<CheckBox id="applyTrendCheckBox" text="{i18n>APPLY_TREND}"
+								selected="true" select="applyTrendCheckBoxSelected" />
+
+							<Label text="{i18n>TREND}" design="Bold" id="trendLabel">
+								<layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+
+							<Input id="evaluationTrend" type="Text" enabled="true" valueHelpRequest="openMeasureSelectDialog"
+								value="{/TREND}" editable="true">
+								<customData>
+									<core:CustomData key="TREND" value="TREND" />
+								</customData>
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+							</Input>
+							<Label></Label>
+							<CheckBox id="selectAdditionalMeasuresCheckBox" text="{i18n>SELECT_ADDITIONAL_MEASURES}"
+								selected="false" select="applyAdditionalMeasuresCheckBoxSelected" />
+							<Label>
+							    <layoutData>
+									<l:GridData span="L5 M5 S5" />
+								</layoutData>
+							</Label>
+
+							<MultiInput id="additionalMeasures" type="Text" enabled="true" valueHelpRequest="openAdditionalMeasures" 
+							    tokenChange="multiMeasureTokenChange" change="multiMeasureChange" showValueHelp="true" visible="false">
+								
+								<layoutData>
+									<l:GridData span="L7 M7 S7" />
+								</layoutData>
+							</MultiInput>
+						</form:content>
+					</form:SimpleForm>
+				</l:content>
+			</l:Grid>
+		</form:content>
+	</form:SimpleForm>
+</core:View>

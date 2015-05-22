@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          controllerName="uniorg.ui.core.mvc.md.view.Component"
+          displayBlock="true"
+          height="100%"
+          xmlns="sap.m">
+    <SplitContainer id="idAppControl"/>
+</mvc:View>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ActionType</name>
+	<author></author>
+	<documentation>Action Type of a action</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="NORMAL">
+			<documentation>Normal action type</documentation>
+		</value>
+		<value name="MENU">
+			<documentation>Menu action type</documentation>
+		</value>
+	</enumeration>
+</simple-type>

@@ -1,0 +1,73 @@
+<core:View xmlns:core="sap.ui.core" xmlns:drilldown="sap.suite.ui.smartbusiness.lib" xmlns="sap.m" xmlns:suite="sap.suite.ui.commons" xmlns:charts="sap.ca.ui.charts" controllerName="sap.suite.ui.smartbusiness.designtime.drilldown.view.configurator">
+	<Page class="drilldownConfiguratorPage">
+		<content>
+			<drilldown:Filter id='ddaFilter' mode='designTime'  class="_ie9viewOptionBox"/>
+	<HBox id="headerRibbon" class="header" justifyContent="SpaceBetween">
+		<items>
+			<Label text="{SB_DDACONFIG>/EVALUATION_TITLE}" class="kpi_name" />
+			<HBox class="_ie9viewOptionBox0">
+				<items>
+					<CheckBox id="enableAggregate" selected="{SB_DDACONFIG>/CONFIG/SAP_AGGREGATE_VALUE}"
+						select="displayAggregate" />
+					<Label id="aggregate_number" class="aggregate_number"
+						visible="{SB_DDACONFIG>/CONFIG/SAP_AGGREGATE_VALUE}" />
+					<Label id="aggregate_number_unit" class="aggregate_number_unit"
+						visible="{SB_DDACONFIG>/CONFIG/SAP_AGGREGATE_VALUE}" />
+
+				</items>
+			</HBox>
+		</items>
+	</HBox>
+
+
+		    
+		    <VBox justifyContent="SpaceBetween">
+		    <items>
+		    		    	<HBox class="_ie9tileContainerBox" justifyContent="End">
+			    	<HBox class="_ie9viewOptionBox" >
+					<items>
+				    	<Button icon="sap-icon://add" type="Transparent" width="auto" press="openEvaluationsDialog" class="_ie9IssueButton1"></Button>
+				    	<Button id='deleteTile' icon="sap-icon://delete" type="Transparent" width="auto" press="deleteTile"></Button>
+				    </items>
+				    </HBox>	
+				    <HBox class="_ie9viewOptionBox">
+					<items>
+				    	<Button id="leftMoveArrow" icon="sap-icon://arrow-left" type="Transparent" width="auto" press="leftArrowAction" enabled="false"></Button>
+				    	<Button id="rightMoveArrow" icon="sap-icon://arrow-right" type="Transparent" width="auto" press="rightArrowAction" enabled="false"></Button>
+				    </items>
+				    </HBox>	
+				</HBox>
+		    	<suite:HeaderContainer id='tileContainer' class="tilesHeaderContainer">
+		    	</suite:HeaderContainer>
+
+		    </items>
+		    </VBox>     
+			<HBox
+			id="viewOptions" justifyContent="SpaceBetween" class="_ie9viewOptionBox">
+				<items>
+				<HBox id="viewNames"></HBox>
+           		</items>
+           		<HBox justifyContent="End" class="_ie9viewOptionBox">
+           			<items>
+		 			<Button id="xyz" icon="sap-icon://add" type="Transparent" press="onAddView" class="_ie9IssueButton"/> 
+		 			<Button id="changeViewOrder" icon="sap-icon://sort" type="Transparent" press="changeViewOrder" class="_ie9IssueButton"/> 
+					<Button id="deleteViewButton" icon="sap-icon://delete" type="Transparent" press="onDeleteView" class="_ie9IssueButton"/>
+					<Button id="editViewButton" icon="sap-icon://edit" type="Transparent" press="onEditView" class="_ie9IssueButton"/>
+					</items>
+				</HBox>
+			</HBox>
+					   <charts:ChartToolBar id="chartToolbar"  showFullScreen="true" class="chartToolBar"
+                                 firstDimensionPath="SB_DDACONFIG>/ALL_VIEWS" 
+                                 firstDimensionKeyPath="SB_DDACONFIG>ID" 
+								 firstDimensionTextPath="SB_DDACONFIG>TITLE"
+                                 firstDimensionKeySelected="onViewSwitch" showLegend="false" >                                
+                        
+		                <charts:charts>
+		                	<charts:Chart id="chartRef" showPopover="true" chartType="Bar"/>
+		                	<Table id="chartTable" showUnread="true" class="drillDownTable"></Table>
+		                </charts:charts>
+		
+		            </charts:ChartToolBar>
+		</content>
+	</Page>
+</core:View>

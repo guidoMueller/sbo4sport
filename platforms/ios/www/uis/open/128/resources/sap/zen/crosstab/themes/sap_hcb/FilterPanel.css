@@ -1,0 +1,866 @@
+/* ================================================== */
+/* CSS for control sap.ui.commons/Filterpanel.control */
+/* HCB                                                */
+/* ================================================== */
+
+.sapUiTableTreeIconLeaf {
+			visibility: hidden !important;
+}
+
+.sapzenfilterpanel-PopupContainer, .sapzenfilterpanel-PopupContainerDialog {
+       background: #000000;
+       border: 1px solid #ffffff;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+       overflow-x: hidden;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiBorderLayout.sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutCenter, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiBorderLayout.sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutCenter{
+	background-color: #000000;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiBorderLayoutBottom, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiBorderLayoutBottom{
+	height: 35px !important;
+	overflow: hidden !important;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiBtnS, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiBtnS{
+	height: 25px;
+}
+
+.sapzenfilterpanel-Container {
+       background: #000000;
+       border: 1px solid #ffffff;
+}
+
+.sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutTop, 
+.sapzenfilterpanel-PopupContainerDialog > .sapUiBorderLayoutTop{
+		height: 40px !important;
+		overflow: hidden !important;
+}
+
+.sapzenfilterpanel-Container > .sapUiBorderLayoutTop{
+		height: 0px !important;
+		overflow: hidden !important;
+}
+
+.sapzenfilterpanel-SelectionContainer, 
+.sapzenfilterpanel-SelectionContainer2{
+	border-top: 1px solid #ffffff;
+	-moz-box-sizing: border-box;
+       box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+}
+
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutTop > .sapuiVlt, 
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutTop > .sapuiVlt{
+		width: 100%;
+}
+
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutTop > .sapuiVlt .sapUiHLayout, 
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutTop > .sapuiVlt .sapUiHLayout{
+		width: 100%;
+}
+
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutCenter{
+		top: 34px !important;
+		bottom: 34px !important;
+		background-color: #000000;
+}
+
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutCenter{
+		top: 34px !important;
+		bottom: 62px !important;
+		background-color: #000000;
+}
+
+.sapzenfilterpanel-SelectionContainer .sapUiTableCtrlEmpty, 
+.sapzenfilterpanel-SelectionContainer2 .sapUiTableCtrlEmpty{
+	background: #000000;
+	border-top: 1px solid #ffffff;
+}
+
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutBottom{
+	height: 33px !important;
+	background-color: #000000;
+    border-top: 1px solid #ffffff;
+}
+
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutBottom{
+	height: 66px !important;
+	background-color: #000000;
+    border-top: 1px solid #ffffff;
+}
+
+.sapzenfilterpanel-PopupContainerHeader {
+       height: 42px !important;
+}
+
+.sapzenfilterpanel-PopupContainerHeader .sapUiTvH1{
+	color: #4F5C72;
+	margin-top: 9px;
+}
+
+.sapzenfilterpanel-PopupContainerHeader > div > div {
+       padding: 5px;
+}
+
+.sapzenfilterpanel-PopupContainerHeader > .sapUiBorderLayoutBegin {
+		padding-top: 9px;
+		padding-left: 6px;
+}
+
+.sapzenfilterpanel-PopupContainerHeader > .sapUiBorderLayoutEnd {
+		padding-top: 9px;
+		padding-right: 6px;
+}
+
+.sapzenfilterpanel-PopupContainerFooter > .sapuiVltCell, 
+.sapzenfilterpanel-PopupContainerFooter2 > .sapuiVltCell:last-of-type {
+		padding: 4px;
+		padding-right: 5px;
+		padding-left: 5px;
+}
+
+.sapzenfilterpanel-HeadLine {
+       margin-top: 15px;
+}
+
+.sapzenfilterpanel-HeaderText {
+       overflow: hidden;
+	  text-overflow: ellipsis;
+	  -o-text-overflow: ellipsis;
+	  -webkit-text-overflow: ellipsis;     
+}
+
+.sapzenfilterpanel-RowRepeaterRow, 
+.sapzenfilterpanel-RangeFrom, 
+.sapzenfilterpanel-RangeTo {  
+    border: 1px solid #ffffff;
+    border-bottom: none;
+    margin-bottom: 0px;
+    
+    height: 32px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiRrPage, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiRrPage{  
+    border-bottom: 1px solid #ffffff;
+}
+
+
+.sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter, 
+.sapzenfilterpanel-RangeFrom .sapUiBorderLayoutCenter, 
+.sapzenfilterpanel-RangeTo .sapUiBorderLayoutCenter{	
+	top: 0px !important;
+	overflow: hidden !important;
+}
+
+.sapzenfilterpanel-RowRepeaterRow .sapUiTvH2, 
+.sapzenfilterpanel-RangeFrom .sapUiTvH2, 
+.sapzenfilterpanel-RangeTo .sapUiTvH2{
+	line-height: 30px; /* = height von .sapzenfilterpanel-RowRepeaterRow*/
+	font-weight: bold;
+}
+
+.sapzenfilterpanel-RowRepeaterRow > .sapUiBorderLayoutCenter, 
+.sapzenfilterpanel-RangeFrom > .sapUiBorderLayoutCenter, 
+.sapzenfilterpanel-RangeTo > .sapUiBorderLayoutCenter {
+	padding-left: 8px;
+	overflow: hidden !important;																																											/*	 width: 50px; funtioniert nicht!!!! */
+}
+
+.sapzenfilterpanel-RowRepeaterRow, 
+.sapzenfilterpanel-RangeFrom, 
+.sapzenfilterpanel-RangeTo{
+	background-color: #000000;
+}
+
+.sapzenfilterpanel-RowRepeaterRow > .sapUiBorderLayoutEnd, 
+.sapzenfilterpanel-RangeFrom > .sapUiBorderLayoutEnd, 
+.sapzenfilterpanel-RangeTo > .sapUiBorderLayoutEnd {
+	background: #000000;
+	overflow: hidden !important;
+}
+
+.sapzenfilterpanel-RowRepeaterRowActive > .sapUiBorderLayoutBegin,
+.sapzenfilterpanel-RowRepeaterRowActive > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-RowRepeaterRowActive > .sapUiBorderLayoutEnd {
+	bottom: 73px !important; /* = height von .sapUiBorderLayoutBottom*/
+	background: #000000;
+}
+
+.sapzenfilterpanel-PopupContainerHeader > .sapUiBorderLayoutEnd > .sapUiBtnS,
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom  .sapUiBorderLayoutEnd > .sapUiBtnS, 
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom  .sapUiBorderLayoutEnd > .sapUiBtnS { 
+	float: right;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnAct:hover{
+	padding: 0 10px;
+}
+
+.sapUiTvH1.sapzenfilterpanel-NoNotifications{
+	color: #444444;
+	filter:none;
+	text-shadow:none;
+	margin-top: 0px;
+	width:100%;
+	text-align: center !important;
+}
+
+.sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutCenter{
+	bottom: 41px !important;
+	top: 41px !important;
+	left: 6px !important;
+	right: 6px !important;
+	background: #000000;
+}
+
+.sapzenfilterpanel-DialogContainer.sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutCenter{
+	top: 6px !important;
+	bottom: 6px !important;
+}
+
+.sapzenfilterpanel-PopupContainerDialog > .sapUiBorderLayoutCenter{
+	bottom: 6px !important;
+	top: 41px !important;
+	left: 6px !important;
+	right: 6px !important;
+	background: #000000;
+}
+
+.sapzenfilterpanel-Container > .sapUiBorderLayoutCenter{
+	bottom: 0px !important;
+	top: 0px !important;
+	left: 0px !important;
+	right: 0px !important;
+	background: #000000;
+}
+
+.sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutTop{
+		height: 22px !important;
+		overflow: hidden !important;
+}
+
+.sapzenfilterpanel-SingleRowRepeater > .sapUiBorderLayoutTop{
+		height: 0px !important;
+		overflow: hidden !important;
+}
+
+.sapzenfilterpanel-SingleRowRepeater > .sapUiBorderLayoutCenter{
+		top: 0px !important;
+}
+
+.sapzenfilterpanel-PopupTitle{
+	color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 42px;
+    text-align: center !important;
+    width: 100%;
+    overflow: hidden;
+	 display: block;
+	 white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+}
+
+.sapUiTv.sapzenfilterpanel-HeaderText, 
+.sapUiTv.sapzenfilterpanel-FromToText{
+	line-height: 32px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.sapUiTv.sapzenfilterpanel-HeaderTextWidthFiltertext{
+    width: 50%;
+}
+
+.sapUiTv.sapzenfilterpanel-HeaderTextWidthFiltercount{
+    width: 80%;
+}
+
+.sapUiTv.sapzenfilterpanel-SelectionMemberText{
+	line-height: 32px;
+    overflow: hidden;
+    position: absolute;
+    right: 24px;
+    top: 0px;
+    text-align: right !important;
+    text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 11px;
+}
+
+.sapUiTv.sapzenfilterpanel-SelectionMemberTextWidthFiltertext{
+    width: 35%;
+}
+
+.sapUiTv.sapzenfilterpanel-SelectionMemberTextWidthFiltercount{
+    width: 15%;
+}
+
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutTop, 
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutTop {
+    background-color: #000000;
+    height: 33px !important;
+    overflow: hidden !important;
+}
+
+.sapUiSegmentedButton.sapzenfilterpanel-SelectionSegmentedButton {
+    position: absolute;
+    right: 7px;
+    top: 4px;
+}
+
+.sapUiTv.sapzenfilterpanel-SelectionTitle {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 32px;
+    padding-left: 8px;
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+}
+
+.sapUiTv.sapzenfilterpanel-SelectionTitle {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 32px;
+    padding-left: 8px;
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+}
+
+.sapzenfilterpanel-ExclusionCheckBox{
+	position: absolute;
+	right: 9px;
+	top: 8px;
+}
+
+.sapUiTv.sapzenfilterpanel-ExclusionText{
+	line-height: 28px;
+	padding-left: 3px;
+}
+
+.sapzenfilterpanel-ExclusionContainer{
+	height: 25px;
+}
+
+.sapzenfilterpanel-MemberSegmentButton,
+.sapzenfilterpanel-SearchSegmentButton,
+.sapzenfilterpanel-SearchButton{
+	width: 40px;
+}
+
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-SearchFieldRow .sapzenfilterpanel-SearchButton{
+	float:right;
+}
+
+.sapzenfilterpanel-SearchSegmentButton .sapUiBtnS.sapUiBtnIconOnly{
+	padding: 0;
+}
+/*
+.sapUiSegmentedButton > .sapUiBtnS.sapUiSegButtonSelected{
+	
+}*/
+
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-SearchSegmentButton .sapUiBtnIco,
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-SearchSegmentButton .sapUiBtnIco,
+.sapzenfilterpanel-SearchFieldRow .sapzenfilterpanel-SearchButton .sapUiBtnIco{
+	background: transparent url(img/filterpanel_searchsegmentbutton.png) no-repeat center center;
+	height: 17px;
+}
+
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-MemberSegmentButton .sapUiBtnIco,
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-MemberSegmentButton .sapUiBtnIco{
+	background: transparent url(img/filterpanel_membersegmentbutton.png) no-repeat center center;
+	height: 17px;
+}
+
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-IncludeButton .sapUiBtnIco,
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-IncludeButton .sapUiBtnIco{
+	background: transparent url(img/filterpanel_including.png) no-repeat center center;
+	height: 17px;
+}
+
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ExcludeButton .sapUiBtnIco,
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-ExcludeButton .sapUiBtnIco{
+	background: transparent url(img/filterpanel_excluding.png) no-repeat center center;
+	height: 17px;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-ExcludeButton .sapUiBtnIco,
+html[data-sap-ui-browser="ie8"] .sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-IncludeButton .sapUiBtnIco {
+	margin-left: -4px; 
+}
+
+.sapzenfilterpanel-IncludeButton,
+.sapzenfilterpanel-ExcludeButton{
+	width:29px;
+}
+
+.sapzenfilterpanel-SearchFieldRow {
+    height: 34px;
+    width: 100%;
+    background-color: #000000;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.sapzenfilterpanel-SearchFieldRow div:first-child {
+    left: 8px;
+    position: absolute;
+    width: 75%;
+}
+
+.sapzenfilterpanel-SearchFieldRow div:first-child input {
+    width: 100%;
+    height: 24px;
+}
+
+.sapzenfilterpanel-SearchFieldRow div:last-child {
+    position: absolute;
+    right: 8px;
+}
+
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-SearchFieldRow div{
+    margin-left: 8px;
+    margin-right: 8px;
+    position: static;
+}
+
+.sapzenfilterpanel-SearchFieldRow div {
+    margin-top: 5px;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTable > div:last-child, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiTable > div:last-child{
+    -webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTable > div, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiTable > div {
+    border-style: solid none none;
+}
+
+.sapUiTableCol,
+.sapUiTableCtrl tr > td:last-child{
+	border-right: none;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTableTreeIcon,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableTreeIcon {
+    line-height: 13px;
+    margin-right: 6px;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTableCtrl .sapUiCb.sapUiCbInteractive.sapUiCbStd, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCtrl .sapUiCb.sapUiCbInteractive.sapUiCbStd{
+	width:100%;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTableCtrl .sapUiCb > label, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCtrl .sapUiCb > label{
+	padding-left: 13px;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTableCell, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCell{
+    text-align: center;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTableCell span, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCell span{
+    margin-top: 1px;
+}
+
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom  .sapUiBorderLayoutEnd, 
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom  .sapUiBorderLayoutEnd{
+	padding-right: 8px;
+	padding-top: 4px;
+}
+
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom .sapUiBorderLayoutBegin, 
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom .sapUiBorderLayoutBegin{
+	padding-top: 4px;
+	padding-left: 8px;
+	width: 74px !important;
+}
+
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom .sapUiBorderLayoutCenter, 
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom .sapUiBorderLayoutCenter{
+	left: 74px !important;
+	right: 95px !important; 
+}
+
+.sapzenfilterpanel-SelectionContainer .sapzenfilterpanel-CheckAll, 
+.sapzenfilterpanel-SelectionContainer2 .sapzenfilterpanel-CheckAll{
+	height:19px;
+	width:100%;
+	background: transparent url("img/filterpanel_checkAll.png") no-repeat center center;
+}
+
+.sapUiTv.sapzenfilterpanel-RestrictionText{
+	line-height: 34px;
+	overflow: hidden;
+	 display: block;
+	 white-space: nowrap;
+	  text-overflow: ellipsis;
+	  -o-text-overflow: ellipsis;
+	  -webkit-text-overflow: ellipsis;
+	  font-weight: bold;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTv.sapzenfilterpanel-RestrictionText,
+html[data-sap-ui-browser="ie9"] .sapUiTv.sapzenfilterpanel-RestrictionText{
+	line-height: 33px;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTableCnt, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCnt{
+    border-bottom: none !important;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiTableCCnt tr:last-child td, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCCnt tr:last-child td{
+	border-bottom: 1px solid #ffffff;
+}
+
+.sapUiTv.sapzenfilterpanel-NoNotifications{
+	margin-top: 20px;
+	 overflow: hidden;
+	 display: block;
+	 font-weight: bold;
+	 white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	text-align: center !important;
+}
+
+.sapUiTv.sapzenfilterpanel-SelectionTableText{
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.sapUiTv.sapzenfilterpanel-SelectionTableKey{
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.sapzenfilterpanel-IncorrectValue.sapzenfilterpanel-RowRepeaterRow {
+    background: @sapUiErrorBG;
+}
+
+.sapzenfilterpanel-DirtyState, .sapzenfilterpanel-DirtyState > input {
+	font-style: italic !important;
+}
+
+.sapzenfilterpanel-RowRepeaterRow:hover,
+.sapzenfilterpanel-RangeFromActive,
+.sapzenfilterpanel-RangeToActive,
+.sapzenfilterpanel-RowActive {	
+	background: #7a5100;																																										/*	 width: 50px; funtioniert nicht!!!! */
+}
+
+/* Dimension Filter */
+.sapzenfilterpanel-Container > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-Container{
+	background: none;
+	border:none;
+}
+.sapzenfilterpanel-Container .sapUiRrRow .sapzenfilterpanel-RowRepeaterRow div{
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+
+.sapzenfilterpanel-Container .sapUiRrRow:first-child .sapzenfilterpanel-RowRepeaterRow{
+	border: none;
+}
+/* END Dimension Filter */
+
+.sapzenfilterpanel-RemoveImage{
+	background: transparent url("img/filterpanel_remove.png") no-repeat center center;
+    height: 16px;
+}
+
+.sapUiBtnS {
+    padding: 0 10px;
+}
+
+html[data-sap-ui-browser*="ff"] .sapzenfilterpanel-PopupContainer .sapUiBtnS.sapUiBtnIconOnly > .sapUiBtnIco, 
+html[data-sap-ui-browser*="ff"] .sapzenfilterpanel-PopupContainerDialog .sapUiBtnS.sapUiBtnIconOnly > .sapUiBtnIco{
+    margin-top: 0px;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiBtnS.sapUiBtnIconOnly, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiBtnS.sapUiBtnIconOnly{
+    padding: 0px;
+}
+
+.sapzenfilterpanel-PopupContainer .sapUiCb.sapUiCbInteractive.sapUiCbStd, 
+.sapzenfilterpanel-PopupContainerDialog .sapUiCb.sapUiCbInteractive.sapUiCbStd{
+	text-overflow: clip;
+}
+
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom .sapUiBorderLayoutEnd,
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom .sapUiBorderLayoutEnd,
+.sapzenfilterpanel-PopupContainerHeader > .sapUiBorderLayoutBegin{
+	width: 130px !important;
+	overflow: hidden !important;
+}
+
+.sapzenfilterpanel-ExclusionState{
+	background: transparent url("img/filterpanel_excluded.png") no-repeat right 2px;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+
+.sapzenfilterpanel-InclusionState{
+	background: transparent url("img/filterpanel_included.png") no-repeat right 2px;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+
+/*Update 2013-01-10*/
+.sapzenfilterpanel-PopupContainerDialog .sapUiSearchFieldTf{
+	margin: 5px;
+}
+
+.sapzenfilterpanel-PopupContainerDialog .sapUiSearchField {
+    height: 28px;
+    background-color: #000;
+    border-top: 1px solid #fff;
+}
+
+.sapUiHLayout.sapzenfilterpanel-LiveSearchField{
+	display: block;
+	padding: 5px;
+	background-color: #000;
+    border-top: 1px solid #fff;
+}
+
+.sapzenfilterpanel-SearchField.sapzenfilterpanel-SearchFieldInactive {
+	color: #AAAAAA;
+}
+
+.sapzenfilterpanel-LiveSearchField .sapzenfilterpanel-SearchField,
+.sapzenfilterpanel-LiveSearchField .sapUiHLayoutChildWrapper{
+	width: 100%;
+}
+
+.sapUiHLayout.sapzenfilterpanel-TextVariableFieldContainer {
+	width: 100%;
+}
+
+.sapzenfilterpanel-TextVariableFieldContainer .sapUiHLayoutChildWrapper:first-child {
+	padding-top: 3px;
+}
+
+.sapzenfilterpanel-TextVariableFieldContainer .sapUiHLayoutChildWrapper:last-child {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.sapzenfilterpanel-TextVariableField {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100% !important;
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+.sapzenfilterpanel-TextFieldWidthFiltercount.sapzenfilterpanel-TextVariableField {
+		width: 85% !important;
+}
+
+.sapzenfilterpanel-TextFieldWidthFiltertext.sapzenfilterpanel-TextVariableField {
+		width: 65% !important;
+}
+
+.sapzenfilterpanel-RangeFrom, 
+.sapzenfilterpanel-RangeTo{
+	border: none;
+	border-top: 1px solid #fff;
+}
+
+.sapUiTableCtrl tr > td{
+	border-right: 1px solid #fff;
+}
+
+.sapUiTableCtrl tr:nth-child(2n+1){
+	background-color: #2E2E2E;
+}
+
+/* BugFixing IE8 
+html[data-sap-ui-browser="ie8"] */
+
+/****************************************************/
+/* extract the search-button in the non-auto-search */
+/****************************************************/
+
+/* clear the done styling */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd{
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding-right: 57px;
+}
+
+/* styling of the seachfield */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiTf.sapUiTfInner{
+	background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* styling of the seachfield - Focus */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfFoc .sapUiTf.sapUiTfInner{
+	outline: 1px solid #fff;
+}
+
+/* styling of the seachfield - Hover */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiTf.sapUiTfInner:hover {
+    
+}
+
+/**/
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd.sapUiTfFoc{
+	outline: none;
+}
+
+/* styling of the seachfield-button */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco{
+	height: 18px;
+	width: 47px;
+	background: #000 url("img/filterpanel_searchsegmentbutton.png") no-repeat center center;
+    border: 1px solid #fff;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+ 	margin-top: -1px;
+}
+html[data-sap-ui-browser="ie9"] .sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco{
+
+}
+html[data-sap-ui-browser="ie8"] .sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco{
+	
+}
+/* hover */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco:hover,
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd:hover .sapUiSearchFieldIco{
+	background: #7A5100 url("img/filterpanel_searchsegmentbutton.png") no-repeat center center;
+	border-color: #fff;
+	color: #ffffff;
+}
+html[data-sap-ui-browser="ie9"] .sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd:hover .sapUiSearchFieldIco{
+	
+}
+html[data-sap-ui-browser="ie8"] .sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd:hover .sapUiSearchFieldIco{
+	
+}
+
+/* active */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco:active{
+	background: #7A5100 url("img/filterpanel_searchsegmentbutton.png") no-repeat center center;
+	border-color: #fff;
+}
+html[data-sap-ui-browser="ie9"] .sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco:active{
+	
+}
+html[data-sap-ui-browser="ie8"] .sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco:active{
+
+}
+
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableTreeIcon,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCol .sapUiTableColCell label,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCol div{
+	cursor: pointer;
+}
+
+.sapUiTableGroupIconClosed, .sapUiTableTreeIconNodeClosed{
+	background-image: url("img/treenode_expand.png") !important;
+	width: 13px !important;
+}
+
+.sapUiTableGroupIconOpen, .sapUiTableTreeIconNodeOpen{
+	background-image: url("img/treenode_collapse.png") !important;
+	width: 13px !important;
+}
+
+.sapzenfilterpanel-PopupContainerDialog .sapzenfilterpanel-SelectionContainer .sapUiTableColHdrScr,
+.sapzenfilterpanel-PopupContainerDialog .sapzenfilterpanel-SelectionContainer2 .sapUiTableColHdrScr{
+	background: #111111; /* Old browsers */
+	background: -moz-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(15%,#2e2e2e), color-stop(50%,#000000), color-stop(85%,#2e2e2e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #2e2e2e 15%,#000000 50%,#2e2e2e 85%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #2e2e2e 15%,#000000 50%,#2e2e2e 85%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #2e2e2e 15%,#000000 50%,#2e2e2e 85%); /* IE10+ */
+	background: linear-gradient(to bottom, #2e2e2e 15%,#000000 50%,#2e2e2e 85%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#000',GradientType=0 ); /* IE6-9 */
+}
+
+.sapzenfilterpanel-RightArrowImage {
+	height:16px;
+	width:16px;
+	background: transparent url("img/right_16.png") no-repeat center center;
+	cursor: pointer;
+	position:absolute !important;
+	top: 8px;
+	right:2px;
+}
+
+.sapzenfilterpanel-DesktopSubmit {
+		position: absolute;
+    right: 6px;
+    top: 4px;
+}
+
+.sapzenfilterpanel-DesktopSubmit > .sapUiHLayoutChildWrapper:first-child {
+		margin-right: 5px;
+}
+
+.sapzenfilterpanel-DesktopSubmit2 {
+		position: absolute;
+    right: 6px;
+    top: 37px;
+}
+
+.sapzenfilterpanel-DesktopSubmit2 > .sapUiHLayoutChildWrapper:first-child {
+		margin-right: 5px;
+}
+
+.sapzenfilterpanel-DesktopSelectMember {
+	margin-top: 4px;
+}

@@ -1,0 +1,70 @@
+<core:View xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" xmlns="sap.m" controllerName="sap.suite.ui.smartbusiness.designtime.authorization.view.S3">
+	<Page>
+		<content>
+			<ObjectHeader title="{TITLE}" titleActive="true"
+				showMarkers="true" markFavorite="{path:'MANUAL_ENTRY', formatter:'.formatFavoriteMark'}"
+				titlePress=".doSomething">
+				<attributes>
+					<ObjectAttribute text= "{path:'ID', formatter:'.formatId'}"/>
+					<ObjectAttribute text="{path:'OWNER_NAME', formatter:'.formatOwner'}" />
+				</attributes>
+			</ObjectHeader>
+			<IconTabBar id="idWorkspaceDetailTab">
+				<items>
+				    <IconTabFilter icon="sap-icon://hint" text="{i18n>INFO}">
+						<form:SimpleForm id="idInfoForm" minWidth="1024"
+							maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
+							labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+							columnsL="1" columnsM="1">
+							<form:content>
+							    <Label text="{i18n>KPI}" />
+							    <Text text="{INDICATOR}" />
+							    <Label text="{i18n>DATA_SOURCE}" />
+							    <Text text="{ODATA_URL}" />
+							    <Label text="{i18n>PROPERTIES}" />
+							    <HBox items="{PROPERTIES}" id="properties">
+									<items>
+										<Text text="{parts:[{path:'NAME'},{path:'VALUE'}], formatter:'.formatProperties'}" />
+									</items>
+								</HBox>
+							</form:content>
+						</form:SimpleForm>
+					</IconTabFilter>
+					<IconTabFilter id="usersTab" icon="sap-icon://person-placeholder" text="{i18n>USERS}">
+					    <form:SimpleForm minWidth="1024"
+							maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
+							labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+							columnsL="1" columnsM="1">
+							<form:content>
+							    <core:Title id="usersTitle" />
+							    <l:Grid id="users" 
+					        		content="{/AUTHORIZED_USERS}">
+									<l:content >
+							     		<Text text="{NAME}" />
+									</l:content>
+					    		</l:Grid>
+					    	</form:content>
+					    </form:SimpleForm>
+					</IconTabFilter>
+					<IconTabFilter id="rolesTab" icon="sap-icon://group" text="{i18n>ROLES}">
+					     <form:SimpleForm minWidth="1024"
+							maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
+							labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+							columnsL="1" columnsM="1">
+							<form:content>
+							    <core:Title id="rolesTitle" />
+							    <l:Grid id="roles" 
+					        		content="{/AUTHORIZED_USERS}">
+									<l:content >
+							     		<Text text="{NAME}" />
+									</l:content>	
+					    		</l:Grid>
+					    	</form:content>
+					    </form:SimpleForm>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+	</Page>
+</core:View>

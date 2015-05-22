@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ConnectionType</name>
+	<author></author>
+	<documentation>type file for ps, ts and mob soln</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="ProductSystem">
+			<documentation>ps type</documentation>
+		</value>
+		<value name="TechnicalSystem">
+			<documentation>ts type</documentation>
+		</value>
+		<value name="MobileSolution">
+			<documentation>mob type</documentation>
+		</value>
+	</enumeration>
+</simple-type>

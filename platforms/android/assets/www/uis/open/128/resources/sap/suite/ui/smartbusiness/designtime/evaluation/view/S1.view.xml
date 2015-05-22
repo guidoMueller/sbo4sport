@@ -1,0 +1,281 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout"
+       xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout"
+       xmlns:mvc="sap.ui.core.mvc"
+       controllerName="sap.suite.ui.smartbusiness.designtime.evaluation.view.S1">
+
+       <Page id="page" class="evaluationViewS1">
+              <content>
+                     <l:VerticalLayout>
+                           <form:SimpleForm id="myForm" editable="true"
+                                  layout="ResponsiveGridLayout" maxContainerCols="3" emptySpanL="2"
+                                  emptySpanM="2" columnsL="1" columnsM="1" labelSpanL="4" labelSpanM="4">
+                                  <form:content>
+                                         <core:Title text="{i18n>PARAMETERS}" />
+                                         <Label id="selectKpi" text="{i18n>SELECTED_KPI_OPI}" required="true">
+                                         </Label>
+                                         <Input id="indicatorId" showValueHelp="true"
+                                                valueHelpRequest="listAllKpis" value="{/INDICATOR}" change="getKpiDetails">
+                                                <layoutData>
+                                                       <l:GridData span="L3 M3" />
+                                                </layoutData>
+                                         </Input>
+                                         <Label text="{i18n>EVALUATION_ID}" required="true">
+                                         </Label>
+                                         <Input value="{/ID}" id="evalId" change="validateEvalId">
+                                                <layoutData>
+                                                       <l:GridData span="L3 M3" />
+                                                </layoutData>
+                                         </Input>
+                                         <Label text="{i18n>EVALUATION_TITLE}" required="true">
+                                         </Label>
+                                         <Input value="{/TITLE}" id="evalTitle">
+                                                <layoutData>
+                                                       <l:GridData span="L3 M3" />
+                                                </layoutData>
+                                         </Input>
+                                        <Link
+                                                 text="{path:'/NO_OF_ADDITIONAL_LANGUAGES',formatter:'.formatLangCount'}"
+                                                 press="addAdditionalLanguageDialog">
+                                          <layoutData>
+                                                <l:GridData span="L2 M2" />
+                                          </layoutData>
+                                         </Link>              
+             
+                                         
+                                         <Label text="{i18n>DESCRIPTION}">
+                                         </Label>
+                                         <Input value="{/DESCRIPTION}" id="evalDescription">
+                                                <layoutData>
+                                                       <l:GridData span="L5 M5" />
+                                                </layoutData>
+                                         </Input>
+                                         <Label text="{i18n>TAGS}" />
+                                         <Input id="kpiTag" type="Text" value="{/TAG}">
+                                                <layoutData>
+                                                       <l:GridData span="L5 M5" />
+                                                </layoutData>
+                                         </Input>
+                                         <Label text="{i18n>OWNER_NAME}">
+                                         </Label>
+                                         <Input value="{/OWNER_NAME}">
+                                                <layoutData>
+                                                       <l:GridData span="L5 M5" />
+                                                </layoutData>
+                                         </Input>
+                                         <Label text="{i18n>OWNER_ID_EMAIL}">
+                                         </Label>
+                                         <Input value="{/OWNER_ID}">
+                                                <layoutData>
+                                                       <layout:GridData span="L2 M2" />
+                                                </layoutData>
+                                         </Input>
+                                         <Input value="{/OWNER_E_MAIL}" type="Email" id="evalOwnerEmail"
+                                                change="validateEmailAddress">
+                                                <layoutData>
+                                                       <layout:GridData span="L3 M3" />
+                                                </layoutData>
+                                         </Input>
+                                         <Label text="{i18n>PROPERTY_NAME_VALUE}" />
+                                         <VBox id="propertyNameValueBoxHeader" class="parameterList"
+											noDataText=" ">
+											<layoutData>
+												<l:GridData span="L8 M8" />
+											</layoutData>
+											<l:Grid defaultSpan="L12 M12 S12" class="propertyEntryGrid">
+												<l:content>
+													<Input id="propertyName" type="Text" placeholder="{i18n>NAME}">
+														<layoutData>
+															<l:GridData span="L4 M4" />
+														</layoutData>
+													</Input>
+													<Input id="propertyValue" type="Text" placeholder="{i18n>VALUE}">
+														<layoutData>
+															<l:GridData span="L4 M4" />
+														</layoutData>
+													</Input>
+													<Button id="addPropertyButton" icon="sap-icon://add"
+														press="addNewProperty">
+														<layoutData>
+															<l:GridData span="L2 M2" />
+														</layoutData>
+													</Button>
+												</l:content>
+											</l:Grid>
+										</VBox>
+										<Label />
+										<VBox defaultSpan="L12 M12 S12" id="propertyNameValueBox" class="parameterList"
+											noDataText=" ">
+											<layoutData>
+												<l:GridData span="L8 M8" />
+											</layoutData>
+										</VBox>
+                                         
+
+                                         <core:Title text="{i18n>DATA_SOURCE}" />
+                                         <Label text="{i18n>HANA_VIEW}" />
+                                         <Input id="viewInput" placeholder="{i18n>SELECT_VIEW}"
+                                                showValueHelp="true" value="{/VIEW_NAME}" valueHelpRequest="handleHanaViewValueHelp" change="hanaViewChange">
+                                                <layoutData>
+                                                       <l:GridData span="L3 M3" />
+                                                </layoutData>
+                                         </Input>
+                                         <Label text="{i18n>ODATA_SERVICE}" />
+                                         <Input id="odataServiceInput" type="Text" value="{/ODATA_URL}"  showValueHelp="true" valueHelpRequest="handleOdataServiceValueHelp" change="oDataUrlChange">
+                                                <layoutData>
+                                                       <l:GridData span="L3 M3" />
+                                                </layoutData>
+                                         </Input>
+
+                                         <Label text="{i18n>ENTITY_SET}" />
+                                         <Input id="entitySetInput" type="Text"
+                                                showValueHelp="true" valueHelpRequest="handleEntitySetValueHelp" value="{/ODATA_ENTITYSET}" change="entitySetChange">
+                                                <layoutData>
+                                                       <l:GridData span="L3 M3" />
+                                                </layoutData>
+                                         </Input>
+
+                                         <Label text="{i18n>Value Measure}" />
+                                         <Input id="valueMeasureInput" type="Text"
+                                                showValueHelp="true" valueHelpRequest="handleMeasureValueHelp"  value="{/COLUMN_NAME}" change="measureChange">
+                                                <layoutData>
+                                                       <l:GridData span="L3 M3" />
+                                                </layoutData>
+                                         </Input>
+
+                                         <Label text="{i18n>SEMANTIC_OBJECT_ACTION}"/>
+                                         <Input id="semanticObject" type="Text" value="{/SEMANTIC_OBJECT}">
+											<layoutData>
+												<l:GridData span="L2 M2" />
+											</layoutData>
+										 </Input>
+										 <Input id="action" type="Text" value="{/ACTION}">
+											<layoutData>
+												<l:GridData span="L3 M3" />
+											</layoutData>
+										 </Input>
+                                         <Label text="" />
+
+                                         <Link id="additionalInfo" text="{i18n>ADDITIONAL_INFO_FROM_KPI}" 
+                                                tooltip="{i18n>SHOWS_ADDITIONAL_INFO}" press="additionalInformationForKpi">
+                                         </Link>
+
+                                         <Label text="{i18n>SCALING_FACTOR}" />
+
+                                         <Select id="scaleFactorSelect" items="" selectedKey="{/SCALING}">
+                                                <layoutData>
+                                                       <l:GridData span="L2 M2" />
+                                                </layoutData>
+                                                <items>
+                                                       <core:Item text="{i18n>AUTO}" key="0" />
+                                                       <core:Item text="{i18n>THOUSAND}" key="3" />
+                                                       <core:Item text="{i18n>MILLION}" key="6" />
+                                                       <core:Item text="{i18n>BILLION}" key="9" />
+                                                       <core:Item text="{i18n>PERCENT}" key="-2" />
+                                                       <core:Item text="{i18n>MILLI}" key="-3" />
+                                                       <core:Item text="{i18n>MICRO}" key="-6" />
+                                                       <core:Item text="{i18n>NANO}" key="-9" />
+                                                </items>
+                                         </Select>
+                                         <core:Title text="{i18n>INPUT_PARAMETERS_FILTERS}" />
+                                  </form:content>
+                           </form:SimpleForm>
+                           <Panel class="filtersLayout">
+                           <l:Grid defaultSpan="L9 M9 S9" defaultIndent="L3 M3"
+                                  class="dimensionHeaders1">
+                                  <l:content>
+                                         <Label text="{i18n>INPUT_PARAMETERS}" design="Bold" required="true">
+                                                <layoutData>
+                                                       <l:GridData span="L6 M6" />
+                                                </layoutData>
+                                         </Label>
+                                         <Label
+                                                text="{i18n>REQUIRED_PARAM_LIST}">
+                                                <layoutData>
+                                                       <l:GridData span="L6 M6" />
+                                                </layoutData>
+                                         </Label>
+                                         <VBox id="inputParameterLayoutHeaders">
+                                                <layoutData>
+                                                       <l:GridData span="L6 M6" />
+                                                </layoutData>
+                                                <items>
+                                                       <l:Grid defaultSpan="L9 M9" vSpacing="0">
+                                                              <l:content>
+                                                                     <Label text="{i18n>DIMENSION}" design="Bold">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L4 M4" />
+                                                                           </layoutData>
+                                                                     </Label>
+                                                                     <Label text="{i18n>OPERATOR}" design="Bold">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L4 M4" />
+                                                                           </layoutData>
+                                                                     </Label>
+                                                                     <Label text="{i18n>VALUES}" design="Bold">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L4 M4" />
+                                                                           </layoutData>
+                                                                     </Label>
+                                                              </l:content>
+                                                       </l:Grid>
+                                                </items>
+                                         </VBox>
+                                         <VBox id="inputParameterBaseLayout">
+                                                <layoutData>
+                                                       <l:GridData span="L6 M6" />
+                                                </layoutData>
+                                         </VBox>
+                                         <Label text="{i18n>OPTIONAL_DIMENTIONAL_FILTERS}" design="Bold">
+                                                <layoutData>
+                                                       <l:GridData span="L6 M6" />
+                                                </layoutData>
+                                         </Label>
+                                         <Input id="selectDimensions" type="Text"
+                                                placeholder="{i18n>SELECT_DIMENSION_TO_ADD_FILTERS}" showValueHelp="true"
+                                                valueHelpRequest="openDimensionDialog" value="{/hanaView}">
+                                                <layoutData>
+                                                       <l:GridData span="L2 M2" />
+                                                </layoutData>
+                                         </Input>
+                                         <VBox id="dimensionLayoutHeaders">
+                                                <layoutData>
+                                                       <l:GridData span="L6 M6" />
+                                                </layoutData>
+                                                <items>
+                                                       <l:Grid defaultSpan="L9 M9" class="dimensionHeaders" vSpacing="0">
+                                                              <l:content>
+                                                                     <Label text="{i18n>DIMENSION}" design="Bold">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L4 M4" />
+                                                                           </layoutData>
+                                                                     </Label>
+                                                                     <Label text="{i18n>OPERATOR}" design="Bold">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L4 M4" />
+                                                                           </layoutData>
+                                                                     </Label>
+                                                                     <Label text="{i18n>VALUES}" design="Bold">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L4 M4" />
+                                                                           </layoutData>
+                                                                     </Label>
+                                                              </l:content>
+                                                       </l:Grid>
+                                                </items>
+                                         </VBox>
+                                         <VBox id="baseDimensionLayout">
+                                                <layoutData>
+                                                       <l:GridData span="L8 M8" />
+                                                </layoutData>
+                                         </VBox>
+                                  </l:content>
+                           </l:Grid>
+							</Panel>
+                           <Panel class="evaluationPanel" visible="false" id="targetThresholdPanel">
+                                  <mvc:XMLView id="targetThresholdView"
+                                         viewName="sap.suite.ui.smartbusiness.designtime.evaluation.view.createEvalTargetThresholdTrendInput" />
+                           </Panel>
+                     </l:VerticalLayout>
+              </content>
+       </Page>
+</core:View>

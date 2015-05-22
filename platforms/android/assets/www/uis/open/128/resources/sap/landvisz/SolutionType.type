@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>SolutionType</name>
+	<author></author>
+
+	<documentation>View type of landscape viewer</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="COMPONENT_VIEW">
+			<documentation>Component view of a solution </documentation>
+		</value>
+		<value name="DEPLOYMENT_VIEW">
+			<documentation>Deploy view of a solution</documentation>
+		</value>
+	</enumeration>
+</simple-type>

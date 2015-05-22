@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/GroupListItem</name>
+
+	<documentation>Add your documentation for the newui/launchpad/GroupListItem</documentation>
+
+	<baseType>sap.m/ListItemBase</baseType>
+	<properties>
+		<property group="Misc" name="title" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="defaultGroup" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+		<property group="Misc" name="show" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="editMode" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+		<property group="Misc" name="groupId" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="index" type="sap.ui.core/int">
+		</property>
+		<property group="Misc" name="allowEditMode" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="removable" type="sap.ui.core/boolean">
+		</property>
+		<property group="Misc" name="numberOfTiles" type="sap.ui.core/int" defaultValue="0">
+		</property>
+		<property group="Misc" name="isGroupVisible" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+	</properties>
+	<events>
+		<event name="press">
+		</event>
+		<event name="change">
+		</event>
+		<event name="drop">
+		</event>
+		<event name="over">
+		</event>
+		<event name="afterRendering">
+		</event>
+		<event name="out">
+		</event>
+	</events>
+</control>

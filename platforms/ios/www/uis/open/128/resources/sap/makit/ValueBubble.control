@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ValueBubble</name>
+	<developmentState state="experimental" since="1.8">API is not yet finished and might change completely</developmentState>
+	<author>SAP SE</author>
+	<documentation>The properties of the Chart's Value Bubble.</documentation>
+	<since>1.8</since>
+
+	<baseType>sap.ui.core/Element</baseType>
+	<properties>
+		<property group="Misc" name="showCategoryText" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Whether to display category's text on the Value Bubble</documentation>
+		</property>
+		<property group="Misc" name="showCategoryDisplayName" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Whether to display category's display name on the Value Bubble</documentation>
+		</property>
+		<property group="Misc" name="showValueDisplayName" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Whether to display value's display name on the Value Bubble</documentation>
+		</property>
+		<property group="Misc" name="showValueOnPieChart" type="sap.ui.core/boolean" defaultValue="false">
+			<documentation>Whether to display value on Pie or Donut chart</documentation>
+		</property>
+		<property group="Misc" name="showLegendLabel" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Whether to display legend's label (Pie or Donut chart only)</documentation>
+		</property>
+		<property group="Misc" name="showNullValue" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Whether to render null item on the Value Bubble</documentation>
+		</property>
+		<property group="Misc" name="position" type="ValueBubblePosition" defaultValue="Top">
+			<documentation>The position of the Value Bubble (Pie or Donut chart only)</documentation>
+		</property>
+		<property group="Misc" name="style" type="ValueBubbleStyle" defaultValue="Top">
+			<documentation>Value Bubble positioning style (All the chart types except: Pie/Donut/HBar chart)</documentation>
+		</property>
+		<property group="Appearance" name="visible" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Whether the Value Bubble is visible</documentation>
+		</property>
+	</properties>
+</control>

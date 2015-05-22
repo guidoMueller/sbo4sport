@@ -1,0 +1,40 @@
+<mvc:View xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+          xmlns:mvc="sap.ui.core.mvc"
+          controllerName="uniorg.ui.core.mvc.md.view.Dashboard"
+          xmlns="sap.m">
+    <Page
+            title="{i18n>Dashboard}"
+            showNavButton="{device>/isPhone}"
+            navButtonPress="onNavBack"
+            enableScrolling="false">
+        <headerContent>
+            <Button icon="sap-icon://refresh" press="onRefresh"/>
+        </headerContent>
+        <content>
+            <TileContainer
+                    tiles="{
+                    path: 'menu>/items',
+                    filters : [{ path: 'group', operator: 'EQ', value1: 'filter' }],
+                    sorter: [{
+                        path: 'sorter'
+                    },{
+                        path: 'text'
+                    }]     
+                }">
+                <StandardTile
+                        press="onTilePress"
+                        icon="{menu>icon}"
+                        type="{menu>type}"
+                        number="{menu>number}"
+                        numberUnit="{menu>numberUnit}"
+                        title="{menu>title}"
+                        info="{menu>info}"
+                        infoState="{menu>infoState}"
+                        data:group="{menu>group}"
+                        data:key="{menu>key}"
+                        data:filter="{menu>filter}"
+                        />
+            </TileContainer>
+        </content>
+    </Page>
+</mvc:View>

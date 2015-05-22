@@ -1,0 +1,24 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <Dialog
+    title="{i18n>SELECT}" id="measureDimensionDialog"
+     class='dialog'  horizontalScrolling='false'>
+    <content>
+   <SegmentedButton width="83%">
+   <Button text="{i18n>MEASURE}" press="showMeasureList" width="50%"></Button>
+   <Button text="{i18n>DIMENSION}" id="Dimensions" press="showDimensionList" width="50%"></Button>
+   
+   </SegmentedButton>
+      <HBox width="100%" justifyContent="SpaceAround">
+      <SearchField liveChange="onMeasureDimensionSearch" width="99%" />
+   </HBox>    
+    </content>
+    <beginButton>
+      <Button text="{i18n>OK}" press="onMeasureDimensionAdded" />
+    </beginButton>
+    <endButton>
+      <Button text="{i18n>CANCEL}" press="onMeasureDimensionCancel" />
+    </endButton>
+  </Dialog>
+</core:FragmentDefinition>

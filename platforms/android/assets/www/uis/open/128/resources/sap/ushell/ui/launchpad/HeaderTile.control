@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/HeaderTile</name>
+	<documentation>A HeaderTile acts as a separator inside a TileContainer.</documentation>
+
+	<baseType>sap.ushell/ui/launchpad/Tile</baseType>
+	<properties>
+		<property group="Appearance" name="headerLevel" type="sap.m/HeaderLevel" defaultValue="H3">
+		</property>
+		<property group="Appearance" name="headerText" type="sap.ui.core/string">
+		</property>
+	</properties>
+</control>

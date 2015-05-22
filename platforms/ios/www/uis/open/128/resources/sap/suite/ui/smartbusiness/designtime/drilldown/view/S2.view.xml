@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m"
+	controllerName="sap.suite.ui.smartbusiness.designtime.drilldown.view.S2">
+	<Page id="page" title="{i18n>ALL_ACTIVE_EVALUATIONS}">		
+	<content>
+			<List id="list"
+				items="{
+				path: '/EVALUATIONS_DDA',
+				sorter: {
+	        		path: 'INDICATOR',
+	        		descending: false,
+	        		group: '.formatIndicatorId'      		}
+	      	}"
+				mode="{device>/listMode}" select="_handleSelect">
+				<ObjectListItem id="MAIN_LIST_ITEM" type="{device>/listItemType}"
+					press="_handleItemPress" title="{TITLE}" number="{VIEWS_COUNT}" numberUnit="{i18n>VIEWS}">
+					<attributes>
+						<ObjectAttribute id="ATTR1" text="ID: {path:'ID'}" />
+					</attributes>
+				</ObjectListItem>
+			</List>
+		</content>
+	</Page>
+</core:View>

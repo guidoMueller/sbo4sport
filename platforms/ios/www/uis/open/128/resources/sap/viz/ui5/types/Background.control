@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Background</name>
+  <documentation>Module ui5/types/Background</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="visible" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set the visibility</documentation>
+    </property>
+    <property name="drawingEffect" type="sap.viz/ui5/types/Background_drawingEffect" defaultValue="normal">
+      <documentation>Set the drawing effect for the background. If this value is set to 'glossy', the background is glossy. If this value is set to 'normal', the background is matte.</documentation>
+    </property>
+    <property name="direction" type="sap.viz/ui5/types/Background_direction" defaultValue="vertical">
+      <documentation>Set the direction of the color gradient in the background. This only takes effect if the 'drawingEffect' value is set to 'glossy'.</documentation>
+    </property>
+    <property name="color" type="sap.ui.core/string" defaultValue="transparent">
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Define the color for the plot background body.</documentation>
+    </property>
+  </properties>
+  <aggregations>
+    <aggregation name="border" cardinality="0..1" type="sap.viz/ui5/types/Background_border">
+      <documentation>Settings for the border</documentation>
+    </aggregation>
+  </aggregations>
+</control>

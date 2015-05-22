@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+	<name>internal/ActionBar</name>
+	<documentation>A control that render actions of a system</documentation>
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="actionLabel" type="sap.ui.core/string">
+			<documentation>label for action</documentation>
+		</property>
+		<property group="Dimension" name="renderingSize" type="EntityCSSSize" defaultValue="sap.landvisz.EntityCSSSize.Regular">
+			<documentation>Property that determines the size of the entity rendered</documentation>
+		</property>
+		<property group="Data" type="sap.ui.core/URI" name="iconSrc">
+			<documentation>source for the icon rendered</documentation>
+		</property>
+		<property group="Data" name="actionType" type="ActionType" defaultValue="sap.landvisz.ActionType.NORMAL">
+			<documentation>type of the action </documentation>
+		</property>
+		<property group="Data" name="menuData" type="sap.ui.core/object">
+			<documentation>data of menu items and sub items</documentation>
+		</property>
+		<property group="Data" name="actionTooltip" type="sap.ui.core/string">
+			<documentation>Tooltip for the action</documentation>
+		</property>
+		<property group="Identification" name="enable" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>property to enable/disable actions</documentation>
+		</property>
+		<property group="Identification" name="changeView" type="sap.ui.core/boolean" defaultValue="false">
+			<documentation>new type of view is loaded while performing the action.</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="select">
+			<documentation>click on the action bar</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation name="menu" type="sap.ui.commons/Menu">
+			<documentation>aggregation for menu items</documentation>
+		</aggregation>
+	</aggregations>
+	<methods>
+		<method name="getSelectedItem" type="sap.ui.core/object">
+			<documentation>returns selected menu item object</documentation>
+		</method>
+		<method name="setSelectedItemSubAction" type="sap.ui.core/void">
+			<documentation>sub actions to be added in the  recently selected </documentation>
+			<parameters>
+				<parameter type="sap.ui.core/object" name="subAction">
+					<documentation>sub action of selcted menu item</documentation>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="getSystemId" type="sap.ui.core/string">
+			<documentation>returns the system ID.</documentation>
+		</method>
+	</methods>
+</control>

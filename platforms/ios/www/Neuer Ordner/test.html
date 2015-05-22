@@ -1,0 +1,266 @@
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script src="js/datajs-1.1.2.min.js"></script>
+
+	<script>
+		var appId = "com.opensap.myfirst"; // Change this to app id on server
+		var applicationContext = null;
+		var smpServerHost = "smp-p1729301597trial.hanatrial.ondemand.com";
+		var smpServerPort = "443";
+		var authStr = "";
+		var store = null; //Offline OData store
+		var startTime = null;
+		var online = navigator.onLine;
+
+		// Optional initial connection context
+		var context = {
+			"serverHost": smpServerHost, //Place your SMP 3.0 server name here
+			"https": true,
+			"serverPort": smpServerPort,
+			"user": "s0013961857",       //user name for registration
+			"password": "Guido75#",   //password for registration
+
+			"communicatorId": "REST",
+			"passcode": "password",
+			"unlockPasscode": "password",
+			"passcode_CONFIRM":"password",
+			"ssoPasscode":"Password1"
+		};
+
+		window.onerror = onError;
+
+		function onError(msg, url, line) {
+			var idx = url.lastIndexOf("/");
+			var file = "unknown";
+			if (idx > -1) {
+				file = url.substring(idx + 1);
+			}
+			alert("An error occurred in " + file + " (at line # " + line + "): " + msg);
+			return false; //suppressErrorAlert;
+		}
+
+		function init() {
+			if (sap.Logger) {
+				sap.Logger.setLogLevel(sap.Logger.DEBUG);  //enables the display of debug log messages from the Kapsel plugins.
+				sap.Logger.debug("Log level set to DEBUG");
+			}
+			register()
+			console.log("init completed");
+		}
+
+		function register() {
+			updateStatus2("register called");
+			sap.Logon.init(logonSuccessCallback, logonErrorCallback, appId, context);
+		}
+
+		function logonSuccessCallback(result) {
+			console.log("logonSuccessCallback " + JSON.stringify(result));
+			updateStatus2("Successfully REGISTERED");
+			applicationContext = result;
+			//alternatively the authproxy and logon plugincan provide this if SAPKapselHandleHttpRequests=true, (it is by default on iOS)
+			authStr = "Basic " + btoa(applicationContext.registrationContext.user + ":" + applicationContext.registrationContext.password);
+		}
+
+		function logonErrorCallback(error) {   //this method is called if the user cancels the registration.
+			console.log("An error occurred:  " + JSON.stringify(error));
+			if (device.platform == "Android") {  //Not supported on iOS
+				navigator.app.exitApp();
+			}
+		}
+
+		function unRegister() {
+			updateStatus2("unregister called");
+			sap.Logon.core.deleteRegistration(logonUnregisterSuccessCallback, errorCallback);
+			clearTable();
+		}
+
+		function logonUnregisterSuccessCallback(result) {
+			updateStatus2("Successfully UNREGISTERED");
+			console.log("logonUnregisterSuccessCallback " + JSON.stringify(result));
+			applicationContext = null;
+		}
+
+		function errorCallback(e) {
+			alert("An error occurred " + JSON.stringify(e));
+			console.log("An error occurred " + JSON.stringify(e));
+			updateStatus1("");
+		}
+
+		function read() {
+			updateStatus2("read request started");
+			startTime = new Date();
+
+			clearTable();
+			if (!haveAppId()) {
+				return;
+			}
+			var sURL = applicationContext.applicationEndpointURL + "/Products?$orderby=Name desc";
+			var oHeaders = {};
+			oHeaders['Authorization'] = authStr;
+			//oHeaders['X-SMP-APPCID'] = applicationContext.applicationConnectionId;    //this header is provided by the logon plugin
+
+			var request = {
+				headers : oHeaders,
+				requestUri : sURL,
+				method : "GET"
+			};
+			console.log("read using " + sURL);
+			OData.read(request, readSuccessCallback, errorCallback);
+		}
+
+		function readSuccessCallback(data, response) {
+			var endTime = new Date();
+			var duration = (endTime - startTime)/1000;
+			updateStatus2("Read " + data.results.length + " records in " + duration + " seconds");
+
+			var productsTable = document.getElementById("ProductsTable");
+			for (var i = 0; i < data.results.length; i++) {
+				var row = productsTable.insertRow(1);
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				var cell3 = row.insertCell(2);
+				cell1.innerHTML = data.results[i].Name;
+				cell2.innerHTML = data.results[i].Description;
+				cell3.innerHTML = data.results[i].Price;
+			}
+		}
+
+		function clearTable() {
+			var productsTable = document.getElementById("ProductsTable");
+			while(productsTable.rows.length > 1) {
+				productsTable.deleteRow(1);
+			}
+		}
+
+		function openStore() {
+			if (!haveAppId()) {
+				return;
+			}
+			startTime = new Date();
+			updateStatus2("store.open called");
+			var properties = {
+				"name": "ProductsOfflineStore",
+				"host": applicationContext.registrationContext.serverHost,
+				"port": applicationContext.registrationContext.serverPort,
+				"https": applicationContext.registrationContext.https,
+				"serviceRoot" :  appId,
+
+				"definingRequests" : {
+					"ProductsDR" : "/Products"
+				}
+			};
+
+			store = sap.OData.createOfflineStore(properties);
+
+			//var options = {};
+			store.open(openStoreSuccessCallback, errorCallback/*, options*/);
+		}
+
+		function openStoreSuccessCallback() {
+			var endTime = new Date();
+			var duration = (endTime - startTime)/1000;
+			updateStatus2("Store opened in  " + duration + " seconds");
+			updateStatus1("Store is OPEN.");
+			sap.OData.applyHttpClient();  //Offline OData calls can now be made against datajs.
+		}
+
+		function closeStore() {
+			if (!store) {
+				updateStatus2("The store must be opened before it can be closed");
+				return;
+			}
+			startTime = new Date();
+			updateStatus2("store.close called");
+			store.close(closeStoreSuccessCallback, errorCallback);
+		}
+
+		function closeStoreSuccessCallback() {
+			sap.OData.removeHttpClient();
+			var endTime = new Date();
+			var duration = (endTime - startTime)/1000;
+			updateStatus1("Store is CLOSED.");
+			updateStatus2("Store closed in  " + duration + " seconds");
+		}
+
+		//Removes the physical store from the filesystem
+		function clearStore() {
+			if (!store) {
+				updateStatus2("The store must be closed before it can be cleared");
+				return;
+			}
+			store.clear(clearStoreSuccessCallback, errorCallback);
+		}
+
+		function clearStoreSuccessCallback() {
+			updateStatus1("");
+			updateStatus2("Store is CLEARED");
+			store = null;
+		}
+
+		function haveAppId() {
+			if (!applicationContext) {
+				alert("Please register with the SMP Server before proceeding");
+				return false;
+			}
+			return true;
+		}
+
+		function updateStatus1(msg) {
+			document.getElementById('statusID').innerHTML = msg + " " + getDeviceStatusString();
+			console.log(msg + " " + getDeviceStatusString());
+		}
+
+		function updateStatus2(msg) {
+			var d = new Date();
+			document.getElementById('statusID2').innerHTML = msg + " at " + addZero(d.getHours()) + ":" + addZero(d.getMinutes()) + "." + addZero(d.getSeconds());
+			console.log(msg + " at " + addZero(d.getHours()) + ":" + addZero(d.getMinutes()) + "." + addZero(d.getSeconds()));
+		}
+
+		function addZero(input) {
+			if (input < 10) {
+				return "0" + input;
+			}
+			return input;
+		}
+
+		function getDeviceStatusString() {
+			if (online) {
+				return "Device is ONLINE";
+			}
+			else {
+				return "Device is OFFLINE";
+			}
+		}
+
+		function deviceOnline() {
+			online = true;
+			updateStatus1("");
+		}
+
+		function deviceOffline() {
+			online = false;
+			updateStatus1("");
+		}
+
+		document.addEventListener("deviceready", init, false);
+		document.addEventListener("online", deviceOnline, false);
+		document.addEventListener("offline", deviceOffline, false);
+	</script>
+
+</head>
+<body onload="updateStatus1('');">
+<h1>Offline OData Sample</h1>
+<button id="register" onclick="register()">Register</button>
+<button id="unregister" onclick="unRegister()">Unregister</button>
+<button id="read" onclick="read()">Read</button><br>
+<button id="openStore" onclick="openStore()">Open Offline Store</button>
+<button id="closeStore" onclick="closeStore()">Close Offline Store</button>
+<button id="clearStore" onclick="clearStore()">Clear Offline Store</button><br>
+<span id="statusID"></span><br>
+<span id="statusID2"></span>
+<table id="ProductsTable"><tr><th>Name</th><th>Description</th><th>Price</th></tr></table>
+</body>
+</html>
+
+

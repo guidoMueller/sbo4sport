@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>composite/InboxComment</name>
+	<documentation>fsgg</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="sender" type="sap.ui.core/string">
+			<documentation>Sender of the comment chunk</documentation>
+		</property>
+		<property group="Data" name="timestamp" type="sap.ui.core/string">
+			<documentation>Format is ISO 8601 YYYY-MM-DDThh:mm:ss.sZ, Z meaning the time is in UTC time zone</documentation>
+		</property>
+		<property group="Data" type="sap.ui.core/URI" name="thumbnailSrc">
+			<documentation>URL to the thumbnail image.</documentation>
+		</property>
+		<property group="Data" name="text" type="sap.ui.core/string">
+			<documentation>The FeedChunk text</documentation>
+		</property>
+		<property group="Misc" name="createdBy" type="sap.ui.core/string">
+			<documentation>Unique username of the user responsible for adding comment</documentation>
+		</property>
+		<property group="Misc" name="sapOrigin" type="sap.ui.core/string">
+			<documentation>Represent system origin in case of multi origin scenario</documentation>
+		</property>
+	</properties>
+</control>

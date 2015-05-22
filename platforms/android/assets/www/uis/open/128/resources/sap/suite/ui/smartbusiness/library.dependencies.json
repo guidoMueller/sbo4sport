@@ -1,0 +1,2871 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 3812,
+      "compressedSize" : 2757,
+      "required" : ["sap/suite/ui/smartbusiness/designtime/association/Configuration.js", "sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/Configuration.js",
+      "size" : 1813,
+      "compressedSize" : 1266,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/Main.controller.js",
+      "size" : 549,
+      "compressedSize" : 358,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/Main.view.xml",
+      "size" : 311,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/association/Main.controller.js", "sap/m/NavContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n.properties",
+      "size" : 4123,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_ar.properties",
+      "size" : 10333,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_bg.properties",
+      "size" : 9819,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_ca.properties",
+      "size" : 4274,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_cs.properties",
+      "size" : 4627,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_da.properties",
+      "size" : 4119,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_de.properties",
+      "size" : 4385,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_el.properties",
+      "size" : 10287,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_en.properties",
+      "size" : 3972,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_es.properties",
+      "size" : 4269,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_et.properties",
+      "size" : 4243,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_fi.properties",
+      "size" : 4369,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_fr.properties",
+      "size" : 4419,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_hi.properties",
+      "size" : 8980,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_hr.properties",
+      "size" : 4175,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_hu.properties",
+      "size" : 4999,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_it.properties",
+      "size" : 4252,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_iw.properties",
+      "size" : 7434,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_ja.properties",
+      "size" : 6361,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_ko.properties",
+      "size" : 5669,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_lt.properties",
+      "size" : 4572,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_lv.properties",
+      "size" : 4744,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_nl.properties",
+      "size" : 4138,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_no.properties",
+      "size" : 3987,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_pl.properties",
+      "size" : 4704,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_pt.properties",
+      "size" : 4464,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_ro.properties",
+      "size" : 4582,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_ru.properties",
+      "size" : 9477,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_sh.properties",
+      "size" : 4560,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_sk.properties",
+      "size" : 4700,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_sl.properties",
+      "size" : 4148,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_sv.properties",
+      "size" : 4162,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_th.properties",
+      "size" : 9986,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_tr.properties",
+      "size" : 4592,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_uk.properties",
+      "size" : 9571,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_vi.properties",
+      "size" : 6140,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_zh_CN.properties",
+      "size" : 4885,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/i18n/i18n_zh_TW.properties",
+      "size" : 4889,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/view/S2.controller.js",
+      "size" : 11425,
+      "compressedSize" : 7510,
+      "required" : ["sap/ca/scfld/md/controller/ScfldMasterController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/view/S2.view.xml",
+      "size" : 1085,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/association/view/S2.controller.js", "sap/m/Page.js", "sap/m/List.js", "sap/m/ObjectListItem.js", "sap/m/ObjectAttribute.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/view/S3.controller.js",
+      "size" : 8551,
+      "compressedSize" : 6232,
+      "required" : ["sap/ca/scfld/md/controller/BaseDetailController.js", "sap/m/MessageBox.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/view/S3.view.xml",
+      "size" : 4063,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/association/view/S3.controller.js", "sap/m/Page.js", "sap/m/ObjectHeader.js", "sap/m/ObjectAttribute.js", "sap/ui/layout/Grid.js", "sap/ui/layout/form/SimpleForm.js", "sap/m/Label.js", "sap/m/Text.js", "sap/m/HBox.js", "sap/m/Table.js", "sap/m/Toolbar.js", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/ui/core/Icon.js", "sap/m/FlexItemData.js", "sap/m/ObjectNumber.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/view/S4.controller.js",
+      "size" : 50258,
+      "compressedSize" : 32416,
+      "required" : ["sap/ca/scfld/md/controller/BaseDetailController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/association/view/S4.view.xml",
+      "size" : 5817,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/association/view/S4.controller.js", "sap/m/Page.js", "sap/ui/layout/Grid.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Input.js", "sap/ui/layout/GridData.js", "sap/m/Select.js", "sap/ui/core/Item.js", "sap/m/VBox.js", "sap/m/Panel.js", "sap/m/HBox.js", "sap/m/Text.js", "sap/ui/core/Icon.js", "sap/m/FlexItemData.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 3666,
+      "compressedSize" : 2661,
+      "required" : ["sap/suite/ui/smartbusiness/designtime/authorization/Configuration.js", "sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/Configuration.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP SE. All rights reserved",
+      "size" : 1916,
+      "compressedSize" : 1370,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/Main.controller.js",
+      "size" : 553,
+      "compressedSize" : 362,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/Main.view.xml",
+      "size" : 313,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/authorization/Main.controller.js", "sap/m/NavContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n.properties",
+      "size" : 2978,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_ar.properties",
+      "size" : 5860,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_bg.properties",
+      "size" : 6581,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_ca.properties",
+      "size" : 2963,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_cs.properties",
+      "size" : 3322,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_da.properties",
+      "size" : 2881,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_de.properties",
+      "size" : 3017,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_el.properties",
+      "size" : 6842,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_en.properties",
+      "size" : 2769,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_es.properties",
+      "size" : 3021,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_et.properties",
+      "size" : 2951,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_fi.properties",
+      "size" : 3241,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_fr.properties",
+      "size" : 3148,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_hi.properties",
+      "size" : 6330,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_hr.properties",
+      "size" : 2965,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_hu.properties",
+      "size" : 3401,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_it.properties",
+      "size" : 3023,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_iw.properties",
+      "size" : 5033,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_ja.properties",
+      "size" : 4042,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_ko.properties",
+      "size" : 3755,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_lt.properties",
+      "size" : 3208,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_lv.properties",
+      "size" : 3326,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_nl.properties",
+      "size" : 2923,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_no.properties",
+      "size" : 2888,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_pl.properties",
+      "size" : 3261,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_pt.properties",
+      "size" : 3203,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_ro.properties",
+      "size" : 3096,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_ru.properties",
+      "size" : 6583,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_sh.properties",
+      "size" : 3017,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_sk.properties",
+      "size" : 3397,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_sl.properties",
+      "size" : 2923,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_sv.properties",
+      "size" : 3037,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_th.properties",
+      "size" : 6310,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_tr.properties",
+      "size" : 3151,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_uk.properties",
+      "size" : 6567,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_vi.properties",
+      "size" : 4149,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_zh_CN.properties",
+      "size" : 3348,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/i18n/i18n_zh_TW.properties",
+      "size" : 3380,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/view/S2.controller.js",
+      "size" : 10962,
+      "compressedSize" : 6772,
+      "required" : ["sap/ca/scfld/md/controller/ScfldMasterController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/view/S2.view.xml",
+      "size" : 895,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/authorization/view/S2.controller.js", "sap/m/Page.js", "sap/m/List.js", "sap/m/ObjectListItem.js", "sap/m/ObjectAttribute.js", "sap/m/Label.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/view/S3.controller.js",
+      "size" : 2624,
+      "compressedSize" : 2162,
+      "required" : ["sap/ca/scfld/md/controller/BaseDetailController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/view/S3.view.xml",
+      "size" : 2746,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/authorization/view/S3.controller.js", "sap/m/Page.js", "sap/m/ObjectHeader.js", "sap/m/ObjectAttribute.js", "sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/ui/layout/form/SimpleForm.js", "sap/m/Label.js", "sap/m/Text.js", "sap/m/HBox.js", "sap/ui/core/Title.js", "sap/ui/layout/Grid.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/view/S4.controller.js",
+      "size" : 20836,
+      "compressedSize" : 12855,
+      "required" : ["sap/ca/scfld/md/controller/BaseFullscreenController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/authorization/view/S4.view.xml",
+      "size" : 3184,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/authorization/view/S4.controller.js", "sap/m/Page.js", "sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/m/List.js", "sap/m/Toolbar.js", "sap/m/SearchField.js", "sap/m/Label.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/Icon.js", "sap/m/CustomListItem.js", "sap/ui/layout/Grid.js", "sap/ui/layout/GridData.js", "sap/m/Link.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/Component.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP SE. All rights reserved",
+      "size" : 3940,
+      "compressedSize" : 3075,
+      "required" : ["sap/suite/ui/smartbusiness/designtime/drilldown/Configuration.js", "sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/Configuration.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP SE. All rights reserved",
+      "size" : 1945,
+      "compressedSize" : 1403,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/Main.controller.js",
+      "size" : 355,
+      "compressedSize" : 334,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/Main.view.xml",
+      "size" : 238,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/drilldown/Main.controller.js", "sap/m/NavContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n.properties",
+      "size" : 13950,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_ar.properties",
+      "size" : 26647,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_bg.properties",
+      "size" : 30420,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_ca.properties",
+      "size" : 15161,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_cs.properties",
+      "size" : 15592,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_da.properties",
+      "size" : 14491,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_de.properties",
+      "size" : 14977,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_el.properties",
+      "size" : 31411,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_en.properties",
+      "size" : 14047,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_es.properties",
+      "size" : 14948,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_et.properties",
+      "size" : 14937,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_fi.properties",
+      "size" : 14915,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_fr.properties",
+      "size" : 15479,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_hi.properties",
+      "size" : 28079,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_hr.properties",
+      "size" : 14684,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_hu.properties",
+      "size" : 16652,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_it.properties",
+      "size" : 14404,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_iw.properties",
+      "size" : 23914,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_ja.properties",
+      "size" : 19708,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_ko.properties",
+      "size" : 18270,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_lt.properties",
+      "size" : 15578,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_lv.properties",
+      "size" : 16325,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_nl.properties",
+      "size" : 14470,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_no.properties",
+      "size" : 12313,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_pl.properties",
+      "size" : 15338,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_pt.properties",
+      "size" : 15150,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_ro.properties",
+      "size" : 15396,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_ru.properties",
+      "size" : 31134,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_sh.properties",
+      "size" : 14873,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_sk.properties",
+      "size" : 15775,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_sl.properties",
+      "size" : 14712,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_sv.properties",
+      "size" : 14869,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_th.properties",
+      "size" : 29993,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_tr.properties",
+      "size" : 15925,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_uk.properties",
+      "size" : 29856,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_vi.properties",
+      "size" : 19396,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_zh_CN.properties",
+      "size" : 16303,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/i18n/i18n_zh_TW.properties",
+      "size" : 16284,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/js/util.js",
+      "size" : 0,
+      "compressedSize" : 0,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/S2.controller.js",
+      "size" : 7303,
+      "compressedSize" : 4794,
+      "required" : ["sap/ca/scfld/md/controller/ScfldMasterController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/S2.view.xml",
+      "size" : 795,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/drilldown/view/S2.controller.js", "sap/m/Page.js", "sap/m/List.js", "sap/m/ObjectListItem.js", "sap/m/ObjectAttribute.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/S3.controller.js",
+      "size" : 55727,
+      "compressedSize" : 34809,
+      "required" : ["sap/ca/scfld/md/controller/BaseDetailController.js", "sap/suite/ui/smartbusiness/tiles/Bullet.js", "sap/suite/ui/smartbusiness/tiles/Comparison.js", "sap/suite/ui/smartbusiness/tiles/AreaChart.js", "sap/suite/ui/smartbusiness/tiles/Numeric.js", "sap/suite/ui/smartbusiness/tiles/MeasureComparison.js", "sap/m/MessageBox.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/S3.view.xml",
+      "size" : 2167,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/drilldown/view/S3.controller.js", "sap/m/Page.js", "sap/suite/ui/smartbusiness/lib/Filter.js", "sap/m/ObjectHeader.js", "sap/suite/ui/commons/HeaderContainer.js", "sap/m/HBox.js", "sap/ca/ui/charts/ChartToolBar.js", "sap/ca/ui/charts/Chart.js", "sap/m/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/addRelatedTilesDialog.fragment.xml",
+      "size" : 886,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/SegmentedButton.js", "sap/m/Button.js", "sap/m/List.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/addThresholdMeasure.fragment.xml",
+      "size" : 925,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/VBox.js", "sap/m/Label.js", "sap/m/Select.js", "sap/ui/core/Item.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/addTileDialog.fragment.xml",
+      "size" : 561,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/List.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/additionalLanguagesDialog.fragment.xml",
+      "size" : 1675,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/Table.js", "sap/m/Column.js", "sap/m/VBox.js", "sap/m/Label.js", "sap/m/Input.js", "sap/m/Select.js", "sap/ui/core/Item.js", "sap/ui/core/Icon.js", "sap/m/ColumnListItem.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/chartNameAndDataInfoContainer.fragment.xml",
+      "size" : 1506,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/VBox.js", "sap/m/Label.js", "sap/m/Input.js", "sap/m/Link.js", "sap/m/CheckBox.js", "sap/m/Select.js", "sap/ui/core/ListItem.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/chartTypeConfig.fragment.xml",
+      "size" : 1649,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/VBox.js", "sap/m/Label.js", "sap/m/List.js", "sap/m/CustomListItem.js", "sap/m/Select.js", "sap/ui/core/ListItem.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/configurator.controller.js",
+      "size" : 72720,
+      "compressedSize" : 45010,
+      "required" : ["sap/ca/scfld/md/controller/BaseDetailController.js", "sap/suite/ui/smartbusiness/tiles/Bullet.js", "sap/suite/ui/smartbusiness/tiles/Comparison.js", "sap/suite/ui/smartbusiness/tiles/MeasureComparison.js", "sap/suite/ui/smartbusiness/tiles/AreaChart.js", "sap/suite/ui/smartbusiness/tiles/Numeric.js", "sap/m/MessageBox.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/configurator.view.xml",
+      "size" : 3562,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/drilldown/view/configurator.controller.js", "sap/m/Page.js", "sap/suite/ui/smartbusiness/lib/Filter.js", "sap/m/HBox.js", "sap/m/Label.js", "sap/m/CheckBox.js", "sap/m/VBox.js", "sap/m/Button.js", "sap/suite/ui/commons/HeaderContainer.js", "sap/ca/ui/charts/ChartToolBar.js", "sap/ca/ui/charts/Chart.js", "sap/m/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/configureNewView.controller.js",
+      "size" : 97247,
+      "compressedSize" : 67419,
+      "required" : ["sap/ca/scfld/md/controller/ScfldMasterController.js", "sap/suite/ui/smartbusiness/lib/Util.js", "sap/m/MessageBox.js", "sap/m/MessageToast.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/configureNewView.view.xml",
+      "size" : 2528,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/drilldown/view/configureNewView.controller.js", "sap/m/Page.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/Label.js", "sap/m/SplitContainer.js", "sap/ui/core/Fragment.js", "sap/suite/ui/smartbusiness/designtime/drilldown/view/measureDimensionList.fragment.xml", "sap/suite/ui/smartbusiness/designtime/drilldown/view/chartTypeConfig.fragment.xml", "sap/suite/ui/smartbusiness/designtime/drilldown/view/chartNameAndDataInfoContainer.fragment.xml", "sap/m/VBox.js", "sap/ca/ui/charts/ChartToolBar.js", "sap/ca/ui/charts/Chart.js", "sap/m/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/dualAxisConfig.fragment.xml",
+      "size" : 2910,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/ResponsiveGridLayout.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/m/Label.js", "sap/m/Select.js", "sap/ui/core/ListItem.js", "sap/m/Button.js", "sap/m/Text.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/editDialog.fragment.xml",
+      "size" : 6738,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/SegmentedButton.js", "sap/m/Button.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/GridLayout.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/m/Text.js", "sap/m/HBox.js", "sap/ui/core/Icon.js", "sap/m/Select.js", "sap/ui/core/Item.js", "sap/ui/layout/form/ResponsiveGridLayout.js", "sap/m/CheckBox.js", "sap/m/VBox.js", "sap/m/Label.js", "sap/ui/core/ListItem.js", "sap/m/RadioButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/list.fragment.xml",
+      "size" : 355,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/List.js", "sap/m/CustomListItem.js", "sap/m/HBox.js", "sap/m/CheckBox.js", "sap/m/Label.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/measureDimensionDialog.fragment.xml",
+      "size" : 859,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/SegmentedButton.js", "sap/m/Button.js", "sap/m/HBox.js", "sap/m/SearchField.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/measureDimensionList.fragment.xml",
+      "size" : 2315,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/List.js", "sap/m/CustomListItem.js", "sap/m/HBox.js", "sap/m/VBox.js", "sap/m/Label.js", "sap/ui/core/Icon.js", "sap/m/Toolbar.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/minichartsDialog.fragment.xml",
+      "size" : 1089,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/List.js", "sap/m/CustomListItem.js", "sap/m/VBox.js", "sap/m/Label.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/msrDialogForStack1.fragment.xml",
+      "size" : 702,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/SelectDialog.js", "sap/m/StandardListItem.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/drilldown/view/multipleMeasureDialog.fragment.xml",
+      "size" : 4580,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/List.js", "sap/m/GroupHeaderListItem.js", "sap/m/CustomListItem.js", "sap/m/VBox.js", "sap/m/HBox.js", "sap/m/Input.js", "sap/m/Select.js", "sap/ui/core/Item.js", "sap/m/Label.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 4397,
+      "compressedSize" : 2773,
+      "required" : ["sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/Configuration.js",
+      "size" : 1798,
+      "compressedSize" : 1290,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/Main.controller.js",
+      "size" : 251,
+      "compressedSize" : 229,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/Main.view.xml",
+      "size" : 246,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/evaluation/Main.controller.js", "sap/m/App.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n.properties",
+      "size" : 8130,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_ar.properties",
+      "size" : 19986,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_bg.properties",
+      "size" : 21654,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_ca.properties",
+      "size" : 8656,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_cs.properties",
+      "size" : 9048,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_da.properties",
+      "size" : 7987,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_de.properties",
+      "size" : 8421,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_el.properties",
+      "size" : 21697,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_en.properties",
+      "size" : 7587,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_es.properties",
+      "size" : 8536,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_et.properties",
+      "size" : 8196,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_fi.properties",
+      "size" : 8399,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_fr.properties",
+      "size" : 8800,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_hi.properties",
+      "size" : 19589,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_hr.properties",
+      "size" : 8135,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_hu.properties",
+      "size" : 10185,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_it.properties",
+      "size" : 8270,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_iw.properties",
+      "size" : 15103,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_ja.properties",
+      "size" : 12808,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_ko.properties",
+      "size" : 11588,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_lt.properties",
+      "size" : 9170,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_lv.properties",
+      "size" : 9439,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_nl.properties",
+      "size" : 7869,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_no.properties",
+      "size" : 6612,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_pl.properties",
+      "size" : 8875,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_pt.properties",
+      "size" : 8634,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_ro.properties",
+      "size" : 8735,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_ru.properties",
+      "size" : 21569,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_sh.properties",
+      "size" : 8389,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_sk.properties",
+      "size" : 8881,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_sl.properties",
+      "size" : 8032,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_sv.properties",
+      "size" : 8251,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_th.properties",
+      "size" : 20139,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_tr.properties",
+      "size" : 9394,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_uk.properties",
+      "size" : 20350,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_vi.properties",
+      "size" : 12496,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_zh_CN.properties",
+      "size" : 9478,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/i18n/i18n_zh_TW.properties",
+      "size" : 9736,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/view/S1.controller.js",
+      "size" : 118522,
+      "compressedSize" : 79367,
+      "required" : ["sap/ca/scfld/md/controller/BaseFullscreenController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/view/S1.view.xml",
+      "size" : 18818,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/evaluation/view/S1.controller.js", "sap/m/Page.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Input.js", "sap/ui/layout/GridData.js", "sap/m/Link.js", "sap/m/VBox.js", "sap/ui/layout/Grid.js", "sap/m/Button.js", "sap/m/Select.js", "sap/ui/core/Item.js", "sap/m/Panel.js", "sap/suite/ui/smartbusiness/designtime/evaluation/view/createEvalTargetThresholdTrendInput.view.xml"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/view/createEvalTargetThresholdTrendInput.controller.js",
+      "size" : 16006,
+      "compressedSize" : 12281,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/evaluation/view/createEvalTargetThresholdTrendInput.view.xml",
+      "size" : 8010,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/evaluation/view/createEvalTargetThresholdTrendInput.controller.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/ui/layout/Grid.js", "sap/m/Text.js", "sap/m/Label.js", "sap/ui/layout/GridData.js", "sap/m/Select.js", "sap/ui/core/Item.js", "sap/m/Image.js", "sap/m/Input.js", "sap/ui/core/CustomData.js", "sap/m/CheckBox.js", "sap/m/MultiInput.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 3171,
+      "compressedSize" : 2529,
+      "required" : ["sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/Configuration.js",
+      "size" : 1850,
+      "compressedSize" : 1252,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/Main.controller.js",
+      "size" : 237,
+      "compressedSize" : 215,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/Main.view.xml",
+      "size" : 239,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/kpi/Main.controller.js", "sap/m/App.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n.properties",
+      "size" : 4973,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_ar.properties",
+      "size" : 13790,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_bg.properties",
+      "size" : 13549,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_ca.properties",
+      "size" : 5190,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_cs.properties",
+      "size" : 5537,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_da.properties",
+      "size" : 4911,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_de.properties",
+      "size" : 5361,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_el.properties",
+      "size" : 13585,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_en.properties",
+      "size" : 4804,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_es.properties",
+      "size" : 5203,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_et.properties",
+      "size" : 5168,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_fi.properties",
+      "size" : 5175,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_fr.properties",
+      "size" : 5519,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_hi.properties",
+      "size" : 12050,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_hr.properties",
+      "size" : 5250,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_hu.properties",
+      "size" : 5939,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_it.properties",
+      "size" : 5260,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_iw.properties",
+      "size" : 9297,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_ja.properties",
+      "size" : 8663,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_ko.properties",
+      "size" : 7650,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_lt.properties",
+      "size" : 5651,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_lv.properties",
+      "size" : 5948,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_nl.properties",
+      "size" : 4957,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_no.properties",
+      "size" : 4561,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_pl.properties",
+      "size" : 6264,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_pt.properties",
+      "size" : 5255,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_ro.properties",
+      "size" : 5445,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_ru.properties",
+      "size" : 12996,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_sh.properties",
+      "size" : 5516,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_sk.properties",
+      "size" : 5565,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_sl.properties",
+      "size" : 5042,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_sv.properties",
+      "size" : 5084,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_th.properties",
+      "size" : 12924,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_tr.properties",
+      "size" : 6085,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_uk.properties",
+      "size" : 13031,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_vi.properties",
+      "size" : 7377,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_zh_CN.properties",
+      "size" : 5978,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/i18n/i18n_zh_TW.properties",
+      "size" : 6315,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/view/S1.controller.js",
+      "size" : 61396,
+      "compressedSize" : 39825,
+      "required" : ["sap/ca/scfld/md/controller/BaseFullscreenController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/kpi/view/S1.view.xml",
+      "size" : 6992,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/kpi/view/S1.controller.js", "sap/m/Page.js", "sap/ui/layout/Grid.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Input.js", "sap/ui/layout/GridData.js", "sap/m/Link.js", "sap/m/TextArea.js", "sap/m/VBox.js", "sap/m/RadioButton.js", "sap/ui/core/CustomData.js", "sap/m/Select.js", "sap/ui/core/Item.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 2910,
+      "compressedSize" : 1730,
+      "required" : ["sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/Configuration.js",
+      "size" : 1763,
+      "compressedSize" : 1137,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/Main.controller.js",
+      "size" : 369,
+      "compressedSize" : 239,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/Main.view.xml",
+      "size" : 251,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/tools/migration/Main.controller.js", "sap/m/App.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n.properties",
+      "size" : 3201,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_ar.properties",
+      "size" : 6560,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_bg.properties",
+      "size" : 6309,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_ca.properties",
+      "size" : 3201,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_cs.properties",
+      "size" : 3364,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_da.properties",
+      "size" : 3099,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_de.properties",
+      "size" : 3267,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_el.properties",
+      "size" : 6923,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_en.properties",
+      "size" : 3043,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_es.properties",
+      "size" : 3219,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_et.properties",
+      "size" : 3126,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_fi.properties",
+      "size" : 3166,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_fr.properties",
+      "size" : 3356,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_hi.properties",
+      "size" : 6198,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_hr.properties",
+      "size" : 3156,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_hu.properties",
+      "size" : 3623,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_it.properties",
+      "size" : 3187,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_iw.properties",
+      "size" : 5207,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_ja.properties",
+      "size" : 4200,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_ko.properties",
+      "size" : 4412,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_lt.properties",
+      "size" : 3307,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_lv.properties",
+      "size" : 3319,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_nl.properties",
+      "size" : 3129,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_no.properties",
+      "size" : 3041,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_pl.properties",
+      "size" : 3447,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_pt.properties",
+      "size" : 3355,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_ro.properties",
+      "size" : 3319,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_ru.properties",
+      "size" : 6264,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_sh.properties",
+      "size" : 3378,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_sk.properties",
+      "size" : 3468,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_sl.properties",
+      "size" : 3155,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_sv.properties",
+      "size" : 3096,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_th.properties",
+      "size" : 6186,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_tr.properties",
+      "size" : 3594,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_uk.properties",
+      "size" : 6126,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_vi.properties",
+      "size" : 3955,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_zh_CN.properties",
+      "size" : 3587,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/i18n/i18n_zh_TW.properties",
+      "size" : 3485,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/view/S1.controller.js",
+      "size" : 64340,
+      "compressedSize" : 32551,
+      "required" : ["sap/ca/scfld/md/controller/BaseFullscreenController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/tools/migration/view/S1.view.xml",
+      "size" : 2791,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/tools/migration/view/S1.controller.js", "sap/m/Page.js", "sap/ui/layout/Grid.js", "sap/m/Input.js", "sap/ui/layout/GridData.js", "sap/m/List.js", "sap/m/StandardListItem.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 3778,
+      "compressedSize" : 2706,
+      "required" : ["sap/suite/ui/smartbusiness/designtime/visualization/Configuration.js", "sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/Configuration.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP SE. All rights reserved",
+      "size" : 1919,
+      "compressedSize" : 1374,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/Main.controller.js",
+      "size" : 553,
+      "compressedSize" : 362,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/Main.view.xml",
+      "size" : 313,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/visualization/Main.controller.js", "sap/m/NavContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n.properties",
+      "size" : 6559,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_ar.properties",
+      "size" : 14691,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_bg.properties",
+      "size" : 18176,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_ca.properties",
+      "size" : 7175,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_cs.properties",
+      "size" : 7681,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_da.properties",
+      "size" : 6698,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_de.properties",
+      "size" : 7077,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_el.properties",
+      "size" : 18153,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_en.properties",
+      "size" : 6380,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_es.properties",
+      "size" : 7167,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_et.properties",
+      "size" : 6863,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_fi.properties",
+      "size" : 7001,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_fr.properties",
+      "size" : 7497,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_hi.properties",
+      "size" : 15589,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_hr.properties",
+      "size" : 6937,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_hu.properties",
+      "size" : 7998,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_it.properties",
+      "size" : 6897,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_iw.properties",
+      "size" : 12992,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_ja.properties",
+      "size" : 10878,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_ko.properties",
+      "size" : 9481,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_lt.properties",
+      "size" : 7528,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_lv.properties",
+      "size" : 8090,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_nl.properties",
+      "size" : 6690,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_no.properties",
+      "size" : 5184,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_pl.properties",
+      "size" : 7614,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_pt.properties",
+      "size" : 7209,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_ro.properties",
+      "size" : 7423,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_ru.properties",
+      "size" : 17401,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_sh.properties",
+      "size" : 7016,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_sk.properties",
+      "size" : 7727,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_sl.properties",
+      "size" : 7125,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_sv.properties",
+      "size" : 6860,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_th.properties",
+      "size" : 15895,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_tr.properties",
+      "size" : 7624,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_uk.properties",
+      "size" : 17100,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_vi.properties",
+      "size" : 10258,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_zh_CN.properties",
+      "size" : 8107,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/i18n/i18n_zh_TW.properties",
+      "size" : 8144,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/view/S2.controller.js",
+      "size" : 8291,
+      "compressedSize" : 5738,
+      "required" : ["sap/ca/scfld/md/controller/ScfldMasterController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/view/S2.view.xml",
+      "size" : 1122,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/visualization/view/S2.controller.js", "sap/m/Page.js", "sap/m/List.js", "sap/m/Toolbar.js", "sap/m/Label.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/Icon.js", "sap/m/ObjectListItem.js", "sap/m/ObjectAttribute.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/view/S3.controller.js",
+      "size" : 28817,
+      "compressedSize" : 17305,
+      "required" : ["sap/ca/scfld/md/controller/BaseDetailController.js", "sap/m/MessageBox.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/view/S3.view.xml",
+      "size" : 1510,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/visualization/view/S3.controller.js", "sap/m/Page.js", "sap/m/ObjectHeader.js", "sap/m/ObjectAttribute.js", "sap/m/Table.js", "sap/m/Toolbar.js", "sap/m/Label.js", "sap/m/ToolbarSpacer.js", "sap/m/Button.js", "sap/m/Column.js", "sap/m/Text.js", "sap/ui/core/Icon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/view/S4.controller.js",
+      "size" : 87849,
+      "compressedSize" : 52976,
+      "required" : ["sap/ca/scfld/md/controller/BaseFullscreenController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/visualization/view/S4.view.xml",
+      "size" : 54519,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/visualization/view/S4.controller.js", "sap/m/Page.js", "sap/suite/ui/commons/HeaderContainer.js", "sap/suite/ui/commons/HeaderCell.js", "sap/suite/ui/commons/HeaderCellItem.js", "sap/suite/ui/commons/GenericTile.js", "sap/ui/core/CustomData.js", "sap/suite/ui/commons/TileContent.js", "sap/suite/ui/commons/NumericContent.js", "sap/suite/ui/commons/ComparisonChart.js", "sap/suite/ui/commons/ComparisonData.js", "sap/suite/ui/commons/MicroAreaChart.js", "sap/suite/ui/commons/MicroAreaChartLabel.js", "sap/suite/ui/commons/MicroAreaChartItem.js", "sap/suite/ui/commons/MicroAreaChartPoint.js", "sap/suite/ui/commons/BulletChart.js", "sap/suite/ui/commons/BulletChartData.js", "sap/ui/layout/Grid.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/core/Title.js", "sap/m/Label.js", "sap/m/Select.js", "sap/ui/layout/GridData.js", "sap/ui/core/Item.js", "sap/m/Input.js", "sap/m/Link.js", "sap/m/VBox.js", "sap/m/RadioButton.js", "sap/m/Button.js", "sap/ui/core/Icon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 3685,
+      "compressedSize" : 2607,
+      "required" : ["sap/suite/ui/smartbusiness/designtime/workspace/Configuration.js", "sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/Configuration.js",
+      "size" : 1807,
+      "compressedSize" : 1262,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/Main.controller.js",
+      "size" : 438,
+      "compressedSize" : 247,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/Main.view.xml",
+      "size" : 309,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/workspace/Main.controller.js", "sap/m/NavContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n.properties",
+      "size" : 12556,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_ar.properties",
+      "size" : 37806,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_bg.properties",
+      "size" : 33235,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_ca.properties",
+      "size" : 12809,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_cs.properties",
+      "size" : 14126,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_da.properties",
+      "size" : 12634,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_de.properties",
+      "size" : 13550,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_el.properties",
+      "size" : 34600,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_en.properties",
+      "size" : 12289,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_es.properties",
+      "size" : 13109,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_et.properties",
+      "size" : 13307,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_fi.properties",
+      "size" : 12985,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_fr.properties",
+      "size" : 13786,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_hi.properties",
+      "size" : 31456,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_hr.properties",
+      "size" : 13196,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_hu.properties",
+      "size" : 15446,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_it.properties",
+      "size" : 12682,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_iw.properties",
+      "size" : 26050,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_ja.properties",
+      "size" : 22146,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_ko.properties",
+      "size" : 19872,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_lt.properties",
+      "size" : 14022,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_lv.properties",
+      "size" : 14793,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_nl.properties",
+      "size" : 12605,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_no.properties",
+      "size" : 12070,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_pl.properties",
+      "size" : 14776,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_pt.properties",
+      "size" : 13056,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_ro.properties",
+      "size" : 13975,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_ru.properties",
+      "size" : 31511,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_sh.properties",
+      "size" : 14502,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_sk.properties",
+      "size" : 14104,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_sl.properties",
+      "size" : 12726,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_sv.properties",
+      "size" : 12786,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_th.properties",
+      "size" : 34583,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_tr.properties",
+      "size" : 15289,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_uk.properties",
+      "size" : 32115,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_vi.properties",
+      "size" : 18729,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_zh_CN.properties",
+      "size" : 15060,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/i18n/i18n_zh_TW.properties",
+      "size" : 15531,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/view/S2.controller.js",
+      "size" : 40172,
+      "compressedSize" : 26240,
+      "required" : ["sap/ca/scfld/md/controller/ScfldMasterController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/view/S2.view.xml",
+      "size" : 1297,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/workspace/view/S2.controller.js", "sap/m/Page.js", "sap/m/List.js", "sap/m/Toolbar.js", "sap/m/Label.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/Icon.js", "sap/m/ObjectListItem.js", "sap/m/ObjectAttribute.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/view/S3.controller.js",
+      "size" : 23800,
+      "compressedSize" : 13165,
+      "required" : ["sap/ca/scfld/md/controller/BaseDetailController.js", "sap/m/MessageBox.js", "sap/m/MessageToast.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/view/S3.view.xml",
+      "size" : 7215,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/workspace/view/S3.controller.js", "sap/m/Page.js", "sap/m/ObjectHeader.js", "sap/m/ObjectAttribute.js", "sap/m/ObjectStatus.js", "sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/ui/layout/form/SimpleForm.js", "sap/m/Label.js", "sap/m/Text.js", "sap/m/HBox.js", "sap/m/Table.js", "sap/m/Toolbar.js", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/ui/layout/Grid.js", "sap/ui/core/Icon.js", "sap/m/FlexItemData.js", "sap/m/ObjectNumber.js", "sap/m/ObjectIdentifier.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/view/S4.controller.js",
+      "size" : 48958,
+      "compressedSize" : 23965,
+      "required" : ["sap/ca/scfld/md/controller/BaseDetailController.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/designtime/workspace/view/S4.view.xml",
+      "size" : 5555,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/designtime/workspace/view/S4.controller.js", "sap/m/Page.js", "sap/m/Button.js", "sap/m/ObjectHeader.js", "sap/m/ObjectAttribute.js", "sap/m/ObjectStatus.js", "sap/ui/layout/Grid.js", "sap/ui/layout/form/SimpleForm.js", "sap/m/Label.js", "sap/m/Text.js", "sap/m/HBox.js", "sap/ui/layout/GridData.js", "sap/m/Table.js", "sap/m/Toolbar.js", "sap/m/Column.js", "sap/m/ColumnListItem.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/Component-preload.js",
+      "size" : 147,
+      "compressedSize" : 18,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/Component.js",
+      "description" : "define a root UIComponent which exposes the main view",
+      "size" : 2090,
+      "compressedSize" : 1275,
+      "required" : ["sap/ca/scfld/md/ComponentBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/Configuration.js",
+      "size" : 439,
+      "compressedSize" : 355,
+      "required" : ["sap/ca/scfld/md/ConfigurationBase.js", "sap/ca/scfld/md/app/Application.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n.properties",
+      "size" : 2667,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_ar.properties",
+      "size" : 5292,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_bg.properties",
+      "size" : 5677,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_ca.properties",
+      "size" : 2729,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_cs.properties",
+      "size" : 2829,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_da.properties",
+      "size" : 2620,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_de.properties",
+      "size" : 2674,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_el.properties",
+      "size" : 5487,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_en.properties",
+      "size" : 2509,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_es.properties",
+      "size" : 2673,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_et.properties",
+      "size" : 2700,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_fi.properties",
+      "size" : 2618,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_fr.properties",
+      "size" : 2766,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_hi.properties",
+      "size" : 5349,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_hr.properties",
+      "size" : 2742,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_hu.properties",
+      "size" : 2954,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_it.properties",
+      "size" : 2572,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_iw.properties",
+      "size" : 4472,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_ja.properties",
+      "size" : 3588,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_ko.properties",
+      "size" : 3336,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_lt.properties",
+      "size" : 2950,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_lv.properties",
+      "size" : 2920,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_nl.properties",
+      "size" : 2598,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_no.properties",
+      "size" : 1274,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_pl.properties",
+      "size" : 2781,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_pt.properties",
+      "size" : 2681,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_ro.properties",
+      "size" : 2730,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_ru.properties",
+      "size" : 5623,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_sh.properties",
+      "size" : 2732,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_sk.properties",
+      "size" : 2845,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_sl.properties",
+      "size" : 2670,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_sv.properties",
+      "size" : 2693,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_th.properties",
+      "size" : 5081,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_tr.properties",
+      "size" : 2894,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_uk.properties",
+      "size" : 5697,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_vi.properties",
+      "size" : 3532,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_zh_CN.properties",
+      "size" : 3043,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/i18n/i18n_zh_TW.properties",
+      "size" : 3097,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/lib/AllLibrary.js",
+      "size" : 679,
+      "compressedSize" : 671,
+      "required" : ["sap/suite/ui/smartbusiness/drilldown/lib/Configuration.js", "sap/suite/ui/smartbusiness/lib/Util.js", "sap/suite/ui/smartbusiness/lib/Chip.js", "sap/suite/ui/smartbusiness/drilldown/lib/Hash.js", "sap/suite/ui/smartbusiness/drilldown/lib/CustomTable.js", "sap/suite/ui/smartbusiness/drilldown/lib/Navigation.js", "sap/suite/ui/smartbusiness/drilldown/lib/MiniChartManager.js", "sap/ca/ui/model/format/NumberFormat.js", "sap/ca/ui/model/type/Date.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/lib/Configuration.js",
+      "size" : 37466,
+      "compressedSize" : 17289,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/lib/CustomTable.js",
+      "size" : 3844,
+      "compressedSize" : 2363,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/lib/Hash.js",
+      "size" : 8399,
+      "compressedSize" : 3451,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/lib/MiniChartManager.js",
+      "size" : 5569,
+      "compressedSize" : 2370,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/lib/Navigation.js",
+      "size" : 4002,
+      "compressedSize" : 1597,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/lib/Performance.js",
+      "size" : 3108,
+      "compressedSize" : 1427,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/view/AddToHome.controller.js",
+      "size" : 10220,
+      "compressedSize" : 5739,
+      "required" : ["sap/m/MessageBox.js", "sap/suite/ui/smartbusiness/lib/Chip.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/view/AddToHome.view.xml",
+      "size" : 308,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/drilldown/view/AddToHome.controller.js", "sap/m/VBox.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/view/Drilldown.controller.js",
+      "size" : 109391,
+      "compressedSize" : 53826,
+      "required" : ["sap/ca/scfld/md/controller/BaseFullscreenController.js", "sap/m/MessageBox.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/view/Drilldown.view.xml",
+      "size" : 1270,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/drilldown/view/Drilldown.controller.js", "sap/m/Page.js", "sap/suite/ui/smartbusiness/lib/Filter.js", "sap/m/ObjectHeader.js", "sap/suite/ui/commons/HeaderContainer.js", "sap/ca/ui/charts/ChartToolBar.js", "sap/m/Bar.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/view/Main.controller.js",
+      "size" : 249,
+      "compressedSize" : 210,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/drilldown/view/Main.view.xml",
+      "size" : 224,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/suite/ui/smartbusiness/drilldown/view/Main.controller.js", "sap/m/App.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/Chip.js",
+      "size" : 12057,
+      "compressedSize" : 4739,
+      "required" : ["sap/suite/ui/smartbusiness/lib/Util.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/DrilldownConfiguration.js",
+      "size" : 23158,
+      "compressedSize" : 13649,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/DrilldownModel.js",
+      "size" : 28226,
+      "compressedSize" : 13621,
+      "required" : ["sap/suite/ui/smartbusiness/lib/DrilldownConfiguration.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/DrilldownSaveService.js",
+      "size" : 10350,
+      "compressedSize" : 6340,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/DrilldownWriteService.js",
+      "size" : 12000,
+      "compressedSize" : 5674,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/Filter.js",
+      "size" : 18048,
+      "compressedSize" : 12670,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/ListPersona.js",
+      "size" : 8835,
+      "compressedSize" : 5064,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/Util.js",
+      "size" : 80347,
+      "compressedSize" : 33203,
+      "required" : ["sap/suite/ui/smartbusiness/lib/oData4Analytics.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/formatters.js",
+      "size" : 2394,
+      "compressedSize" : 1763,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/lib/oData4Analytics.js",
+      "description" : "Module declaration",
+      "size" : 142105,
+      "compressedSize" : 42827,
+      "required" : ["sap/ui/core/Core.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/library.js",
+      "description" : "Initialization Code and shared classes of library sap.suite.ui.smartbusiness (1.24.3)",
+      "size" : 1162,
+      "compressedSize" : 469,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/m/library.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/library.properties",
+      "size" : 106,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/tiles/AreaChart.js",
+      "size" : 26963,
+      "compressedSize" : 13024,
+      "required" : ["sap/suite/ui/smartbusiness/tiles/Generic.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/tiles/Bullet.js",
+      "size" : 8880,
+      "compressedSize" : 5286,
+      "required" : ["sap/suite/ui/smartbusiness/tiles/Generic.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/tiles/Comparison.js",
+      "size" : 7771,
+      "compressedSize" : 4455,
+      "required" : ["sap/suite/ui/smartbusiness/tiles/Generic.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/tiles/Generic.js",
+      "size" : 31037,
+      "compressedSize" : 17165,
+      "required" : ["sap/suite/ui/smartbusiness/lib/Util.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/tiles/MeasureComparison.js",
+      "size" : 6670,
+      "compressedSize" : 4067,
+      "required" : ["sap/suite/ui/smartbusiness/tiles/Generic.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/smartbusiness/tiles/Numeric.js",
+      "size" : 7875,
+      "compressedSize" : 3932,
+      "required" : ["sap/suite/ui/smartbusiness/tiles/Generic.js", "jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

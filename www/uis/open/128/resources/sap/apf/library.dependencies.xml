@@ -1,0 +1,578 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.apf">
+  <module name="sap/apf/Component.js" size="2195" compressedSize="743">
+    <requires>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/apf/api.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/api.js" size="35562" compressedSize="5215">
+    <requires>
+      <module name="sap/apf/core/messageHandler.js"/>
+      <module name="sap/apf/core/instance.js"/>
+      <module name="sap/apf/utils/filter.js"/>
+      <module name="sap/apf/utils/pathContextHandler.js"/>
+      <module name="sap/apf/utils/serializationMediator.js"/>
+      <module name="sap/apf/utils/smartBusinessHandler.js"/>
+      <module name="sap/apf/ui/instance.js"/>
+      <module name="sap/apf/ui/representations/representationInterface.js"/>
+      <module name="sap/apf/ui/representations/lineChart.js"/>
+      <module name="sap/apf/ui/representations/columnChart.js"/>
+      <module name="sap/apf/ui/representations/scatterPlotChart.js"/>
+      <module name="sap/apf/ui/representations/table.js"/>
+      <module name="sap/apf/ui/representations/stackedColumnChart.js"/>
+      <module name="sap/apf/ui/representations/pieChart.js"/>
+      <module name="sap/apf/ui/representations/percentageStackedColumnChart.js"/>
+      <module name="sap/apf/ui/representations/bubbleChart.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/ajax.js" size="1368" compressedSize="594">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/utils/checkForTimeout.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/annotation.js" size="31503" compressedSize="9655">
+    <description>@fileOverview This file contains an annotation parser.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/binding.js" size="8975" compressedSize="3857">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/constants.js"/>
+      <module name="sap/apf/core/utils/filter.js"/>
+      <module name="sap/apf/core/utils/filterTerm.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/configurationFactory.js" size="20014" compressedSize="8903">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/step.js"/>
+      <module name="sap/apf/core/request.js"/>
+      <module name="sap/apf/utils/hashtable.js"/>
+      <module name="sap/apf/core/binding.js"/>
+      <module name="sap/apf/core/representationTypes.js"/>
+      <module name="sap/apf/core/constants.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/constants.js" size="5543" compressedSize="2082">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/entityTypeMetadata.js" size="2168" compressedSize="657">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/instance.js" size="16447" compressedSize="6295">
+    <description>global jQuery, sap, OData</description>
+    <requires>
+      <module name="sap/apf/utils/utils.js"/>
+      <module name="sap/apf/core/utils/uriGenerator.js"/>
+      <module name="sap/apf/core/annotation.js"/>
+      <module name="sap/apf/core/metadata.js"/>
+      <module name="sap/apf/core/metadataFacade.js"/>
+      <module name="sap/apf/core/metadataProperty.js"/>
+      <module name="sap/apf/core/ajax.js"/>
+      <module name="sap/apf/core/odataRequest.js"/>
+      <module name="sap/apf/core/messageHandler.js"/>
+      <module name="sap/apf/core/entityTypeMetadata.js"/>
+      <module name="sap/apf/core/metadataFactory.js"/>
+      <module name="sap/apf/core/textResourceHandler.js"/>
+      <module name="sap/apf/core/configurationFactory.js"/>
+      <module name="sap/apf/core/path.js"/>
+      <module name="sap/apf/core/sessionHandler.js"/>
+      <module name="sap/apf/core/resourcePathHandler.js"/>
+      <module name="sap/apf/core/persistence.js"/>
+      <module name="sap/apf/core/readRequest.js"/>
+      <module name="sap/apf/core/readRequestByRequiredFilter.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/messageDefinition.js" size="9224" compressedSize="6630">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/messageHandler.js" size="16857" compressedSize="6583">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/messageObject.js"/>
+      <module name="sap/apf/utils/hashtable.js"/>
+      <module name="sap/apf/core/constants.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/messageObject.js" size="5711" compressedSize="1197">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/metadata.js" size="18686" compressedSize="7443">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/utils/utils.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/metadataFacade.js" size="4696" compressedSize="1275">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/utils/utils.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/metadataFactory.js" size="3671" compressedSize="1095">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/metadataProperty.js" size="2451" compressedSize="690">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/odataRequest.js" size="1596" compressedSize="531">
+    <description>global OData</description>
+    <requires>
+      <module name="sap/ui/thirdparty/datajs.js"/>
+      <module name="sap/apf/core/utils/checkForTimeout.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/path.js" size="13168" compressedSize="3577">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/persistence.js" size="14222" compressedSize="5782">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/readRequest.js" size="3348" compressedSize="640">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/request.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/readRequestByRequiredFilter.js" size="4470" compressedSize="997">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/request.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/representationTypes.js" size="4090" compressedSize="2794">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/request.js" size="9485" compressedSize="3978">
+    <description>global OData</description>
+    <requires>
+      <module name="sap/apf/utils/utils.js"/>
+      <module name="sap/apf/core/utils/filter.js"/>
+      <module name="sap/apf/core/utils/filterTerm.js"/>
+      <module name="sap/ui/thirdparty/datajs.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/resourcePathHandler.js" size="15256" compressedSize="7413">
+    <description>global jQuery, sap</description>
+    <requires>
+      <module name="sap/apf/core/utils/checkForTimeout.js"/>
+      <module name="sap/apf/utils/hashtable.js"/>
+      <module name="sap/apf/core/messageHandler.js"/>
+      <module name="sap/apf/core/messageDefinition.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/sessionHandler.js" size="5734" compressedSize="2537">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/ajax.js"/>
+      <module name="sap/apf/utils/filter.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/step.js" size="11360" compressedSize="3781">
+    <description>global sap, jQuery</description>
+    <requires>
+      <module name="sap/apf/core/utils/filter.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/textResourceHandler.js" size="6015" compressedSize="2944">
+    <description>global jQuery, sap, OData</description>
+    <requires>
+      <module name="sap/apf/utils/hashtable.js"/>
+      <module name="jquery.sap.resources.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/utils/checkForTimeout.js" size="1373" compressedSize="601">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/messageObject.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/utils/filter.js" size="27627" compressedSize="8356">
+    <description>internally used filter object</description>
+    <requires>
+      <module name="sap/apf/core/utils/filterTerm.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/utils/filterTerm.js" size="15368" compressedSize="4672">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/utils/utils.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/core/utils/uriGenerator.js" size="6878" compressedSize="2281">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/messageObject.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/library.js" size="921" compressedSize="278">
+    <description>Initialization Code and shared classes of library sap.apf (1.24.2)</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/library.properties" size="62">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi.properties" size="6944">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_ar.properties" size="17843">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_bg.properties" size="22570">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_ca.properties" size="8261">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_cs.properties" size="8552">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_da.properties" size="6831">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_de.properties" size="7726">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_el.properties" size="23552">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_en.properties" size="6719">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_es.properties" size="8065">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_et.properties" size="7278">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_fi.properties" size="7769">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_fr.properties" size="8208">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_hi.properties" size="20065">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_hr.properties" size="7444">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_hu.properties" size="9020">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_it.properties" size="7591">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_iw.properties" size="16414">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_ja.properties" size="12395">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_ko.properties" size="11228">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_lt.properties" size="8352">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_lv.properties" size="8608">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_nl.properties" size="6936">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_no.properties" size="7112">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_pl.properties" size="8890">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_pt.properties" size="8335">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_ro.properties" size="8161">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_ru.properties" size="22428">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_sh.properties" size="7345">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_sk.properties" size="8444">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_sl.properties" size="7449">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_sv.properties" size="7501">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_th.properties" size="23328">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_tr.properties" size="8466">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_uk.properties" size="21888">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_vi.properties" size="11502">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_zh_CN.properties" size="9016">
+  </module>
+  <module name="sap/apf/resources/i18n/apfUi_zh_TW.properties" size="9256">
+  </module>
+  <module name="sap/apf/ui/controls/draggableCarousel/DraggableCarousel.js" size="22098" compressedSize="13136">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/instance.js" size="7223" compressedSize="3140">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/ui/utils/print.js"/>
+      <module name="sap/apf/ui/utils/constants.js"/>
+      <module name="sap/apf/ui/utils/facetFilterHandler.js"/>
+      <module name="sap/apf/ui/representations/lineChart.js"/>
+      <module name="sap/apf/ui/representations/columnChart.js"/>
+      <module name="sap/apf/ui/representations/scatterPlotChart.js"/>
+      <module name="sap/apf/ui/representations/stackedColumnChart.js"/>
+      <module name="sap/apf/ui/representations/table.js"/>
+      <module name="sap/apf/ui/representations/pieChart.js"/>
+      <module name="sap/apf/ui/representations/percentageStackedColumnChart.js"/>
+      <module name="sap/apf/ui/representations/bubbleChart.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/BaseVizChartRepresentation.js" size="16164" compressedSize="7962">
+    <requires>
+      <module name="sap/apf/ui/representations/utils/vizHelper.js"/>
+      <module name="sap/apf/ui/representations/utils/formatter.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/bubbleChart.js" size="1853" compressedSize="1202">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/ui/representations/BaseVizChartRepresentation.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/columnChart.js" size="1640" compressedSize="1062">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/ui/representations/BaseVizChartRepresentation.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/lineChart.js" size="1008" compressedSize="715">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/ui/representations/BaseVizChartRepresentation.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/percentageStackedColumnChart.js" size="1556" compressedSize="1102">
+    <requires>
+      <module name="sap/apf/ui/representations/BaseVizChartRepresentation.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/pieChart.js" size="996" compressedSize="708">
+    <requires>
+      <module name="sap/apf/ui/representations/BaseVizChartRepresentation.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/representationInterface.js" size="20026" compressedSize="1921">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/scatterPlotChart.js" size="2312" compressedSize="1502">
+    <requires>
+      <module name="sap/apf/ui/representations/BaseVizChartRepresentation.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/stackedColumnChart.js" size="1084" compressedSize="780">
+    <requires>
+      <module name="sap/apf/ui/representations/BaseVizChartRepresentation.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/table.js" size="22349" compressedSize="11485">
+    <requires>
+      <module name="sap/apf/ui/representations/utils/formatter.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/utils/formatter.js" size="7889" compressedSize="3251">
+    <description>@class utils @name utils @memberOf sap.apf.ui.representations @description holds utility functions used by vizHelper and representations</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/representations/utils/vizHelper.js" size="17031" compressedSize="9190">
+    <description>@class utils @name utils @memberOf sap.apf.ui.representations @description holds utility functions used by viz representations</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/reuse/controller/analysisPath.controller.js" size="5674" compressedSize="2414" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/carousel.controller.js" size="9908" compressedSize="5892" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/deleteAnalysisPath.controller.js" size="3599" compressedSize="1815" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/facetFilter.controller.js" size="7226" compressedSize="3038">
+    <requires>
+      <module name="sap/apf/ui/utils/facetFilterListHandler.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/reuse/controller/layout.controller.js" size="5227" compressedSize="3276" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/messageHandler.controller.js" size="4349" compressedSize="2051" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/pathGallery.controller.js" size="4562" compressedSize="2612" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/step.controller.js" size="4301" compressedSize="2434" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/stepContainer.controller.js" size="10117" compressedSize="5645" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/stepGallery.controller.js" size="5624" compressedSize="2636" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/stepToolbar.controller.js" size="18959" compressedSize="12201" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/controller/toolbar.controller.js" size="26988" compressedSize="15106" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/fragment/pathGallery.fragment.js" size="2799" compressedSize="1819" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/fragment/stepGallery.fragment.js" size="3689" compressedSize="2201" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/analysisPath.view.js" size="3021" compressedSize="1741" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/carousel.view.js" size="5446" compressedSize="3728" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/deleteAnalysisPath.view.js" size="1654" compressedSize="1144" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/facetFilter.view.js" size="1473" compressedSize="991" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/layout.view.xml" size="1288">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/apf/ui/reuse/controller/layout.controller.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/SplitApp.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/reuse/view/messageHandler.view.js" size="915" compressedSize="423" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/pathGallery.view.js" size="343" compressedSize="294" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/step.view.js" size="5811" compressedSize="3991" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/stepContainer.view.js" size="1386" compressedSize="691" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/stepGallery.view.js" size="535" compressedSize="280" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/stepToolbar.view.js" size="1206" compressedSize="377" raw="true">
+  </module>
+  <module name="sap/apf/ui/reuse/view/toolbar.view.js" size="4616" compressedSize="2936" raw="true">
+  </module>
+  <module name="sap/apf/ui/utils/constants.js" size="1626" compressedSize="1176">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/utils/facetFilterHandler.js" size="4962" compressedSize="2197">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/utils/facetFilterListHandler.js" size="8387" compressedSize="2776">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/ui/representations/utils/formatter.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/ui/utils/print.js" size="13711" compressedSize="7087">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/utils/filter.js" size="30546" compressedSize="7207">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/core/utils/filterTerm.js"/>
+      <module name="sap/apf/core/utils/filter.js"/>
+      <module name="sap/apf/utils/hashtable.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/utils/hashtable.js" size="3212" compressedSize="1197">
+    <description>Hashtable</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/utils/pathContextHandler.js" size="9086" compressedSize="1962">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="sap/apf/utils/hashtable.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/utils/serializationMediator.js" size="4084" compressedSize="857">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/utils/smartBusinessHandler.js" size="3472" compressedSize="1474">
+    <description>! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/apf/utils/utils.js" size="6755" compressedSize="3040">
+    <description>Static helper functions</description>
+    <requires>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+</library>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="sap.uniorg.sbo4Sport" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <name>sbo4Sport</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <preference name="AutoHideSplashScreen" value="false" />
+    <feature name="AuthProxy">
+        <param name="android-package" value="com.sap.mp.cordova.plugins.authProxy.AuthProxy" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="SAPKapselHandleHttpRequests" value="false" />
+    <feature name="i18n">
+        <param name="android-package" value="com.sap.mp.cordova.plugins.i18n.I18N" />
+    </feature>
+    <feature name="Online">
+        <param name="android-package" value="com.sap.mp.cordova.plugins.online.Online" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="ErrorUrl" value="file:///android_asset/www/CannotReachHost.html" />
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="CacheManager">
+        <param name="android-package" value="com.sap.mp.cordova.plugins.cacheManager.CacheManager" />
+    </feature>
+    <feature name="MAFLogonCoreCDVPluginJS" required="true">
+        <param name="android-package" value="com.sap.maf.html5.android.MAFLogonCoreCDVPlugin" />
+    </feature>
+    <feature name="Logging">
+        <param name="android-package" value="com.sap.mp.cordova.plugins.logger.Logger" />
+    </feature>
+    <feature name="OData">
+        <param name="android-package" value="com.sap.mp.cordova.plugins.odata.OData" />
+    </feature>
+    <feature name="SMPPushPlugin" onload="true" required="true">
+        <param name="android-package" value="com.sap.mp.push.PushPlugin" />
+    </feature>
+    <preference name="showTitle" value="true" />
+    <feature name="toolbar">
+        <param name="android-package" value="com.sap.mp.cordova.plugins.toolbar.Toolbar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+</widget>

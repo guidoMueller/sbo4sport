@@ -1,0 +1,921 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ca.ui">
+  <module name="sap/ca/ui/AddPicture.js" size="37462" compressedSize="6755">
+    <description>Provides control sap.ca.ui.AddPicture.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/ca/ui/PictureItem.js"/>
+      <module name="sap/ca/ui/utils/CanvasHelper.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/AddPictureRenderer.js" size="3336" compressedSize="1836">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/JS/jquery-ui-widget.js"/>
+      <module name="sap/ca/ui/JS/jquery-iframe-transport.js"/>
+      <module name="sap/ca/ui/JS/jquery-fileupload.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/AppConfig.js" size="1432" compressedSize="1126">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/CustomerContext.js" size="31660" compressedSize="10065">
+    <description>Provides control sap.ca.ui.CustomerContext.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/ca/ui/CustomerControlListItem.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/CustomerControlListItem.js" size="10503" compressedSize="2145">
+    <description>Provides control sap.ca.ui.CustomerControlListItem.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/ca/ui/model/format/FormattingLibrary.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/CustomerControlListItemRenderer.js" size="418" compressedSize="353">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/m/CustomListItemRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/DatePicker.js" size="12423" compressedSize="5118">
+    <description>Provides control sap.ca.ui.DatePicker.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/InputBase.js"/>
+      <module name="sap/me/Calendar.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/ca/ui/model/type/Date.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/DatePickerRenderer.js" size="1197" compressedSize="623">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/InputBaseRenderer.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/ExpansibleFeedListItem.js" size="8816" compressedSize="2646">
+    <description>Provides control sap.ca.ui.ExpansibleFeedListItem.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/FeedListItem.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/ExpansibleFeedListItemRenderer.js" size="5524" compressedSize="2981">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/m/FeedListItemRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/FileUpload.js" size="114443" compressedSize="35619">
+    <description>Provides control sap.ca.ui.FileUpload.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/ca/ui/dialog/factory.js"/>
+      <module name="sap/ca/ui/model/format/FileSizeFormat.js"/>
+      <module name="sap/ca/ui/model/type/Date.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/FileUploadRenderer.js" size="2178" compressedSize="1097">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/ListRenderer.js"/>
+      <module name="sap/ca/ui/JS/jquery-ui-widget.js"/>
+      <module name="sap/ca/ui/JS/jquery-iframe-transport.js"/>
+      <module name="sap/ca/ui/JS/jquery-fileupload.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/GrowingTileContainer.js" size="24681" compressedSize="9561">
+    <description>Provides control sap.ca.ui.GrowingTileContainer.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/ui/layout/Grid.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/GrowingTileContainerRenderer.js" size="2358" compressedSize="1197">
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/m/ScrollContainerRenderer.js"/>
+      <module name="sap/ui/layout/GridRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/HierarchicalSelectDialog.js" size="18597" compressedSize="4313">
+    <description>Provides control sap.ca.ui.HierarchicalSelectDialog.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/HierarchicalSelectDialogItem.js" size="6015" compressedSize="657">
+    <description>Provides control sap.ca.ui.HierarchicalSelectDialogItem.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/HierarchicalSelectDialogRenderer.js" size="426" compressedSize="296">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/DialogRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/Hierarchy.js" size="10072" compressedSize="1922">
+    <description>Provides control sap.ca.ui.Hierarchy.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/HierarchyItem.js" size="13653" compressedSize="2891">
+    <description>Provides control sap.ca.ui.HierarchyItem.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/HierarchyItemRenderer.js" size="3013" compressedSize="1558">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/HierarchyRenderer.js" size="2273" compressedSize="1177">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/InPlaceEdit.js" size="33924" compressedSize="13979">
+    <description>Provides control sap.ca.ui.InPlaceEdit.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/InPlaceEditRenderer.js" size="4247" compressedSize="1971">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/JS/jquery-fileupload.js" size="57460" compressedSize="17164" requiresTopLevelScope="true" exposedGlobals="e" raw="true">
+  </module>
+  <module name="sap/ca/ui/JS/jquery-iframe-transport.js" size="10088" compressedSize="2452" requiresTopLevelScope="true" exposedGlobals="e" raw="true">
+  </module>
+  <module name="sap/ca/ui/JS/jquery-ui-widget.js" size="15441" compressedSize="6928" requiresTopLevelScope="true" exposedGlobals="e" raw="true">
+  </module>
+  <module name="sap/ca/ui/NavigationHandler.js" size="5744" compressedSize="3222">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.history.js"/>
+      <module name="sap/m/InstanceManager.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/Notes.js" size="15028" compressedSize="4560">
+    <description>Provides control sap.ca.ui.Notes.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/NotesRenderer.js" size="1466" compressedSize="699">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/ListRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/OverflowContainer.js" size="11454" compressedSize="3062">
+    <description>Provides control sap.ca.ui.OverflowContainer.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/OverflowContainerRenderer.js" size="1665" compressedSize="788">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/Overlay.js" size="2006" compressedSize="1394">
+    <requires>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/OverviewTile.js" size="22757" compressedSize="7012">
+    <description>Provides control sap.ca.ui.OverviewTile.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/Tile.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/OverviewTileRenderer.js" size="4233" compressedSize="2408">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/TileRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/PictureItem.js" size="17319" compressedSize="3836">
+    <description>Provides control sap.ca.ui.PictureItem.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/PictureItemRenderer.js" size="1169" compressedSize="534">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/PictureTile.js" size="10908" compressedSize="2244">
+    <description>Provides control sap.ca.ui.PictureTile.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/CustomTile.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/PictureTileRenderer.js" size="1416" compressedSize="842">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/CustomTileRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/PictureViewer.js" size="25534" compressedSize="7257">
+    <description>Provides control sap.ca.ui.PictureViewer.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/TileContainer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/PictureViewerItem.js" size="5425" compressedSize="836">
+    <description>Provides control sap.ca.ui.PictureViewerItem.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/PictureViewerRenderer.js" size="952" compressedSize="458">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/TileContainerRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/ZoomableScrollContainer.js" size="7500" compressedSize="1351">
+    <description>Provides control sap.ca.ui.ZoomableScrollContainer.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/ZoomableScrollContainerRenderer.js" size="435" compressedSize="355">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/ScrollContainerRenderer.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/BarListItem.js" size="5550" compressedSize="607">
+    <description>Provides control sap.ca.ui.charts.BarListItem.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/ListItemBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/BarListItemRenderer.js" size="1602" compressedSize="908">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/m/ListItemBaseRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/BubbleChart.js" size="48841" compressedSize="14744">
+    <description>Provides control sap.ca.ui.charts.BubbleChart.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ca/ui/charts/Chart.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/BubbleChartRenderer.js" size="339" compressedSize="275">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/charts/ChartRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/Chart.js" size="134709" compressedSize="42735">
+    <description>Provides control sap.ca.ui.charts.Chart.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/ca/ui/charts/ChartType.js"/>
+      <module name="sap/ca/ui/charts/ChartSelectionMode.js"/>
+      <module name="sap/ca/ui/charts/ChartSemanticColor.js"/>
+      <module name="sap/ca/ui/charts/ChartColor.js"/>
+      <module name="sap/ca/ui/charts/ClusterList.js"/>
+      <module name="sap/ca/ui/charts/ChartFormatter.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ChartFormatter.js" size="8064" compressedSize="4359">
+    <requires>
+      <module name="sap/ca/ui/model/format/NumberFormat.js"/>
+      <module name="sap/ca/ui/model/type/Date.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ChartPopover.js" size="2393" compressedSize="1084">
+    <requires>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ChartRenderer.js" size="1339" compressedSize="546">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ChartToolBar.js" size="54550" compressedSize="17451">
+    <description>Provides control sap.ca.ui.charts.ChartToolBar.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/ca/ui/Overlay.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ChartToolBarRenderer.js" size="1544" compressedSize="742">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ChartType.js" size="8013" compressedSize="4692">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ClusterList.js" size="14422" compressedSize="8092">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/m/List.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ca/ui/charts/ClusterListItem.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ClusterListItem.js" size="4964" compressedSize="810">
+    <description>Provides control sap.ca.ui.charts.ClusterListItem.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/m/ListItemBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/ClusterListItemRenderer.js" size="3980" compressedSize="2286">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/m/ListItemBaseRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/CombinedChart.js" size="8642" compressedSize="1899">
+    <description>Provides control sap.ca.ui.charts.CombinedChart.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ca/ui/charts/Chart.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/CombinedChartRenderer.js" size="334" compressedSize="279">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/charts/ChartRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/HorizontalBarChart.js" size="11806" compressedSize="2923">
+    <description>Provides control sap.ca.ui.charts.HorizontalBarChart.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ca/ui/charts/Chart.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/HorizontalBarChartRenderer.js" size="347" compressedSize="289">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/charts/ChartRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/LineChart.js" size="27715" compressedSize="5782">
+    <description>Provides control sap.ca.ui.charts.LineChart.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ca/ui/charts/Chart.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/LineChartRenderer.js" size="349" compressedSize="300">
+    <requires>
+      <module name="sap/ca/ui/charts/ChartRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/StackedHorizontalBarChart.js" size="12491" compressedSize="1862">
+    <description>Provides control sap.ca.ui.charts.StackedHorizontalBarChart.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ca/ui/charts/Chart.js"/>
+      <module name="sap/ca/ui/charts/ChartType.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/StackedHorizontalBarChartRenderer.js" size="376" compressedSize="303">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/charts/ChartRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/StackedVerticalColumnChart.js" size="12798" compressedSize="1912">
+    <description>Provides control sap.ca.ui.charts.StackedVerticalColumnChart.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ca/ui/charts/Chart.js"/>
+      <module name="sap/ca/ui/charts/ChartType.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/StackedVerticalColumnChartRenderer.js" size="379" compressedSize="305">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/charts/ChartRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/VerticalBarChart.js" size="15345" compressedSize="3010">
+    <description>Provides control sap.ca.ui.charts.VerticalBarChart.</description>
+    <requires>
+      <module name="sap/ca/ui/library.js"/>
+      <module name="sap/ca/ui/charts/Chart.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/charts/VerticalBarChartRenderer.js" size="341" compressedSize="285">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/charts/ChartRenderer.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/dialog/Confirm.controller.js" size="4778" compressedSize="2351">
+    <requires>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/dialog/Confirm.view.xml" size="2538">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/ui/dialog/Confirm.controller.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/Button.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/dialog/Dialog.js" size="2499" compressedSize="1688">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/dialog/Forward.controller.js" size="5103" compressedSize="2303">
+    <requires>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/dialog/Forward.view.xml" size="1196">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/ui/dialog/Forward.controller.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Button.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/dialog/SelectItem.controller.js" size="2629" compressedSize="1017">
+    <requires>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/dialog/SelectItem.view.xml" size="856">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/ui/dialog/SelectItem.controller.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Button.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/dialog/factory.js" size="5839" compressedSize="1926">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/dialog/Dialog.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/i18n/i18n.properties" size="10150">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_ar.properties" size="14987">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_cs.properties" size="10843">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_de.properties" size="10749">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_en.properties" size="10035">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_es.properties" size="10945">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_fr.properties" size="11220">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_hu.properties" size="10888">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_it.properties" size="10310">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_iw.properties" size="13696">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_ja.properties" size="12162">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_no.properties" size="10182">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_pl.properties" size="10708">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_pt.properties" size="10864">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_ru.properties" size="17332">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_tr.properties" size="10785">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_uk.properties" size="16497">
+  </module>
+  <module name="sap/ca/ui/i18n/i18n_zh_CN.properties" size="11429">
+  </module>
+  <module name="sap/ca/ui/images/images.js" size="420" compressedSize="344">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/library.js" size="7014" compressedSize="2364">
+    <description>Initialization Code and shared classes of library sap.ca.ui (1.24.5)</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ca/ui/charts/ChartColor.js"/>
+      <module name="sap/ca/ui/charts/ChartSelectionMode.js"/>
+      <module name="sap/ca/ui/charts/ChartSemanticColor.js"/>
+    </includes>
+  </module>
+  <module name="sap/ca/ui/library.properties" size="2478">
+  </module>
+  <module name="sap/ca/ui/message/MessageBox.controller.js" size="1737" compressedSize="481" raw="true">
+  </module>
+  <module name="sap/ca/ui/message/MessageBox.view.xml" size="1081">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/ui/message/MessageBox.controller.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/Button.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/message/message.js" size="4737" compressedSize="1530">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/dialog/factory.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/format/AmountFormat.js" size="13072" compressedSize="3542">
+    <description>Provides class sap.ca.ui.model.format.AmountFormat</description>
+    <requires>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ca/ui/model/format/FormatHelper.js"/>
+      <module name="sap/ca/ui/model/format/NumberFormat.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/format/DateFormat.js" size="8889" compressedSize="2479">
+    <description>Provides class sap.ca.ui.model.format.DateFormat</description>
+    <requires>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/format/FileSizeFormat.js" size="5402" compressedSize="2254">
+    <description>Provides class sap.ca.ui.model.format.FileSizeFormat</description>
+    <requires>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ca/ui/model/format/FormatHelper.js"/>
+      <module name="sap/ca/ui/model/format/NumberFormat.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/format/FormatHelper.js" size="6112" compressedSize="3081">
+    <description>Provides class sap.ca.ui.model.format.FormatHelper</description>
+    <requires>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/format/FormattingLibrary.js" size="5618" compressedSize="3499">
+    <description>Provides class sap.ca.ui.model.format.FormattingLibrary</description>
+    <requires>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/format/NumberFormat.js" size="14440" compressedSize="4226">
+    <description>Provides class sap.ca.ui.model.format.NumberFormat</description>
+    <requires>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ca/ui/model/format/FormatHelper.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/format/QuantityFormat.js" size="8022" compressedSize="3226">
+    <description>Provides class sap.ca.ui.model.format.QuantityFormat</description>
+    <requires>
+      <module name="sap/ca/ui/model/format/NumberFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ca/ui/model/format/FormatHelper.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/type/Date.js" size="6529" compressedSize="2519">
+    <description>Provides the base implementation for all model implementations</description>
+    <requires>
+      <module name="sap/ui/model/SimpleType.js"/>
+      <module name="sap/ca/ui/model/format/DateFormat.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/type/DateTime.js" size="2684" compressedSize="663">
+    <description>Provides the base implementation for all model implementations</description>
+    <requires>
+      <module name="sap/ca/ui/model/type/Date.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/type/FileSize.js" size="4380" compressedSize="1689">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/model/SimpleType.js"/>
+      <module name="sap/ca/ui/model/format/FileSizeFormat.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/type/Number.js" size="4445" compressedSize="1663">
+    <description>Provides the base implementation for all model implementations</description>
+    <requires>
+      <module name="sap/ui/model/SimpleType.js"/>
+      <module name="sap/ca/ui/model/format/NumberFormat.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/model/type/Time.js" size="2628" compressedSize="639">
+    <description>Provides the base implementation for all model implementations</description>
+    <requires>
+      <module name="sap/ca/ui/model/type/Date.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/quickoverview/Company.controller.js" size="960" compressedSize="667" raw="true">
+  </module>
+  <module name="sap/ca/ui/quickoverview/Company.view.xml" size="1759">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/ui/quickoverview/Company.controller.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/core/Title.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/quickoverview/CompanyLaunch.js" size="2494" compressedSize="1367">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ca/ui/quickoverview/Quickoverview.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/quickoverview/Employee.controller.js" size="1803" compressedSize="1210">
+    <requires>
+      <module name="sap/ca/ui/quickoverview/CompanyLaunch.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/quickoverview/Employee.view.xml" size="1601">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/ui/quickoverview/Employee.controller.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/core/Title.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/m/Text.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/quickoverview/EmployeeLaunch.js" size="3753" compressedSize="2016">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ca/ui/quickoverview/Quickoverview.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/quickoverview/Quickoverview.js" size="11073" compressedSize="4818">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ca/ui/utils/resourcebundle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/quickoverview/Quickview.controller.js" size="4963" compressedSize="2112" raw="true">
+  </module>
+  <module name="sap/ca/ui/quickoverview/Quickview.view.xml" size="505">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ca/ui/quickoverview/Quickview.controller.js"/>
+      <module name="sap/m/VBox.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/utils/BinaryUtil.js" size="2109" compressedSize="1021">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/utils/CanvasHelper.js" size="11759" compressedSize="5780">
+    <description>This file includes large portions of code from canvasResize https://github.com/gokercebeci/canvasResize/blob/master/canvasResize.js which is licensed under MIT license:  ----------------------------------------------------------------------------------------------  The MIT License  Copyright (c) 2012 goker.cebeci, http://gokercebeci.com  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  It requires **binaryajax.js** and **exif.js** (or **jQuery EXIF**) to work which is also under the [**MPL License**](http://www.nihilogic.dk/licenses/mpl-license.txt)  ------------------------------------ ---------------------------------------------------------  However, this modified version doesn't require anymore binaryajax.js</description>
+    <requires>
+      <module name="sap/ca/ui/utils/exif.js"/>
+      <module name="sap/ca/ui/utils/BinaryUtil.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/utils/Lessifier.js" size="2875" compressedSize="1333">
+    <description>global less</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/utils/TablePersonalizer.js" size="931" compressedSize="622">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ushell/services/Personalization.js"/>
+      <module name="sap/m/TablePersoController.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/utils/busydialog.js" size="3554" compressedSize="915">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ca/ui/images/images.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ca/ui/utils/exif.js" size="23274" compressedSize="10029" requiresTopLevelScope="true" exposedGlobals="EXIF" raw="true">
+  </module>
+  <module name="sap/ca/ui/utils/resourcebundle.js" size="556" compressedSize="450">
+    <description>Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+</library>

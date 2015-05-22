@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.sap.mp.cordova.plugins.settings" version="3.7.1">
+	<name>Settings</name>
+    <dependency id="com.sap.mp.cordova.plugins.corelibs" />
+    <dependency id="org.apache.cordova.inappbrowser" />
+    <dependency id="com.sap.mp.cordova.plugins.logon" />
+    <dependency id="com.sap.mp.cordova.plugins.logger" />
+    
+    <js-module name="Settings" src="www/settings.js">
+		<clobbers target="sap.Settings"/>
+	</js-module>
+
+    <js-module name="AppSettings" src="www/appsettings.js">
+		<merges target="sap.Settings"/>
+	</js-module>
+	
+</plugin>

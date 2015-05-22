@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Library name="sap.uiext.inbox" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
+<Template name="sap.uiext.inbox.Inbox" alias="Inbox">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.Inbox({
+	id: "${id}", // sap.ui.core.ID
+	taskExecutionURLThemeValue: undefined, // string
+	handleBindings: true, // boolean
+	openCompletedTasks: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	oDataRequestCompleted: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	refresh: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	taskAction: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	taskSelectionChange: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Inbox xmlns="sap.uiext.inbox"
+	id="${id}"
+	taskExecutionURLThemeValue=""
+	handleBindings="true"
+	openCompletedTasks="false"
+	oDataRequestCompleted=""
+	refresh=""
+	taskAction=""
+	taskSelectionChange="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</Inbox>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.InboxLaunchPad" alias="InboxLaunchPad,Pad">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.InboxLaunchPad({
+	id: "${id}", // sap.ui.core.ID
+	title: "Inbox Launch Pad Title", // string
+	logoSrc: undefined, // string
+	showLogoutButton: true, // boolean
+	showUserName: true, // boolean
+	userName: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	tileSelected: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	logout: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<InboxLaunchPad xmlns="sap.uiext.inbox"
+	id="${id}"
+	title="Inbox Launch Pad Title"
+	logoSrc=""
+	showLogoutButton="true"
+	showUserName="true"
+	userName=""
+	tileSelected=""
+	logout="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</InboxLaunchPad>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.InboxSplitApp" alias="InboxSplitApp,App">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.InboxSplitApp({
+	id: "${id}", // sap.ui.core.ID
+	showMasterPageNavBtn: undefined, // boolean
+	tcmServiceURL: undefined, // string
+	filters: undefined, // object[]
+	tcmConfiguration: undefined, // object
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	splitAppl: undefined, // sap.m.SplitApp
+	navButtonPressed: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<InboxSplitApp xmlns="sap.uiext.inbox"
+	id="${id}"
+	showMasterPageNavBtn=""
+	tcmServiceURL=""
+	filters=""
+	tcmConfiguration=""
+	navButtonPressed="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+		<splitAppl></splitAppl> <!-- sap.m.SplitApp -->
+</InboxSplitApp>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.SubstitutionRulesManager" alias="SubstitutionRulesManager,Manager">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.SubstitutionRulesManager({
+	id: "${id}", // sap.ui.core.ID
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [] // sap.ui.core.Control, since 1.19
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<SubstitutionRulesManager xmlns="sap.uiext.inbox"
+	id="${id}">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</SubstitutionRulesManager>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.composite.InboxAddAttachmentTile" alias="InboxAddAttachmentTile,Tile">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.composite.InboxAddAttachmentTile({
+	id: "${id}", // sap.ui.core.ID
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [] // sap.ui.core.Control, since 1.19
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<composite/InboxAddAttachmentTile xmlns="sap.uiext.inbox"
+	id="${id}">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</composite/InboxAddAttachmentTile>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.composite.InboxAttachmentTile" alias="InboxAttachmentTile,Tile">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.composite.InboxAttachmentTile({
+	id: "${id}", // sap.ui.core.ID
+	fileName: undefined, // string
+	fileSize: undefined, // string
+	fileDescription: undefined, // string
+	fileTypeIcon: undefined, // sap.ui.core.URI
+	creationDate: undefined, // string
+	downloadUrl: undefined, // string
+	createdBy: undefined, // string
+	showDeleteButton: true, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	deleteAttachment: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<composite/InboxAttachmentTile xmlns="sap.uiext.inbox"
+	id="${id}"
+	fileName=""
+	fileSize=""
+	fileDescription=""
+	fileTypeIcon=""
+	creationDate=""
+	downloadUrl=""
+	createdBy=""
+	showDeleteButton="true"
+	deleteAttachment="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</composite/InboxAttachmentTile>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.composite.InboxAttachmentsTileContainer" alias="InboxAttachmentsTileContainer,Container">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.composite.InboxAttachmentsTileContainer({
+	id: "${id}", // sap.ui.core.ID
+	uploadUrl: undefined, // string
+	fileName: undefined, // string
+	fileType: undefined, // string
+	isFileSelected: undefined, // boolean
+	enteredDescription: undefined, // string
+	showAddTile: true, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	attachments: [], // sap.uiext.inbox.composite.InboxAttachmentTile
+	uploadButtonPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	uploadSuccess: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	uploadFailed: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<composite/InboxAttachmentsTileContainer xmlns="sap.uiext.inbox"
+	id="${id}"
+	uploadUrl=""
+	fileName=""
+	fileType=""
+	isFileSelected=""
+	enteredDescription=""
+	showAddTile="true"
+	uploadButtonPress=""
+	uploadSuccess=""
+	uploadFailed="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+		<attachments></attachments> <!-- sap.uiext.inbox.composite.InboxAttachmentTile -->
+</composite/InboxAttachmentsTileContainer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.composite.InboxBusyIndicator" alias="InboxBusyIndicator,Indicator">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.composite.InboxBusyIndicator({
+	id: "${id}", // sap.ui.core.ID
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [] // sap.ui.core.Control, since 1.19
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<composite/InboxBusyIndicator xmlns="sap.uiext.inbox"
+	id="${id}">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</composite/InboxBusyIndicator>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.composite.InboxComment" alias="InboxComment,Comment">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.composite.InboxComment({
+	id: "${id}", // sap.ui.core.ID
+	sender: undefined, // string
+	timestamp: undefined, // string
+	thumbnailSrc: undefined, // sap.ui.core.URI
+	text: undefined, // string
+	createdBy: undefined, // string
+	sapOrigin: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [] // sap.ui.core.Control, since 1.19
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<composite/InboxComment xmlns="sap.uiext.inbox"
+	id="${id}"
+	sender=""
+	timestamp=""
+	thumbnailSrc=""
+	text=""
+	createdBy=""
+	sapOrigin="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</composite/InboxComment>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.composite.InboxTaskComments" alias="InboxTaskComments,Comments">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.composite.InboxTaskComments({
+	id: "${id}", // sap.ui.core.ID
+	feederSender: undefined, // string
+	feederThumbnailSrc: undefined, // sap.ui.core.URI
+	showFeeder: true, // boolean
+	showHeader: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	comments: [], // sap.uiext.inbox.composite.InboxComment
+	commentSubmit: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<composite/InboxTaskComments xmlns="sap.uiext.inbox"
+	id="${id}"
+	feederSender=""
+	feederThumbnailSrc=""
+	showFeeder="true"
+	showHeader="false"
+	commentSubmit="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+		<comments></comments> <!-- sap.uiext.inbox.composite.InboxComment -->
+</composite/InboxTaskComments>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.composite.InboxTaskTitleControl" alias="InboxTaskTitleControl,Control">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.composite.InboxTaskTitleControl({
+	id: "${id}", // sap.ui.core.ID
+	taskTitle: undefined, // string
+	categoryIconURI: "hasCategory", // sap.ui.core.URI
+	hasAttachments: undefined, // boolean
+	hasComments: undefined, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	titleLink: undefined // sap.ui.core.Control
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<composite/InboxTaskTitleControl xmlns="sap.uiext.inbox"
+	id="${id}"
+	taskTitle=""
+	categoryIconURI="hasCategory"
+	hasAttachments=""
+	hasComments="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+		<titleLink></titleLink> <!-- sap.ui.core.Control -->
+</composite/InboxTaskTitleControl>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.uiext.inbox.composite.InboxUploadAttachmentTile" alias="InboxUploadAttachmentTile,Tile">
+	<jsTemplate><![CDATA[new sap.uiext.inbox.composite.InboxUploadAttachmentTile({
+	id: "${id}", // sap.ui.core.ID
+	fileName: undefined, // string
+	fileTypeIcon: undefined, // sap.ui.core.URI
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	uploadSelectedFile: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<composite/InboxUploadAttachmentTile xmlns="sap.uiext.inbox"
+	id="${id}"
+	fileName=""
+	fileTypeIcon=""
+	uploadSelectedFile="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+</composite/InboxUploadAttachmentTile>
+]]></xmlTemplate>
+</Template>
+</Library>

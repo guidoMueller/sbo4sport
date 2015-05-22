@@ -1,0 +1,41 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/zen/dsh/LumiraLaunchpadViewer.js",
+      "description" : "jshint unused: false",
+      "size" : 3358,
+      "compressedSize" : 980,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/dsh.js",
+      "description" : "Provides control sap.zen.dsh.dsh.",
+      "size" : 19193,
+      "compressedSize" : 4535,
+      "required" : ["sap/zen/dsh/library.js", "sap/ui/core/Control.js", "sap/zen/crosstab/Crosstab.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/dshRenderer.js",
+      "size" : 1184,
+      "compressedSize" : 524,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/library.js",
+      "description" : "Initialization Code and shared classes of library sap.zen.dsh (14.0.1-SNAPSHOT)",
+      "size" : 995,
+      "compressedSize" : 295,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/library.properties",
+      "size" : 124,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

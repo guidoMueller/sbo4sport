@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui5/data/FlattenedDataset</name>
+
+	<documentation>A dataset for flattened (redundant) data using a tabular format.</documentation>
+	<since>1.7.2</since>
+	<developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+
+	<baseType>sap.viz/ui5/data/Dataset</baseType>
+	<aggregations >
+		<aggregation cardinality="0..n" name="dimensions" type="sap.viz/ui5/data/DimensionDefinition">
+			<documentation>List of definitions of all dimensions in this dataset</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="measures" type="sap.viz/ui5/data/MeasureDefinition">
+			<documentation>list of definitions of all measures in this dataset</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="data" bindable="bindable" type="sap.ui.core/Element">
+			<documentation>Data containing dimensions and measures. 
+			
+&lt;b&gt;Note:&lt;/b&gt; This aggregation can only be bound against a model, it cannot be managed 
+programmatically using the aggregation mutator methods like addData.</documentation>
+		</aggregation>
+	</aggregations>
+</control>

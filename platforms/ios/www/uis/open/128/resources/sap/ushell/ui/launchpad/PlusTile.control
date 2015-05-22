@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/PlusTile</name>
+	<documentation>A specialized tile showing a plus icon.</documentation>
+
+	<baseType>sap.ushell/ui/launchpad/Tile</baseType>
+	<properties>
+		<property group="Misc" name="groupId" type="sap.ui.core/string" defaultValue="">
+		</property>
+	</properties>
+	<events>
+		<event name="press">
+			<documentation>Fired when user clicks on the tile</documentation>
+		</event>
+	</events>
+</control>

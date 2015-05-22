@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>Chart</name>
+	<author>SAP SE</author>
+	<documentation>The Chart control.</documentation>
+	<since>1.8</since>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Dimension" name="width" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The width of the Chart</documentation>
+		</property>
+		<property group="Dimension" name="height" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The height of the Chart</documentation>
+		</property>
+		<property group="Appearance" name="type" type="ChartType" defaultValue="Column">
+			<documentation>Chart type</documentation>
+		</property>
+		<property group="Misc" name="categoryAxis" type="sap.ui.core/object">
+			<documentation>Category Axis property of the Chart. Accepts only an instance of CategoryAxis element.</documentation>
+		</property>
+		<property group="Misc" name="valueAxis" type="sap.ui.core/object">
+			<documentation>Value Axis property of the Chart. Accept only an instance of ValueAxis element.</documentation>
+		</property>
+		<property group="Misc" name="valueBubble" type="sap.ui.core/object">
+			<documentation>Value Bubble property of the Chart. Accept only an instance of ValueBubble element.</documentation>
+		</property>
+		<property group="Appearance" name="showRangeSelector" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Specify whether the range selector should be visible.</documentation>
+		</property>
+		<property group="Misc" name="showTableView" type="sap.ui.core/boolean" defaultValue="false">
+			<documentation>Toggle to display table view</documentation>
+		</property>
+		<property group="Misc" name="legendPosition" type="LegendPosition">
+			<documentation>Legend position all chart types except Bar chart.
+Default position for Pie/Donut chart is Left. All other chart's default position is None. Note: the default legend position is set when the chart type is set first time, subsequent change to the chart type will keep using initial legend position unless it is changed explicitly by user.</documentation>
+		</property>
+		<property group="Misc" name="lineThickness" type="sap.ui.core/float" defaultValue="1">
+			<documentation>Specify the line thickness of the line graph. Only applies to Line chart type.</documentation>
+		</property>
+		<property group="Misc" name="showTableValue" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Toggle to display the table value on a Bar chart. Only applies to Bar chart.</documentation>
+		</property>
+		<property group="Misc" name="maxSliceCount" type="sap.ui.core/int" defaultValue="12">
+			<documentation>Set the maximum number of slices in a Pie/Donut chart. If exceeding the specified value, the rest will be categorised into a single slice. Only applies to Pie/Donut.</documentation>
+		</property>
+		<property group="Misc" name="primaryColorPalette" type="sap.ui.core/any">
+			<documentation>Allow a chart’s color palette to be modified without affecting the other charts' color palette. If not set, the chart will use the default color palette defined in the theme. 
+Accept an array of color in string format or hex format. e.g.
+0xff0000
+&quot;red&quot;
+&quot;rgb(255,0,0)&quot;</documentation>
+		</property>
+		<property group="Misc" name="showTotalValue" type="sap.ui.core/boolean" defaultValue="false">
+			<documentation>Specify whether to show the sum of the value for Waterfall/Waterfall Bar chart. Only applies to Waterfall/WaterfallBar chart.</documentation>
+		</property>
+		<property group="Misc" name="numberOfVisibleCategories" type="sap.ui.core/int">
+			<documentation>The number of categories that will be visible on the chart at any time. The minimum value is 2. If not set, the number of visible categories will be automatically adjusted depending on the screen size</documentation>
+		</property>
+		<property group="Misc" name="rangeSelectorStartPosition" type="sap.ui.core/int" defaultValue="0">
+			<documentation>Specify the range selector start position, default value is 0.</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="doubletap">
+			<documentation>Double tap event on the chart</documentation>
+		</event>
+		<event name="tap">
+			<documentation>Single tap event on the chart</documentation>
+		</event>
+		<event name="longpress">
+			<documentation>Long press event on the chart</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="rows" type="Row" bindable="bindable">
+			<documentation>The data rows of the chart. User should bind these to their data source</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="columns" type="Column" bindable="bindable">
+			<documentation>The data column map of the chart.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="series" type="Series">
+			<documentation>Data region property of the chart's Series</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="values" type="Value">
+			<documentation>Data region property of the chart's Values</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="categoryRegions" type="Category">
+			<documentation>Data region property of the chart's Categories</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="category" type="Category">
+			<documentation>Data region property of the chart's Category</documentation>
+			<deprecation since="7.30.0">This aggregation is deprecated, please use categoryRegions aggregation instead.</deprecation>
+		</aggregation>
+	</aggregations>
+	<methods>
+		<method name="getSelectedCategory" type="sap.ui.core/string">
+			<documentation>Get the value of the currently highlighted category</documentation>
+		</method>
+		<method name="getSelectedSeries" type="sap.ui.core/string">
+			<documentation>Get the value of the currently highlighted series</documentation>
+		</method>
+		<method name="getNumberOfCategories" type="sap.ui.core/int">
+			<documentation>Get the number of distinct category values</documentation>
+		</method>
+		<method name="getSelectedCategoryGroup" type="sap.ui.core/object">
+			<documentation>Return an array of categories value that is currently selected.</documentation>
+		</method>
+	</methods>
+</control>

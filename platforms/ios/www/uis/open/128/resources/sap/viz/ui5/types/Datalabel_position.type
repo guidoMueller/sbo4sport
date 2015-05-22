@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Datalabel_position</name>
+  <documentation>List (Enum) type ui5/types/Datalabel_position</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.ui.core/string</baseType>
+  <enumeration>
+    <value name="inside">
+      <documentation>Value inside</documentation>
+    </value>
+    <value name="outside">
+      <documentation>Value outside</documentation>
+    </value>
+  </enumeration>
+</simple-type>

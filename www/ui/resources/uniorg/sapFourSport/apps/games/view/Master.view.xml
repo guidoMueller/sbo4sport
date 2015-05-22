@@ -1,0 +1,37 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          controllerName="uniorg.sapFourSport.apps.games.controller.Master"
+          xmlns="sap.m"
+        >
+    <Page id="page" title="{i18n>masterTitle}">
+        <content>
+            <List id="list">
+                <ObjectListItem
+                        id="listItemTemplate"
+                        press="onItemPress"
+                        title="{
+					    path: 'vbeln',
+					    formatter: 'uniorg.ui.util.Formatter.removeLeadingZero'
+                    }"
+                        number="123.45"
+                        numberUnit="EUR"
+                        type="{device>/listItemType}">
+                    <attributes>
+                        <ObjectAttribute
+                                text="{
+								path: 'History.createdAt',
+								formatter: 'uniorg.ui.util.Formatter.date'
+							}"/>
+                        <ObjectAttribute
+                                text="{UmeUser.name}"/>
+                    </attributes>
+                    <firstStatus>
+                        <ObjectStatus
+                                text="{status}"/>
+                    </firstStatus>
+                </ObjectListItem>
+            </List>
+        </content>
+        <footer>
+        </footer>
+    </Page>
+</mvc:View>

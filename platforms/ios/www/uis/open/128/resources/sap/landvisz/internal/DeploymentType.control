@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>internal/DeploymentType</name>
+
+	<documentation>A control to render deployment type of a component</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="type" type="sap.ui.core/string">
+			<documentation>icon type of data</documentation>
+		</property>
+	</properties>
+</control>

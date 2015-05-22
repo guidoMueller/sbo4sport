@@ -1,0 +1,18 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/fiori/library.js",
+      "description" : "Initialization Code and shared classes of library sap.fiori (1.24.5)",
+      "size" : 1907,
+      "compressedSize" : 679,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "jquery.sap.resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fiori/library.properties",
+      "size" : 66,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

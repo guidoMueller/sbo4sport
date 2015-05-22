@@ -1,0 +1,145 @@
+/* ====================================================== */
+/* CSS for control sap.ui.commons/VariablesDialog.control */
+/* Platinum                                               */
+/* ====================================================== */
+
+.zenDialogLayout {
+	background: #DBE1EC;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #96a8c3 #7f8ea5 #7f8ea5 #96a8c3;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.zenDialogContentArea{
+	background: none;
+}
+
+.zenDialogTitleArea {
+    background: #E5EAF3; 
+	background: -moz-linear-gradient(top, #ffffff 0px, #eaeef5 0.5px, #ffffff 2px,
+		#ffffff 3px, #f9fafc 7px, #e2e8f0 79%, #dbe1ec 95%, #dbe1ec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0px, #ffffff),
+		color-stop(0.5px, #eaeef5), color-stop(2px, #ffffff),
+		color-stop(3px, #ffffff), color-stop(7px, #f9fafc),
+		color-stop(79%, #e2e8f0), color-stop(95%, #dbe1ec),
+		color-stop(100%, #dbe1ec) ); 
+	background: -webkit-linear-gradient(top, #ffffff 0px, #eaeef5 0.5px, #ffffff 2px,
+		#ffffff 3px, #f9fafc 7px, #e2e8f0 79%, #dbe1ec 95%, #dbe1ec 100%);
+	background: linear-gradient(top, #ffffff 0px, #eaeef5 0.5px, #ffffff 2px, #ffffff
+		3px, #f9fafc 7px, #e2e8f0 79%, #dbe1ec 95%, #dbe1ec 100%); /* W3C */
+	background: -ms-linear-gradient(top, #ffffff 0px, #eaeef5 0.5px, #ffffff 2px,
+		#ffffff 3px, #f9fafc 7px, #e2e8f0 79%, #dbe1ec 95%, #dbe1ec 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#E6EAF2',GradientType=0 );
+	
+	border-bottom: 1px solid #96a8c3;
+}
+
+html[data-sap-ui-browser="ie8"] .zenDialogTitleArea,
+html[data-sap-ui-browser="ie9"] .zenDialogTitleArea {
+	border-bottom: 2px solid #96a8c3;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiRrPage{
+	border-bottom: 1px solid #96A8C3;
+}
+	
+.zenDialogTitleArea {
+    height: 25px;
+}
+
+.zenDialogTitleArea .zenDialogTextView{
+	font-size: 10px;
+	font-weight: normal;
+	line-height: 26px;
+}
+
+.zenDialogCloseCell {
+    width: 14px;
+}
+
+.zenDialogContentArea .sapzenfilterpanel-PopupContainer{
+	border: none;
+	height: 100%;
+}
+
+.zenDialogContentArea .sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutCenter{
+	left: 1px !important;
+    right: 1px !important;
+}
+
+.zenDialogContentArea .sapzenfilterpanel-DialogContainer.sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutCenter{
+	top: 1px !important;
+	bottom: 1px !important;
+}
+
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageError,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageWarning,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageInfo{
+	height: 21px !important;
+	min-height: 21px !important;
+	width: auto !important;
+	float: left;
+}
+
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageError > img,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageWarning > img,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageInfo > img {
+   height: 18px;
+   margin-right: 5px;
+   width: 16px;
+   float: left;
+   margin-left: 1px;
+   background-position: center 2px; 
+}
+
+.zenDialogOkButton{
+	margin-right: 10px;
+	min-width: 80px;
+}
+
+.zenDialogCancelButton{
+	min-width: 80px;
+}
+
+.zenDialogMsgButton{
+	min-width: 80px;
+}
+
+.zenDialogInplaceMode .zenDialogOkButton{
+	margin-right: 0px;
+	margin-bottom: 7px;
+}
+
+.sapUiMltPadRight {
+    padding: 1px;
+}
+
+.zenDialogResizeCell{
+	height: 13px;
+    width: 11px;
+	background: url("img/ResizeDialog.png") 0 0  no-repeat;
+}
+
+.zenDialogCloseCell{
+	background: transparent url("img/VariablenDialogClose.png") no-repeat 0 4px;
+	width: 26px;
+}
+
+
+html[data-sap-ui-browser="ie9"] .zenDialogResizeCell{
+    width: 11px;
+    height: 11px;
+}
+
+html[data-sap-ui-browser="ie8"] .zenDialogResizeCell{
+    width: 10px;
+    height: 11px;
+    padding-top: 2px;
+}
+
+.zenDialogResizeArea{
+	background-color: rgb(219, 225, 236);
+}

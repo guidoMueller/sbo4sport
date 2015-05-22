@@ -1,0 +1,2556 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2014 SAP AG. All rights reserved
+ */
+/* Global CSS for 'base' theme */
+/* ---------------------------------------------------------------------------------------- */
+/* TMP during LESS convertion ---- to be deleted */
+/* may be required by SubstitutionRulesManager.css in inbox lib */
+/* ---------------------------------------------------------------------------------------- */
+/** 
+  * This parameter is used in the Shell control to calculate the size when it grows.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE. 
+  */
+/** 
+  * This parameter is used in the Shell control to calculate the size of the margin when showing
+  * an overflow button in the right pane. As of 1.18.0 this value contains the _maximum_ height
+  * of the overflow button, if the text inside the button is smaller, the button shrinks with it.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
+  */
+/* NotificationBar */
+/* The maximized height will be calculated corresponding to the window's height.*/
+/* ToolPopup */
+/* Telling the ToolPopup if it's inverted per default */
+/* transparent; */
+/* Global CSS for 'sap_hcb' theme */
+/* ---------------------------------------------------------------------------------------- */
+/* NotificationBar */
+/* ToolPopup */
+/* This CSS shares it rules with all other CSS of this library */
+/* This CSS inherits rules from default/shared.css */
+/* shared CSS */
+/*******************************************/
+/* Base styles                             */
+/*******************************************/
+.sapzencrosstab-Crosstab {
+  border-spacing: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  border-collapse: separate;
+  line-height: normal;
+}
+.sapzencrosstab-ResizeDiv {
+  background-color: LightGray;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  position: absolute;
+}
+.sapzencrosstab-RenderSizeDiv {
+  position: absolute;
+  border-color: #000;
+  border-style: solid;
+  border-width:0px 0px 1px 1px;
+  overflow: hidden;
+}
+/* We need this separately applied with the TableDiv style because the resize visualization must not
+   have a background color. Otherwise, the resize visualization will be opaque */
+.sapzencrosstab-TableDivBackground {
+  background-color: #000;
+}
+.sapzencrosstab-TableDiv {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  border-color: #000;
+  border-style: solid;
+  border-width:1px 1px 1px 1px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.sapzencrosstab-MobileHeaderSeparator {
+  border-style: solid;
+  border-width:0px 0px 0px 1px;
+  border-color: #D2DAE8;
+}
+.sapzencrosstab-DimensionHeaderArea,
+.sapzencrosstab-RowHeaderArea,
+.sapzencrosstab-ColumnHeaderArea,
+.sapzencrosstab-DataArea {
+  border-spacing: 0;
+  border-collapse: separate;
+}
+/**********************************/
+/* Crosstab Loading Visualization */
+/**********************************/
+.sapzencrosstab-TableDivLoading {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow:0 0 10px #9ecaed;
+}
+.sapzencrosstab-loadingAnimationDiv {
+  top: 50%;
+  right: 50%;
+  position: absolute;
+  visibility: visible;
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  vertical-align: middle;
+  horizontal-align: center;
+}
+.sapzencrosstab-loadingAnimation {
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  background-image: url("img-RTL/loading.gif");
+  width: 100%;
+  height: 100%;
+}
+/*******************************************/
+/* Cell styles                             */
+/*******************************************/
+.sapzencrosstab-DataCellDefault,
+.sapzencrosstab-HeaderCellDefault {
+  /*border-color: #ffffff;
+	background-color: #F2F2F2;*/
+  border-color: #fff;
+  background-color: black;
+  border-style: solid;
+  border-width:0 0 1px 1px;
+  height: 27px;
+  overflow: hidden;
+  text-align: right;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 8px;
+  color: white;
+}
+/* Alternation in DataArea */
+.sapzencrosstab-DataCellAlternating,
+.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellAlternating {
+  background-color: #2e2e2e;
+}
+.sapzencrosstab-HeaderCellDefault {
+  /*border-color: #FFFFFF #D2DAE8 #D2DAE8 #FFFFFF;*/
+  border-width:0px 0 1px 1px;
+  text-align: left;
+}
+.sapzencrosstab-DataCellTotal,
+.sapzencrosstab-HeaderCellTotal {
+  font-weight: bold;
+}
+.sapzencrosstab-DataCellEmphasized,
+.sapzencrosstab-HeaderCellEmphasized {
+  font-weight: bold;
+}
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-HeaderCellDefault,
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellDefault {
+  background: #000000;
+  background: -moz-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  background: -webkit-gradient(linear, right top, right bottom, color-stop(15%, #2e2e2e),color-stop(50%, #000000),color-stop(85%, #2e2e2e));
+  background: -webkit-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  background: -o-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  background: -ms-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  background: linear-gradient(to bottom, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e2e2e', endColorstr='#000', GradientType=0);
+  /* IE6-9 */
+}
+.sapzencrosstab-HeaderCellFirstInRow,
+.sapzencrosstab-DataCellFirstInRow {
+  border-right-width: 1px;
+  border-right-color: #FFFFFF;
+}
+.sapzencrosstab-HeaderCellLastInCol,
+.sapzencrosstab-DataCellLastInCol {
+  border-bottom-width: 0px;
+}
+.sapzencrosstab-HeaderCellFirstInCol {
+  border-top-width: 1px;
+  border-top-color: #FFFFFF;
+}
+.sapzencrosstab-DataCellLoading,
+.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellLoading {
+  background-color: #E9E9E9;
+}
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellLoading {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.sapzencrosstab-LoadingCellContentDiv {
+  width: 50px;
+}
+.sapzencrosstab-DataCellContentDiv,
+.sapzencrosstab-HeaderCellContentDiv {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  vertical-align: middle;
+}
+.sapzencrosstab-RowHeaderArea,
+.sapzencrosstab-DataArea {
+  border-bottom: 1px solid white;
+}
+/*******************************************/
+/* Scrolling                               */
+/*******************************************/
+.sapzencrosstab-LowerMiddleScrollPad {
+  background-color: #000000;
+  overflow: hidden;
+}
+.sapzencrosstab-upperScrollHeaderSeparator {
+  border-left-style: solid;
+  border-left-color: #000;
+  border-left-width: 1px;
+}
+.sapzencrosstab-lowerScrollHeaderSeparator {
+  border-left-style: solid;
+  border-left-color: #000;
+  border-left-width: 1px;
+}
+.sapzencrosstab-removeRightBorder {
+  border-left-width: 0px !important;
+}
+.sapzencrosstab-HScrollCellWithHeaderScrollRightBorder {
+  border-left-style: solid;
+  border-left-color: #000;
+  border-left-width: 1px;
+}
+.sapzencrosstab-UpperRightScrollPad {
+  background-color: #000000;
+  overflow: hidden;
+}
+.sapzencrosstab-VScrollTable {
+  border-collapse: collapse;
+  border-color: #000;
+  border-spacing: 0;
+  border-style: solid;
+  border-width:0 1px 0 0;
+  margin: 0;
+  padding: 0;
+}
+.sapzencrosstab-VScrollCell {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+.sapzencrosstab-LowerLeftScrollPad {
+  background-color: #000000;
+  overflow: hidden;
+}
+.sapzencrosstab-LowerRightScrollPad {
+  background-color: #000000;
+  overflow: hidden;
+}
+.sapzencrosstab-HScrollTable {
+  border-collapse: collapse;
+  border-color: #000;
+  border-spacing: 0;
+  border-style: solid;
+  border-width:1px 0px 0 0;
+  margin: 0;
+  padding: 0;
+}
+.sapzencrosstab-HScrollCell {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+.sapzencrosstab-ScrollPopup {
+  margin-top: 2px;
+  padding: 5px;
+  background-color: #BCC8DA;
+  border: 1px solid #96A8C3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+.sapzencrosstab-VerticalCutOff-RowHeaderArea {
+  background-repeat: repeat-x;
+  background-image: url("img-RTL/VTornEffect.png");
+}
+.sapzencrosstab-VerticalCutOff-DataArea {
+  background-repeat: repeat-x;
+  background-image: url("img-RTL/VTornEffect.png");
+}
+.sapzencrosstab-HorizontalCutOff-DataArea {
+  background-repeat: repeat-y;
+  background-image: url("img-RTL/HTornEffectData.png");
+}
+.sapzencrosstab-HorizontalCutOff-ColumnHeaderArea {
+  background-repeat: repeat-y;
+  background-image: url("img-RTL/HTornEffectData.png");
+}
+.sapzencrosstab-VerticalCutOffSpacer {
+  height: 40px;
+}
+.sapzencrosstab-HorizontalCutOffSpacer {
+  width: 40px;
+}
+.sapzencrosstab-CutOffCorner {
+  background-repeat: no-repeat;
+  background-image: url("img-RTL/CornerTornEffect.png");
+}
+/*******************************************/
+/* Sorting                                 */
+/*******************************************/
+/* Icons on the Right */
+.sapzencrosstab-HeaderCellSortable {
+  padding-left: 0px;
+}
+.sapzencrosstab-HeaderCellSortable table {
+  width: 100%;
+}
+.sapzencrosstab-HeaderCellSortable td:nth-child(2) div {
+  float: left;
+}
+.sapzencrosstab-HeaderCellDivSortable {
+  height: 12px;
+  width: 12px;
+  padding-right: 5px;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.sapzencrosstab-HeaderCellSortAsc {
+  background-image: url("img-RTL/sort_asc.png");
+  margin-top: -1px;
+}
+.sapzencrosstab-HeaderCellSortDesc {
+  background-image: url("img-RTL/sort_desc.png");
+  margin-top: -1px;
+}
+.sapzencrosstab-HeaderCellSortNone {
+  background-image: url("img-RTL/sort_none.png");
+}
+/*******************************************/
+/* Hierarchies                             */
+/*******************************************/
+.sapzencrosstab-HeaderCellDivHierarchy {
+  height: 13px;
+  width: 13px;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+}
+.sapzencrosstab-ExpandNode {
+  background-image: url("img-RTL/treenode_expand.png");
+  margin-left: 5px;
+  cursor: pointer;
+}
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-ExpandNode,
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-ExpandNode {
+  background-image: url("img-RTL/treenode_expand.png");
+  margin-left: 3px;
+  cursor: pointer;
+}
+.sapzencrosstab-CollapseNode {
+  background-image: url("img-RTL/treenode_collapse.png");
+  margin-left: 4px;
+  cursor: pointer;
+}
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-CollapseNode,
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-CollapseNode {
+  background-image: url("img-RTL/treenode_collapse.png");
+  margin-left: 2px;
+  cursor: pointer;
+}
+.sapzencrosstab-HierarchyIndent {
+  width: 10px;
+  height: 21px;
+}
+/*******************************************/
+/* Resize of Columns                       */
+/*******************************************/
+.sapzencrosstab-columnResizeHandle {
+  position: absolute;
+  top: -5000px;
+  left: -8px;
+  width: 5px;
+  height: 10000px;
+}
+.sapzencrosstab-columnResizeHandle:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+.sapzencrosstab-cellLayoutDiv {
+  position: relative;
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+  overflow: visible;
+}
+/*******************************************/
+/* Hovering and Selection                  */
+/*******************************************/
+.sapzencrosstab-HeaderCellDefault.sapzencrosstab-HoverRowHeaderCell,
+.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellAlternating.sapzencrosstab-HoverRowHeaderCell,
+.sapzencrosstab-HoverDataCell,
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-HeaderCellDefault.sapzencrosstab-HoverColHeaderCell,
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellDefault.sapzencrosstab-HoverColHeaderCell {
+  background: #0F5D94;
+}
+.sapzencrosstab-HeaderCellDefault.sapzencrosstab-SelectRowHeaderCell,
+.sapzencrosstab-RowHeaderArea .sapzencrosstab-HeaderCellAlternating.sapzencrosstab-SelectRowHeaderCell,
+.sapzencrosstab-SelectDataCell,
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-HeaderCellDefault.sapzencrosstab-SelectColHeaderCell,
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellDefault.sapzencrosstab-SelectColHeaderCell {
+  background: #7A5100;
+}
+/*******************************************/
+/* Alert Visualization Dimensions          */
+/*******************************************/
+.sapzencrosstab-SymbolAlertDimensions {
+  width: 16px;
+}
+/**********************************************/
+/* Alert Symbol visualization cell background */
+/**********************************************/
+.sapzencrosstab-DimensionHeaderArea .sapzencrosstab-HeaderCellSymbolAlertBackground,
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellSymbolAlertBackground {
+  background-color: #2e2e2e !important;
+}
+/*
+	If a header cell has a sort icon and an exception symbol there is a conflict as both icons are on the right edge of the cell.
+	This is resolved by moving the sort icon a little bit to the left if an exception symbol is present.
+*/
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellSymbolAlertBackground .sapzencrosstab-HeaderCellDivSortable {
+  background-position:right !important;
+  float: right !important;
+}
+.sapzencrosstab-ColumnHeaderArea .sapzencrosstab-HeaderCellSymbolAlertBackground .sapzencrosstab-HeaderCellDivSortable {
+  background-position:right !important;
+  float: right !important;
+}
+/*******************************************/
+/* Alert Background Styles                 */
+/*******************************************/
+.sapzencrosstab-DataCellAlert1Background,
+.sapzencrosstab-HeaderCellAlert1Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #87C958 !important;
+}
+.sapzencrosstab-DataCellAlert2Background,
+.sapzencrosstab-HeaderCellAlert2Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #9AD272 !important;
+}
+.sapzencrosstab-DataCellAlert3Background,
+.sapzencrosstab-HeaderCellAlert3Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #AEDA8E !important;
+}
+.sapzencrosstab-DataCellAlert4Background,
+.sapzencrosstab-HeaderCellAlert4Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #C2E3A9 !important;
+}
+.sapzencrosstab-DataCellAlert5Background,
+.sapzencrosstab-HeaderCellAlert5Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #FEEDC1 !important;
+}
+.sapzencrosstab-DataCellAlert6Background,
+.sapzencrosstab-HeaderCellAlert6Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #FCDCDA !important;
+}
+.sapzencrosstab-DataCellAlert7Background,
+.sapzencrosstab-HeaderCellAlert7Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #F9BFBB !important;
+}
+.sapzencrosstab-DataCellAlert8Background,
+.sapzencrosstab-HeaderCellAlert8Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #F6A09B !important;
+}
+.sapzencrosstab-DataCellAlert9Background,
+.sapzencrosstab-HeaderCellAlert9Background {
+  background: none !important;
+  filter: none !important;
+  background-color: #F3827B !important;
+}
+/*******************************************/
+/* Alert Font Color Styles                 */
+/*******************************************/
+.sapzencrosstab-DataCellAlert1FontColor,
+.sapzencrosstab-HeaderCellAlert1FontColor {
+  color: #457324 !important;
+}
+.sapzencrosstab-DataCellAlert2FontColor,
+.sapzencrosstab-HeaderCellAlert2FontColor {
+  color: #56902D !important;
+}
+.sapzencrosstab-DataCellAlert3FontColor,
+.sapzencrosstab-HeaderCellAlert3FontColor {
+  color: #67AC36 !important;
+}
+.sapzencrosstab-DataCellAlert4FontColor,
+.sapzencrosstab-HeaderCellAlert4FontColor {
+  color: #73C03C !important;
+}
+.sapzencrosstab-DataCellAlert5FontColor,
+.sapzencrosstab-HeaderCellAlert5FontColor {
+  color: #F9821B !important;
+}
+.sapzencrosstab-DataCellAlert6FontColor,
+.sapzencrosstab-HeaderCellAlert6FontColor {
+  color: #F1635A !important;
+}
+.sapzencrosstab-DataCellAlert7FontColor,
+.sapzencrosstab-HeaderCellAlert7FontColor {
+  color: #EE453B !important;
+}
+.sapzencrosstab-DataCellAlert8FontColor,
+.sapzencrosstab-HeaderCellAlert8FontColor {
+  color: #EB271B !important;
+}
+.sapzencrosstab-DataCellAlert9FontColor,
+.sapzencrosstab-HeaderCellAlert9FontColor {
+  color: #D12318 !important;
+}
+/*******************************************/
+/* Alert StatusSymbol Styles               */
+/*******************************************/
+.sapzencrosstab-DataCellAlert1StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_1.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert1StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_1.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert2StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_2.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert2StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_2.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert3StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_3.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert3StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_3.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert4StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_4.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert4StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_4.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert5StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_5.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert5StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_5.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert6StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_6.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert6StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_6.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert7StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_7.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert7StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_7.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert8StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_8.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert8StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_8.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert9StatusSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_9.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert9StatusSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/status_9.gif") !important;
+  filter: none !important;
+}
+/*******************************************/
+/* Alert TrendAscending Styles             */
+/*******************************************/
+.sapzencrosstab-DataCellAlert1TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_1.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert1TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_1.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert2TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_2.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert2TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_2.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert3TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_3.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert3TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_3.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert4TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_4.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert4TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_4.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert5TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_5.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert5TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_5.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert6TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_6.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert6TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_6.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert7TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_7.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert7TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_7.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert8TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_8.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert8TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_8.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert9TrendAscendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_9.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert9TrendAscendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_asc_9.gif") !important;
+  filter: none !important;
+}
+/*******************************************/
+/* Alert TrendDescending Styles            */
+/*******************************************/
+.sapzencrosstab-DataCellAlert1TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_1.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert1TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_1.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert2TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_2.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert2TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_2.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert3TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_3.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert3TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_3.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert4TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_4.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert4TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_4.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert5TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_5.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert5TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_5.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert6TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_6.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert6TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_6.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert7TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_7.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert7TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_7.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert8TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_8.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert8TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_8.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert9TrendDescendingSymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_9.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert9TrendDescendingSymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_desc_9.gif") !important;
+  filter: none !important;
+}
+/*******************************************/
+/* Alert TrendGrey Styles                  */
+/*******************************************/
+.sapzencrosstab-DataCellAlert1TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_1.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert1TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_1.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert2TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_2.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert2TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_2.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert3TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_3.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert3TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_3.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert4TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_4.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert4TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_4.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert5TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_5.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert5TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_5.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert6TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_6.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert6TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_6.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert7TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_7.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert7TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_7.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert8TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_8.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert8TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_8.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-DataCellAlert9TrendGreySymbol {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_9.gif") !important;
+  filter: none !important;
+}
+.sapzencrosstab-HeaderCellAlert9TrendGreySymbol {
+  background-position:left !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/exceptions/trend_grey_9.gif") !important;
+  filter: none !important;
+}
+/*******************************************/
+/* SDK Highlighting                        */
+/*******************************************/
+.sapzencrosstab-HighlightDataCell {
+  background: lightgreen !important;
+}
+.sapzencrosstab-HighlightRowHeaderCell {
+  background: lightgreen !important;
+}
+.sapzencrosstab-HighlightColHeaderCell {
+  background: lightgreen !important;
+}
+/*******************************************/
+/* Planning					                       */
+/*******************************************/
+.sapzencrosstab-DataCellEntryEnabled,
+.sapzencrosstab-HeaderCellEntryEnabled {
+  cursor: text;
+  color: black;
+}
+.sapzencrosstab-DataCellEntryEnabled > .sapzencrosstab-DataCellContentDiv,
+.sapzencrosstab-HeaderCellEntryEnabled > .sapzencrosstab-cellLayoutDiv .sapzencrosstab-HeaderCellContentDiv {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 13px;
+  background-color: white;
+}
+.sapzencrosstab-DataCellInvalidValue > .sapzencrosstab-DataCellContentDiv,
+.sapzencrosstab-HeaderCellInvalidValue .sapzencrosstab-HeaderCellContentDiv {
+  border-color: red !important;
+}
+.sapzencrosstab-EntryEnabledInput {
+  width: 95%;
+  height: 95%;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-align: right;
+  border: 0px;
+}
+.sapzencrosstab-HeaderCellDivValueHelp {
+  height: 13px;
+  width: 13px;
+  padding-right: 5px;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.sapzencrosstab-HeaderCellValueHelp {
+  background-image: url("img-RTL/ValueHelp.gif");
+}
+.sapzencrosstab-DataCellLocked {
+  background-position:right !important;
+  background-repeat: no-repeat !important;
+  background-image: url("img-RTL/locked.gif") !important;
+  filter: none !important;
+}
+/*******************************************/
+/* Keyboard navigation stuff
+/*******************************************/
+.sapzencrosstab-CellFocus {
+  background-color: lightgray !important;
+}
+/* ================================================== */
+/* CSS for control sap.ui.commons/Filterpanel.control */
+/* HCB                                                */
+/* ================================================== */
+.sapUiTableTreeIconLeaf {
+  visibility: hidden !important;
+}
+.sapzenfilterpanel-PopupContainer,
+.sapzenfilterpanel-PopupContainerDialog {
+  background: #000000;
+  border: 1px solid #ffffff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow-x: hidden;
+}
+.sapzenfilterpanel-PopupContainer .sapUiBorderLayout.sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-PopupContainerDialog .sapUiBorderLayout.sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutCenter {
+  background-color: #000000;
+}
+.sapzenfilterpanel-PopupContainer .sapUiBorderLayoutBottom,
+.sapzenfilterpanel-PopupContainerDialog .sapUiBorderLayoutBottom {
+  height: 35px !important;
+  overflow: hidden !important;
+}
+.sapzenfilterpanel-PopupContainer .sapUiBtnS,
+.sapzenfilterpanel-PopupContainerDialog .sapUiBtnS {
+  height: 25px;
+}
+.sapzenfilterpanel-Container {
+  background: #000000;
+  border: 1px solid #ffffff;
+}
+.sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutTop,
+.sapzenfilterpanel-PopupContainerDialog > .sapUiBorderLayoutTop {
+  height: 40px !important;
+  overflow: hidden !important;
+}
+.sapzenfilterpanel-Container > .sapUiBorderLayoutTop {
+  height: 0px !important;
+  overflow: hidden !important;
+}
+.sapzenfilterpanel-SelectionContainer,
+.sapzenfilterpanel-SelectionContainer2 {
+  border-top: 1px solid #ffffff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutTop > .sapuiVlt,
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutTop > .sapuiVlt {
+  width: 100%;
+}
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutTop > .sapuiVlt .sapUiHLayout,
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutTop > .sapuiVlt .sapUiHLayout {
+  width: 100%;
+}
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutCenter {
+  top: 34px !important;
+  bottom: 34px !important;
+  background-color: #000000;
+}
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutCenter {
+  top: 34px !important;
+  bottom: 62px !important;
+  background-color: #000000;
+}
+.sapzenfilterpanel-SelectionContainer .sapUiTableCtrlEmpty,
+.sapzenfilterpanel-SelectionContainer2 .sapUiTableCtrlEmpty {
+  background: #000000;
+  border-top: 1px solid #ffffff;
+}
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutBottom {
+  height: 33px !important;
+  background-color: #000000;
+  border-top: 1px solid #ffffff;
+}
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutBottom {
+  height: 66px !important;
+  background-color: #000000;
+  border-top: 1px solid #ffffff;
+}
+.sapzenfilterpanel-PopupContainerHeader {
+  height: 42px !important;
+}
+.sapzenfilterpanel-PopupContainerHeader .sapUiTvH1 {
+  color: #4F5C72;
+  margin-top: 9px;
+}
+.sapzenfilterpanel-PopupContainerHeader > div > div {
+  padding: 5px;
+}
+.sapzenfilterpanel-PopupContainerHeader > .sapUiBorderLayoutBegin {
+  padding-top: 9px;
+  padding-right: 6px;
+}
+.sapzenfilterpanel-PopupContainerHeader > .sapUiBorderLayoutEnd {
+  padding-top: 9px;
+  padding-left: 6px;
+}
+.sapzenfilterpanel-PopupContainerFooter > .sapuiVltCell,
+.sapzenfilterpanel-PopupContainerFooter2 > .sapuiVltCell:last-of-type {
+  padding: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.sapzenfilterpanel-HeadLine {
+  margin-top: 15px;
+}
+.sapzenfilterpanel-HeaderText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+.sapzenfilterpanel-RowRepeaterRow,
+.sapzenfilterpanel-RangeFrom,
+.sapzenfilterpanel-RangeTo {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  margin-bottom: 0px;
+  height: 32px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.sapzenfilterpanel-PopupContainer .sapUiRrPage,
+.sapzenfilterpanel-PopupContainerDialog .sapUiRrPage {
+  border-bottom: 1px solid #ffffff;
+}
+.sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-RangeFrom .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-RangeTo .sapUiBorderLayoutCenter {
+  top: 0px !important;
+  overflow: hidden !important;
+}
+.sapzenfilterpanel-RowRepeaterRow .sapUiTvH2,
+.sapzenfilterpanel-RangeFrom .sapUiTvH2,
+.sapzenfilterpanel-RangeTo .sapUiTvH2 {
+  line-height: 30px;
+  /* = height von .sapzenfilterpanel-RowRepeaterRow*/
+  font-weight: bold;
+}
+.sapzenfilterpanel-RowRepeaterRow > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-RangeFrom > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-RangeTo > .sapUiBorderLayoutCenter {
+  padding-right: 8px;
+  overflow: hidden !important;
+  /*	 width: 50px; funtioniert nicht!!!! */
+}
+.sapzenfilterpanel-RowRepeaterRow,
+.sapzenfilterpanel-RangeFrom,
+.sapzenfilterpanel-RangeTo {
+  background-color: #000000;
+}
+.sapzenfilterpanel-RowRepeaterRow > .sapUiBorderLayoutEnd,
+.sapzenfilterpanel-RangeFrom > .sapUiBorderLayoutEnd,
+.sapzenfilterpanel-RangeTo > .sapUiBorderLayoutEnd {
+  background: #000000;
+  overflow: hidden !important;
+}
+.sapzenfilterpanel-RowRepeaterRowActive > .sapUiBorderLayoutBegin,
+.sapzenfilterpanel-RowRepeaterRowActive > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-RowRepeaterRowActive > .sapUiBorderLayoutEnd {
+  bottom: 73px !important;
+  /* = height von .sapUiBorderLayoutBottom*/
+  background: #000000;
+}
+.sapzenfilterpanel-PopupContainerHeader > .sapUiBorderLayoutEnd > .sapUiBtnS,
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom .sapUiBorderLayoutEnd > .sapUiBtnS,
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom .sapUiBorderLayoutEnd > .sapUiBtnS {
+  float: left;
+}
+html[data-sap-ui-browser="ie8"] .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnAct:hover {
+  padding: 0 10px;
+}
+.sapUiTvH1.sapzenfilterpanel-NoNotifications {
+  color: #444444;
+  filter: none;
+  text-shadow:none;
+  margin-top: 0px;
+  width: 100%;
+  text-align: center !important;
+}
+.sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutCenter {
+  bottom: 41px !important;
+  top: 41px !important;
+  right: 6px !important;
+  left: 6px !important;
+  background: #000000;
+}
+.sapzenfilterpanel-DialogContainer.sapzenfilterpanel-PopupContainer > .sapUiBorderLayoutCenter {
+  top: 6px !important;
+  bottom: 6px !important;
+}
+.sapzenfilterpanel-PopupContainerDialog > .sapUiBorderLayoutCenter {
+  bottom: 6px !important;
+  top: 41px !important;
+  right: 6px !important;
+  left: 6px !important;
+  background: #000000;
+}
+.sapzenfilterpanel-Container > .sapUiBorderLayoutCenter {
+  bottom: 0px !important;
+  top: 0px !important;
+  right: 0px !important;
+  left: 0px !important;
+  background: #000000;
+}
+.sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutTop {
+  height: 22px !important;
+  overflow: hidden !important;
+}
+.sapzenfilterpanel-SingleRowRepeater > .sapUiBorderLayoutTop {
+  height: 0px !important;
+  overflow: hidden !important;
+}
+.sapzenfilterpanel-SingleRowRepeater > .sapUiBorderLayoutCenter {
+  top: 0px !important;
+}
+.sapzenfilterpanel-PopupTitle {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 42px;
+  text-align: center !important;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+.sapUiTv.sapzenfilterpanel-HeaderText,
+.sapUiTv.sapzenfilterpanel-FromToText {
+  line-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 12px;
+}
+.sapUiTv.sapzenfilterpanel-HeaderTextWidthFiltertext {
+  width: 50%;
+}
+.sapUiTv.sapzenfilterpanel-HeaderTextWidthFiltercount {
+  width: 80%;
+}
+.sapUiTv.sapzenfilterpanel-SelectionMemberText {
+  line-height: 32px;
+  overflow: hidden;
+  position: absolute;
+  left: 24px;
+  top: 0px;
+  text-align: right !important;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+}
+.sapUiTv.sapzenfilterpanel-SelectionMemberTextWidthFiltertext {
+  width: 35%;
+}
+.sapUiTv.sapzenfilterpanel-SelectionMemberTextWidthFiltercount {
+  width: 15%;
+}
+.sapzenfilterpanel-SelectionContainer > .sapUiBorderLayoutTop,
+.sapzenfilterpanel-SelectionContainer2 > .sapUiBorderLayoutTop {
+  background-color: #000000;
+  height: 33px !important;
+  overflow: hidden !important;
+}
+.sapUiSegmentedButton.sapzenfilterpanel-SelectionSegmentedButton {
+  position: absolute;
+  left: 7px;
+  top: 4px;
+}
+.sapUiTv.sapzenfilterpanel-SelectionTitle {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 32px;
+  padding-right: 8px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+.sapUiTv.sapzenfilterpanel-SelectionTitle {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 32px;
+  padding-right: 8px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+.sapzenfilterpanel-ExclusionCheckBox {
+  position: absolute;
+  left: 9px;
+  top: 8px;
+}
+.sapUiTv.sapzenfilterpanel-ExclusionText {
+  line-height: 28px;
+  padding-right: 3px;
+}
+.sapzenfilterpanel-ExclusionContainer {
+  height: 25px;
+}
+.sapzenfilterpanel-MemberSegmentButton,
+.sapzenfilterpanel-SearchSegmentButton,
+.sapzenfilterpanel-SearchButton {
+  width: 40px;
+}
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-SearchFieldRow .sapzenfilterpanel-SearchButton {
+  float: left;
+}
+.sapzenfilterpanel-SearchSegmentButton .sapUiBtnS.sapUiBtnIconOnly {
+  padding: 0;
+}
+/*
+.sapUiSegmentedButton > .sapUiBtnS.sapUiSegButtonSelected{
+	
+}*/
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-SearchSegmentButton .sapUiBtnIco,
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-SearchSegmentButton .sapUiBtnIco,
+.sapzenfilterpanel-SearchFieldRow .sapzenfilterpanel-SearchButton .sapUiBtnIco {
+  background: transparent url(img-RTL/filterpanel_searchsegmentbutton.png) no-repeat center center;
+  height: 17px;
+}
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-MemberSegmentButton .sapUiBtnIco,
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-MemberSegmentButton .sapUiBtnIco {
+  background: transparent url(img-RTL/filterpanel_membersegmentbutton.png) no-repeat center center;
+  height: 17px;
+}
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-IncludeButton .sapUiBtnIco,
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-IncludeButton .sapUiBtnIco {
+  background: transparent url(img-RTL/filterpanel_including.png) no-repeat center center;
+  height: 17px;
+}
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ExcludeButton .sapUiBtnIco,
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-ExcludeButton .sapUiBtnIco {
+  background: transparent url(img-RTL/filterpanel_excluding.png) no-repeat center center;
+  height: 17px;
+}
+html[data-sap-ui-browser="ie8"] .sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-ExcludeButton .sapUiBtnIco,
+html[data-sap-ui-browser="ie8"] .sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnAct.sapzenfilterpanel-IncludeButton .sapUiBtnIco {
+  margin-right: -4px;
+}
+.sapzenfilterpanel-IncludeButton,
+.sapzenfilterpanel-ExcludeButton {
+  width: 29px;
+}
+.sapzenfilterpanel-SearchFieldRow {
+  height: 34px;
+  width: 100%;
+  background-color: #000000;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.sapzenfilterpanel-SearchFieldRow div:first-child {
+  right: 8px;
+  position: absolute;
+  width: 75%;
+}
+.sapzenfilterpanel-SearchFieldRow div:first-child input {
+  width: 100%;
+  height: 24px;
+}
+.sapzenfilterpanel-SearchFieldRow div:last-child {
+  position: absolute;
+  left: 8px;
+}
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-SearchFieldRow div {
+  margin-right: 8px;
+  margin-left: 8px;
+  position: static;
+}
+.sapzenfilterpanel-SearchFieldRow div {
+  margin-top: 5px;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTable > div:last-child,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTable > div:last-child {
+  -webkit-border-radius:0px !important;
+  -moz-border-radius:0px !important;
+  border-radius:0px !important;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTable > div,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTable > div {
+  border-style: solid none none;
+}
+.sapUiTableCol,
+.sapUiTableCtrl tr > td:last-child {
+  border-left: none;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTableTreeIcon,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableTreeIcon {
+  line-height: 13px;
+  margin-left: 6px;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTableCtrl .sapUiCb.sapUiCbInteractive.sapUiCbStd,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCtrl .sapUiCb.sapUiCbInteractive.sapUiCbStd {
+  width: 100%;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTableCtrl .sapUiCb > label,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCtrl .sapUiCb > label {
+  padding-right: 13px;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTableCell,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCell {
+  text-align: center;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTableCell span,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCell span {
+  margin-top: 1px;
+}
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom .sapUiBorderLayoutEnd,
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom .sapUiBorderLayoutEnd {
+  padding-left: 8px;
+  padding-top: 4px;
+}
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom .sapUiBorderLayoutBegin,
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom .sapUiBorderLayoutBegin {
+  padding-top: 4px;
+  padding-right: 8px;
+  width: 74px !important;
+}
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom .sapUiBorderLayoutCenter {
+  right: 74px !important;
+  left: 95px !important;
+}
+.sapzenfilterpanel-SelectionContainer .sapzenfilterpanel-CheckAll,
+.sapzenfilterpanel-SelectionContainer2 .sapzenfilterpanel-CheckAll {
+  height: 19px;
+  width: 100%;
+  background: transparent url("img-RTL/filterpanel_checkAll.png") no-repeat center center;
+}
+.sapUiTv.sapzenfilterpanel-RestrictionText {
+  line-height: 34px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  font-weight: bold;
+}
+html[data-sap-ui-browser="ie8"] .sapUiTv.sapzenfilterpanel-RestrictionText,
+html[data-sap-ui-browser="ie9"] .sapUiTv.sapzenfilterpanel-RestrictionText {
+  line-height: 33px;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTableCnt,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCnt {
+  border-bottom: none !important;
+}
+.sapzenfilterpanel-PopupContainer .sapUiTableCCnt tr:last-child td,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCCnt tr:last-child td {
+  border-bottom: 1px solid #ffffff;
+}
+.sapUiTv.sapzenfilterpanel-NoNotifications {
+  margin-top: 20px;
+  overflow: hidden;
+  display: block;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  text-align: center !important;
+}
+.sapUiTv.sapzenfilterpanel-SelectionTableText {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: normal;
+}
+.sapUiTv.sapzenfilterpanel-SelectionTableKey {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: normal;
+}
+.sapzenfilterpanel-IncorrectValue.sapzenfilterpanel-RowRepeaterRow {
+  background: #aa0000;
+}
+.sapzenfilterpanel-DirtyState,
+.sapzenfilterpanel-DirtyState > input {
+  font-style: italic !important;
+}
+.sapzenfilterpanel-RowRepeaterRow:hover,
+.sapzenfilterpanel-RangeFromActive,
+.sapzenfilterpanel-RangeToActive,
+.sapzenfilterpanel-RowActive {
+  background: #7a5100;
+  /*	 width: 50px; funtioniert nicht!!!! */
+}
+/* Dimension Filter */
+.sapzenfilterpanel-Container > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-Container {
+  background: none;
+  border: none;
+}
+.sapzenfilterpanel-Container .sapUiRrRow .sapzenfilterpanel-RowRepeaterRow div {
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+.sapzenfilterpanel-Container .sapUiRrRow:first-child .sapzenfilterpanel-RowRepeaterRow {
+  border: none;
+}
+/* END Dimension Filter */
+.sapzenfilterpanel-RemoveImage {
+  background: transparent url("img-RTL/filterpanel_remove.png") no-repeat center center;
+  height: 16px;
+}
+.sapUiBtnS {
+  padding: 0 10px;
+}
+html[data-sap-ui-browser*="ff"] .sapzenfilterpanel-PopupContainer .sapUiBtnS.sapUiBtnIconOnly > .sapUiBtnIco,
+html[data-sap-ui-browser*="ff"] .sapzenfilterpanel-PopupContainerDialog .sapUiBtnS.sapUiBtnIconOnly > .sapUiBtnIco {
+  margin-top: 0px;
+}
+.sapzenfilterpanel-PopupContainer .sapUiBtnS.sapUiBtnIconOnly,
+.sapzenfilterpanel-PopupContainerDialog .sapUiBtnS.sapUiBtnIconOnly {
+  padding: 0px;
+}
+.sapzenfilterpanel-PopupContainer .sapUiCb.sapUiCbInteractive.sapUiCbStd,
+.sapzenfilterpanel-PopupContainerDialog .sapUiCb.sapUiCbInteractive.sapUiCbStd {
+  text-overflow: clip;
+}
+.sapzenfilterpanel-SelectionContainer .sapUiBorderLayoutBottom .sapUiBorderLayoutEnd,
+.sapzenfilterpanel-SelectionContainer2 .sapUiBorderLayoutBottom .sapUiBorderLayoutEnd,
+.sapzenfilterpanel-PopupContainerHeader > .sapUiBorderLayoutBegin {
+  width: 130px !important;
+  overflow: hidden !important;
+}
+.sapzenfilterpanel-ExclusionState {
+  background: transparent url("img-RTL/filterpanel_excluded.png") no-repeat left 2px;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+.sapzenfilterpanel-InclusionState {
+  background: transparent url("img-RTL/filterpanel_included.png") no-repeat left 2px;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+/*Update 2013-01-10*/
+.sapzenfilterpanel-PopupContainerDialog .sapUiSearchFieldTf {
+  margin: 5px;
+}
+.sapzenfilterpanel-PopupContainerDialog .sapUiSearchField {
+  height: 28px;
+  background-color: #000;
+  border-top: 1px solid #fff;
+}
+.sapUiHLayout.sapzenfilterpanel-LiveSearchField {
+  display: block;
+  padding: 5px;
+  background-color: #000;
+  border-top: 1px solid #fff;
+}
+.sapzenfilterpanel-SearchField.sapzenfilterpanel-SearchFieldInactive {
+  color: #AAAAAA;
+}
+.sapzenfilterpanel-LiveSearchField .sapzenfilterpanel-SearchField,
+.sapzenfilterpanel-LiveSearchField .sapUiHLayoutChildWrapper {
+  width: 100%;
+}
+.sapUiHLayout.sapzenfilterpanel-TextVariableFieldContainer {
+  width: 100%;
+}
+.sapzenfilterpanel-TextVariableFieldContainer .sapUiHLayoutChildWrapper:first-child {
+  padding-top: 3px;
+}
+.sapzenfilterpanel-TextVariableFieldContainer .sapUiHLayoutChildWrapper:last-child {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.sapzenfilterpanel-TextVariableField {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100% !important;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.sapzenfilterpanel-TextFieldWidthFiltercount.sapzenfilterpanel-TextVariableField {
+  width: 85% !important;
+}
+.sapzenfilterpanel-TextFieldWidthFiltertext.sapzenfilterpanel-TextVariableField {
+  width: 65% !important;
+}
+.sapzenfilterpanel-RangeFrom,
+.sapzenfilterpanel-RangeTo {
+  border: none;
+  border-top: 1px solid #fff;
+}
+.sapUiTableCtrl tr > td {
+  border-left: 1px solid #fff;
+}
+.sapUiTableCtrl tr:nth-child(2n+1) {
+  background-color: #2E2E2E;
+}
+/* BugFixing IE8 
+html[data-sap-ui-browser="ie8"] */
+/****************************************************/
+/* extract the search-button in the non-auto-search */
+/****************************************************/
+/* clear the done styling */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd {
+  background: none;
+  border: none;
+  box-shadow:none;
+  padding-left: 57px;
+}
+/* styling of the seachfield */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiTf.sapUiTfInner {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* styling of the seachfield - Focus */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfFoc .sapUiTf.sapUiTfInner {
+  outline: 1px solid #fff;
+}
+/* styling of the seachfield - Hover */
+/**/
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd.sapUiTfFoc {
+  outline: none;
+}
+/* styling of the seachfield-button */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco {
+  height: 18px;
+  width: 47px;
+  background: #000000 url("img-RTL/filterpanel_searchsegmentbutton.png") no-repeat center center;
+  border: 1px solid #fff;
+  border-radius:2px;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  margin-top: -1px;
+}
+/* hover */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco:hover,
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd:hover .sapUiSearchFieldIco {
+  background: #7a5100 url("img-RTL/filterpanel_searchsegmentbutton.png") no-repeat center center;
+  border-color: #fff;
+  color: #ffffff;
+}
+/* active */
+.sapUiSearchFieldTf.sapUiTfBack.sapUiTfBrd.sapUiTfStd .sapUiSearchFieldIco:active {
+  background: #7a5100 url("img-RTL/filterpanel_searchsegmentbutton.png") no-repeat center center;
+  border-color: #fff;
+}
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableTreeIcon,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCol .sapUiTableColCell label,
+.sapzenfilterpanel-PopupContainerDialog .sapUiTableCol div {
+  cursor: pointer;
+}
+.sapUiTableGroupIconClosed,
+.sapUiTableTreeIconNodeClosed {
+  background-image: url("img-RTL/treenode_expand.png") !important;
+  width: 13px !important;
+}
+.sapUiTableGroupIconOpen,
+.sapUiTableTreeIconNodeOpen {
+  background-image: url("img-RTL/treenode_collapse.png") !important;
+  width: 13px !important;
+}
+.sapzenfilterpanel-PopupContainerDialog .sapzenfilterpanel-SelectionContainer .sapUiTableColHdrScr,
+.sapzenfilterpanel-PopupContainerDialog .sapzenfilterpanel-SelectionContainer2 .sapUiTableColHdrScr {
+  background: #111111;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, right top, right bottom, color-stop(15%, #2e2e2e),color-stop(50%, #000000),color-stop(85%, #2e2e2e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #2e2e2e 15%, #000000 50%, #2e2e2e 85%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e2e2e', endColorstr='#000', GradientType=0);
+  /* IE6-9 */
+}
+.sapzenfilterpanel-RightArrowImage {
+  height: 16px;
+  width: 16px;
+  background: transparent url("img-RTL/left_16.png") no-repeat center center;
+  cursor: pointer;
+  position: absolute !important;
+  top: 8px;
+  left: 2px;
+}
+.sapzenfilterpanel-DesktopSubmit {
+  position: absolute;
+  left: 6px;
+  top: 4px;
+}
+.sapzenfilterpanel-DesktopSubmit > .sapUiHLayoutChildWrapper:first-child {
+  margin-left: 5px;
+}
+.sapzenfilterpanel-DesktopSubmit2 {
+  position: absolute;
+  left: 6px;
+  top: 37px;
+}
+.sapzenfilterpanel-DesktopSubmit2 > .sapUiHLayoutChildWrapper:first-child {
+  margin-left: 5px;
+}
+.sapzenfilterpanel-DesktopSelectMember {
+  margin-top: 4px;
+}
+/* =================================================          */
+/* CSS for control sap.ui.commons/FragmentGallery.control     */
+/* HCB                                                        */
+/* =================================================          */
+.zenFragmentGallery:not(.fragmentGalleryDual) .sapUiCrslItm {
+  background-color: #404040;
+}
+/* Message View Component*/
+.sapzenmessageview-PopupContainer {
+  background: #000000;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow:-2px 2px 4px 0px #0b0b0b;
+  box-shadow:-2px 2px 4px 0px #0b0b0b;
+  /*padding: 0 5px 5px 5px;*/
+  width: 280px !important;
+  height: 420px !important;
+}
+.sapzenmessageview-PopupContainer .sapUiBorderLayoutTop {
+  height: 40px !important;
+}
+.sapzenmessageview-PopupContainer .sapUiBorderLayoutCenter {
+  top: 5px !important;
+}
+.sapzenmessageview-PopupContainerHeader {
+  width: 280px !important;
+  height: 28px !important;
+  background: #000000;
+  /* Old browsers */
+  border-bottom: 1px solid #ffffff;
+}
+.sapzenmessageview-PopupContainerHeader .sapUiTvH1 {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.sapzenmessageview-PopupContainerHeader > div > div {
+  padding: 5px;
+}
+.sapzenmessageview-PopupContainerHeader > .sapUiBorderLayoutBegin {
+  width: 5px !important;
+}
+.sapzenmessageview-PopupContainerHeader > .sapUiBorderLayoutCenter {
+  right: 5px !important;
+  left: 120px !important;
+  padding-right: 12px;
+}
+.sapzenmessageview-PopupContainerHeader > .sapUiBorderLayoutEnd {
+  width: 125px !important;
+  padding-top: 3px;
+  padding-left: 5px;
+  overflow: none !important;
+}
+.sapzenmessageview-HeadLine {
+  margin-top: 15px;
+}
+.sapzenmessageview-ExpandImage,
+.sapzenmessageview-RemoveImage {
+  width: 100%;
+  height: 100%;
+}
+.sapzenmessageview-HeaderText {
+  width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+.sapzenmessageview-RowRepeaterRow {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 0px;
+  height: 26px !important;
+  width: 280px !important;
+}
+.sapzenmessageview-RowRepeaterRow .sapUiBorderLayoutCenter {
+  top: 0px !important;
+  overflow: hidden !important;
+}
+.sapzenmessageview-RowRepeaterRow .sapUiTvH2 {
+  line-height: 26px;
+  /* = height von .sapzenmessageview-RowRepeaterRow*/
+  font-weight: normal;
+  font-size: 10px;
+}
+.sapzenmessageview-RowRepeaterRow.sapzenmessageview-RowRepeaterRowActive .sapUiTvH2 {
+  font-weight: bold;
+}
+.sapzenmessageview-RowRepeaterRow.sapzenmessageview-RowRepeaterRowActive {
+  height: 90px !important;
+  /*Gesamth�he = height von .sapzenmessageview-RowRepeaterRow + height von .sapUiBorderLayoutBottom*/
+}
+.sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutBottom {
+  height: 64px !important;
+  border-top: 1px solid #ffffff;
+  overflow: hidden !important;
+  /*	 width: 50px; funtioniert nicht!!!! */
+}
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutBegin {
+  background: #000000;
+  width: 18px !important;
+  overflow: hidden !important;
+  /*	 width: 50px; funtioniert nicht!!!! */
+}
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutCenter {
+  background: #000000;
+  right: 18px !important;
+  left: 65px !important;
+  overflow: hidden !important;
+  /*	 width: 50px; funtioniert nicht!!!! */
+}
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutEnd {
+  background: #000000;
+  width: 65px !important;
+  overflow: hidden !important;
+}
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutBottom {
+  overflow: hidden !important;
+  /*	 width: 50px; funtioniert nicht!!!! */
+}
+.sapUiBorderLayoutCenter .sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutBegin,
+.sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutCenter,
+.sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutEnd {
+  bottom: 64px !important;
+  /* = height von .sapUiBorderLayoutBottom*/
+  background: #834E00;
+}
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutBottom > .sapUiTv {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  height: 48px;
+  background: #000000;
+  padding:10px 11px 10px 20px;
+  width: 248px;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+.sapzenmessageview-RowRepeaterRowActive > .sapUiBorderLayoutBottom > .sapUiTv {
+  line-height: 13px;
+}
+.sapzenmessageview-RowRepeaterRow > .sapUiBorderLayoutCenter > span {
+  width: 150px;
+}
+.sapzenmessageview-Button {
+  /*background-color: blue;*/
+}
+/* Clear All Button*/
+.sapzenmessageview-PopupContainerHeader .sapUiBtnS {
+  float: left;
+  color: #ffffff;
+  font-size: 11px;
+  padding:0 10px 0 10px;
+  height: 22px;
+  -webkit-border-radius:0px;
+  border-radius:0px;
+  -moz-border-radius:0px;
+}
+.sapzenmessageview-PopupContainerHeader .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd {
+  border-color: #ffffff;
+  background: #000000;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  -moz-box-shadow:none;
+}
+/* focus */
+.sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd:focus {
+  border-color: #ffffff;
+  background: #000000;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+}
+/* hover */
+.sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd:hover {
+  border-color: #ffffff;
+  background: #7A5100;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  -moz-box-shadow:none;
+}
+html[data-sap-ui-browser="ie8"] .sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd:hover {
+  padding: 0 10px;
+}
+/* pressed */
+.sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnAct:hover {
+  background: #000000;
+  border-color: #ffffff;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  -moz-box-shadow:none;
+}
+html[data-sap-ui-browser="ie8"] .sapzenmessageview-PopupContainerHeader .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiBtnAct:hover {
+  padding: 0 10px;
+}
+/*END OF BUTTON CLEAR ALL*/
+.sapzenmessageview-ExpandImage {
+  background: url("img-RTL/messageview_expand.png") no-repeat 5px center;
+}
+.sapzenmessageview-ExpandImageActive {
+  background: url("img-RTL/messageview_expand_active.png") no-repeat 5px center;
+}
+.sapzenmessageview-RemoveImage {
+  background: url("img-RTL/messageview_remove.png") no-repeat center center;
+}
+.sapUiTvH1.sapzenmessageview-NoNotifications {
+  color: #ffffff;
+  filter: none;
+  text-shadow:none;
+  margin-top: 100px;
+  width: 100%;
+  text-align: center !important;
+}
+.sapzenmessageview-ButtonLevelImageError > img {
+  background: url("img-RTL/messageview_error.png") no-repeat center center;
+  width: 21px;
+  height: 100%;
+}
+.sapzenmessageview-ButtonLevelImageWarning > img {
+  background: url("img-RTL/messageview_warning.png") no-repeat center center;
+  width: 21px;
+  height: 100%;
+}
+.sapzenmessageview-ButtonLevelImageInfo > img {
+  background: url("img-RTL/messageview_info.png") no-repeat center center;
+  width: 21px;
+  height: 100%;
+}
+.sapzenmessageview-LevelImageWarning {
+  background: url("img-RTL/messageview_warning.png") no-repeat center right;
+  width: 25px;
+  height: 100%;
+}
+.sapzenmessageview-LevelImageError {
+  background: url("img-RTL/messageview_error.png") no-repeat center right;
+  width: 21px;
+  height: 25px;
+}
+.sapzenmessageview-LevelImageInfo {
+  background: url("img-RTL/messageview_info.png") no-repeat center right;
+  width: 21px;
+  height: 25px;
+}
+.sapzenmessageview-PopupContainer > .sapUiBorderLayoutCenter {
+  bottom: 0px !important;
+  top: 29px !important;
+  right: 0px !important;
+  left: 0px !important;
+  background: #000000;
+}
+.sapzenmessageview-PopupContainer .sapzenmessageview-RowRepeaterRow,
+.sapzenmessageview-PopupContainer .sapzenmessageview-RowRepeaterRow .sapUiTv.sapzenmessageview-HeaderText {
+  color: #ffffff;
+  cursor: pointer;
+}
+.sapzenmessageview-PopupContainer .sapzenmessageview-RowRepeaterRow .sapUiTv {
+  cursor: auto;
+}
+.sapzenmessageview-AutoHeight {
+  height: auto !important;
+}
+/* ====================================================== */
+/* CSS for control sap.ui.commons/NavigationPanel.control */
+/* hcb                                                    */
+/* ====================================================== */
+/************************************************************************************/
+/* buttons in segmented control header */
+/************************************************************************************/
+/* to center the header control*/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton {
+  right: 50%;
+  position: absolute;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton span,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton span {
+  left: 50%;
+  position: relative;
+}
+/* header area */
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutTop,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutTop {
+  height: 25px !important;
+}
+/************************************************************************************/
+/* content area */
+/************************************************************************************/
+/* adjust the content area to the header  */
+.sapzenfilterpanel-ModeFilteringNavigation > .sapUiBorderLayoutCenter > .sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-ModeNavigation > .sapUiBorderLayoutCenter > .sapzenfilterpanel-RowRepeater > .sapUiBorderLayoutCenter {
+  top: 0px !important;
+}
+/* row/col buttons generally*/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnAct.sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnAct.sapzenfilterpanel-RowsNavigationButton,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ColumnsNavigationButton,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnAct.sapzenfilterpanel-ColumnsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ColumnsNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnAct.sapzenfilterpanel-ColumnsNavigationButton {
+  margin:3px 3px 0 0 !important;
+  padding: 0 5px;
+}
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-RowsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnAct.sapzenfilterpanel-RowsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-RowsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnAct.sapzenfilterpanel-RowsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ColumnsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeFilteringNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnAct.sapzenfilterpanel-ColumnsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnStd.sapzenfilterpanel-ColumnsNavigationButton,
+html[data-sap-ui-browser="ie8"] .sapzenfilterpanel-ModeNavigation .sapUiBtn.sapUiBtnNorm.sapUiBtnS.sapUiBtnAct.sapzenfilterpanel-ColumnsNavigationButton {
+  padding: 0 5px;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:hover:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:active:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:hover:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:active:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:hover:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-ColumnsNavigationButton:active:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:hover:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:active:before {
+  content: url("img-RTL/col_16.png");
+}
+.sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:before,
+.sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:active:before,
+.sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-ColumnsNavigationButton:active:before {
+  content: url("img-RTL/col_16.png");
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:hover:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:active:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:hover:before,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:active:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:hover:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapzenfilterpanel-RowsNavigationButton:active:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:hover:before,
+.sapzenfilterpanel-ModeNavigation .sapUiBtnS.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:active:before {
+  content: url("img-RTL/row_16.png");
+}
+.sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:before,
+.sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:before,
+.sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:active:before,
+.sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapUiToggleBtnPressed.sapzenfilterpanel-RowsNavigationButton:active:before {
+  content: url("img-RTL/row_16.png");
+}
+/* Label content area */
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter {
+  right: 62px !important;
+}
+/************************************************************************************/
+/* SELECTED showAll / Navigations button */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowAllButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowAllButton {
+  width: 40px !important;
+  background: #7a5100 url("img-RTL/list_16.png") no-repeat center center;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected.sapzenfilterpanel-ShowNavigationButton {
+  width: 40px !important;
+  background: #7a5100 url("img-RTL/axisview_16.png") no-repeat center center;
+}
+/************************************************************************************/
+/* pressed showAll / Navigations button */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiBtnAct.sapUiBtnFoc:focus {
+  background: #7a5100 url("img-RTL/list_16.png") no-repeat center center;
+  width: 40px !important;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowAllButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus {
+  background: #7a5100 url("img-RTL/list_16.png") no-repeat center center;
+  width: 40px !important;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiBtnAct.sapUiBtnFoc:focus {
+  background: #7a5100 url("img-RTL/axisview_16.png") no-repeat center center;
+  width: 40px !important;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:active,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapzenfilterpanel-ShowNavigationButton.sapUiToggleBtnPressed.sapUiBtnAct.sapUiBtnFoc:focus {
+  background: #7a5100 url("img-RTL/axisview_16.png") no-repeat center center;
+  width: 40px !important;
+}
+/************************************************************************************/
+/* unselected showAll / Navigations button
+/*************************************************************************************/
+.sapUiBorderLayoutCenter > .sapzenfilterpanel-MainSegmentedButton {
+  margin-top: 6px !important;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowAllButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowAllButton {
+  background: url("img-RTL/list_16.png") no-repeat center center;
+  width: 40px !important;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton,
+.sapzenfilterpanel-ModeNavigation .sapUiSegmentedButton > span > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapzenfilterpanel-ShowNavigationButton {
+  background: url("img-RTL/axisview_16.png") no-repeat center center;
+  width: 40px !important;
+}
+/************************************************************************************/
+/* Arrow buttons */
+/************************************************************************************/
+.sapzenfilterpanel-RowRepeaterRow > .sapUiBorderLayoutEnd {
+  background: transparent;
+}
+.sapzenfilterpanel-UpNavigationButton {
+  background: #000000 url("img-RTL/up_16.png") no-repeat center center !important;
+  height: 25px !important;
+  width: 30px !important;
+}
+.sapzenfilterpanel-DownNavigationButton {
+  background: #000000 url("img-RTL/down_16.png") no-repeat center center !important;
+  height: 25px !important;
+  width: 30px !important;
+}
+.sapzenfilterpanel-UpNavigationButton:hover {
+  background: #7a5100 url("img-RTL/up_16.png") no-repeat center center !important;
+  height: 25px !important;
+  width: 30px !important;
+}
+.sapzenfilterpanel-DownNavigationButton:hover {
+  background: #7a5100 url("img-RTL/down_16.png") no-repeat center center !important;
+  height: 25px !important;
+  width: 30px !important;
+}
+/************************************************************************************/
+/* LABELs Area */
+/************************************************************************************/
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeaterRow .sapUiBorderLayoutCenter {
+  right: 60px !important;
+}
+.sapzenfilterpanel-ModeFilteringNavigation .sapzenfilterpanel-RowRepeaterRow.sapzenfilterpanel-DragDropRow .sapUiBorderLayoutCenter,
+.sapzenfilterpanel-ModeNavigation .sapzenfilterpanel-RowRepeaterRow.sapzenfilterpanel-DragDropRow .sapUiBorderLayoutCenter {
+  right: 0px !important;
+}
+/*Axis labels*/
+.sapzenfilterpanel-AxisHeaderTop {
+  border-top: 1px solid #fff;
+}
+.sapzenfilterpanel-HeaderCountTop1 {
+  margin-top: -22px;
+  height: 21px !important;
+  padding-top: 3px;
+}
+.sapzenfilterpanel-AxisHeaderTextROWS,
+.sapzenfilterpanel-AxisHeaderTextROWS:active,
+.sapzenfilterpanel-AxisHeaderTextROWS:focus {
+  color: #fff !important;
+}
+.sapzenfilterpanel-AxisHeaderTextCOLUMNS,
+.sapzenfilterpanel-AxisHeaderTextCOLUMNS:active,
+.sapzenfilterpanel-AxisHeaderTextCOLUMNS:focus {
+  color: #fff !important;
+}
+.sapzenfilterpanel-AxisHeaderTextFREE,
+.sapzenfilterpanel-AxisHeaderTextFREE:active,
+.sapzenfilterpanel-AxisHeaderTextFREE:focus {
+  color: #fff !important;
+}
+.sapzenfilterpanel-HeaderCountTop2 {
+  margin-top: -44px;
+  height: 42px !important;
+}
+.sapzenfilterpanel-HeaderCountTop3 {
+  margin-top: -66px;
+  height: 63px !important;
+}
+.sapzenfilterpanel-AxisHeaderFirst {
+  border-top: none;
+}
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop1 {
+  margin-top: 21px;
+}
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop2 {
+  margin-top: 42px;
+}
+.sapzenfilterpanel-RowRepeaterRowWithHeaderBottom1 {
+  margin-bottom: 21px;
+}
+.sapzenfilterpanel-RowRepeaterRowWithHeaderBottom2 {
+  margin-bottom: 42px;
+}
+.sapzenfilterpanel-RowRepeaterRowWithHeaderTop3 {
+  margin-top: 63px;
+}
+.sapzenfilterpanel-HeaderCountBottom1 {
+  margin-top: 30px;
+  top: 0;
+  height: 20px !important;
+}
+.sapzenfilterpanel-HeaderCountBottom2 {
+  margin-top: 30px;
+  top: 0;
+  height: 40px !important;
+}
+.sapzenfilterpanel-UpDownNavigationButtons {
+  margin-top: 3px;
+}
+.sapzenfilterpanel-UpNavigationButton,
+.sapzenfilterpanel-DownNavigationButton {
+  /*background: none !important;*/
+  -webkit-box-shadow:inset -1px 0 0 0 #7A5100 !important;
+  box-shadow:inset -1px 0 0 0 #7A5100 !important;
+}
+.sapzenfilterpanel-MarkedRow {
+  background: #7A5100;
+  /*	 width: 50px; funtioniert nicht!!!! */
+}
+.sapzenfilterpanel-AxisHeaderTop > span {
+  float: right;
+  clear: both;
+  width: 100%;
+}
+.sapzenfilterpanel-AxisHeaderBottom > span {
+  float: right;
+  clear: both;
+  width: 100%;
+}
+.sapzenfilterpanel-HeaderBorder {
+  border-top: 1px solid #96a8c3;
+}
+.sapUiBorderLayoutCenter > .sapUiSegmentedButton {
+  margin-top: 9px !important;
+}
+.sapzenfilterpanel-ModeNavigation > .sapUiBorderLayoutCenter {
+  bottom: 8px !important;
+}
+.sapzenfilterpanel-ModeNavigation > .sapUiBorderLayoutBottom {
+  height: 8px !important;
+}
+.sapzenfilterpanel-TitleOnTop > * > .sapzenfilterpanel-PopupContainerHeader,
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop {
+  height: 70px !important;
+}
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutCenter {
+  top: 70px !important;
+}
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop > .sapUiBorderLayout > .sapUiBorderLayoutTop {
+  top: -2px;
+}
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop > .sapUiBorderLayout > .sapUiBorderLayoutBegin {
+  top: 28px !important;
+}
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop > .sapUiBorderLayout > .sapUiBorderLayoutCenter {
+  top: 28px !important;
+}
+.sapzenfilterpanel-TitleOnTop > .sapUiBorderLayoutTop > .sapUiBorderLayout > .sapUiBorderLayoutEnd {
+  top: 28px !important;
+}
+/* Pagebook, Paginator */
+.zenpb-div-pag-pb-top {
+  position: absolute;
+  top: 30px;
+  bottom: 0px;
+  width: 100%;
+}
+.zenpb-div-pag-paginator-top {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  top: 0px;
+}
+.zenpb-div-pag-pb-bottom {
+  position: absolute;
+  top: 0px;
+  bottom: 30px;
+  width: 100%;
+}
+.zenpb-div-pag-paginator-bottom {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  bottom: 0px;
+}
+.zenpb-div-pag-pb-left {
+  position: absolute;
+  right: 30px;
+  left: 0px;
+  height: 100%;
+}
+.zenpb-div-pag-paginator-left {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0px;
+}
+.zenpb-div-pag-pb-right {
+  position: absolute;
+  right: 0px;
+  left: 30px;
+  height: 100%;
+}
+.zenpb-div-pag-paginator-right {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  left: 0px;
+}
+.zenpb-div-pag-centerH div,
+.zenpb-div-pag-centerV div {
+  float: right;
+  width: 10px;
+  height: 10px;
+  margin: 8px 4px;
+  padding: 0;
+}
+.zenpb-div-pag-centerV div {
+  float: none;
+}
+.zenpb-div-pag-li,
+.zenpb-div-pag-li-ver {
+  background: transparent url("img-RTL/paginator_bubble.png") center center no-repeat;
+}
+.zenpb-div-pag-li-active,
+.zenpb-div-pag-li-active-ver {
+  background: transparent url("img-RTL/paginator_bubble_active.png") center center no-repeat;
+}
+.zenpb-div-pag-containerH {
+  float: right;
+  position: relative;
+  right: 50%;
+  height: 100%;
+}
+.zenpb-div-pag-centerH {
+  float: right;
+  position: relative;
+  right: -50%;
+  height: 100%;
+}
+.zenpb-div-pag-containerV {
+  position: relative;
+  top: 50%;
+  width: 100%;
+}
+.zenpb-div-pag-centerV {
+  position: relative;
+  top: -50%;
+  width: 100%;
+}
+.zenpb-div-pag-clear {
+  clear: both;
+}
+/* ============================================ */
+/* Popup for aad_mobile Theme                   */
+/* ============================================ */
+.sapzenpopup {
+  background: #000;
+  border: 1px solid #fff;
+}
+.sapUiShd.sapzenpopup {
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+/* ================================================== */
+/* CSS for control sap.ui.commons/SplitCellContainer  */
+/* High Contrast Black                                */
+/* ================================================== */
+.zenSplitContainerCellTop {
+  box-shadow:inset 0px 4px 0px 0px #7a5100;
+}
+.zenSplitContainerCellRight {
+  box-shadow:inset 4px 0px 0px 0px #7a5100;
+}
+.zenSplitContainerCellBottom {
+  box-shadow:inset 0px -4px 0px 0px #7a5100;
+}
+.zenSplitContainerCellLeft {
+  box-shadow:inset -4px 0px 0px 0px #7a5100;
+}
+.zenSplitContainerCellCenter {
+  box-shadow:inset 0 0 0px 4px #7a5100;
+}
+.zenSplitcellOverlay {
+  background-color: #2e2e2e;
+  opacity: 0.7;
+}
+/* ====================================================== */
+/* CSS for control sap.ui.commons/VariablesDialog.control */
+/* HCB                                                    */
+/* ====================================================== */
+.zenDialogLayout {
+  background: #000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+}
+.zenDialogTitleArea {
+  background: #000;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #fff;
+}
+.zenDialogTitleArea {
+  background: #000;
+  padding:0 11px 0 0 !important;
+}
+.sapUiMltCell.sapUiMltPadRight.zenDialogCloseCell {
+  background: #000000 url("img-RTL/VariablenDialogClose.png") no-repeat right center;
+  width: 30px;
+  height: 33px;
+}
+.zenDialogContentArea {
+  background-color: #000 !important;
+  padding: 1px !important;
+}
+.zenDialogContentArea .sapzenfilterpanel-PopupContainerDialog,
+.zenDialogContentArea .sapzenfilterpanel-PopupContainer {
+  border: none;
+}
+.zenDialogButtonArea {
+  background: #000;
+}
+.zenDialogButtonArea .sapUiBtnS {
+  height: 25px !important;
+  margin:5px 0 0 0;
+}
+.zenDialogButtonArea .zenDialogOkButton {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  min-width: 80px;
+}
+.zenDialogMsgButton {
+  min-width: 80px;
+}
+.zenDialogCancelButton {
+  min-width: 80px;
+}
+.zenDialogInplaceMode .zenDialogButtonArea .zenDialogOkButton {
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageError,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageWarning,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageInfo {
+  height: 25px !important;
+  min-height: 25px !important;
+  width: auto !important;
+  float: right;
+}
+.sapUiMltCell.sapUiMltPadRight.zenDialogResizeCell {
+  height: 14px;
+  width: 12px;
+  background: url("img-RTL/ResizeDialog.png") 0 0 no-repeat;
+}
+.sapUiMltCell.sapUiMltPadRight {
+  background: #000;
+  padding: 0;
+}
+.zenDialogResizeRow .sapUiMltCell.sapUiMltPadRight {
+  padding-left: 1px;
+}
+.sapUiTv.zenDialogTextView {
+  line-height: 35px;
+  outline: none !important;
+}
+html[data-sap-ui-browser^="ff"] .sapzenfilterpanel-PopupContainer *:focus {
+  outline: none !important;
+}
+:focus {
+  outline: none;
+  -webkit-focus-ring-color: none;
+}
+.sapUiCb > label,
+.sapUiCb > input,
+.sapUiRb > label,
+.sapzenfilterpanel-PopupContainer .sapUiRrDesignBareShell li,
+.sapzenfilterpanel-PopupContainer .sapUiTableColCell {
+  cursor: pointer !important;
+}

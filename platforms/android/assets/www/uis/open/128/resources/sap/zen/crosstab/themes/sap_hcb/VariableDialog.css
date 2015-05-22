@@ -1,0 +1,99 @@
+/* ====================================================== */
+/* CSS for control sap.ui.commons/VariablesDialog.control */
+/* HCB                                                    */
+/* ====================================================== */
+
+.zenDialogLayout {
+	background: #000;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.zenDialogTitleArea{
+	background: #000;
+	height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #fff;
+}
+
+.zenDialogTitleArea{
+	background: #000;
+	padding: 0 0 0 11px !important;
+}
+
+.sapUiMltCell.sapUiMltPadRight.zenDialogCloseCell{
+	background: #000 url("img/VariablenDialogClose.png") no-repeat left center;
+	width: 30px;
+	height: 33px;
+}
+
+.zenDialogContentArea {
+    background-color: #000 !important;
+    padding: 1px !important;
+}
+
+.zenDialogContentArea .sapzenfilterpanel-PopupContainerDialog,
+.zenDialogContentArea .sapzenfilterpanel-PopupContainer{
+	border: none;
+}
+
+.zenDialogButtonArea{
+	background: #000;
+}
+
+.zenDialogButtonArea .sapUiBtnS{
+	height: 25px !important;
+	margin: 5px 0 0 0;
+}
+
+.zenDialogButtonArea .zenDialogOkButton{
+	margin-right: 5px;
+	margin-bottom: 5px;
+	min-width: 80px;
+}
+
+.zenDialogMsgButton {
+	min-width: 80px;
+}
+
+.zenDialogCancelButton{
+	min-width: 80px;
+}
+
+.zenDialogInplaceMode .zenDialogButtonArea .zenDialogOkButton{
+	margin-right: 0px;
+	margin-bottom: 5px;
+}
+
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageError,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageWarning,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageInfo{
+	height: 25px !important;
+	min-height: 25px !important;
+	width: auto !important;
+	float: left;
+}
+
+.sapUiMltCell.sapUiMltPadRight.zenDialogResizeCell{
+	height: 14px;
+    width: 12px;
+	background: url("img/ResizeDialog.png") 0 0  no-repeat;
+}
+
+.sapUiMltCell.sapUiMltPadRight{
+	background: #000;
+	padding: 0;
+}
+
+.zenDialogResizeRow .sapUiMltCell.sapUiMltPadRight{
+	padding-right: 1px;
+}
+
+.sapUiTv.zenDialogTextView{
+	line-height: 35px;
+	outline: none !important;
+}

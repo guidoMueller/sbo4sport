@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui5/core/BaseChart</name>
+
+	<documentation>An abstract base class for all VIZ charts</documentation>
+	<since>1.7.2</since>
+	<developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+	<abstract/>
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Dimension" name="width" type="sap.ui.core/CSSSize" defaultValue="640px">
+			<documentation>Width of the Chart as a CSS size. </documentation>
+		</property>
+		<property group="Dimension" name="height" type="sap.ui.core/CSSSize" defaultValue="480px">
+			<documentation>Height of the Chart as a CSS size.</documentation>
+		</property>
+		<property group="Appearance" name="css" type="sap.ui.core/string">
+      <documentation>CSS style of Chart.</documentation>
+    </property>
+	</properties>
+	<events>
+		<event name="beforeCreateViz">
+			<documentation>Fired before a new VIZ instance is created. Event parameter &quot;usrOptions&quot; contains the intended value for the parameter with the same name of the createViz call. </documentation>
+			<parameters>
+				<parameter name="usrOptions" type="sap.ui.core/object">
+					<documentation>Value for the parameter with the same name of the createViz call.</documentation>
+				</parameter>
+			</parameters>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..1" name="dataset" type="sap.viz/ui5/data/Dataset">
+			<documentation>Dataset for this chart</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="noData" type="sap.ui.core/Control">
+			<documentation>Control tree to display when there is no data available</documentation>
+		</aggregation>
+	</aggregations>
+</control>

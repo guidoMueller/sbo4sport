@@ -1,0 +1,46 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:sb="sap.suite.ui.smartbusiness" xmlns:suite="sap.suite.ui.commons"
+	xmlns:ui="sap.ca.ui" controllerName="sap.suite.ui.smartbusiness.designtime.visualization.view.S3">
+	<Page enableScrolling="true">
+		<content>
+			<ObjectHeader title="{TITLE}">
+				<attributes>
+					<ObjectAttribute id="orderOperation" text="{ID}" />
+				</attributes>
+			</ObjectHeader>
+			<Table id="tileGrid" items="{path:'CHIPS_MODELER',factory:'.getChipRow'}" inset="false" fixedLayout="false">
+				<headerToolbar>
+					<Toolbar>
+						<Label id="chipsTableLabel" text="{path:'CHIPS_COUNT', formatter:'.formatChipsCount'}"></Label>
+			            <ToolbarSpacer></ToolbarSpacer>
+			            <Button icon="sap-icon://sort" press="handleSortPress" />
+			            <Button icon="sap-icon://filter" press="handleFilterPress" />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>TILE_TYPE}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>NAVIGATION}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>STATUS}" />
+					</Column>
+					<Column/>
+					<Column/>
+					<Column/>
+				</columns>
+				<infoToolbar>
+						<Toolbar id="filterToolbar" active="false" visible="false">
+							<content>
+								<Label id="visualizationInfo"/>
+								<ToolbarSpacer/>
+								<core:Icon src="sap-icon://building"/>
+							</content>
+						</Toolbar>
+					</infoToolbar>
+			</Table>
+		</content>
+	</Page>
+</core:View>

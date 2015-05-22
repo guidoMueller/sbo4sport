@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/footerbar/HideGroupsButton</name>
+
+	<documentation>A button to hide groups from the dashboard, for the UShell footerbar.</documentation>
+
+	<baseType>sap.m/Button</baseType>
+
+</control>

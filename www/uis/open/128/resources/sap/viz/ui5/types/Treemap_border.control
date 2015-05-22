@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Treemap_border</name>
+  <documentation>Settings for the border</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="visible" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set the visibility of the zone edge</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

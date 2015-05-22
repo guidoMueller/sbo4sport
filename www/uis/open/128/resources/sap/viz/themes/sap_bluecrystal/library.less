@@ -1,0 +1,191 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2014 SAP SE. All rights reserved
+ */
+
+@import "../../../../../Base/baseLib/baseTheme/base.less"; /* ORIGINAL IMPORT PATH: "../../../../sap/ui/core/themes/base/base.less" */
+
+@import (less) "../../../../sap/ui/core/themes/base/global.css";
+/* START "shared.css" */
+
+/*
+Parameter which stored a long css setting string for cvom's chart's internal use.
+*/
+
+@sapVizChartBackgroundColor: @sapUiBaseBG;
+
+@sapVizChartTooltipBackgroundColor: @sapVizChartBackgroundColor;
+
+@sapVizChartBackgroundStroke: #d8d8d8;
+
+@sapVizChartPieSectorStroke: @sapVizChartBackgroundColor;
+
+@sapVizChartHoverColor: #CCCCCC;
+
+@sapVizChartHoverline: @sapVizChartHoverColor;
+
+@sapVizChartHoverShadow: @sapVizChartHoverColor;
+
+@sapVizChartHoverShadowMouseDown: #808080; 
+
+@sapVizChartInnerWhisker: #000000;
+
+@sapVizChartTitleColor: @sapUiBaseText;
+
+@sapVizChartLabelColor: @sapUiBaseText;
+
+@sapVizChartAxisColor: @sapUiText;
+
+@sapVizChartAxisGridlineColor: @sapVizChartBackgroundStroke;
+
+@sapVizChartTooltipBorderStroke: @sapVizChartBackgroundStroke;
+
+@sapVizChartHiddenTitleColor: #a6a6a6;
+
+.sapVizChartTitleSettings () {
+	fill:@sapVizChartTitleColor;
+	font-family:@sapUiFontFamily;
+}
+
+.sapVizChartLabelSettings () {
+	fill:@sapVizChartLabelColor;
+	font-family:@sapUiFontFamily;
+}
+
+.sapVizChartHiddenTitleSettings(){
+  fill : @sapVizChartHiddenTitleColor;
+}
+
+.sapVizChart .v-m-title .v-title{
+	.sapVizChartTitleSettings
+}
+
+.sapVizChart .v-subtitle{
+	.sapVizChartTitleSettings
+}
+
+.sapVizChart .v-title{
+	.sapVizChartTitleSettings
+}
+
+.sapVizChart .v-hidden-title{
+	.sapVizChartHiddenTitleSettings
+}
+
+.sapVizChart .v-pie .v-donut-title{
+	.sapVizChartTitleSettings
+}
+
+.sapVizChart .v-m-tooltip .v-body-title{
+	.sapVizChartTitleSettings
+}
+
+.sapVizChart .v-label{
+	.sapVizChartLabelSettings
+}
+
+.sapVizChart .viz-polar-axis-label{
+	.sapVizChartLabelSettings
+}
+
+.sapVizChart .v-datalabel{
+	.sapVizChartLabelSettings
+}
+
+.sapVizChart .v-m-tooltip .v-body-label{
+	.sapVizChartLabelSettings
+}
+
+.sapVizChart .v-m-tooltip .v-body-value{
+	.sapVizChartLabelSettings
+}
+
+.sapVizChart .v-m-tooltip .v-footer-label{
+	.sapVizChartLabelSettings
+}
+
+.sapVizChart .v-m-tooltip .v-footer-value{
+	.sapVizChartLabelSettings
+}
+
+.sapVizChart .v-m-tooltip .v-separationline{
+	stroke: @sapVizChartTooltipBorderStroke;
+}
+
+.sapVizChart .v-background-body{
+	fill:@sapVizChartBackgroundColor;
+}
+
+.sapVizChart .v-background-border{
+	stroke : @sapVizChartBackgroundStroke;
+}
+
+.sapVizChart .v-hoverline{
+	stroke:@sapVizChartHoverline;
+}
+
+.sapVizChart .v-hovershadow{
+	fill:@sapVizChartHoverShadow;
+}
+
+.sapVizChart .v-hovershadow-mousedown{
+	fill:@sapVizChartHoverShadowMouseDown;
+}
+
+.sapVizChart .v-m-tooltip .v-background{
+	fill:@sapVizChartTooltipBackgroundColor;
+	stroke:@sapVizChartTooltipBorderStroke;
+}
+
+.sapVizChart .v-m-tooltip .v-closeButton{
+  background-color:@sapVizChartTooltipBackgroundColor  !important;
+  border-color:@sapVizChartTooltipBorderStroke  !important;
+}
+
+.sapVizChart .v-background{  
+	border-color : @sapVizChartTooltipBorderStroke!important;
+}
+
+.sapVizChart .v-innerwhisker{
+	stroke:@sapVizChartInnerWhisker;
+}
+
+.sapVizChart .v-categoryaxisline{
+	stroke:@sapVizChartAxisColor;
+}
+
+.sapVizChart .v-valueaxisline{
+	stroke: @sapVizChartAxisColor;
+}
+
+.sapVizChart .v-gridline{
+	stroke: @sapVizChartAxisGridlineColor;
+}
+
+.sapVizChart .sapVizChart {
+	position: relative;
+}
+
+.sapVizChart .sapVizChart.sapVizNoData {
+	/*background-color: @sapUiLightBG;*/
+	border: 1px solid @sapUiExtraLightBorder;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.sapVizChart .sapVizChart.sapVizNoData > .sapVizNoDataDefault {
+	position: absolute;
+	display: block;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	white-space: nowrap;
+}
+
+/* END "shared.css" */
+
+

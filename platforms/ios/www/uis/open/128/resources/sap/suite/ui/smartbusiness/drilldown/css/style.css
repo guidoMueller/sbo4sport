@@ -1,0 +1,32 @@
+.smartbusinessDrilldownPage .tableColumnHeader {
+	font-family : Arial,Helvetica,sans-serif,SAP-icons;
+	cursor : pointer;
+}
+.smartbusinessDrilldownPage .header  {
+	padding : 0px !important;
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.smartbusinessDrilldownPage .tilesHeaderContainer .sapSuiteUiCommonsHeaderCell {
+	padding-bottom: 0px;
+}
+.smartbusinessDrilldownPage .tilesHeaderContainer .drilldownKpiTile {
+	display: inline-block;
+	margin-right: 0.5rem;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem !important;	
+}
+.smartbusinessDrilldownPage .chartToolbar {
+	padding : 0.5rem;
+}
+
+.smartbusinessDrilldownPage .chartToolbar .tableCellDataLabel {
+	width : 100%;
+}
+/*Overrides*/
+.smartbusinessDrilldownPage .tilesHeaderContainer .sapMScrollContScroll>.sapSuiteHrdrCntrInner:after {
+	border : none !important;
+}
+
+.sbAddToHomeDialogBox  .labelDynamicThresholdNotEditable {
+	padding : 0px 0px 16px 16px;
+}

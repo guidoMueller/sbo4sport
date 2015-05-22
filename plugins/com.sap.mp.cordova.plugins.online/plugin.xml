@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.sap.mp.cordova.plugins.online" version="3.7.1">
+    <name>Online</name>
+    <description>Cordova Online Plugin</description>
+	<dependency id="com.sap.mp.cordova.plugins.corelibs" /> 
+
+	<asset target="CannotReachHost.html" src="CannotReachHost.html"/>
+	<asset target="CertificateErrorPage.html" src="CertificateErrorPage.html"/>
+
+    <!-- Android -->
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="Online">
+				<param name="android-package" value="com.sap.mp.cordova.plugins.online.Online"/>
+				<param name="onload" value="true"/>
+			</feature>
+            <preference name="ErrorUrl" value="file:///android_asset/www/CannotReachHost.html"/>
+		</config-file>
+		<source-file src="android/libs/online-android-3.7.1.jar" target-dir="libs"/>
+	</platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Online">
+                <param name="ios-package" value="SMPOnlinePlugin"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <source-file framework="true" src="ios/libs/libSMPOnlinePlugin.a"/>
+    </platform>
+</plugin>

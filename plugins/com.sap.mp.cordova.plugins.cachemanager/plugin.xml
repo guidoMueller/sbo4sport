@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.sap.mp.cordova.plugins.cachemanager" version="3.7.1">
+	<name>CacheManager</name>
+	<dependency id="com.sap.mp.cordova.plugins.corelibs" />
+	<dependency id="com.sap.mp.cordova.plugins.i18n" />
+	<dependency id="com.sap.mp.cordova.plugins.online" />
+	<dependency id="com.sap.mp.cordova.plugins.authproxy"/>
+	<dependency id="org.apache.cordova.dialogs" />
+	
+	<js-module name="CacheManager" src="www/cachemanager.js">
+		<clobbers target="sap.CacheManager"/>
+	</js-module>
+	
+	<asset target="plugins/com.sap.mp.cordova.plugins.cachemanager/www/messages_en.json" src="www/messages_en.json"/>
+	
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="CacheManager">
+				<param name="android-package" value="com.sap.mp.cordova.plugins.cacheManager.CacheManager"/>
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+		</config-file>
+		
+		<source-file src="android/libs/cachemanager-android-3.7.1.jar" target-dir="libs"/>
+	</platform>
+	
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="CacheManager">
+				<param name="ios-package" value="SMPCacheManagerPlugin"/>
+			</feature>
+		</config-file>
+		<source-file framework="true" src="ios/libs/libSMPCacheManagerPlugin.a"/>
+	</platform>
+</plugin>

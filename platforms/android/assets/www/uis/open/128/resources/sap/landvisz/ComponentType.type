@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ComponentType</name>
+	<author></author>
+
+	<documentation>[Enter description for ComponentType]</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="onDemand">
+			<documentation>on demand component type</documentation>
+		</value>
+		<value name="onPremise">
+			<documentation>on premise component type</documentation>
+		</value>
+		<value name="notDefined">
+			<documentation>component type in not defined</documentation>
+		</value>
+	</enumeration>
+</simple-type>

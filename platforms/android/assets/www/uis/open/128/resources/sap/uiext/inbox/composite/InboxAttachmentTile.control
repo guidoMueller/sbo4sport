@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>composite/InboxAttachmentTile</name>
+
+	<documentation>InboxAttachmentTile</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property name="fileName" type="sap.ui.core/string">
+			<documentation>Name of the attachment </documentation>
+		</property>
+		<property name="fileSize" type="sap.ui.core/string">
+			<documentation>size of the attachment</documentation>
+		</property>
+		<property group="Misc" name="fileDescription" type="sap.ui.core/string">
+			<documentation>description of the attachment</documentation>
+		</property>
+		<property group="Misc" name="fileTypeIcon" type="sap.ui.core/URI">
+			<documentation>Icon URI of the file type</documentation>
+		</property>
+		<property group="Misc" name="creationDate" type="sap.ui.core/string">
+			<documentation>creation date of the attachment</documentation>
+		</property>
+		<property group="Misc" name="downloadUrl" type="sap.ui.core/string">
+			<documentation>URL for attachment title link to download the attachment.</documentation>
+		</property>
+		<property group="Misc" name="createdBy" type="sap.ui.core/string">
+			<documentation>name of the user who has uploaded attachment</documentation>
+		</property>
+		<property group="Misc" name="showDeleteButton" type="boolean" defaultValue="true">
+			<documentation>boolean value to indicate whether to show delete button </documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="deleteAttachment">
+			<documentation>fire this event to delete the attachment </documentation>
+		</event>
+	</events>
+</control>

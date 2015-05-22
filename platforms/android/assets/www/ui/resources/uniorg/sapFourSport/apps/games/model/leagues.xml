@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<result>
+    <item>
+        <LeagueID>161</LeagueID>
+        <LeagueSportID>2</LeagueSportID>
+        <LeagueName>Eishockey WM 2010</LeagueName>
+        <LeagueShortcut>EHWM</LeagueShortcut>
+        <LeagueSaison>2010</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>631</LeagueID>
+        <LeagueSportID>2</LeagueSportID>
+        <LeagueName>Deutsche Eishockey Liga 2013/2014</LeagueName>
+        <LeagueShortcut>DEL</LeagueShortcut>
+        <LeagueSaison>2013</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>671</LeagueID>
+        <LeagueSportID>4</LeagueSportID>
+        <LeagueName>Handball EM 2014</LeagueName>
+        <LeagueShortcut>hbem2014</LeagueShortcut>
+        <LeagueSaison>2014</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>752</LeagueID>
+        <LeagueSportID>4</LeagueSportID>
+        <LeagueName>Handball Bundesliga</LeagueName>
+        <LeagueShortcut>hbl</LeagueShortcut>
+        <LeagueSaison>2014</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>639</LeagueID>
+        <LeagueSportID>4</LeagueSportID>
+        <LeagueName>Handball Bundesliga 2013/2014</LeagueName>
+        <LeagueShortcut>hbl</LeagueShortcut>
+        <LeagueSaison>2013</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>504</LeagueID>
+        <LeagueSportID>4</LeagueSportID>
+        <LeagueName>Handball Bundesliga 2012/2013</LeagueName>
+        <LeagueShortcut>hbl</LeagueShortcut>
+        <LeagueSaison>2012</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>346</LeagueID>
+        <LeagueSportID>4</LeagueSportID>
+        <LeagueName>Handball Bundesliga 2011/2012</LeagueName>
+        <LeagueShortcut>hbl</LeagueShortcut>
+        <LeagueSaison>2011</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>276</LeagueID>
+        <LeagueSportID>13</LeagueSportID>
+        <LeagueName>Beko BBL</LeagueName>
+        <LeagueShortcut>BBL2010</LeagueShortcut>
+        <LeagueSaison>2010</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>791</LeagueID>
+        <LeagueSportID>28</LeagueSportID>
+        <LeagueName>NFL 2014</LeagueName>
+        <LeagueShortcut>nfl</LeagueShortcut>
+        <LeagueSaison>2014</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>289</LeagueID>
+        <LeagueSportID>69</LeagueSportID>
+        <LeagueName>Nidderdale League Division 2</LeagueName>
+        <LeagueShortcut>NACL2</LeagueShortcut>
+        <LeagueSaison>2011</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>720</LeagueID>
+        <LeagueSportID>1</LeagueSportID>
+        <LeagueName>1. Fußball-Bundesliga</LeagueName>
+        <LeagueShortcut>bl1</LeagueShortcut>
+        <LeagueSaison>2014</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>721</LeagueID>
+        <LeagueSportID>1</LeagueSportID>
+        <LeagueName>2. Fußball-Bundesliga</LeagueName>
+        <LeagueShortcut>bl2</LeagueShortcut>
+        <LeagueSaison>2014</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>722</LeagueID>
+        <LeagueSportID>1</LeagueSportID>
+        <LeagueName>3. Fussball-Bundesliga</LeagueName>
+        <LeagueShortcut>bl3</LeagueShortcut>
+        <LeagueSaison>2014</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>733</LeagueID>
+        <LeagueSportID>1</LeagueSportID>
+        <LeagueName>Weltmeisterschaft 2014 Freundschaftsspiele</LeagueName>
+        <LeagueShortcut>WM-2014-Freundschaftsspiele</LeagueShortcut>
+        <LeagueSaison>2014</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>669</LeagueID>
+        <LeagueSportID>1</LeagueSportID>
+        <LeagueName>Fußball-Weltmeisterschaft 2014</LeagueName>
+        <LeagueShortcut>wm14</LeagueShortcut>
+        <LeagueSaison>2014</LeagueSaison>
+    </item>
+    <item>
+        <LeagueID>629</LeagueID>
+        <LeagueSportID>1</LeagueSportID>
+        <LeagueName>tipp3 Bundesliga Österreich</LeagueName>
+        <LeagueShortcut>OBL</LeagueShortcut>
+        <LeagueSaison>2013</LeagueSaison>
+    </item>
+</result>

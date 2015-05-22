@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>composite/InboxTaskTitleControl</name>
+	<documentation>InboxTaskTitleControl</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="taskTitle" type="sap.ui.core/string">
+			<documentation>The Task Title of the Task</documentation>
+		</property>
+		<property group="Misc" name="categoryIconURI" type="sap.ui.core/URI" defaultValue="hasCategory">
+			<documentation>Category icon</documentation>
+		</property>
+		<property group="Misc" name="hasAttachments" type="boolean">
+			<documentation>has Attachments</documentation>
+		</property>
+		<property group="Misc" name="hasComments" type="boolean">
+			<documentation>has Comments</documentation>
+		</property>
+	</properties>
+	<aggregations>
+		<aggregation type="Control" cardinality="0..1" name="titleLink">
+			<documentation>Internal aggregation to hold the inner Task Title Link</documentation>
+		</aggregation>
+	</aggregations>
+</control>

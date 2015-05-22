@@ -1,0 +1,83 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+       xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns="sap.m"
+       controllerName="sap.suite.ui.smartbusiness.designtime.tools.migration.view.S1"
+       xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="false" height="100%">
+ 		
+ 		<Page id="page" >
+		<content>
+ 				<html:style>
+			      .gridMarginTop {
+			         padding-top: 1rem!important;
+			      }
+			      .listContentTop{
+			      margin-top:1rem!important;
+			      }
+			   </html:style>
+			   
+			   
+ 			 <l:Grid class="gridMarginTop" defaultSpan = "L12 M12 S12" vSpacing= "1" hSpacing= "1" >
+    			<l:content>
+<!-- 				    <Label text="Select KPIs to Migrate" design="Bold" id="selectLabel"> -->
+<!-- 				    <layoutData> -->
+<!-- 					<l:GridData span="L4 M6 S10" indent="L4 M3 S1"  />  -->
+<!-- 					</layoutData>	 -->
+<!-- 				    </Label> -->
+				    
+					<Input id="kpiInput" type="Text" placeholder="{i18n>KPI_SELECT}"
+									showValueHelp="true" valueHelpRequest="handleKpiValueHelp"
+									value="{/}" >
+					<layoutData>
+					<l:GridData span="L4 M6 S10" indent="L4 M3 S1"  linebreakL="true"
+						linebreakM="true" linebreakS="true" />
+					</layoutData>				
+					</Input>
+					
+<!-- 					 <Label text="Migration Requirements" design="Bold" id="requirmentsLabel"> -->
+<!-- 				    <layoutData> -->
+<!-- 					<l:GridData span="L2 M2 S2" indent="L5 M5 S4" linebreakL="true" -->
+<!-- 						linebreakM="true" linebreakS="true"   /> -->
+<!-- 					</layoutData>	 -->
+<!-- 				    </Label> -->
+				    
+<!-- 				    <HBox id="listLayout" height="500px"> -->
+<!-- 						<layoutData> -->
+<!-- 							<l:GridData span="L11 M11 S11" indent="L4 M4 S4"  />  -->
+<!-- 						</layoutData> -->
+<!-- 				    </HBox> -->
+
+				    
+				    <List id="oldList" items="{/ActiveEvaluations}"
+					    headerText="{i18n>HEADERTEXT_LIST_OLD}"
+					    noDataText="{i18n>NO_DATA_TEXT}">
+					    
+						<StandardListItem id="MAIN_LIST_ITEM1"
+						title="{evaluationText}"
+	                    description="{variantId}">
+						
+						</StandardListItem>
+						
+					<layoutData>
+					<l:GridData span="L6 M6 S6" indent="L0 M0 S0" linebreakL="true"
+						linebreakM="true" linebreakS="true" /> 
+					</layoutData>
+					</List>
+					
+					  <List id="newList" items="{/EVALUATIONS}"
+					    headerText="{i18n>HEADERTEXT_LIST_NEW}" noDataText="{i18n>NO_DATA_TEXT}">
+					    
+						<StandardListItem id="MAIN_LIST_ITEM2"
+						title="{TITLE}"
+	                    description="{DESCRIPTION}">
+						</StandardListItem>
+						
+					<layoutData>
+					<l:GridData span="L6 M6 S6"  linebreakL="false"
+						linebreakM="false" linebreakS="false" /> 
+					</layoutData>
+					</List>
+						
+				</l:content>
+			</l:Grid>
+			</content>
+	</Page>
+</core:View>

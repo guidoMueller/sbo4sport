@@ -1,0 +1,55 @@
+<core:View xmlns:core="sap.ui.core"  xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"  xmlns:charts="sap.ca.ui.charts" controllerName="sap.suite.ui.smartbusiness.designtime.drilldown.view.configureNewView">
+	<Page showNavButton="true" navButtonPress="goBack" title="" height="100%" class="chartConfigurationPage">
+	      <customHeader>
+          <Bar id="title_bar">
+             <contentLeft>
+                <Button id="back_btn" press="onBack" icon="sap-icon://nav-back"/> 
+               </contentLeft>
+             <contentMiddle>
+              <Label id="chartName" text="{i18n>HEADER_CHART_CONFIGURATION}"/>
+             </contentMiddle>
+             <contentRight>
+             </contentRight>
+            </Bar>
+        </customHeader>
+        <content>
+         	<SplitContainer id='splitContainer'>
+			<masterPages>
+			<Page showHeader='false'>
+			<content>
+			<core:Fragment id='measureDimensionsList' fragmentName="sap.suite.ui.smartbusiness.designtime.drilldown.view.measureDimensionList" type="XML"></core:Fragment>
+                        <core:Fragment id='chartTypeConfig' fragmentName="sap.suite.ui.smartbusiness.designtime.drilldown.view.chartTypeConfig" type="XML"></core:Fragment>
+              <core:Fragment fragmentName="sap.suite.ui.smartbusiness.designtime.drilldown.view.chartNameAndDataInfoContainer" type="XML"></core:Fragment>
+			</content>
+			</Page>
+			</masterPages>
+			<detailPages>
+			<Page showHeader='false'>
+			<content>
+				<VBox>
+                        <items>
+                             <charts:ChartToolBar id="chartToolbar_config"  showFullScreen="true" showLegend="false" class="chartToolbar_config">                      
+                             <charts:charts>
+                                 <charts:Chart id="oChartRef" showPopover="true" chartType="Bar" class="oChartRef"/>
+                                 <Table id="oChartTable" showUnread="true" class="oChartTable"></Table>
+                              </charts:charts>      
+                          </charts:ChartToolBar>
+                      </items>
+                   </VBox>
+				</content>
+				</Page>
+			</detailPages>
+	</SplitContainer>
+                   
+        </content>
+        <footer>
+            <Bar id="footer-bar">
+                <contentRight>
+                    <Button text="{i18n>SAVE}" id="save-btn" press="onSave"/>
+                    <Button text="{i18n>CANCEL}" id="cancel-btn" press="onCancel"/>
+                </contentRight>
+            </Bar>
+        </footer>
+	</Page>
+</core:View>

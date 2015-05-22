@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/tile/TileBase</name>
+	<documentation>Base class for tiles that already provides several visual elements like title, subtitle, icon and additional information</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property name="title" type="sap.ui.core/string" group="Data">
+			<documentation>The title of this tile</documentation>
+		</property>
+		<property group="Data" name="subtitle" type="sap.ui.core/string">
+			<documentation>A subtitle of this tile (optional)</documentation>
+		</property>
+		<property group="Data" name="icon" type="sap.ui.core/string">
+			<documentation>An icon for the tile</documentation>
+		</property>
+		<property group="Data" name="info" type="sap.ui.core/string">
+			<documentation>Additional information displayed at the bottom of the tile</documentation>
+		</property>
+		<property name="infoState" type="State" defaultValue="Neutral">
+			<documentation>The state of the info field</documentation>
+		</property>
+		<property group="Behavior" name="targetURL" type="sap.ui.core/string">
+			<documentation>If given, the Control is wrapped into a link pointing to this URL. If empty or not set, the link is not rendered</documentation>
+		</property>
+		<property group="Appearance" type="sap.ui.core/any" name="highlightTerms" defaultValue="[]">
+			<documentation>contains an array of terms that should be highlighted; per default, the array is empty</documentation>
+		</property>
+		<property group="Appearance" type="sap.ui.core/any" name="actions" defaultValue="[]">
+			<documentation>contains an array of tile actions; per default, the array is empty</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="press">
+			<documentation>called when the tile is clicked / pressed</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="content" type="sap.ui.core/Control">
+		</aggregation>
+	</aggregations>
+</control>

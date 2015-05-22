@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>sap.zen.dsh</name>
+	<vendor>sap.com</vendor>
+	<version>14.0.1-SNAPSHOT</version>
+
+	<documentation>[Enter description for sap.zen.dsh]</documentation>
+
+<dependencies>
+	<dependency>
+		<libraryName>sap.ui.core</libraryName>
+	</dependency>
+</dependencies>
+</library>

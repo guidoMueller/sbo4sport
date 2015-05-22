@@ -1,0 +1,150 @@
+<html>
+	<head profile="http://www.w3.org/2005/10/profile">
+	
+		<link rel="icon" 
+      		type="image/png" 
+      		href="file:///android_res/drawable/icon.png" />
+      		
+			<style type="text/css">
+				body {
+					margin: 1em;
+					font-family: Arial;
+					font-size: 1em;
+				}
+				
+				div#errorSection {
+					padding : 0.3em 0.3em 0.5em 0.3em;
+				}
+				
+				div#errorSection > div#errorTitle {
+					font-size: larger;
+					margin-bottom: 1em;
+					font-weight: bold;
+				}
+				
+				div#errorSection > div#errorDescription {
+					
+				}
+				
+				div#errorTitle > img {
+					border-style: solid;
+					border-width: 1px;
+				}
+				
+				div#helpSection {
+					padding : 0.3em 0.3em 0.5em 0.3em;
+					font-weight: normal;
+					font-size: smaller;
+				}
+				
+				div#helpSection > div#title {
+					margin-bottom: 0.5em;
+					margin-top: 0.5em;
+				}
+				
+				#hostname {
+					margin: 2px;
+				}
+				
+				div#footerSection {
+					padding : 0.3em 0.3em 0.5em 0.3em;
+					font-size: x-small;
+					font-style: italic;
+					
+				}
+			
+			</style>
+            
+            <script type="text/javascript">
+            
+              function getGETParameters() {
+                  var queryString = window.location.search.substr(1);
+                  return queryString != null && queryString != "" ? transformToAssocArray(queryString) : {};
+              }
+
+              function transformToAssocArray( queryString ) {
+                 var params = {};
+                 var prmarr = queryString.split("&");
+                 for ( var i = 0; i < prmarr.length; i++) {
+                     var tmparr = prmarr[i].split("=");
+                     params[tmparr[0]] = tmparr[1];
+                 }
+                 return params;
+               }
+             
+               function getHomeUrl(){
+             	  var params = getGETParameters();
+                  return params['fioriUrl'];
+               }
+             
+                function getPageUrl(){
+                  var params = getGETParameters();
+              	  return params['failingUrl'];
+                }
+             
+                function loadUrl (url){
+                    if (url){
+                        window.location.replace (decodeURIComponent(url));
+                    }
+                }
+                
+                function getHTMLEscapedUrl(url){
+                	return url.replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/'/g, "&#x27;").replace(/\"/g, "&quot;").replace(/\//g, "&#x2F;");
+                }
+                
+                function updateHomeUrl(){
+                	var url = getHTMLEscapedUrl(decodeURIComponent(getHomeUrl()));
+                	document.getElementById('homeUrlSpan').innerHTML = '(' + url + ')';
+                }
+                
+                function updatePageUrl(){
+                	var url = getHTMLEscapedUrl(decodeURIComponent(getPageUrl()));
+                	document.getElementById('pageAddressSpan').innerHTML = url;
+                }
+                
+                function updateUrls(){
+                	updateHomeUrl();
+                	updatePageUrl();
+                }
+
+                function onLoad() {
+                    document.addEventListener("deviceready", onDeviceReady, false);
+                } 
+
+                function onDeviceReady() {
+                    document.addEventListener(
+                        "onSapResumeSuccess",
+                        function() {
+                           var failingPage = decodeURIComponent(getPageUrl());
+                           window.location.replace(failingPage);
+                        },
+                        false
+                    );
+                }
+            </script>
+            
+	</head>
+	<body onload='onLoad()'>
+	
+		<div id='errorSection'>
+		
+		<div id='errorTitle'> 
+		<img src="file:///android_res/drawable/icon.png" height="30px" width="30px" > </img> 
+		The page cannot be found 
+		</div>
+		
+		<div id='errorDescription'> The page you are looking for might have been removed, had its name changed or is temporarily unavailable. </div>
+		
+		</div>
+		<hr />
+		<div id='helpSection'>
+			<div id='title'> Please try the following </div>
+			<ol>	
+				<li> If you typed the website address, make sure it is spelled correctly.</li>
+				<li> Make sure the device is using the correct network settings. </li>
+				<li> Contact the website administrator. </li>
+			</ol>
+		</div>
+		
+	</body>
+</html>

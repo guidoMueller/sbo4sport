@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>sap.apf</name>
+  <vendor>SAP AG</vendor>
+  <version>1.24.2</version>
+  
+  <documentation>Analysis Path Framework (by SAP)</documentation>
+  
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+  </dependencies>
+  
+  <appData>
+    <!-- excludes for the JSDoc -->
+    <jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc" >
+        <exclude name="sap/apf/ui/libs/cvom/" />
+    </jsdoc>
+    <!-- excludes for the JSCoverage > -->
+    <jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage" >
+        <exclude name="sap.apf.core.annotation" />
+    </jscoverage>
+    
+    <documentation xmlns="http://www.sap.com/ui5/buildext/documentation"
+    indexUrl="../../../test-resources/sap/apf/demokit/docuindex.json"
+    resolve="lib" />
+  </appData>
+  
+</library>

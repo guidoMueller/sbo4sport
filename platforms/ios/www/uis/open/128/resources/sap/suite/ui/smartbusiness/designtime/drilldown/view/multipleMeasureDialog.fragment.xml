@@ -1,0 +1,127 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Dialog title="Micro Chart Configuration" class='dialog' id='multipleMeasureDialog'
+		horizontalScrolling='false' verticalScrolling='true'>
+		<content>
+			<List
+				visible="{path:'SB_DDACONFIG>VISUALIZATION_TYPE',formatter:'.showConfigureTileDimension'}">
+				<items>
+					<GroupHeaderListItem title="{SB_DDACONFIG>TITLE} {SB_DDACONFIG>SUBTITLE}"></GroupHeaderListItem>
+					<CustomListItem>
+					</CustomListItem>
+					<CustomListItem>
+						<content>
+							<VBox>
+								<items>
+									<HBox>
+										<items>
+											<Input editable="false" value="{i18n>DIMENSION}" />
+											<Select items="{SB_DDACONFIG>ALL_DIMENSIONS}"
+												selectedKey="{SB_DDACONFIG>DIMENSION}">
+												<core:Item key="{path:'SB_DDACONFIG>'}" text="{path:'SB_DDACONFIG>'}" />
+											</Select>
+
+										</items>
+									</HBox>
+									<HBox
+										visible="{path:'SB_DDACONFIG>VISUALIZATION_TYPE',formatter:'.showConfigureTileSortOrder'}">
+										<items>
+											<Input editable="false" value="{i18n>SORT_ORDER}" />
+											<Select selectedKey="{SB_DDACONFIG>SORT_ORDER}">
+												<items>
+													<core:Item  key="MA"
+														text="{i18n>MEASURE_ASC}" />
+													<core:Item  key="MD"
+														text="{i18n>MEASURE_DESC}" />
+													<core:Item  key="DA"
+														text="{i18n>DIMENSION_ASC}" />
+													<core:Item  key="DD"
+														text="{i18n>DIMENSION_DESC}" />
+
+												</items>
+											</Select>
+										</items>
+									</HBox>
+								</items>
+							</VBox>
+						</content>
+					</CustomListItem>
+				</items>
+			</List>
+			<List
+				visible="{path: 'SB_DDACONFIG>VISUALIZATION_TYPE',formatter:'.showConfigureTileMeasure'}">
+				<items>
+					<GroupHeaderListItem title="{SB_DDACONFIG>TITLE} {SB_DDACONFIG>SUBTITLE}"></GroupHeaderListItem>
+					<CustomListItem>
+					</CustomListItem>
+					<CustomListItem>
+						<content>
+							<VBox>
+								<items>
+									<HBox>
+										<items>
+											<Label required='true' text="{i18n>MEASURE_1}"/>
+											<Select  items="{SB_DDACONFIG>ALL_MEASURES}"
+												selectedKey="{SB_DDACONFIG>MEASURE1}">
+												<core:Item key="{path:'SB_DDACONFIG>'}" text="{path:'SB_DDACONFIG>'}" />
+											</Select>
+											<Select selectedKey="{SB_DDACONFIG>COLOR1}">
+												<items>
+													<core:Item key="Good" text="{i18n>GOOD}" />
+													<core:Item key="Critical" text="{i18n>WARNING}" />
+													<core:Item key="Error" text="{i18n>CRITICAL}"/>
+													<core:Item key="Neutral" text="{i18n>NEUTRAL}"/>
+												</items>
+											</Select>
+										</items>
+									</HBox>
+									<HBox>
+										<items>
+											<Label required='true' text="{i18n>MEASURE_2}"/>
+											<Select items="{SB_DDACONFIG>ALL_MEASURES}"
+												selectedKey="{SB_DDACONFIG>MEASURE2}">
+												<core:Item key="{path:'SB_DDACONFIG>'}" text="{path:'SB_DDACONFIG>'}" />
+											</Select>
+											<Select selectedKey="{SB_DDACONFIG>COLOR2}">
+												<items>
+													<core:Item key="Good" text="{i18n>GOOD}" />
+													<core:Item key="Critical" text="{i18n>WARNING}" />
+													<core:Item key="Error" text="{i18n>CRITICAL}"/>
+													<core:Item key="Neutral" text="{i18n>NEUTRAL}"/>
+												</items>
+											</Select>
+										</items>
+									</HBox>
+									<HBox>
+										<items>
+											<Label text="{i18n>MEASURE_3}" />
+											<Select   id="measuresForTile3"  items="{SB_DDACONFIG>ALL_MEASURES}"
+												selectedKey="{SB_DDACONFIG>MEASURE3}">
+												<core:Item key="{path:'SB_DDACONFIG>'}" text="{path:'SB_DDACONFIG>'}" />
+											</Select>
+											<Select selectedKey="{SB_DDACONFIG>COLOR3}">
+												<items>
+													<core:Item key="Good" text="{i18n>GOOD}" />
+													<core:Item key="Critical" text="{i18n>WARNING}" />
+													<core:Item key="Error" text="{i18n>CRITICAL}"/>
+													<core:Item key="Neutral" text="{i18n>NEUTRAL}"/>
+												</items>
+											</Select>
+										</items>
+									</HBox>
+								</items>
+							</VBox>
+
+						</content>
+					</CustomListItem>
+				</items>
+			</List>
+		</content>
+		<beginButton>
+			<Button text="{i18n>OK}" press="onMiniChartConfigureOk" />
+		</beginButton>
+		<endButton>
+			<Button text="{i18n>CANCEL}" press="onAddTileCancel" />
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

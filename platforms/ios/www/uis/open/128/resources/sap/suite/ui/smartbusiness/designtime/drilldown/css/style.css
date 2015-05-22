@@ -1,0 +1,159 @@
+.chartConfigurationPage .sapMPageScroll .hiddenList {
+	display : none;
+}
+
+.dimnsnMrsContainer .measureAndDimensionListHeader{
+	padding-left:0
+}
+.dialog.sapUiPopupWithPadding .sapMDialogScrollCont {
+	padding:0rem;
+}
+
+
+.chartTypeConfigTitle{
+	margin-left:1.5rem;
+}
+ .editMeasureDialog{
+	width:45%!important;
+	padding-left:0;
+	padding:0rem;
+	
+}
+.chartNameAndDataInfoContainer{
+	width: 80%!important;
+	margin-left: 1.5rem;
+}
+
+.measureDimensionListItemTemplate{
+	line-height: 150%;
+}
+
+
+.dimnsnMrsContainer{
+	padding-bottom: 2rem;
+}
+
+.chartTypeContainer{
+	padding-bottom: 2rem;
+}
+.chartInfoInputs{
+	width: 100%!important;
+}
+
+.itemList{
+	padding:4%;
+}
+}
+.editMeasureDialog .sapMDialogSection{
+	height: 20%!important;
+}
+.editMeasureDialog .segmentedButton{
+	width:88%;
+}
+
+.editMeasureDialog.sapUiPopupWithPadding .sapMDialogScrollCont {
+	padding:0rem;
+}
+
+
+
+.editMeasureForm{
+
+	font-weight:bold;
+}
+.editMeasureForm .sapMLabel{
+	font-weight:bold;
+}
+
+.editMeasureForm .sapMText{
+ 	font-weight:normal;
+ }
+
+ .size1{
+	font-size:32px;
+	width:auto!important;
+}
+
+.editMeasureDialog .formLabels{
+	font-weight:bold;
+}
+
+.editMeasureDialog .axis_label_edit{
+	padding-top: 1rem;
+	padding-right: 1rem;
+}
+
+.editMeasureDialog .typeLabel{
+	padding-top: 3%;
+}
+
+.dialogComboBoxes{
+
+}
+
+
+.marginBoxContent{
+	margin-left: 7%;
+}
+
+
+.labelThreshold{
+	white-space:normal;
+	padding:4%;
+}
+.thresholdDialog{
+	width:30% !important;
+}
+.facetFilterContainer .facetFilterDimension{
+	margin: 0px 8px 0 8px;
+}
+.facetFilterContainer .dimensionName{
+	margin-right:4px
+}
+
+.drilldownConfiguratorPage .tableColumnHeader {
+	font-family : Arial,Helvetica,sans-serif,SAP-icons;
+	cursor : pointer;
+}
+.drilldownConfiguratorPage .header  {
+	padding : 0px !important;
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.drilldownConfiguratorPage .tilesHeaderContainer .sapSuiteUiCommonsHeaderCell {
+	padding-bottom: 0px;
+}
+.drilldownConfiguratorPage .tilesHeaderContainer .drilldownKpiTile {
+	display: inline-block;
+	margin-right: 0.5rem;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem !important;	
+}
+.drilldownConfiguratorPage .chartToolbar {
+	margin-top : 0.5rem;
+}
+
+.drilldownConfiguratorPage .chartToolbar .tableCellDataLabel {
+	width : 100%;
+}
+/*Overrides*/
+.drilldownConfiguratorPage .tilesHeaderContainer .sapMScrollContScroll>.sapSuiteHrdrCntrInner:after {
+	border : none !important;
+}
+
+.drilldownConfiguratorPage .header .aggregate_number{
+	font-size:1.75rem;
+}
+.drilldownConfiguratorPage .header .aggregate_number_unit{
+	font-size:0.75rem;
+}
+.drilldownConfiguratorPage .header{
+	padding : 0px !important;
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.drilldownConfiguratorPage .header .kpi_name{
+	
+	font-size:1.5rem;
+}
+.mySelectedStyle{
+	border: 1px solid #006CA7;
+}

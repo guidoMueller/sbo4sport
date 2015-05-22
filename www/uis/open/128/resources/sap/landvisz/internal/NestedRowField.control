@@ -1,0 +1,39 @@
+<!-- <?xml version="1.0" ?> -->
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>internal/NestedRowField</name>
+	<documentation>A control to render nester row fields in a control</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="label" type="sap.ui.core/string">
+			<documentation>label for data in a row field</documentation>
+		</property>
+		<property group="Data" name="values" type="sap.ui.core/string[]">
+			<documentation>value of the data in a row field</documentation>
+		</property>
+		<property group="Dimension" name="renderingSize" type="EntityCSSSize" defaultValue="sap.landvisz.EntityCSSSize.Regular">
+			<documentation>rendering size of the control</documentation>
+		</property>
+		<property group="Data" name="iconTitle" type="sap.ui.core/string">
+			<documentation>titlte of the icon rendered in the nested row field</documentation>
+		</property>
+		<property group="Identification" name="type" type="sap.ui.core/string">
+			<documentation>determines the type of landscape object</documentation>
+		</property>
+		<property group="Identification" name="valueType" type="sap.ui.core/string">
+			<documentation>determines the type of value</documentation>
+		</property>
+		<property group="Data" name="rightIconSrc" type="sap.ui.core/string">
+			<documentation>Image source of the icon on right</documentation>
+		</property>
+		<property group="Data" name="linkSource" type="sap.ui.core/string">
+			<documentation>source from which two or more systems are dependent</documentation>
+		</property>
+	</properties>
+	<aggregations>
+		<aggregation cardinality="0..n" type="sap.landvisz/internal/LinearRowField" name="linearRows">
+			<documentation>Rows aggregation in a label</documentation>
+		</aggregation>
+	</aggregations>
+</control>

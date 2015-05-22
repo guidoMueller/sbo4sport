@@ -1,0 +1,27 @@
+<core:View
+        xmlns:core="sap.ui.core"
+        height="100%"
+        controllerName="uniorg.sapFourSport.apps.financials.controller.Detail"
+        xmlns="sap.m"
+        >
+    <Page
+            id="page"
+            title="financials"
+            enableScrolling="false"
+            showHeader="false">
+        <TileContainer
+                id="container"
+                tileDelete="handleTileDelete"
+                tiles="{/appCollection}"
+                height="100%">
+            <StandardTile
+                    icon="sap-icon://{icon}"
+                    type="{type}"
+                    number="{number}"
+                    numberUnit="{numberUnit}"
+                    title="{title}"
+                    info="{info}"
+                    infoState="{infoState}"/>
+        </TileContainer>
+    </Page>
+</core:View>

@@ -1,0 +1,153 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns="sap.m"
+	controllerName="sap.suite.ui.smartbusiness.designtime.workspace.view.S4" xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="false" height="100%">
+	<Page class="s4workspace">
+	    <headerContent>
+	        <Button icon="sap-icon://up" />
+	        <Button icon="sap-icon://down" />
+	    </headerContent>
+		<content>
+		    <ObjectHeader title="{TITLE}" titleActive="true"
+				showMarkers="true" markFavorite="{path:'MANUAL_ENTRY', formatter:'.formatFavoriteMark'}">
+				<attributes>
+					<ObjectAttribute text="{ID}" />
+					<ObjectAttribute text="{path:'OWNER_NAME', formatter:'.formatOwnerName'}" />
+				</attributes>
+				<statuses>
+					<ObjectStatus id="evalStatus" text="{parts:[{path:'IS_ACTIVE'},{path:'COUNTER'}], formatter:'.formatEvalStatus'}"
+						state="{path:'IS_ACTIVE', formatter:'sap.suite.smartbusiness.formatters.kpiStatusState'}" />
+				</statuses>
+			</ObjectHeader>
+	<l:Grid defaultIndent="L0 M0 S0" defaultSpan="L12 M12 S12">
+		<l:content>
+			<form:SimpleForm minWidth="1024" maxContainerCols="4"
+				width="100%" editable="false" layout="ResponsiveGridLayout" title="{i18n>INFORMATION}"
+				labelSpanL="2" labelSpanM="2" emptySpanL="0" emptySpanM="0"
+				columnsL="1" columnsM="1">
+				<form:content>
+					<Label text="{i18n>KPI_TEXT}" design="Bold" />
+					<Text text="{INDICATOR}"/>
+					<Label text="{i18n>DATA_SOURCE}" design="Bold" />
+					<Text text="{ODATA_URL}"/>
+					<Label text="{i18n>PROPERTIES}" design="Bold" />
+					<HBox items="{PROPERTIES}" id="properties">
+									<items>
+										<Text
+											text="{parts:[{path:'NAME'},{path:'VALUE'}], formatter:'.formatProperties'}" />
+									</items>
+								</HBox>
+				</form:content>
+			</form:SimpleForm>
+
+
+			<form:SimpleForm id="thresholdTrendId" minWidth="1024" maxContainerCols="4"
+				width="100%" editable="false" layout="ResponsiveGridLayout" title="{i18n>TARGET_THRESHOLD_TREND}"
+				labelSpanL="2" labelSpanM="2" emptySpanL="0" emptySpanM="0" 
+				columnsL="2" columnsM="2">
+				<form:content>
+					<Label text="{i18n>GOAL_TYPE}" design="Bold" >
+					</Label>
+					<Text id="goalType" class="goalValueCss" text="" >
+					<layoutData>
+                                           <l:GridData span="L8 M8" />
+                                      </layoutData>
+					</Text>
+					<Label text="{i18n>VALUE_TYPE}" design="Bold" >
+                                      </Label>
+					<Text text="{/VALUES_SOURCE}" class="goalValueCss">
+					<layoutData>
+                                           <l:GridData span="L8 M8" />
+                                      </layoutData>
+					</Text>
+					
+					<Text text=" " >
+					<layoutData>
+                            <l:GridData span="L8 M8" />
+                       </layoutData>
+                    </Text>
+					<Label id="CHlabel" text="{path:'/GOAL_TYPE', formatter:'.formatThresholdCriticalHigh'}" design="Bold" />
+					<Text id="CHinput" text="{/CH}" editable="false">
+						<layoutData>
+							<l:GridData span="L8 M8" />
+						</layoutData>
+					</Text>
+					<Label id="WHlabel" text="{path:'/GOAL_TYPE', formatter:'.formatThresholdWarningHigh'}" design="Bold" />
+					<Text id="WHinput" text="{/WH}" editable="false">
+						<layoutData>
+							<l:GridData span="L8 M8" />
+						</layoutData>
+					</Text>
+					<Label id="TAlabel" text="{i18n>TARGET}" design="Bold" />	
+					<Text id="TAinput" text="{/TA}" editable="false">
+						<layoutData>
+							<l:GridData span="L8 M8" />
+						</layoutData>
+					</Text>
+					<Label id="WLlabel" text="{path:'/GOAL_TYPE', formatter:'.formatThresholdWarningLow'}" design="Bold" />	
+					<Text id="WLinput" text="{/WL}" editable="false">
+						<layoutData>
+							<l:GridData span="L8 M8" />
+						</layoutData>
+					</Text>
+					<Label id="CLlabel" text="{path:'/GOAL_TYPE', formatter:'.formatThresholdCriticalLow'}" design="Bold" />	
+					<Text id="CLinput" text="{/CL}" editable="false">
+						<layoutData>
+							<l:GridData span="L8 M8" />
+						</layoutData>
+					</Text>
+					<Label id="TrendLabel" text="{i18n>TREND}" design="Bold" />
+					<Text id="Trendinput" text="{/TC}" editable="false">
+						<layoutData>
+							<l:GridData span="L8 M8" />
+						</layoutData>
+					</Text>
+				</form:content>
+			</form:SimpleForm>
+
+
+
+			<Table id="filterInputParameterTable" inset="false" items="{path:'filterInput>/EVALUATION_FILTERS'}" itemPress="handlePressID">
+				<headerToolbar>
+					<Toolbar>
+						<Label text="{i18n>INPUT_PARAMETERS_FILTERS}"></Label>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>DIMENSIONS}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>TYPE}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>OPERATOR}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>VALUES_FROM}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>VALUE_TO}" />
+					</Column>
+
+				</columns>
+				<items>
+					<ColumnListItem vAlign="Middle">
+						<cells>
+							<Text text="{filterInput>NAME}" />
+							<Text text="{path:'filterInput>TYPE', formatter:'.formatTypeOfFilter'}" />
+							<Text text="{path:'filterInput>OPERATOR', formatter:'.formatOperator'}" />
+							<Text text="{path: 'filterInput>VALUES', formatter:'.formatFilterValue'}" />
+							<Text text="{path: 'filterInput>VALUE_2', formatter:'.formatFilterValue'}" />
+
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+
+		</l:content>
+	</l:Grid>
+	</content>
+	</Page>
+
+</core:View>

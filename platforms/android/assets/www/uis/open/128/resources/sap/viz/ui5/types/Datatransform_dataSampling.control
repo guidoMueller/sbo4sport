@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Datatransform_dataSampling</name>
+  <documentation>Settings for the data sampling algorithm</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="enable" type="sap.ui.core/boolean" defaultValue="false">
+      <documentation>Set whether data sampling is enabled.</documentation>
+    </property>
+    <property name="sizeFactor" type="sap.ui.core/int" defaultValue="1">
+      <documentation>Set the data point percentage in the original dataset</documentation>
+    </property>
+    <property name="numberPrecondition" type="sap.ui.core/int" defaultValue="3000">
+      <documentation>If the data point is larger than this value, data sampling is triggered.</documentation>
+    </property>
+  </properties>
+  <aggregations>
+    <aggregation name="grid" cardinality="0..1" type="sap.viz/ui5/types/Datatransform_dataSampling_grid">
+      <documentation>add documentation for aggregation grid</documentation>
+    </aggregation>
+  </aggregations>
+</control>

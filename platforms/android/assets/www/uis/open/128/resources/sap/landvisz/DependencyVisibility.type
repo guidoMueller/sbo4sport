@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>DependencyVisibility</name>
+	<author></author>
+
+	<documentation>View Visibility of landscape viewer</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="NETWORK">
+			<documentation>Network dependency view</documentation>
+		</value>
+		<value name="BOX">
+			<documentation>Box Dependency View</documentation>
+		</value>
+		<value name="BOTH">
+			<documentation>make both view visible</documentation>
+		</value>
+	</enumeration>
+</simple-type>

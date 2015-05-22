@@ -1,0 +1,120 @@
+/* ====================================================== */
+/* CSS for control sap.ui.commons/VariablesDialog.control */
+/* Goldreflection                                         */
+/* ====================================================== */
+
+.zenDialogLayout {
+	background: #a2a2a2;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a2a2a2;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.zenDialogTitleArea {
+    background: #e0e0e0;
+    border-bottom: 1px solid #a2a2a2;
+    padding: 0;
+    height: 35px;
+    line-height: 35px;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fefefe;
+	box-shadow: inset 0px 1px 0px 0px #fefefe;
+}
+
+html[data-sap-ui-browser="ie9"] .sapUiMltCell.sapUiMltPadRight.zenDialogHeader{
+	border-bottom: 2px solid #a2a2a2;
+}
+
+.sapUiMltCell.sapUiMltPadRight.zenDialogTitleArea{
+	font-weight: normal;
+	padding: 0 0 0 11px !important;
+	background: #e0e0e0;
+}
+
+.sapUiTv.zenDialogTextView{
+	line-height: 35px;
+	outline: none !important;
+}
+
+.sapUiMltCell.sapUiMltPadRight.zenDialogCloseCell{
+	background: transparent url("img/VariablenDialogClose.png") no-repeat left center;
+	width: 26px;
+	height: 35px;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #fefefe;
+	box-shadow: inset 0px 1px 0px 0px #fefefe;
+}
+
+.sapUiMltCell.sapUiMltPadRight.zenDialogContentArea{
+	background: #eee !important;	
+	padding: 0 !important;
+}
+
+.zenDialogContentArea .sapzenfilterpanel-PopupContainerDialog,
+.zenDialogContentArea .sapzenfilterpanel-PopupContainer{
+	border: none;
+}
+
+.sapUiMltCell.sapUiMltPadRight.zenDialogButtonArea{
+	border-top: 1px solid #a2a2a2;
+	background: #e9e9e9;
+}
+
+html[data-sap-ui-browser="ie9"] .sapUiMltCell.sapUiMltPadRight.zenDialogButtonArea{
+	border-top: 1px solid #a2a2a2;
+}
+
+.zenDialogResizeRow .sapUiMltCell.sapUiMltPadRight{
+	padding-right: 1px;
+}
+
+.zenDialogButtonArea .sapUiBtnS{
+	height: 27px !important;
+	margin: 5px 0 0 0;
+}
+
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageError,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageWarning,
+.zenDialogButtonArea .sapzenmessageview-ButtonLevelImageInfo{
+	height: 27px !important;
+	min-height: 27px !important;
+	width: auto !important;
+	float: left;
+}
+
+.sapUiMltCell.sapUiMltPadRight{
+	padding: 0;
+}
+
+.sapUiMltCell.sapUiMltPadRight.zenDialogResizeCell{
+	height: 14px;
+    width: 12px;
+	background: url("img/ResizeDialog.png") 0 0  no-repeat;
+}
+
+.zenDialogResizeArea{
+	background-color: #e9e9e9;
+}
+
+.zenDialogOkButton{
+	min-width: 80px;
+}
+
+.zenDialogMsgButton{
+	min-width: 80px;
+}
+
+.zenDialogCancelButton{
+	min-width: 80px;
+}
+
+.zenDialogButtonArea .zenDialogOkButton{
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.zenDialogInplaceMode .zenDialogButtonArea .zenDialogOkButton{
+	margin-right: 0px;
+	margin-bottom: 5px;
+}

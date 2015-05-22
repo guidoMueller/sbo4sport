@@ -1,0 +1,35 @@
+<core:View
+        xmlns:core="sap.ui.core"
+        height="100%"
+        controllerName="uniorg.sapFourSport.apps.sponsoring.controller.Detail"
+        xmlns="sap.m"
+        >
+    <Page
+            id="page"
+            title="Sponsoring"
+            enableScrolling="true"
+            showHeader="false">
+        <IconTabBar
+                class="iconTabBarPaddingTop"
+                id="idIconTabBarMulti"
+                expanded="{device>/isNoPhone}"
+                select="handleIconTabBarTopSelect">
+            <items>
+                <IconTabFilter
+                        icon="sap-icon://table-view"
+                        id="idIconTabBar"
+                        key="1">
+                    <Toolbar>
+                        <Button text="Top 10" press="onPressTop" />
+                    </Toolbar>
+                </IconTabFilter>
+                <IconTabFilter
+                        icon="sap-icon://line-charts"
+                        key="2">
+                    <core:Fragment fragmentName="uniorg.sapFourSport.apps.sponsoring.view.fragment.SponsoringVizFrame" type="XML"/>
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+
+    </Page>
+</core:View>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ValueAxis</name>
+	<developmentState state="experimental" since="1.8">API is not yet finished and might change completely</developmentState>
+	<author>SAP SE</author>
+	<documentation>Contains the properties of the Value's Axis.</documentation>
+	<since>1.8</since>
+
+	<baseType>Axis</baseType>
+	<properties>
+		<property group="Misc" name="min" type="sap.ui.core/string">
+			<documentation>Highest displayed value on the Value Axis (this value will be automatically adjusted to nearest major tick value depending on the value's range). Set to empty string to switch back to automatic calculation.</documentation>
+		</property>
+		<property group="Misc" name="max" type="sap.ui.core/string">
+			<documentation>Highest displayed value on the Value Axis (this value will be automatically adjusted to nearest major tick value depending on the value's range)</documentation>
+		</property>
+	</properties>
+</control>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/SearchResultAppItem</name>
+
+	<documentation>Add your documentation for the newui/launchpad/SearchResultAppItem</documentation>
+
+	<baseType>sap.m/Button</baseType>
+	<properties>
+		<property group="Appearance" name="searchTerm" type="sap.ui.core/string">
+			<documentation>the search term used for searching apps. Occurrences of this search term in the app title are highlighted</documentation>
+		</property>
+		<property group="Behavior" name="targetUrl" type="sap.ui.core/URI">
+			<documentation>The app's target URL for navigating to the app</documentation>
+		</property>
+	</properties>
+</control>

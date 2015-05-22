@@ -1,0 +1,859 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/apf/Component.js",
+      "size" : 2195,
+      "compressedSize" : 743,
+      "required" : ["sap/ui/core/UIComponent.js", "sap/apf/api.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/api.js",
+      "size" : 35562,
+      "compressedSize" : 5215,
+      "required" : ["sap/apf/core/messageHandler.js", "sap/apf/core/instance.js", "sap/apf/utils/filter.js", "sap/apf/utils/pathContextHandler.js", "sap/apf/utils/serializationMediator.js", "sap/apf/utils/smartBusinessHandler.js", "sap/apf/ui/instance.js", "sap/apf/ui/representations/representationInterface.js", "sap/apf/ui/representations/lineChart.js", "sap/apf/ui/representations/columnChart.js", "sap/apf/ui/representations/scatterPlotChart.js", "sap/apf/ui/representations/table.js", "sap/apf/ui/representations/stackedColumnChart.js", "sap/apf/ui/representations/pieChart.js", "sap/apf/ui/representations/percentageStackedColumnChart.js", "sap/apf/ui/representations/bubbleChart.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/ajax.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 1368,
+      "compressedSize" : 594,
+      "required" : ["sap/apf/core/utils/checkForTimeout.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/annotation.js",
+      "description" : "@fileOverview This file contains an annotation parser.",
+      "size" : 31503,
+      "compressedSize" : 9655,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/binding.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 8975,
+      "compressedSize" : 3857,
+      "required" : ["sap/apf/core/constants.js", "sap/apf/core/utils/filter.js", "sap/apf/core/utils/filterTerm.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/configurationFactory.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 20014,
+      "compressedSize" : 8903,
+      "required" : ["sap/apf/core/step.js", "sap/apf/core/request.js", "sap/apf/utils/hashtable.js", "sap/apf/core/binding.js", "sap/apf/core/representationTypes.js", "sap/apf/core/constants.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/constants.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 5543,
+      "compressedSize" : 2082,
+      "required" : ["sap/ui/model/FilterOperator.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/entityTypeMetadata.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 2168,
+      "compressedSize" : 657,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/instance.js",
+      "description" : "global jQuery, sap, OData",
+      "size" : 16447,
+      "compressedSize" : 6295,
+      "required" : ["sap/apf/utils/utils.js", "sap/apf/core/utils/uriGenerator.js", "sap/apf/core/annotation.js", "sap/apf/core/metadata.js", "sap/apf/core/metadataFacade.js", "sap/apf/core/metadataProperty.js", "sap/apf/core/ajax.js", "sap/apf/core/odataRequest.js", "sap/apf/core/messageHandler.js", "sap/apf/core/entityTypeMetadata.js", "sap/apf/core/metadataFactory.js", "sap/apf/core/textResourceHandler.js", "sap/apf/core/configurationFactory.js", "sap/apf/core/path.js", "sap/apf/core/sessionHandler.js", "sap/apf/core/resourcePathHandler.js", "sap/apf/core/persistence.js", "sap/apf/core/readRequest.js", "sap/apf/core/readRequestByRequiredFilter.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/messageDefinition.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 9224,
+      "compressedSize" : 6630,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/messageHandler.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 16857,
+      "compressedSize" : 6583,
+      "required" : ["sap/apf/core/messageObject.js", "sap/apf/utils/hashtable.js", "sap/apf/core/constants.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/messageObject.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 5711,
+      "compressedSize" : 1197,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/metadata.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 18686,
+      "compressedSize" : 7443,
+      "required" : ["sap/apf/utils/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/metadataFacade.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 4696,
+      "compressedSize" : 1275,
+      "required" : ["sap/apf/utils/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/metadataFactory.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 3671,
+      "compressedSize" : 1095,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/metadataProperty.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 2451,
+      "compressedSize" : 690,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/odataRequest.js",
+      "description" : "global OData",
+      "size" : 1596,
+      "compressedSize" : 531,
+      "required" : ["sap/ui/thirdparty/datajs.js", "sap/apf/core/utils/checkForTimeout.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/path.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 13168,
+      "compressedSize" : 3577,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/persistence.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 14222,
+      "compressedSize" : 5782,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/readRequest.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 3348,
+      "compressedSize" : 640,
+      "required" : ["sap/apf/core/request.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/readRequestByRequiredFilter.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 4470,
+      "compressedSize" : 997,
+      "required" : ["sap/apf/core/request.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/representationTypes.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 4090,
+      "compressedSize" : 2794,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/request.js",
+      "description" : "global OData",
+      "size" : 9485,
+      "compressedSize" : 3978,
+      "required" : ["sap/apf/utils/utils.js", "sap/apf/core/utils/filter.js", "sap/apf/core/utils/filterTerm.js", "sap/ui/thirdparty/datajs.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/resourcePathHandler.js",
+      "description" : "global jQuery, sap",
+      "size" : 15256,
+      "compressedSize" : 7413,
+      "required" : ["sap/apf/core/utils/checkForTimeout.js", "sap/apf/utils/hashtable.js", "sap/apf/core/messageHandler.js", "sap/apf/core/messageDefinition.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/sessionHandler.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 5734,
+      "compressedSize" : 2537,
+      "required" : ["sap/apf/core/ajax.js", "sap/apf/utils/filter.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/step.js",
+      "description" : "global sap, jQuery",
+      "size" : 11360,
+      "compressedSize" : 3781,
+      "required" : ["sap/apf/core/utils/filter.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/textResourceHandler.js",
+      "description" : "global jQuery, sap, OData",
+      "size" : 6015,
+      "compressedSize" : 2944,
+      "required" : ["sap/apf/utils/hashtable.js", "jquery.sap.resources.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/utils/checkForTimeout.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 1373,
+      "compressedSize" : 601,
+      "required" : ["sap/apf/core/messageObject.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/utils/filter.js",
+      "description" : "internally used filter object",
+      "size" : 27627,
+      "compressedSize" : 8356,
+      "required" : ["sap/apf/core/utils/filterTerm.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/utils/filterTerm.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 15368,
+      "compressedSize" : 4672,
+      "required" : ["sap/apf/utils/utils.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/core/utils/uriGenerator.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 6878,
+      "compressedSize" : 2281,
+      "required" : ["sap/apf/core/messageObject.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/library.js",
+      "description" : "Initialization Code and shared classes of library sap.apf (1.24.2)",
+      "size" : 921,
+      "compressedSize" : 278,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/library.properties",
+      "size" : 62,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi.properties",
+      "size" : 6944,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_ar.properties",
+      "size" : 17843,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_bg.properties",
+      "size" : 22570,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_ca.properties",
+      "size" : 8261,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_cs.properties",
+      "size" : 8552,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_da.properties",
+      "size" : 6831,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_de.properties",
+      "size" : 7726,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_el.properties",
+      "size" : 23552,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_en.properties",
+      "size" : 6719,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_es.properties",
+      "size" : 8065,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_et.properties",
+      "size" : 7278,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_fi.properties",
+      "size" : 7769,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_fr.properties",
+      "size" : 8208,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_hi.properties",
+      "size" : 20065,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_hr.properties",
+      "size" : 7444,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_hu.properties",
+      "size" : 9020,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_it.properties",
+      "size" : 7591,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_iw.properties",
+      "size" : 16414,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_ja.properties",
+      "size" : 12395,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_ko.properties",
+      "size" : 11228,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_lt.properties",
+      "size" : 8352,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_lv.properties",
+      "size" : 8608,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_nl.properties",
+      "size" : 6936,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_no.properties",
+      "size" : 7112,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_pl.properties",
+      "size" : 8890,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_pt.properties",
+      "size" : 8335,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_ro.properties",
+      "size" : 8161,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_ru.properties",
+      "size" : 22428,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_sh.properties",
+      "size" : 7345,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_sk.properties",
+      "size" : 8444,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_sl.properties",
+      "size" : 7449,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_sv.properties",
+      "size" : 7501,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_th.properties",
+      "size" : 23328,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_tr.properties",
+      "size" : 8466,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_uk.properties",
+      "size" : 21888,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_vi.properties",
+      "size" : 11502,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_zh_CN.properties",
+      "size" : 9016,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/resources/i18n/apfUi_zh_TW.properties",
+      "size" : 9256,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/controls/draggableCarousel/DraggableCarousel.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 22098,
+      "compressedSize" : 13136,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/instance.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 7223,
+      "compressedSize" : 3140,
+      "required" : ["sap/apf/ui/utils/print.js", "sap/apf/ui/utils/constants.js", "sap/apf/ui/utils/facetFilterHandler.js", "sap/apf/ui/representations/lineChart.js", "sap/apf/ui/representations/columnChart.js", "sap/apf/ui/representations/scatterPlotChart.js", "sap/apf/ui/representations/stackedColumnChart.js", "sap/apf/ui/representations/table.js", "sap/apf/ui/representations/pieChart.js", "sap/apf/ui/representations/percentageStackedColumnChart.js", "sap/apf/ui/representations/bubbleChart.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/BaseVizChartRepresentation.js",
+      "size" : 16164,
+      "compressedSize" : 7962,
+      "required" : ["sap/apf/ui/representations/utils/vizHelper.js", "sap/apf/ui/representations/utils/formatter.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/bubbleChart.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 1853,
+      "compressedSize" : 1202,
+      "required" : ["sap/apf/ui/representations/BaseVizChartRepresentation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/columnChart.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 1640,
+      "compressedSize" : 1062,
+      "required" : ["sap/apf/ui/representations/BaseVizChartRepresentation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/lineChart.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 1008,
+      "compressedSize" : 715,
+      "required" : ["sap/apf/ui/representations/BaseVizChartRepresentation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/percentageStackedColumnChart.js",
+      "size" : 1556,
+      "compressedSize" : 1102,
+      "required" : ["sap/apf/ui/representations/BaseVizChartRepresentation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/pieChart.js",
+      "size" : 996,
+      "compressedSize" : 708,
+      "required" : ["sap/apf/ui/representations/BaseVizChartRepresentation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/representationInterface.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 20026,
+      "compressedSize" : 1921,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/scatterPlotChart.js",
+      "size" : 2312,
+      "compressedSize" : 1502,
+      "required" : ["sap/apf/ui/representations/BaseVizChartRepresentation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/stackedColumnChart.js",
+      "size" : 1084,
+      "compressedSize" : 780,
+      "required" : ["sap/apf/ui/representations/BaseVizChartRepresentation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/table.js",
+      "size" : 22349,
+      "compressedSize" : 11485,
+      "required" : ["sap/apf/ui/representations/utils/formatter.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/utils/formatter.js",
+      "description" : "@class utils @name utils @memberOf sap.apf.ui.representations @description holds utility functions used by vizHelper and representations",
+      "size" : 7889,
+      "compressedSize" : 3251,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/representations/utils/vizHelper.js",
+      "description" : "@class utils @name utils @memberOf sap.apf.ui.representations @description holds utility functions used by viz representations",
+      "size" : 17031,
+      "compressedSize" : 9190,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/analysisPath.controller.js",
+      "size" : 5674,
+      "compressedSize" : 2414,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/carousel.controller.js",
+      "size" : 9908,
+      "compressedSize" : 5892,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/deleteAnalysisPath.controller.js",
+      "size" : 3599,
+      "compressedSize" : 1815,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/facetFilter.controller.js",
+      "size" : 7226,
+      "compressedSize" : 3038,
+      "required" : ["sap/apf/ui/utils/facetFilterListHandler.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/layout.controller.js",
+      "size" : 5227,
+      "compressedSize" : 3276,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/messageHandler.controller.js",
+      "size" : 4349,
+      "compressedSize" : 2051,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/pathGallery.controller.js",
+      "size" : 4562,
+      "compressedSize" : 2612,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/step.controller.js",
+      "size" : 4301,
+      "compressedSize" : 2434,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/stepContainer.controller.js",
+      "size" : 10117,
+      "compressedSize" : 5645,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/stepGallery.controller.js",
+      "size" : 5624,
+      "compressedSize" : 2636,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/stepToolbar.controller.js",
+      "size" : 18959,
+      "compressedSize" : 12201,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/controller/toolbar.controller.js",
+      "size" : 26988,
+      "compressedSize" : 15106,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/fragment/pathGallery.fragment.js",
+      "size" : 2799,
+      "compressedSize" : 1819,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/fragment/stepGallery.fragment.js",
+      "size" : 3689,
+      "compressedSize" : 2201,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/analysisPath.view.js",
+      "size" : 3021,
+      "compressedSize" : 1741,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/carousel.view.js",
+      "size" : 5446,
+      "compressedSize" : 3728,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/deleteAnalysisPath.view.js",
+      "size" : 1654,
+      "compressedSize" : 1144,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/facetFilter.view.js",
+      "size" : 1473,
+      "compressedSize" : 991,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/layout.view.xml",
+      "size" : 1288,
+      "required" : ["sap/ui/core/mvc/XMLView.js", "sap/apf/ui/reuse/controller/layout.controller.js", "sap/m/Page.js", "sap/m/Bar.js", "sap/m/Label.js", "sap/m/VBox.js", "sap/m/SplitApp.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/messageHandler.view.js",
+      "size" : 915,
+      "compressedSize" : 423,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/pathGallery.view.js",
+      "size" : 343,
+      "compressedSize" : 294,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/step.view.js",
+      "size" : 5811,
+      "compressedSize" : 3991,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/stepContainer.view.js",
+      "size" : 1386,
+      "compressedSize" : 691,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/stepGallery.view.js",
+      "size" : 535,
+      "compressedSize" : 280,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/stepToolbar.view.js",
+      "size" : 1206,
+      "compressedSize" : 377,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/reuse/view/toolbar.view.js",
+      "size" : 4616,
+      "compressedSize" : 2936,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/utils/constants.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 1626,
+      "compressedSize" : 1176,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/utils/facetFilterHandler.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 4962,
+      "compressedSize" : 2197,
+      "required" : ["sap/ui/thirdparty/d3.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/utils/facetFilterListHandler.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 8387,
+      "compressedSize" : 2776,
+      "required" : ["sap/apf/ui/representations/utils/formatter.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/ui/utils/print.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 13711,
+      "compressedSize" : 7087,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/utils/filter.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 30546,
+      "compressedSize" : 7207,
+      "required" : ["sap/apf/core/utils/filterTerm.js", "sap/apf/core/utils/filter.js", "sap/apf/utils/hashtable.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/utils/hashtable.js",
+      "description" : "Hashtable",
+      "size" : 3212,
+      "compressedSize" : 1197,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/utils/pathContextHandler.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 9086,
+      "compressedSize" : 1962,
+      "required" : ["sap/apf/utils/hashtable.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/utils/serializationMediator.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 4084,
+      "compressedSize" : 857,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/utils/smartBusinessHandler.js",
+      "description" : "! SAP APF Analysis Path Framework  (c) Copyright 2012-2014 SAP AG. All rights reserved",
+      "size" : 3472,
+      "compressedSize" : 1474,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/apf/utils/utils.js",
+      "description" : "Static helper functions",
+      "size" : 6755,
+      "compressedSize" : 3040,
+      "required" : ["sap/ui/core/format/DateFormat.js", "jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

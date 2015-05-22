@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>components/factsheet/controls/PictureViewerItem</name>
+
+	<documentation>Picture viewer control relying on the TileContainer control</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" name="src" type="sap.ui.core/string">
+            <documentation>Image source url.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation cardinality="0..1" name="image" type="sap.m/Image">
+            <documentation>Pass in an existing Image control to be used inside the PictureViewer</documentation>
+        </aggregation>
+    </aggregations>
+</control>

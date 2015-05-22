@@ -1,0 +1,19 @@
+.addPropertyVizBtn{
+	padding-left: .5rem;
+}
+.deleteIconForAssociationProperty{
+	padding-left: 0.7rem;
+	padding-top: 0.5rem;
+}
+
+.visualizationAppPropName{
+	padding-right: 0.4rem;
+}
+
+.navigationVLayout div {
+	margin-bottom: 0.3rem;
+}
+
+.chipActionsHLayout div {
+	margin-left: 2rem;
+}

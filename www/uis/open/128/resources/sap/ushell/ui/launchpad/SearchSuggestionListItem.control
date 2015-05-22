@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/SearchSuggestionListItem</name>
+
+	<documentation>Add your documentation for the newui/launchpad/SearchSuggestionListItem</documentation>
+
+	<baseType>sap.m/ListItemBase</baseType>
+	<properties>
+		<property group="Misc" name="text" type="sap.ui.core/string">
+			<documentation>Suggestion text</documentation>
+		</property>
+		<property group="Misc" name="isGroupFooter" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+		<property group="Misc" name="categorySeperator" type="sap.ui.core/string" defaultValue="/">
+		</property>
+		<property group="Misc" name="categoryFirstSeperator" type="sap.ui.core/string" defaultValue="">
+		</property>
+		<property group="Misc" name="icon" type="sap.ui.core/URI">
+		</property>
+		<property group="Misc" name="maxCategories" type="sap.ui.core/int" defaultValue="2">
+		</property>
+		<property group="Misc" name="isGroupHeader" type="sap.ui.core/boolean">
+		</property>
+	</properties>
+	<events>
+		<event name="press">
+		</event>
+		<event name="focus">
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="categories" type="sap.ui.core/Control">
+			<documentation>Category Control</documentation>
+		</aggregation>
+	</aggregations>
+</control>

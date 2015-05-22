@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>sap.fiori</name>
+  <vendor>SAP SE</vendor>
+  <copyright>SAP UI development toolkit for HTML5 (SAPUI5)
+
+(c) Copyright 2009-2014 SAP SE. All rights reserved</copyright>
+  <version>1.24.5</version>
+  
+  <documentation>A hybrid UILibrary merged from the most common UILibraries that are used in Fiori apps</documentation>
+  
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+  </dependencies>
+
+	<appData>
+		<jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc" >
+			<exclude name="sap.fiori." />
+		</jsdoc>
+	</appData>
+
+</library>

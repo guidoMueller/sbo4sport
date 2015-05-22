@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Area_marker_shape</name>
+  <documentation>List (Enum) type ui5/types/Area_marker_shape</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.ui.core/string</baseType>
+  <enumeration>
+    <value name="circle">
+      <documentation>Value circle</documentation>
+    </value>
+    <value name="diamond">
+      <documentation>Value diamond</documentation>
+    </value>
+    <value name="triangleUp">
+      <documentation>Value triangleUp</documentation>
+    </value>
+    <value name="triangleDown">
+      <documentation>Value triangleDown</documentation>
+    </value>
+    <value name="triangleLeft">
+      <documentation>Value triangleLeft</documentation>
+    </value>
+    <value name="triangleRight">
+      <documentation>Value triangleRight</documentation>
+    </value>
+    <value name="cross">
+      <documentation>Value cross</documentation>
+    </value>
+    <value name="intersection">
+      <documentation>Value intersection</documentation>
+    </value>
+  </enumeration>
+</simple-type>

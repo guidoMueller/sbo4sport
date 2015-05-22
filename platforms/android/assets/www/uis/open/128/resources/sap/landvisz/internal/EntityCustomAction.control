@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>internal/EntityCustomAction</name>
+	<documentation>A control to render custom actions of visualization control</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="customAction" type="sap.ui.core/string">
+			<documentation>name of the custom action</documentation>
+		</property>
+		<property group="Dimension" name="renderingSize" type="EntityCSSSize" defaultValue="sap.landvisz.EntityCSSSize.Regular">
+			<documentation>rendering size of the control</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="select">
+			<documentation>click on the action bar</documentation>
+		</event>
+	</events>
+</control>

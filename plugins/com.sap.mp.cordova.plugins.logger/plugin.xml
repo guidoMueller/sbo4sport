@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.sap.mp.cordova.plugins.logger"
+    version="3.7.1">
+
+    <name>Logger</name>
+    
+    <dependency id="com.sap.mp.cordova.plugins.corelibs" />
+    <dependency id="org.apache.cordova.inappbrowser"/>    
+    <dependency id="com.sap.mp.cordova.plugins.logon"/>
+
+	<js-module name="Logging" src="www/logger.js">
+		<clobbers target="sap.Logger"/>
+	</js-module>
+
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="Logging">
+			  <param name="android-package" value="com.sap.mp.cordova.plugins.logger.Logger"/>
+			</feature>
+		</config-file>  
+
+    	<source-file src="android/libs/logger-android-3.7.1.jar" target-dir="libs"/>
+		
+  	</platform>
+
+    <platform name="ios">
+		<config-file target="config.xml" parent="/*">
+            <feature name="Logging">
+                <param name="ios-package" value="SMPLoggerPlugin"/>
+			</feature>
+		</config-file>  
+        
+        <source-file src="ios/libs/libSMPLoggerPlugin.a" framework="true"/>
+
+    	<framework src="libz.dylib" />
+    </platform>
+  
+   <!-- windows8.1/Windows Phone 8.1 -->
+    <platform name="windows">
+        <!-- command proxy for windows8 platform -->  
+        <js-module name="logger_proxy_win8" src="windows81/src/logger_proxy_win8.js">
+          <clobbers target=""/>
+        </js-module>
+        
+        <!-- copy the native components -->
+        <framework src="windows81/bin/SAP.Logger.winmd" custom="true"/>
+        <framework src="windows81/bin/SAP.Supportability.winmd" custom="true"/>
+    </platform>
+</plugin>

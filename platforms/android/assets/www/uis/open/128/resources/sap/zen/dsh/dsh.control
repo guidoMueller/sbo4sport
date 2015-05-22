@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>dsh</name>
+
+	<documentation>Add your documentation for the newdsh</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="dshAppName" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="dshBaseUrl" type="sap.ui.core/URI">
+		</property>
+		<property group="Misc" name="dshBaseAppUrl" type="sap.ui.core/URI">
+		</property>
+		<property group="Misc" name="dshBaseAppUrl2" type="sap.ui.core/URI">
+		</property>
+		<property group="Misc" name="dshHost" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="dshPort" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="hanaAlias" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="width" type="sap.ui.core/CSSSize">
+		</property>
+		<property group="Misc" name="height" type="sap.ui.core/CSSSize">
+		</property>
+		<property group="Misc" name="embedded" type="sap.ui.core/boolean">
+		</property>
+		<property group="Misc" name="deployment" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="protocol" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="client" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="language" type="sap.ui.core/string">
+		</property>
+	</properties>
+	<methods>
+		<method name="addParameter" type="sap.ui.core/string">
+			<parameters>
+				<parameter name="name" type="sap.ui.core/string">
+				</parameter>
+				<parameter name="value" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+		<method name="executeScript" type="sap.ui.core/void">
+			<parameters>
+				<parameter name="script" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+		<method name="getDataSource" type="sap.ui.core/object">
+			<parameters>
+				<parameter name="name" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+		<method name="getComponent" type="sap.ui.core/object">
+			<parameters>
+				<parameter name="name" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+		<method name="getPage" type="sap.ui.core/object">
+		</method>		
+	</methods>
+</control>

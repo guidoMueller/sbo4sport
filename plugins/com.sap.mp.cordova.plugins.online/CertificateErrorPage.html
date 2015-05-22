@@ -1,0 +1,207 @@
+<html>
+	<head profile="http://www.w3.org/2005/10/profile">
+	
+		<link rel="icon" 
+      		type="image/png" 
+      		href="file:///android_res/drawable/icon.png" />
+      		
+			<style type="text/css">
+				body {
+					margin: 0.5em;
+					font-family: Arial;
+				}
+				
+				div#errorSection {
+					padding : 0.3em 0.3em 0.5em 0.3em;
+				}
+				
+				div#errorSection > div#errorTitle {
+					
+					margin-bottom: 0.5em;
+					font-weight: bold;
+					font-size: 1.2em;
+				}
+				
+				div#errorSection > div#errorDescription {
+					font-size: 0.9em;
+				}
+				
+				div#errorTitle > img {
+					border-style: solid;
+					border-width: 1px;
+					
+				}
+				
+				div#helpSection {
+					padding : 0.3em 0.3em 0.3em 0.3em;
+					font-weight: normal;
+					font-size: 1em;
+					
+				}
+				
+				div.title {
+					margin-bottom: 1.0em;
+					margin-top: 0.5em;
+					margin-left: 0.2em;
+					font-size:0.8em;
+				}
+				
+				div.details {
+					margin-bottom: 0.2em;
+					margin-top: 0.2em;
+					margin-left: 0.3em;
+					font-size: 0.8em;
+				}
+				
+				span.details {
+					font-size: 1.0em;
+				}
+				
+				span.emphasize {
+					font-weight: bolder;
+					font-size: 1.0em;
+				}
+				
+				#hostname {
+					margin: 2px;
+				}
+				
+				div#footerSection {
+					padding : 0.3em 0.3em 0.5em 0.3em;
+					font-size: x-small;
+					font-style: italic;
+					
+				}
+				
+				
+		
+			</style>
+            
+            <script type="text/javascript">
+            
+              function getGETParameters() {
+                  var queryString = window.location.search.substr(1);
+                  return queryString != null && queryString != "" ? transformToAssocArray(queryString) : {};
+              }
+
+              function transformToAssocArray( queryString ) {
+                 var params = {};
+                 var prmarr = queryString.split("&");
+                 for ( var i = 0; i < prmarr.length; i++) {
+                     var tmparr = prmarr[i].split("=");
+                     params[tmparr[0]] = tmparr[1];
+                 }
+                 return params;
+               }
+             
+               function getHomeUrl(){
+             	  var params = getGETParameters();
+                  return params['fioriUrl'];
+               }
+             
+                function getPageUrl(){
+                  var params = getGETParameters();
+              	  return params['failingUrl'];
+                }
+                
+                function getErrorMessage(){
+                	var params = getGETParameters();
+                	return params['errorMessage'];
+                }
+                
+                function getCertDetails(){
+                	var params = getGETParameters();
+                	return params['cert'];
+                }
+             
+                function loadUrl (url){
+                    if (url){
+                        window.location.replace (decodeURIComponent(url));
+                    }
+                }
+
+                function getHTMLEscapedUrl(url){
+                	return url.replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/'/g, "&#x27;").replace(/\"/g, "&quot;").replace(/\//g, "&#x2F;");
+                }
+                
+                function updatePageUrl(){
+                	var url = getHTMLEscapedUrl(decodeURIComponent(getPageUrl()));
+                	document.getElementById('pageAddressSpan').innerHTML = url;
+                }
+                
+                function updateErrorMessage(){
+                	var error = getErrorMessage();
+                	if (!error){
+                		error = "The certificate is invalid. Further details are not available";
+                	}
+                	document.getElementById('errorMessageSpan').innerHTML = decodeURIComponent(error);
+                	
+                	var certDetails = getCertDetails();
+                	if (!certDetails){
+                		certDetails : "N/A";
+                	}
+               		document.getElementById('certificateDetailsSpan').innerHTML = decodeURIComponent(certDetails);
+                }
+                
+                function getHomeUrl(){
+             	  var params = getGETParameters();
+                  return params['fioriUrl'];
+                }
+                
+                function updateHomeUrl(){
+                	var url = getHTMLEscapedUrl(decodeURIComponent(getHomeUrl()));
+                	document.getElementById('homeUrlSpan').innerHTML = '(' + url + ')';
+                }
+
+                function updateUrls(){
+                	updatePageUrl();
+                	updateErrorMessage();
+                	document.addEventListener("deviceready", onDeviceReady, false);
+
+                }
+
+                function onDeviceReady() {
+                    document.addEventListener(
+                         "onSapResumeSuccess",
+                         function() {
+                             var failingPage = decodeURIComponent(getPageUrl());
+                             window.location.replace(failingPage);
+                         },
+                         false
+                    );
+                }
+
+            </script>
+            
+	</head>
+	<body onload='updateUrls()'>
+	
+		<div id='errorSection'>
+		
+		<div id='errorTitle'> 
+		<img src="file:///android_res/drawable/icon.png" height="30px" width="30px" > </img> 
+		Certificate Error 
+		</div>
+		
+		<div id='errorDescription'> The page cannot be displayed due to a problem with the server certificate. </div>
+		</div>
+		
+		<div id='helpSection'>
+			
+			<hr/>
+			<div class='title'>Please contact your help desk and provide the following information. </div>
+			<div >
+				<div class='details'> <span class='emphasize'> Error Cause: </span> <span id='errorMessageSpan' class='details'> </div>
+				<div class='details'> <span class='emphasize'> Certificate Information: <br/></span><span id='certificateDetailsSpan' class='details'> </span></div>
+			</div>
+			
+		</div>
+		
+		<hr/>
+		<div id='footerSection'>
+			Page Address: <span id='pageAddressSpan'></span>
+		</div>
+
+		
+	</body>
+</html>

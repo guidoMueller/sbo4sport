@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>charts/BarListItem</name>
+	<author>SAP SE</author>
+	<documentation>The display list item consists of a label and a value.</documentation>
+
+	<baseType>sap.m/ListItemBase</baseType>
+	<properties>
+		<property group="Misc" name="axis" type="sap.ui.core/string">
+			<documentation>List item label</documentation>
+		</property>
+		<property group="Misc" name="group" type="sap.ui.core/string">
+			<documentation>List item label</documentation>
+		</property>
+		<property group="Data" name="value" type="sap.ui.core/string">
+			<documentation>List item value</documentation>
+		</property>
+	</properties>
+</control>

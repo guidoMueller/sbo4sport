@@ -1,0 +1,35 @@
+<!-- <?xml version="1.0" ?> -->
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+	<name>OptionEntity</name>
+
+	<documentation>Options for solution entities</documentation>
+
+	<baseType>OptionSource</baseType>
+	<properties>
+		<property group="Data" name="label" type="sap.ui.core/string">
+			<documentation>label for option entity</documentation>
+		</property>
+		<property group="Accessibility" name="selected" type="sap.ui.core/boolean"
+			defaultValue="false">
+			<documentation>determines current selected option</documentation>
+		</property>
+		<property group="Identification" name="enable" type="sap.ui.core/boolean"
+			defaultValue="true">
+			<documentation>enabling/disabling options</documentation>
+		</property>
+		<property group="Data" name="optionTextTooltip" type="sap.ui.core/string">
+<documentation>tooltip for options</documentation>
+</property>
+	</properties>
+	<events>
+		<event name="selectOption">
+			<documentation>Select event for option entity</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="optionSources" type="OptionSource">
+			<documentation>Option Renderer Control</documentation>
+		</aggregation>
+	</aggregations>
+</control>

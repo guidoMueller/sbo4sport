@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>sap.collaboration</name>
+  <vendor>SAP SE</vendor>
+  <version>1.24.3</version>
+  
+  <documentation>SAP UI library: sap.collaboration (by SAP SE, Author)</documentation>
+  
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+  </dependencies>
+  
+  <appData>
+  </appData>
+  
+</library>

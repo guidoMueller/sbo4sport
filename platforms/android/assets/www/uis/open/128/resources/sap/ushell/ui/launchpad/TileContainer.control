@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/launchpad/TileContainer</name>
+
+	<documentation>A container that arranges Tile controls.</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="scrollType" type="sap.ui.core/string" defaultValue="item">
+		</property>
+		<property group="Misc" name="animationSpeed" type="sap.ui.core/int" defaultValue="500">
+			<documentation>Animation Speed in milliseconds (ms)</documentation>
+		</property>
+		<property group="Misc" name="groupId" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="showHeader" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="showPlaceholder" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="defaultGroup" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+		<property group="Misc" name="headerText" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="headerLevel" type="sap.m/HeaderLevel" defaultValue="H2">
+		</property>
+		<property group="Misc" name="groupHeaderLevel" type="sap.m/HeaderLevel" defaultValue="H4">
+			<documentation>Header level (H1-H6) used for headers of tile groups.</documentation>
+		</property>
+		<property group="Misc" name="showGroupHeader" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="visible" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="sortable" type="sap.ui.core/boolean" defaultValue="true">
+		</property>
+		<property group="Misc" name="showNoData" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+		<property group="Misc" name="noDataText" type="sap.ui.core/string">
+		</property>
+	</properties>
+	<events>
+		<event name="afterRendering">
+		</event>
+		<event name="add">
+			<documentation>Event fired when placeholder is clicked</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="tiles" type="sap.ushell/ui/launchpad/Tile">
+		</aggregation>
+		<aggregation cardinality="0..n" name="footerContent" type="sap.ui.core/Control">
+		</aggregation>
+	</aggregations>
+</control>

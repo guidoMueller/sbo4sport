@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>LongTextField</name>
+
+	<documentation>Long text for a header</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" type="sap.ui.core/string" name="text">
+			<documentation>Long text for a header</documentation>
+		</property>
+		<property group="Dimension" name="renderingSize" type="EntityCSSSize">
+			<documentation>rendering size of the data</documentation>
+		</property>
+	</properties>
+</control>

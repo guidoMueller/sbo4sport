@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>composite/InboxAddAttachmentTile</name>
+
+	<documentation>InboxAddAttachmentTile</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+</control>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/XYContainer</name>
+  <documentation>Module ui5/types/XYContainer</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="yAngle" type="sap.ui.core/float" defaultValue="0">
+      <developmentState state="deprecated" since="1.20">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Set the angle for the pie chart. This value should be between '-180' and '180'.</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

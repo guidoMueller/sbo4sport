@@ -1,0 +1,29 @@
+{
+  "appCollection": [
+    {
+      "icon": "ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Sponsors.png",
+      "title": "Sponsoring",
+      "routeName": "sponsoringDetail"
+    },
+    {
+      "icon": "ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Tickets.png",
+      "title": "Ticketing",
+      "routeName": "ticketingDetail"
+    },
+    {
+      "icon": "ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Matches.png",
+      "title": "Games",
+      "routeName": "gamesDetail"
+    },
+    {
+      "icon": "ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Members.png",
+      "title": "Members",
+      "routeName": "memberDetail"
+    },
+    {
+      "icon": "ui/resources/uniorg/sapFourSport/mimes/UNIORG_SBO4Players.png",
+      "title": "Players",
+      "routeName": "playersDetail"
+    }
+  ]
+}

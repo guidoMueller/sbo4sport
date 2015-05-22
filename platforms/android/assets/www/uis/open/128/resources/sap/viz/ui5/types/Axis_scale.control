@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Axis_scale</name>
+  <documentation>Set the scale of the value axis. This property only works on value type axes.</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="fixedRange" type="sap.ui.core/boolean" defaultValue="false">
+      <documentation>Set whether the axis range is limited to the range between the minValue and maxValue</documentation>
+    </property>
+    <property name="minValue" type="sap.ui.core/float" defaultValue="0">
+      <documentation>Set the minValue of the value axis</documentation>
+    </property>
+    <property name="maxValue" type="sap.ui.core/float" defaultValue="0">
+      <documentation>Set the maxValue of the value axis</documentation>
+    </property>
+    <property name="fixedTicks" type="sap.ui.core/object[]">
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Set the specific ticks for value axis. The format should be [{value : "/value/", text : "/text/"}...]. If its length is less than 2, this property will not take effect.</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

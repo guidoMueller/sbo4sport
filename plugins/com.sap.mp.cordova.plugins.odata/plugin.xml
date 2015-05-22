@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.sap.mp.cordova.plugins.odata" version="3.7.1">
+    <name>OData</name>
+    <description>OData Plugin</description>
+	
+    <dependency id="com.sap.mp.cordova.plugins.corelibs"/>
+    <dependency id="com.sap.mp.cordova.plugins.authproxy" />
+    
+    <js-module src="www/OData.js" name="OData">
+        <clobbers target="window.sap.OData"/>
+    </js-module>
+    <js-module src="www/OfflineStore.js" name="OfflineStore">
+        <clobbers target="window.sap.OfflineStore"/>
+    </js-module>
+    <platform name="android">
+        <info>
+            For Android, Intel processors are not supported at this time.  You need to use an ARM based device or emulator for this plugin to work correclty.
+        </info>
+
+        <source-file target-dir="libs" src="android/libs/ODataAPI-3.7.0.jar" />
+        <source-file target-dir="libs" src="android/libs/ODataOffline-16.5.3.1689.jar" />
+        <source-file target-dir="libs/armeabi-v7a" src="android/libs/armeabi-v7a/libodataofflinejni.so" />
+        <source-file target-dir="libs/armeabi-v7a" src="android/libs/armeabi-v7a/libmlcrsa16.so" />
+        <source-file target-dir="libs" src="android/libs/odata-android-3.7.1.jar" />
+        
+        <config-file target="res/xml/config.xml" parent="/widget">
+            <feature name="OData">
+        		<param name="android-package" value="com.sap.mp.cordova.plugins.odata.OData"/>
+        	</feature>
+        </config-file>
+    </platform>
+    <platform name="ios">
+		<config-file target="config.xml" parent="/widget">
+            <feature name="OData">
+                <param name="ios-package" value="SMPODataPlugin" />
+            </feature>
+		</config-file>
+        
+        <source-file framework="true" src="ios/libs/libODataAPI.a"/>
+        <source-file framework="true" src="ios/libs/libODataOffline.a"/>
+        <source-file framework="true" src="ios/libs/libSMPODataPlugin.a"/>
+    </platform>
+    <platform name="windows">
+        <info>
+        **********************************************************
+        * Manual steps required to add this plugin on Windows 8.1 and Windows Phone 8.1 only.
+        * 
+        * This plugin requires a Native windows references that cannot be added automatically. 
+        * 
+        * ADD NATIVE REFERENCES FOR THE WINDOWS 8.1 PROJECT
+        * 1) Open the Cordova generated solution in Visual Studio.
+        * 2) Select the project generated for Windows 8.1. Select the References node, Right Click and select "Add Reference".
+        * 3) Click "Browse", locate the OfflineOData plugin location on your disk ({OfflineODataPluginDirectory}/windows81/bin/win)
+        * 4) Select *.winmd and *.dll file for the appropriate CPU architecture of your project (x86 or x64 or ARM). This file is located in {OfflineODataPluginDirectory}/windows81/bin/win/[x86 or x64 or ARM] 
+        * 5) Select "Windows 8.1" -> "Extensions" and select "Microsoft Visual C++ 2013 Runtime Package for Windows (Version 12.0 or higher)".
+        * 6) Click OK to add the references. 
+        *
+        * ADD NATIVE REFERENCES FOR THE WINDOWS PHONE 8.1 PROJECT
+        * 1) Open the Cordova generated solution in Visual Studio.
+        * 2) Select the project generated for Windows Phone 8.1. Select the References node, Right Click and select "Add Reference".
+        * 3) Click "Browse", locate the OfflineOData plugin location on your disk ({OfflineODataPluginDirectory}/windows81/bin/wp)
+        * 4) Select *.winmd and *.dll file for the appropriate CPU architecture of your project (x86 or ARM). This file is located in {OfflineODataPluginDirectory}/windows81/bin/wp/[x86 or ARM]
+        * 5) Select "Windows 8.1" -> "Extensions" and select "Microsoft Visual C++ 2013 Runtime Package for Windows Phone (Version 12.0 or higher)".
+        * 6) Click OK to add the references. 
+        **********************************************************
+
+        </info>
+        <js-module name="odata_proxy_win" src="windows81/src/odata_proxy_win.js">
+            <merges target=""/>
+        </js-module>
+
+    </platform>
+
+</plugin>

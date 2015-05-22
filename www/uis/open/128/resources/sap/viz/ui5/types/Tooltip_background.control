@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Tooltip_background</name>
+  <documentation>Define the background style of the tooltip.</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="color" type="sap.ui.core/string" defaultValue="#ffffff">
+      <documentation>Define the background color of the tooltip.</documentation>
+    </property>
+    <property name="borderColor" type="sap.ui.core/string" defaultValue="#cccccc">
+      <documentation>Define the background border color of the tooltip.</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

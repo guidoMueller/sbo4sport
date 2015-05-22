@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+  <name>ui5/controls/Popover</name>
+  <documentation>Viz Chart Popover</documentation>
+  <since>1.22.0</since>
+  <developmentState state="experimental" since="1.22.0">API is not finished yet and might change completely
+  </developmentState>
+
+  <baseType>sap.viz/ui5/controls/common/BaseControl</baseType>
+  <properties>
+    <property name='customDataControl' type='sap.ui.core/any'>
+      <documentation>A callback function let user customize Popover's content panel.</documentation>
+    </property>
+    <property name="actionItems" type="sap.ui.core/object[]">
+      <documentation>The items of this list or rows of Action List in Home Page inside the Popover.</documentation>
+    </property>
+    <property name="formatString" type="sap.ui.core/any">
+      <documentation>The patterns used to format each measure displayed in the Popover.</documentation>
+    </property>
+  </properties>
+  <methods>
+    <method name="connect" type="sap.ui.core/void">
+      <documentation>Connect Chart's Popover with VizFrame.</documentation>
+      <parameters>
+        <parameter name="vizFrameId" type="sap.ui.core/string">
+          <documentation>Set Uid of VizFrame.</documentation>
+        </parameter>
+      </parameters>
+    </method>
+  </methods>
+</control>

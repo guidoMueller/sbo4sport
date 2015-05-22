@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/tile/StateArrow</name>
+	<author></author>
+
+	<documentation>The state of an arrow as trend direction indicator, pointing either up or down
+@private</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="None">
+			<documentation>The trend direction indicator is invisible</documentation>
+		</value>
+		<value name="Up">
+			<documentation>The trend direction indicator points up</documentation>
+		</value>
+		<value name="Down">
+			<documentation>The trend direction indicator points down</documentation>
+		</value>
+	</enumeration>
+</simple-type>

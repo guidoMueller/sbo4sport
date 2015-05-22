@@ -1,0 +1,82 @@
+<Dialog xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns="sap.m" id='dualAxisConfig' title="{i18n>DUAL_AXIS_CONFIGURATION}" 
+	class="dualAxisConfig" horizontalScrolling='false' verticalScrolling='false' resourceBundleName="myBundle" resourceBundleAlias="i18n">
+	
+	<content>
+		<f:Form id="dualAxisConfigForm" editable="true"	class="dualAxisConfigForm">
+			<f:layout>
+				<f:ResponsiveGridLayout/>
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement>
+							<f:label>
+								<Label id="select_msr_for_axis_lbl" design="Bold" class="formLabels" required="true"/>
+							</f:label>							
+						</f:FormElement>
+						<f:FormElement>
+							<f:label>
+								<Label id="axis_1_label" design="Bold" class="formLabels" />
+							</f:label>
+							<f:fields>
+								<Select id="AxisMsr1" class="dialogComboBoxes" items="{DUAL_AXIS_MODEL>/DATA}" change="setStackMsrs">
+									<items>
+										<core:ListItem key="{DUAL_AXIS_MODEL>name}" text="{DUAL_AXIS_MODEL>name}" />					
+									</items>
+								</Select>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement>
+							<f:label>
+								<Label id="axis_2_label" design="Bold" class="formLabels" />
+							</f:label>
+							<f:fields>
+								<Select id="AxisMsr2" class="dialogComboBoxes" items="{DUAL_AXIS_MODEL>/DATA}" change="setStackMsrs">
+									<items>
+										<core:ListItem key="{DUAL_AXIS_MODEL>name}" text="{DUAL_AXIS_MODEL>name}" />					
+									</items>
+								</Select>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement>
+							<f:fields>
+								<Label text="{i18n>SELECT_MEASURE}" design="Bold" class="formLabels" required="true"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement>
+							<f:fields>
+								<Button text="{i18n>SELECT_MEASUES_FOR_STACK_1}" icon="sap-icon://slim-arrow-right" iconFirst="false" press="openMsrDialogForStack1"/>  
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement>
+							<f:fields>
+								<Label id="In_stack1_label" design="Bold" class="formLabels"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement>
+							<f:fields>
+								<Text id="stack1MsrsLabel"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement>
+							<f:fields>
+								<Label text="{i18n>MSG_REMAINING_MEASURES}" design="Bold" class="formLabels"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement>
+							<f:fields>
+								<Text id="stack2MsrsLabel"/>
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>	
+	</content>
+	<beginButton>
+		<Button text="{i18n>OK}" press="onDualAxisDialogOk" />
+	</beginButton>
+	<endButton>
+		<Button text="{i18n>CANCEL}" press="onDualAxisDialogCancel" />
+	</endButton>
+</Dialog>

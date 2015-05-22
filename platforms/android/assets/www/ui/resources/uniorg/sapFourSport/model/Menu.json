@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "group": "menu",
+      "route": "home",
+      "sorter": 1,
+      "text": "Home (LaunchPad)",
+      "icon": "sap-icon://home"
+    },
+    {
+      "group": "menu",
+      "route": "dashboard",
+      "sorter": 2,
+      "text": "Dashboard",
+      "icon": "sap-icon://business-by-design"
+    },
+    {
+      "group": "filter",
+      "sorter": 1,
+      "key": "ALL",
+      "text": "Alle Bestellungen",
+      "filter": "",
+      "icon": "sap-icon://group",
+      "type": "None",
+      "number": 345,
+      "numberUnit": "Benutzer",
+      "title": "sind derzeit im Shop registriert",
+      "info": "Aktiv",
+      "infoState": "None"
+    },
+    {
+      "group": "filter",
+      "key": "ERRORS",
+      "sorter": 9,
+      "text": "SAP Fehler",
+      "filter": "Status___EQ___DEFAULT",
+      "icon": "sap-icon://alert",
+      "type": "None",
+      "number": 3,
+      "numberUnit": "Neu",
+      "title": "warten noch auf eine Freigabe",
+      "info": "Freigabe",
+      "infoState": "Warning"
+    },
+    {
+      "group": "filter",
+      "key": "PROCESSED",
+      "sorter": 9,
+      "text": "SAP verbucht",
+      "filter": "Status___NE___DEFAULT",
+      "icon": "sap-icon://retail-store",
+      "type": "None",
+      "number": 456,
+      "numberUnit": "Online",
+      "title": "sind aktuell im Shop unterwegs",
+      "info": "Online",
+      "infoState": "Success"
+    }
+  ]
+}

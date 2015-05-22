@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>CombinationChart</name>
+	<author>SAP SE</author>
+	<documentation>The CombinationChart control.</documentation>
+	<since>1.12</since>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Dimension" name="width" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The width of the Chart</documentation>
+		</property>
+		<property group="Dimension" name="height" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The height of the Chart</documentation>
+		</property>
+		<property group="Misc" name="categoryAxis" type="sap.ui.core/object">
+			<documentation>Category Axis property of the Chart. Accepts only an instance of CategoryAxis element.</documentation>
+		</property>
+		<property group="Misc" name="primaryValueAxis" type="sap.ui.core/object">
+			<documentation>Property of the Combination Chart's primary Value Axis. Accept only an instance of ValueAxis element.</documentation>
+		</property>
+		<property group="Misc" name="secondaryValueAxis" type="sap.ui.core/object">
+			<documentation>Property of the Combination Chart's secondary Value Axis. Accept only an instance of ValueAxis element.</documentation>
+		</property>
+		<property group="Misc" name="valueBubble" type="sap.ui.core/object">
+			<documentation>Value Bubble property of the Chart. Accept only an instance of ValueBubble element.</documentation>
+		</property>
+		<property group="Appearance" name="showRangeSelector" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Specify whether the range selector should be visible.</documentation>
+		</property>
+		<property group="Misc" name="legendPosition" type="LegendPosition" defaultValue="Left">
+			<documentation>Legend position for Pie /Donut chart only.</documentation>
+		</property>
+		<property group="Misc" name="primaryColorPalette" type="sap.ui.core/any">
+			<documentation>Allow a combination chart’s primary axis color palette to be modified without affecting other charts' color palette. If not set, the chart will use the default color palette defined in the theme. 
+Accept an array of color in string format or hex format. e.g.
+0xff0000
+&quot;red&quot;
+&quot;rgb(255,0,0)&quot;</documentation>
+		</property>
+		<property group="Misc" name="secondaryColorPalette" type="sap.ui.core/any">
+			<documentation>Allow a combination chart’s secondary axis color palette to be modified without affecting other charts' color palette. If not set, the chart will use the default color palette defined in the theme. 
+Accept an array of color in string format or hex format. e.g.
+0xff0000
+&quot;red&quot;
+&quot;rgb(255,0,0)&quot;</documentation>
+		</property>
+		<property group="Misc" name="showTableValue" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Toggle to display the table value on a Bar chart. Only applies to Bar chart.</documentation>
+		</property>
+		<property group="Misc" name="numberOfVisibleCategories" type="sap.ui.core/int">
+			<documentation>The number of categories that will be visible on the chart at any time. The minimum value is 2. If not set, the number of visible categories will be automatically adjusted depending on the screen size</documentation>
+		</property>
+		<property group="Misc" name="rangeSelectorStartPosition" type="sap.ui.core/int" defaultValue="0">
+			<documentation>Specify the range selector start position, default value is 0.</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="doubletap">
+			<documentation>Double tap event on the chart</documentation>
+		</event>
+		<event name="tap">
+			<documentation>Single tap event on the chart</documentation>
+		</event>
+		<event name="longpress">
+			<documentation>Long press event on the chart</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..n" name="categoryRegions" type="Category">
+			<documentation>Data region property of the chart's Categories</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="layers" type="Layer">
+			<documentation>The collection of charts</documentation>
+		</aggregation>
+	</aggregations>
+	<methods>
+		<method name="getSelectedCategory" type="sap.ui.core/string">
+			<documentation>Get the value of the currently highlighted category</documentation>
+		</method>
+		<method name="getNumberOfCategories" type="sap.ui.core/int">
+			<documentation>Get the number of distinct category values</documentation>
+		</method>
+		<method name="getSelectedCategoryGroup" type="sap.ui.core/object">
+			<documentation>Return an array of categories value that is currently selected.</documentation>
+		</method>
+	</methods>
+</control>

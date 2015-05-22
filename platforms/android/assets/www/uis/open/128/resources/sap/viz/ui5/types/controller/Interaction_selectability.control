@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/controller/Interaction_selectability</name>
+  <documentation>Settings for selectability</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="mode" type="sap.viz/ui5/types/controller/Interaction_selectability_mode" defaultValue="inclusive">
+      <documentation>Set the selection mode. If this value is set to 'exclusive' or 'single', only one set of data points can be selected at once. If this value is set to 'inclusive' or 'multiple', multiple sets of data points can be selected at once. If this value is set to 'none', no sets of data points can be selected. The values 'single' and 'multiple' are deprecated; please remove them from your chart.</documentation>
+    </property>
+    <property name="axisLabelSelection" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set whether axis labels can be selected</documentation>
+    </property>
+    <property name="legendSelection" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set whether the legend can be selected</documentation>
+    </property>
+    <property name="plotLassoSelection" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set whether lasso selection can be used in the plot area</documentation>
+    </property>
+    <property name="plotStdSelection" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set whether selection can be done in the plot area by clicking and tapping</documentation>
+    </property>
+    <property name="lassoWithCtrlKey" type="sap.ui.core/boolean" defaultValue="false">
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Set whether the user must hold the ctrl key to use lasso selection</documentation>
+    </property>
+    <property name="dataPointsCacheable" type="sap.ui.core/boolean" defaultValue="true">
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Set whether data points can be cached. If it's true, data points might be cached by Interaction for better performance.</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

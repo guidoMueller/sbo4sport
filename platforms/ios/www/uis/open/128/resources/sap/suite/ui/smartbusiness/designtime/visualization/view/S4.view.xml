@@ -1,0 +1,581 @@
+<core:View xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"
+       xmlns:form="sap.ui.layout.form" xmlns:sb="sap.suite.ui.smartbusiness"
+       xmlns:suite="sap.suite.ui.commons" xmlns="sap.m"
+       controllerName="sap.suite.ui.smartbusiness.designtime.visualization.view.S4">
+
+       <Page enableScrolling="true">
+              <content>
+                     <suite:HeaderContainer id="tilesContainer">
+                           <suite:items>
+                                  <suite:HeaderCell height="auto" width="auto">
+                                         <suite:west>
+                                                <suite:HeaderCellItem height="100%">
+                                                       <suite:content>
+                                                              <suite:GenericTile id="NT" subheader="{i18n>SUB_TITLE}"
+                                                                     header="{i18n>TITLE}" press="onTileSelect" class="sbTile">
+                                                                     <suite:customData>
+                                                                           <core:CustomData key="tileType" value="NT" />
+                                                                     </suite:customData>
+                                                                     <suite:tileContent>
+                                                                           <suite:TileContent unit="{i18n>TILE_CURRENCY}" footer="{i18n>ACTUAL}">
+                                                                                  <suite:content>
+                                                                                         <suite:NumericContent value="0.0"
+                                                                                                scale="M" valueColor="Good" />
+                                                                                  </suite:content>
+                                                                           </suite:TileContent>
+                                                                     </suite:tileContent>
+                                                              </suite:GenericTile>
+                                                       </suite:content>
+                                                </suite:HeaderCellItem>
+                                         </suite:west>
+                                  </suite:HeaderCell>
+                                  <suite:HeaderCell height="auto" width="auto">
+                                         <suite:west>
+                                                <suite:HeaderCellItem height="100%">
+                                                       <suite:content>
+                                                              <suite:GenericTile id="CT" subheader="{i18n>SUB_TITLE}"
+                                                                     header="{i18n>TITLE}" press="onTileSelect" class="sbTile">
+                                                                     <suite:customData>
+                                                                           <core:CustomData key="tileType" value="CT" />
+                                                                     </suite:customData>
+                                                                     <suite:tileContent>
+                                                                           <suite:TileContent>
+                                                                                  <suite:content>
+                                                                                         <suite:ComparisonChart scale="M">
+                                                                                                <suite:data>
+                                                                                                       <suite:ComparisonData title="{i18n>VALUE_1}"
+                                                                                                              value="1550" />
+                                                                                                       <suite:ComparisonData title="{i18n>VALUE_2}"
+                                                                                                              value="219.2" />
+                                                                                                       <suite:ComparisonData title="{i18n>VALUE_3}"
+                                                                                                              value="66.46" />
+                                                                                                </suite:data>
+                                                                                         </suite:ComparisonChart>
+                                                                                  </suite:content>
+                                                                           </suite:TileContent>
+                                                                     </suite:tileContent>
+                                                              </suite:GenericTile>
+                                                       </suite:content>
+                                                </suite:HeaderCellItem>
+                                         </suite:west>
+                                  </suite:HeaderCell>
+                                  <suite:HeaderCell height="auto" width="auto">
+                                         <suite:west>
+                                                <suite:HeaderCellItem height="100%">
+                                                       <suite:content>
+                                                              <suite:GenericTile id="TT" subheader="{i18n>SUB_TITLE}"
+                                                                     header="{i18n>TITLE}" press="onTileSelect" class="sbTile">
+                                                                     <suite:customData>
+                                                                           <core:CustomData key="tileType" value="TT" />
+                                                                     </suite:customData>
+                                                                     <suite:tileContent>
+                                                                           <suite:TileContent>
+                                                                                  <suite:content>
+                                                                                         <suite:MicroAreaChart width="164px"
+                                                                                                height="74px" minXValue="0" maxXValue="100" minYValue="0"
+                                                                                                maxYValue="100">
+                                                                                                <suite:firstXLabel>
+                                                                                                       <suite:MicroAreaChartLabel
+                                                                                                              label="{i18n>JAN_01}" color="Neutral" />
+                                                                                                </suite:firstXLabel>
+                                                                                                <suite:lastXLabel>
+                                                                                                       <suite:MicroAreaChartLabel
+                                                                                                              label="{i18n>JAN_31}" color="Neutral" />
+                                                                                                </suite:lastXLabel>
+                                                                                                <suite:firstYLabel>
+                                                                                                       <suite:MicroAreaChartLabel
+                                                                                                              label="3 M" color="Error" />
+                                                                                                </suite:firstYLabel>
+                                                                                                <suite:lastYLabel>
+                                                                                                       <suite:MicroAreaChartLabel
+                                                                                                              label="23 M" color="Good" />
+                                                                                                </suite:lastYLabel>
+                                                                                                <suite:target>
+                                                                                                       <suite:MicroAreaChartItem>
+                                                                                                              <suite:points>
+                                                                                                                     <suite:MicroAreaChartPoint x="0"
+                                                                                                                            y="0" />
+                                                                                                                     <suite:MicroAreaChartPoint x="30"
+                                                                                                                            y="30" />
+                                                                                                                     <suite:MicroAreaChartPoint x="60"
+                                                                                                                            y="40" />
+                                                                                                                     <suite:MicroAreaChartPoint x="100"
+                                                                                                                            y="90" />
+                                                                                                              </suite:points>
+                                                                                                       </suite:MicroAreaChartItem>
+                                                                                                </suite:target>
+                                                                                                <suite:innerMinThreshold>
+                                                                                                       <suite:MicroAreaChartItem color="Good" />
+                                                                                                </suite:innerMinThreshold>
+                                                                                                <suite:innerMaxThreshold>
+                                                                                                       <suite:MicroAreaChartItem color="Good" />
+                                                                                                </suite:innerMaxThreshold>
+                                                                                                <suite:minThreshold>
+                                                                                                       <suite:MicroAreaChartItem color="Error">
+                                                                                                              <suite:points>
+                                                                                                                     <suite:MicroAreaChartPoint x="0"
+                                                                                                                            y="0" />
+                                                                                                                     <suite:MicroAreaChartPoint x="30"
+                                                                                                                            y="20" />
+                                                                                                                     <suite:MicroAreaChartPoint x="60"
+                                                                                                                            y="30" />
+                                                                                                                     <suite:MicroAreaChartPoint x="100"
+                                                                                                                            y="70" />
+                                                                                                              </suite:points>
+                                                                                                       </suite:MicroAreaChartItem>
+                                                                                                </suite:minThreshold>
+                                                                                                <suite:maxThreshold>
+                                                                                                       <suite:MicroAreaChartItem color="Good">
+                                                                                                              <suite:points>
+                                                                                                                     <suite:MicroAreaChartPoint x="0"
+                                                                                                                            y="0" />
+                                                                                                                     <suite:MicroAreaChartPoint x="30"
+                                                                                                                            y="40" />
+                                                                                                                     <suite:MicroAreaChartPoint x="60"
+                                                                                                                            y="50" />
+                                                                                                                     <suite:MicroAreaChartPoint x="100"
+                                                                                                                            y="100" />
+                                                                                                              </suite:points>
+                                                                                                       </suite:MicroAreaChartItem>
+                                                                                                </suite:maxThreshold>
+                                                                                                <suite:chart>
+                                                                                                       <suite:MicroAreaChartItem>
+                                                                                                              <suite:points>
+                                                                                                                     <suite:MicroAreaChartPoint x="0"
+                                                                                                                            y="0" />
+                                                                                                                     <suite:MicroAreaChartPoint x="30"
+                                                                                                                            y="20" />
+                                                                                                                     <suite:MicroAreaChartPoint x="60"
+                                                                                                                            y="20" />
+                                                                                                                     <suite:MicroAreaChartPoint x="100"
+                                                                                                                            y="80" />
+                                                                                                              </suite:points>
+                                                                                                       </suite:MicroAreaChartItem>
+                                                                                                </suite:chart>
+                                                                                         </suite:MicroAreaChart>
+                                                                                  </suite:content>
+                                                                           </suite:TileContent>
+                                                                     </suite:tileContent>
+                                                              </suite:GenericTile>
+                                                       </suite:content>
+                                                </suite:HeaderCellItem>
+                                         </suite:west>
+                                  </suite:HeaderCell>
+                                  <suite:HeaderCell height="auto" width="auto">
+                                         <suite:west>
+                                                <suite:HeaderCellItem height="100%">
+                                                       <suite:content>
+                                                              <suite:GenericTile id="AT" subheader="{i18n>SUB_TITLE}"
+                                                                     header="{i18n>TITLE}" press="onTileSelect" class="sbTile">
+                                                                     <suite:customData>
+                                                                           <core:CustomData key="tileType" value="AT" />
+                                                                     </suite:customData>
+                                                                     <suite:tileContent>
+                                                                           <suite:TileContent>
+                                                                                  <suite:content>
+                                                                                         <suite:BulletChart scale="M" minValue="0"
+                                                                                                maxvalue="312" targetValue="150">
+                                                                                                <suite:actual>
+                                                                                                       <suite:BulletChartData value="312"
+                                                                                                              color="Error" />
+                                                                                                </suite:actual>
+                                                                                                <suite:thresholds>
+                                                                                                       <suite:BulletChartData value="312"
+                                                                                                              color="Error" />
+                                                                                                       <suite:BulletChartData value="200"
+                                                                                                              color="Critical" />
+                                                                                                </suite:thresholds>
+                                                                                         </suite:BulletChart>
+                                                                                  </suite:content>
+                                                                           </suite:TileContent>
+                                                                     </suite:tileContent>
+                                                              </suite:GenericTile>
+                                                       </suite:content>
+                                                </suite:HeaderCellItem>
+                                         </suite:west>
+                                  </suite:HeaderCell>
+								
+								 <suite:HeaderCell height="auto" width="auto">
+                                         <suite:west>
+                                                <suite:HeaderCellItem height="100%">
+                                                       <suite:content>
+                                                              <suite:GenericTile id="CM" subheader="{i18n>SUB_TITLE}"
+                                                                     header="{i18n>TITLE}" press="onTileSelect" class="sbTile">
+                                                                     <suite:customData>
+                                                                           <core:CustomData key="tileType" value="CM" />
+                                                                     </suite:customData>
+                                                                     <suite:tileContent>
+                                                                           <suite:TileContent>
+                                                                                  <suite:content>
+                                                                                         <suite:ComparisonChart scale="M">
+                                                                                                <suite:data>
+                                                                                                       <suite:ComparisonData title="{i18n>MEASURE_1}"
+                                                                                                              value="34" color="Good" />
+                                                                                                       <suite:ComparisonData title="{i18n>MEASURE_2}"
+                                                                                                              value="125" color="Error" />
+                                                                                                       <suite:ComparisonData title="{i18n>MEASURE_3}"
+                                                                                                              value="97" color="Critical" />
+                                                                                                </suite:data>
+                                                                                         </suite:ComparisonChart>
+                                                                                  </suite:content>
+                                                                           </suite:TileContent>
+                                                                     </suite:tileContent>
+                                                              </suite:GenericTile>
+                                                       </suite:content>
+                                                </suite:HeaderCellItem>
+                                         </suite:west>
+                                  </suite:HeaderCell>
+									
+							
+							
+                           </suite:items>
+                     </suite:HeaderContainer>
+                     <l:Grid defaultSpan="L12 M12 S12" width="auto">
+                           <l:content>
+                                  <form:SimpleForm editable="true" minWidth="1024"
+                                         layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4"
+                                         emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2"
+                                         id="tileConfigForm">
+                                         <form:content>
+                                                <core:Title text="{i18n>TILE_CONFIGURATION}" />
+                                                <Label design="Bold" text="{i18n>TILE_FORMAT}" />
+                                                <Select id="selectTileType" change="selectTileType"
+                                                       selectedItem="{tileConfig>/tileType}" selectedKey="{tileConfig>/tileType}">
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                       <items>
+                                                              <core:Item text="{i18n>NUMERIC_TILE}" key="NT" />
+                                                              <core:Item text="{i18n>COMPARISON_TILE}" key="CT" />
+                                                              <core:Item text="{i18n>TREND_TILE}" key="TT" />
+                                                              <core:Item text="{i18n>ACTUAL_VS_TARGET_TILE}" key="AT" />
+                                                              <core:Item text="{i18n>COMPARISON_MM_TILE}" key="CM" />
+                                                       </items>
+                                                </Select>
+                                                <Label design="Bold" text="{i18n>TILE_TITLE}" />
+                                                <Input id="tileTitle" value="{tileConfig>/title}" change="titleChange" >
+                                                       <layoutData>
+                                                              <l:GridData span="L4 M4" />
+                                                       </layoutData>
+                                                </Input>
+                                                <Link id="additionalLanguageLink" press="addAdditionalLanguageDialog">
+													<layoutData>
+														<l:GridData span="L4 M4" />
+													</layoutData>
+												</Link>
+                                                <Label design="Bold" text="{i18n>TILE_SUBTITLE}" />
+                                                <Input id="tileSubtitle" value="{tileConfig>/description}" change="subTitleChange" >
+                                                       <layoutData>
+                                                              <l:GridData span="L4 M4" />
+                                                       </layoutData>
+                                                </Input>
+                                                <Label design="Bold" text="{i18n>DIMENSION}" />
+                                                <Select id="selectDimension" items="{populateDimension>/dimensions}"
+                                                       selectedItem="{tileConfig>/dimension}" change="handleDimensionSelectionChange"
+                                                       selectedKey="{tileConfig>/dimension}" visible="false">
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                       <items>
+                                                              <core:Item key="{populateDimension>dimensionName}"
+                                                                     text="{populateDimension>dimensionName}" />
+                                                       </items>
+                                                </Select>
+
+
+                                                <Label design="Bold" text="{i18n>SORT_ORDER}" />
+                                                <Select id="selectSortOrder" visible="false" change="selectSortOrder"
+                                                       selectedItem="{tileConfig>/sortOrder}" selectedKey="{tileConfig>/sortOrder}">
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                       <items>
+                                                              <core:Item text="{i18n>MEASURE_ASC}" key="0" />
+                                                              <core:Item text="{i18n>MEASURE_DESC}" key="1" />
+                                                              <core:Item text="{i18n>DIMENSION_ASC}" key="2" />
+                                                              <core:Item text="{i18n>DIMENSION_DESC}" key="3" />
+                                                       </items>
+                                                </Select>
+                                                <Label design="Bold" text="{i18n>KEYWORDS}" />
+                                                <Input value="{tileConfig>/keywords}">
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                </Input>
+                                                
+                                                <Label design="Bold" text="{i18n>MEASURE_1}" required="true"/>
+                                                <VBox id="measure1Layout" noDataText=" ">
+                                                <layoutData>
+                                                       <l:GridData span="L8 M8" defaultIndent="L2 M2"/>
+                                                </layoutData>
+                                                <l:Grid defaultSpan="L8 M8" hSpacing="0rem">
+                                                       <l:content>
+                                                              <Input id="measure1" value="{multiMeasures>/MULTI_MEASURE/0/COLUMN_NAME}" class="visualizationAppPropName"
+                                                              showValueHelp="true" valueHelpRequest="handleCustomMeasure" valueHelpOnly="true">
+                                                                     <layoutData>
+                                                                           <l:GridData span="L8 M8" />
+                                                                     </layoutData>
+                                                              </Input>
+                                                              <Select id="measureColor1" 
+                                                       	 	 selectedItem="{multiMeasures>/MULTI_MEASURE/0/semanticColor}" selectedKey="{multiMeasures>/MULTI_MEASURE/0/semanticColor}">
+                                                      			 <layoutData>
+                                                        		      <l:GridData span="L4 M4" />
+                                                       			</layoutData>
+                                                       			<items>
+                                                            	  <core:Item text="{i18n>NEUTRAL}" key="Neutral" />
+                                                            	  <core:Item text="{i18n>CRITICAL}" key="Error" />
+                                                            	  <core:Item text="{i18n>WARNING}" key="Critical" />
+                                                            	  <core:Item text="{i18n>GOOD}" key="Good" />
+                                                       			</items>
+                                                			</Select>
+                                                       </l:content>
+                                                </l:Grid>
+                                         	</VBox>
+                                         	
+                                         	<Label design="Bold" text="{i18n>MEASURE_2}" required="true"/>
+                                                <VBox id="measure2Layout" noDataText=" ">
+                                                <layoutData>
+                                                       <l:GridData span="L8 M8" defaultIndent="L2 M2"/>
+                                                </layoutData>
+                                                <l:Grid defaultSpan="L8 M8" hSpacing="0rem">
+                                                       <l:content>
+                                                              <Input value="{multiMeasures>/MULTI_MEASURE/1/COLUMN_NAME}" class="visualizationAppPropName"
+                                                              showValueHelp="true" valueHelpRequest="handleCustomMeasure" valueHelpOnly="true">
+                                                                     <layoutData>
+                                                                           <l:GridData span="L8 M8" />
+                                                                     </layoutData>
+                                                              </Input>
+                                                              <Select id="measureColor2"
+                                                       	 	 selectedItem="{multiMeasures>/MULTI_MEASURE/1/semanticColor}" selectedKey="{multiMeasures>/MULTI_MEASURE/1/semanticColor}">
+                                                      			 <layoutData>
+                                                        		      <l:GridData span="L4 M4" />
+                                                       			</layoutData>
+                                                       			<items>
+                                                            	  <core:Item text="{i18n>NEUTRAL}" key="Neutral" />
+                                                            	  <core:Item text="{i18n>CRITICAL}" key="Error" />
+                                                            	  <core:Item text="{i18n>WARNING}" key="Critical" />
+                                                            	  <core:Item text="{i18n>GOOD}" key="Good" />
+                                                       			</items>
+                                                			</Select>
+                                                       </l:content>
+                                                </l:Grid>
+                                         	</VBox>
+                                         	
+                                         	<Label design="Bold" text="{i18n>MEASURE_3}"/>
+                                                <VBox id="measure3Layout" noDataText=" ">
+                                                <layoutData>
+                                                       <l:GridData span="L8 M8" defaultIndent="L2 M2"/>
+                                                </layoutData>
+                                                <l:Grid defaultSpan="L8 M8" hSpacing="0rem">
+                                                       <l:content>
+                                                              <Input value="{multiMeasures>/MULTI_MEASURE/2/COLUMN_NAME}"  class="visualizationAppPropName"
+                                                              showValueHelp="true" valueHelpRequest="handleCustomMeasure1" valueHelpOnly="true">
+                                                                     <layoutData>
+                                                                           <l:GridData span="L8 M8" />
+                                                                     </layoutData>
+                                                              </Input>
+                                                              <Select id="measureColor3" 
+                                                       	 	 selectedItem="{multiMeasures>/MULTI_MEASURE/2/semanticColor}" selectedKey="{multiMeasures>/MULTI_MEASURE/2/semanticColor}">
+                                                      			 <layoutData>
+                                                        		      <l:GridData span="L4 M4" />
+                                                       			</layoutData>
+                                                       			<items>
+                                                            	  <core:Item text="{i18n>NEUTRAL}" key="Neutral" />
+                                                            	  <core:Item text="{i18n>CRITICAL}" key="Error" />
+                                                            	  <core:Item text="{i18n>WARNING}" key="Critical" />
+                                                            	  <core:Item text="{i18n>GOOD}" key="Good" />
+                                                       			</items>
+                                                			</Select>
+                                                       </l:content>
+                                                </l:Grid>
+                                         	</VBox>
+                                                
+                                                <core:Title text="{i18n>NAVIGATION}" />
+                                                <Label design="Bold" text="{i18n>DRILLDOWN}" />
+                                                <VBox>
+                                                       <items>
+                                                              <RadioButton id="genericDrilldown" text='{i18n>GENERIC_DRILLDOWN}'
+                                                                     groupName='drilldown'
+                                                                     selected="{path:'tileConfig>/navType', formatter:'.setGenericDrillDown'}"
+                                                                     select="getSelectedRadioButton">
+                                                                     <customData>
+                                                                           <core:CustomData key="drilldownType" value="GDD" />
+                                                                     </customData>
+                                                              </RadioButton>
+                                                              <RadioButton id="otherDrilldown" text='{i18n>OTHER_DRILLDOWN}'
+                                                                     groupName='drilldown'
+                                                                     selected="{path:'tileConfig>/navType', formatter:'.setOtherDrillDown'}"
+                                                                     select="getSelectedRadioButton">
+                                                                     <customData>
+                                                                           <core:CustomData key="drilldownType" value="ODD" />
+                                                                     </customData>
+                                                              </RadioButton>
+                                                       </items>
+                                                </VBox>
+                                                <Label design="Bold" text="{i18n>SELECT_NAV_TYPE}" />
+                                                <Select id="selectNavType" change="selectNavType"
+                                                       selectedItem="{tileConfig>/navType}" selectedKey="{tileConfig>/navType}">
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                       <items>
+                                                              <core:Item text="{i18n>LUMIRA}" key="1" />
+                                                            <!--   <core:Item text="{i18n>APF}" key="2" />  -->
+                                                              <core:Item text="{i18n>CUSTOM}" key="4" />
+                                                       </items>
+                                                </Select>
+                                                
+                                                <Label design="Bold" text="{i18n>STORY_ID}" />
+                                                <Input id="selectStoryId" value="{tileConfig>/storyId}" change="setStoryId" 
+                                                       showValueHelp="true" valueHelpRequest="handleStoryIdValueHelp" >
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                </Input>
+                                                
+                                                <Label design="Bold" text="{i18n>SEMANTIC_OBJECT}" />
+                                                <Input id="semanticObjectText" value="{tileConfig>/semanticObject}"
+                                                       change="handleSemanticObjectChange">
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                </Input>
+                                                <Label design="Bold" text="{i18n>ACTION}" />
+<!--                                            <Select id="selectODD" visible="false" selectedKey="{tileConfig>/action}" -->
+<!--                                                   items="{semanticObjectActions>/Actions}" change="setSemanticAction"> -->
+<!--                                                   <layoutData> -->
+<!--                                                          <l:GridData span="L5 M5" /> -->
+<!--                                                   </layoutData> -->
+<!--                                                   <items> -->
+<!--                                                          <core:Item key="{semanticObjectActions>semanticAction}" -->
+<!--                                                                 text="{semanticObjectActions>semanticAction}" /> -->
+<!--                                                   </items> -->
+<!--                                            </Select> -->
+                                                <Input id="selectODD" value="{tileConfig>/action}" change="setSemanticAction">
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                </Input>
+                                                
+                                                <Label design="Bold" text="{i18n>APP_PARAMETER}" />
+                                                <VBox id="propertyNameValueBoxHeader" 
+                                                       noDataText=" ">
+                                                       <layoutData>
+                                                              <l:GridData span="L8 M8" />
+                                                       </layoutData>
+                                                       <l:Grid defaultSpan="L8 M8" hSpacing="0rem" defaultIndent="L0 M0">
+                                                              <l:content>
+                                                                     <Input id="appPropertyName" type="Text" class="visualizationAppPropName"
+                                                                           placeholder="{i18n>NAME}" change="appPropertyNameChange">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L5 M5" />
+                                                                           </layoutData>
+                                                                     </Input>
+                                                                     <Input id="appPropertyValue" type="Text" change="appPropertyValueChange"
+                                                                           placeholder="{i18n>VALUE}">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L5 M5" />
+                                                                           </layoutData>
+                                                                     </Input>
+                                                                     <Button id="addAppPropertyButtonHeader" icon="sap-icon://add" class="addPropertyVizBtn"
+                                                                           press="addNewProperty">
+                                                                           <layoutData>
+                                                                                  <l:GridData span="L2 M2" />
+                                                                           </layoutData>
+                                                                     </Button>
+                                                              </l:content>
+                                                       </l:Grid>
+                                                </VBox>
+                                                
+<!--                                            <Table id="propertyNameValueBoxHeader" class="parametersListHeader" -->
+<!--                                                   noDataText=" "> -->
+<!--                                                   <columns> -->
+<!--                                                          <Column> -->
+<!--                                                                 <Input id="appPropertyName" type="Text" placeholder="property"> -->
+<!--                                                                       <layoutData> -->
+<!--                                                                              <l:GridData span="L3 M3" /> -->
+<!--                                                                       </layoutData> -->
+<!--                                                                 </Input> -->
+<!--                                                          </Column> -->
+<!--                                                          <Column> -->
+<!--                                                                 <Input id="appPropertyValue" type="Text" placeholder="value"> -->
+<!--                                                                       <layoutData> -->
+<!--                                                                              <l:GridData span="L2 M2" /> -->
+<!--                                                                       </layoutData> -->
+<!--                                                                 </Input> -->
+<!--                                                          </Column> -->
+<!--                                                          <Column> -->
+<!--                                                                 <Button id="addAppPropertyButtonHeader" icon="sap-icon://add" -->
+<!--                                                                       press="addNewProperty" height="5%"/> -->
+
+<!--                                                          </Column> -->
+<!--                                                   </columns> -->
+<!--                                            </Table> -->
+<!--                                            <Label /> -->
+                                         
+                                         <Label />
+                                         <VBox id="propertyNameValueBox" 
+                                                items="{appParameters>/PROPERTIES}" noDataText=" ">
+                                                <layoutData>
+                                                       <l:GridData span="L8 M8" defaultIndent="L2 M2"/>
+                                                </layoutData>
+                                                <l:Grid defaultSpan="L8 M8" hSpacing="0rem">
+                                                       <l:content>
+                                                              <Input value="{appParameters>NAME}" change="inputNameChange"  class="visualizationAppPropName">
+                                                                     <layoutData>
+                                                                           <l:GridData span="L5 M5" />
+                                                                     </layoutData>
+                                                              </Input>
+                                                              <Input value="{appParameters>VALUE}" change="inputValueChange">
+                                                                     <layoutData>
+                                                                           <l:GridData span="L5 M5" />
+                                                                     </layoutData>
+                                                              </Input>
+                                                              <core:Icon src="sap-icon://sys-cancel" class="deleteIconForAssociationProperty"
+                                                                     size="2rem" press="removeProperty">
+                                                                     <core:layoutData>
+                                                                           <l:GridData span="L2 M2" />
+                                                                     </core:layoutData>
+                                                              </core:Icon>
+                                                       </l:content>
+                                                </l:Grid>
+                                         </VBox>
+
+
+<!--                                            <Table id="propertyNameValueBox" class="parametersList" items="{appParameters>/PROPERTIES}" -->
+<!--                                                   noDataText=" "> -->
+<!--                                                   <columns> -->
+<!--                                                          <Column /> -->
+<!--                                                          <Column /> -->
+<!--                                                          <Column />  -->
+<!--                                                   </columns> -->
+<!--                                                   <items> -->
+<!--                                                          <ColumnListItem> -->
+<!--                                                                 <cells> -->
+<!--                                                                       <Input type="Text" value="{appParameters>NAME}"> -->
+<!--                                                                              <layoutData> -->
+<!--                                                                                     <l:GridData span="L3 M3" /> -->
+<!--                                                                              </layoutData> -->
+<!--                                                                       </Input> -->
+<!--                                                                       <Input type="Text" value="{appParameters>VALUE}"> -->
+<!--                                                                              <layoutData> -->
+<!--                                                                                     <l:GridData span="L2 M2" /> -->
+<!--                                                                              </layoutData> -->
+<!--                                                                       </Input>       -->
+<!--                                                                       <core:Icon src="sap-icon://sys-cancel" -->
+<!--                                                       size="2rem" class="cancelProperty" -->
+<!--                                                       press="removeProperty"> -->
+<!--                                                 </core:Icon> -->
+<!--                                                                 </cells> -->
+<!--                                                          </ColumnListItem> -->
+<!--                                                   </items> -->
+<!--                                            </Table> -->
+
+                                         </form:content>
+                                  </form:SimpleForm>
+                           </l:content>
+                     </l:Grid>
+              </content>
+       </Page>
+</core:View>
+

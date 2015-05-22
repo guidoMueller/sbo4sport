@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ViewType</name>
+	<author></author>
+
+	<documentation>View type of landscape viewer</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="DEPENDENCY_VIEW">
+			<documentation>dependency view </documentation>
+		</value>
+		<value name="SELECTION_VIEW">
+			<documentation>Landscape view for selected view</documentation>
+		</value>
+		<value name="SOLUTION_VIEW">
+			<documentation>Solution View for a Landscape Objects</documentation>
+		</value>
+	</enumeration>
+</simple-type>

@@ -1,0 +1,1 @@
+jQuery.sap.declare("sap.zen.dsh.library");jQuery.sap.require("sap.ui.core.Core");jQuery.sap.require("sap.ui.core.library");sap.ui.getCore().initLibrary({name:"sap.zen.dsh",dependencies:["sap.ui.core"],types:[],interfaces:[],controls:["sap.zen.dsh.dsh"],elements:[],version:"14.0.1-SNAPSHOT"});

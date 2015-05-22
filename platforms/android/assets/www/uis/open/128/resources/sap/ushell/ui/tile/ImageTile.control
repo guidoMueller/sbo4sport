@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ui/tile/ImageTile</name>
+
+	<documentation>Add your documentation for the newui/tile/ImageTile</documentation>
+
+	<baseType>TileBase</baseType>
+	<properties>
+		<property group="Appearance" name="imageSource" type="sap.ui.core/string">
+			<documentation>the URL of the image to display</documentation>
+		</property>
+	</properties>
+</control>

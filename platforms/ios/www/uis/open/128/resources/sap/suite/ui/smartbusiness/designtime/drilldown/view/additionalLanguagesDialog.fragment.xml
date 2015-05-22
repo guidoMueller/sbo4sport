@@ -1,0 +1,61 @@
+<Dialog xmlns="sap.m" xmlns:core="sap.ui.core" contentWidth="40%" id="additionalLanguageDialog" title="Additional Languages" class='dialog'>
+  <content>
+  
+  	<Table id="ALTable">
+  		<!-- Entry fields for the new text -->
+  		<columns>
+				<Column>
+					<VBox>
+						<items>
+							<Label text="{i18n>TITLE}"></Label>
+							<Input id="newTitle"></Input>
+						</items>
+					</VBox>
+				</Column>
+				<Column>
+					<VBox>
+						<items>
+							<Label text="{i18n>LANGUAGE}"></Label>
+							<Select id="newTitleLanguage" width="100%" items="{SB_DDACONFIG>/ALL_LANGUAGES}">
+								<items>
+									<core:Item text="{SB_DDACONFIG>LAISO}" key="{SB_DDACONFIG>SPRAS}"></core:Item>
+								</items>
+							</Select>
+						</items>
+					</VBox>
+				</Column>
+				<Column width="20px">
+					<VBox>
+						<items>
+							<!-- Label atop Plus button -->
+							<Label text=" "></Label>
+							<core:Icon src="sap-icon://add" size="32px" press="addEntry"></core:Icon>
+						</items>
+					</VBox>
+				</Column>
+			</columns>
+			
+			<!-- List of Added foreign language texts -->
+  		<items>
+  			<ColumnListItem>
+  				<cells>
+  					<!-- Example of an entry -->
+  					<!-- 
+  					<Label text="German Text"></Label>
+  					<Label text="DE"></Label>
+  					<core:Icon src="sap-icon://decline"></core:Icon>
+  					 -->
+  				</cells>
+  			</ColumnListItem>
+  		</items>
+  	</Table>
+  	
+  </content>
+  
+  <beginButton>
+    <Button text="{i18n>OK}" press="closeAdditionalLanguagesDialog_OK" />
+  </beginButton>
+  <endButton>
+    <Button text="{i18n>CANCEL}" press="closeAdditionalLanguagesDialog_Cancel" />
+  </endButton>
+</Dialog>

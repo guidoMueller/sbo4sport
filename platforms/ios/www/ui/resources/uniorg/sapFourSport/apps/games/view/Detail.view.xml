@@ -1,0 +1,208 @@
+<core:View
+        xmlns:core="sap.ui.core"
+        xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+        xmlns:l="sap.ui.layout"
+        xmlns:co="sap.suite.ui.commons"
+        xmlns:viz="sap.viz.ui5.controls"
+        height="100%"
+        controllerName="uniorg.sapFourSport.apps.games.controller.Detail"
+        xmlns="sap.m"
+        >
+    <Page
+            id="page"
+            title="games"
+            enableScrolling="true"
+            showHeader="false">
+        <content>
+            <IconTabBar
+                    class="iconTabBarPaddingTop"
+                    id="idIconTabBarMulti"
+                    expanded="{device>/isNoPhone}"
+                    select="handleIconTabBarTopSelect">
+                <items>
+                    <IconTabFilter
+                            icon="sap-icon://table-view"
+                            key="1"
+                            text="Spiele Tabele"
+                            id="idIconTabBarRounds">
+                        <Toolbar>
+                            <Select
+                                    autoAdjustWidth="true"
+                                    change="onSelectSaison"
+                                    id="onSelectSaison"
+                                    items="{
+                                                path: 'oDataTicket>/RoundS',
+                                                sorter: { path: 'SAISONDESC' },
+                                                parameters: {
+                                                    select: 'SAISONDESC'
+                                                }
+                                              }">
+                                <core:Item
+                                        key="{oDataTicket>SAISONDESC}"
+                                        text="{oDataTicket>SAISONDESC}"/>
+                            </Select>
+                            <Select
+                                    autoAdjustWidth="true"
+                                    change="onSelectRound"
+                                    id="onSelectRound"
+                                    width="150px"
+                                    placeholder="Alle"
+                                    items="{
+                                                path: 'oDataTicket>/RoundS',
+                                                sorter: { path: 'ROUNDDESC' },
+                                                parameters: {
+                                                    select: 'ROUNDDESC'
+                                                }
+                                              }">
+                                <core:Item
+                                        key="{oDataTicket>ROUNDDESC}"
+                                        text="{oDataTicket>ROUNDDESC}"/>
+                            </Select>
+                            <Select
+                                    autoAdjustWidth="true"
+                                    change="onSelectTeam"
+                                    id="onSelectTeam"
+                                    items="{
+                                                path: 'oDataTicket>/RoundS',
+                                                parameters: {
+                                                    select: 'OPPONENTDESC'
+                                                }
+                                              }">
+                                <core:Item
+                                        key="{oDataTicket>OPPONENTDESC}"
+                                        text="{oDataTicket>OPPONENTDESC}"/>
+                            </Select>
+                            <Button press="onPressResetFilter" text="Reset"/>
+                        </Toolbar>
+                    </IconTabFilter>
+                    <IconTabFilter
+                            icon="sap-icon://area-chart"
+                            key="2"
+                            text="Uniorg Chart">
+                    </IconTabFilter>
+                    <IconTabFilter
+                            icon="sap-icon://table-view"
+                            id="idIconTabBar"
+                            key="3"
+                            text="Echtdaten Tabele">
+                        <Toolbar>
+                            <SearchField
+                                    width="30%"
+                                    liveChange="onSearch"
+                                    placeholder="Datum, Team, Zuschauer Größer als, Stadium"/>
+                            <ToolbarSpacer/>
+                            <Select
+                                    id="gamesSportsSelectTable"
+                                    autoAdjustWidth="true"
+                                    change="onSelectSport"
+                                    items="{
+                                                path: 'gamesSports>/item/'
+                                              }">
+                                <core:Item
+                                        key="{gamesSports>sportsID}"
+                                        text="{gamesSports>sportsName}"/>
+                            </Select>
+                            <Select
+                                    id="gamesLeaguesSelectTable"
+                                    autoAdjustWidth="true"
+                                    change="onSelectLeague"
+                                    items="{
+                                                path: 'gamesLeagues>/item/'
+                                              }">
+                                <core:Item
+                                        key="{gamesLeagues>LeagueShortcut}"
+                                        text="{gamesLeagues>LeagueName} ({gamesLeagues>LeagueShortcut})"
+                                        data:saison="{gamesLeagues>LeagueSaison}"/>
+                            </Select>
+                            <Select
+                                    autoAdjustWidth="true"
+                                    change="onChartSaisonSelect">
+                                <core:Item key="All" text="Allle Saisons"/>
+                                <core:Item key="2010" text="Saison 2010"/>
+                                <core:Item key="2011" text="Saison 2011"/>
+                                <core:Item key="2012" text="Saison 2012"/>
+                                <core:Item key="2013" text="Saison 2013"/>
+                                <core:Item key="2014" text="Saison 2014"/>
+                                <core:Item key="2015" text="Saison 2015"/>
+                            </Select>
+                        </Toolbar>
+                    </IconTabFilter>
+                    <IconTabFilter
+                            icon="sap-icon://vertical-bar-chart"
+                            key="4"
+                            text="Echtdaten Chart"
+                            id="chartContainer">
+                        <l:Splitter width="100%" height="800px">
+                                    <l:contentAreas>
+                                        <co:ChartContainer
+                                                id="idChartContainer2"
+                                                showFullScreen="true"
+                                                showPersonalization="false"
+                                                autoAdjustHeight="true"
+                                                showLegend="true">
+                            
+                            
+                                            <co:dimensionSelectors>
+                                              
+                                    <Select
+                                            id="gamesSportsSelect"
+                                            autoAdjustWidth="true"
+                                            change="onSelectSport"
+                                            items="{
+                                                path: 'gamesSports>/item/'
+                                              }">
+                                        <core:Item
+                                                key="{gamesSports>sportsID}"
+                                                text="{gamesSports>sportsName}"/>
+                                    </Select>
+                                    <Select
+                                            id="gamesLeaguesSelect"
+                                            autoAdjustWidth="true"
+                                            change="onSelectLeague"
+                                            items="{
+                                                path: 'gamesLeagues>/item/'
+                                              }">
+                                        <core:Item
+                                                key="{gamesLeagues>LeagueShortcut}"
+                                                text="{gamesLeagues>LeagueName} ({gamesLeagues>LeagueShortcut})"
+                                                data:saison="{gamesLeagues>LeagueSaison}"/>
+                                    </Select>
+                                    <Select
+                                            autoAdjustWidth="true"
+                                            change="onChartSaisonSelect">
+                                        <core:Item key="All" text="Allle Saisons"/>
+                                        <core:Item key="2010" text="Saison 2010"/>
+                                        <core:Item key="2011" text="Saison 2011"/>
+                                        <core:Item key="2012" text="Saison 2012"/>
+                                        <core:Item key="2013" text="Saison 2013"/>
+                                        <core:Item key="2014" text="Saison 2014"/>
+                                        <core:Item key="2015" text="Saison 2015"/>
+                                    </Select>
+                                            </co:dimensionSelectors>
+                                            <co:content>
+                                                <co:ChartContainerContent
+                                                        icon="sap-icon://horizontal-bar-chart-2"
+                                                        title="Sponsoringeinnahmen">
+                                                    <co:content>
+                                                        <viz:Popover id="idPopOver"></viz:Popover>
+                                                        <viz:VizFrame id="idVizFrameStackedBar" title="" uiConfig="{applicationSet:'fiori'}" vizType="stacked_column">
+                                                        </viz:VizFrame>      
+                                                    </co:content>
+                                                </co:ChartContainerContent> 
+                                            </co:content>
+                                        </co:ChartContainer>
+                                    </l:contentAreas>
+                                </l:Splitter>
+                    </IconTabFilter>
+                    <IconTabFilter
+                            icon="sap-icon://pie-chart"
+                            key="5"
+                            text="Echtdaten Chart"
+                            id="pieChartContent">                                                      
+
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</core:View>

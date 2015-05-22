@@ -1,0 +1,51 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:dda="sap.suite.ui.smartbusiness.designtime.drilldown.lib" xmlns:drilldown="sap.suite.ui.smartbusiness.lib" xmlns="sap.m"
+	xmlns:charts="sap.ca.ui.charts" xmlns:suite="sap.suite.ui.commons" controllerName="sap.suite.ui.smartbusiness.designtime.drilldown.view.S3">
+	<Page class="drilldownConfiguratorPage">
+		<!-- <content>
+			<ObjectHeader title="{TITLE}">
+				<attributes>
+					<ObjectAttribute id="orderOperation" text="{ID}" />
+				</attributes>
+			</ObjectHeader>
+			<StandardTile id="xyz" removable='false' press="lauchConfigurator" icon="sap-icon://dimension"  title= "SmartBusiness Generic Drilldown"  info="Configured">
+				
+			</StandardTile>
+		</content>
+		
+		
+		
+		 -->
+			<content>
+			<drilldown:Filter id='ddaFilter' mode='designTime' suppressAction='true'/>
+		    	<ObjectHeader id="header-ribbon" number="{path:'SB_DDACONFIG>/CONFIG/SAP_AGGREGATE_VALUE',
+		    	formatter:'.headerNumberFormatter'}" title="{TITLE}" numberUnit="{path:'SB_DDACONFIG>/CONFIG/SAP_AGGREGATE_VALUE',
+		    	formatter:'.headerNumberUnitFormatter'}"
+		    	class="header"></ObjectHeader>
+		    
+		    	<suite:HeaderContainer id='tileContainer' class="tilesHeaderContainer">
+		    	</suite:HeaderContainer>   
+			<HBox
+			id="viewOptions" justifyContent="SpaceBetween">
+				<items>
+				<HBox id="viewNames"></HBox>
+           		</items>
+           		
+			</HBox>
+					   <charts:ChartToolBar id="chartToolbar"  showFullScreen="true" class="chartToolbar"
+                                 firstDimensionPath="SB_DDACONFIG>/ALL_VIEWS" 
+                                 firstDimensionKeyPath="SB_DDACONFIG>ID" 
+								 firstDimensionTextPath="SB_DDACONFIG>TITLE"
+                                 firstDimensionKeySelected="onViewSwitch" showLegend="false" >                                
+                        
+		                <charts:charts>
+		                	<charts:Chart id="chartRef" showPopover="true" chartType="Bar"/>
+		                	<Table id="chartTable" showUnread="true" class="drillDownTable"></Table>
+		                </charts:charts>
+		
+		            </charts:ChartToolBar>
+		</content>
+		
+		
+	</Page>
+</core:View>

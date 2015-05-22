@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<result>
+    <item>
+        <sportsID>1</sportsID>
+        <sportsName>Fußball</sportsName>
+    </item>
+    <item>
+        <sportsID>2</sportsID>
+        <sportsName>Eishockey</sportsName>
+    </item>
+    <item>
+        <sportsID>4</sportsID>
+        <sportsName>Handball</sportsName>
+    </item>
+    <item>
+        <sportsID>13</sportsID>
+        <sportsName>Basketball</sportsName>
+    </item>
+    <item>
+        <sportsID>28</sportsID>
+        <sportsName>Football</sportsName>
+    </item>
+    <item>
+        <sportsID>69</sportsID>
+        <sportsName>Cricket</sportsName>
+    </item>
+</result>

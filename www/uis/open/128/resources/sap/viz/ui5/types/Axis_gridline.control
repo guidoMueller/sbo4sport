@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>ui5/types/Axis_gridline</name>
+  <documentation>Settings for the gridlines on the axis</documentation>
+  <since>1.7.2</since>
+  <developmentState state="experimental" since="1.7.2">Charting API is not finished yet and might change completely</developmentState>
+  <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+  <properties>
+    <property name="visible" type="sap.ui.core/boolean" defaultValue="true">
+      <documentation>Set the visibility of gridlines on the axis</documentation>
+    </property>
+    <property name="disable" type="sap.ui.core/boolean" defaultValue="false">
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Disable gridline or not</documentation>
+    </property>
+    <property name="showFirstLine" type="sap.ui.core/boolean" defaultValue="false">
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Set whether the first gridline on the axis appears</documentation>
+    </property>
+    <property name="showLastLine" type="sap.ui.core/boolean" defaultValue="false">
+      <developmentState state="deprecated" since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</developmentState>
+      <documentation>Set whether the last gridline on the axis appears</documentation>
+    </property>
+    <property name="type" type="sap.viz/ui5/types/Axis_gridline_type" defaultValue="line">
+      <documentation>Set the line type of gridlines on the axis</documentation>
+    </property>
+    <property name="color" type="sap.ui.core/string" defaultValue="#d8d8d8">
+      <documentation>Set the color of the gridlines on the axis</documentation>
+    </property>
+    <property name="size" type="sap.ui.core/int" defaultValue="1">
+      <documentation>Set the line size of gridlines on the axis</documentation>
+    </property>
+  </properties>
+  <aggregations>
+  </aggregations>
+</control>

@@ -1,0 +1,54 @@
+<VBox xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" width="100%" class='chartTypeContainer'>
+<items>
+<Label text="{i18n>VISUALIZATION_TYPE} " design="Bold" class='chartTypeConfigTitle'></Label>
+<List  id="chartTypeConfig" displayBlock="false" width="80%" class="marginBoxContent">
+	
+	
+	<items>
+		<CustomListItem>
+
+			<Select id="chartType" width="100%"  items="{SB_DDACONFIG>/CHART_TYPES}" selectedKey="{SB_DDACONFIG>/CHART_TYPE}"
+				change="onChartTypeChange" >
+				<items>
+					<core:ListItem key="{SB_DDACONFIG>key}" text="{SB_DDACONFIG>text}" />
+					
+				</items>
+			</Select>
+
+		</CustomListItem>
+
+
+		<CustomListItem>
+
+			<Select id="singleDual" width="100%" items="{SB_DDACONFIG>/AXIS_TYPES}" selectedKey="{SB_DDACONFIG>/AXIS_TYPE}" change="onSingleDualChange">
+				<items>
+					<core:ListItem key="{SB_DDACONFIG>key}" text="{SB_DDACONFIG>text}" />
+					
+				</items>
+			</Select>
+		</CustomListItem>
+
+		<CustomListItem>
+
+			<Select id="isAbsolute" width="100%" items="{SB_DDACONFIG>/VALUE_TYPES}" selectedKey="{SB_DDACONFIG>/VALUE_TYPE}" change="onIsAbsoluteChange">
+				<items>
+					<core:ListItem key="{SB_DDACONFIG>key}" text="{SB_DDACONFIG>text}"  />
+					
+				</items>
+			</Select>
+
+		</CustomListItem>
+		<CustomListItem>
+
+			<Select id="semanticColors" width="100%" items="{SB_DDACONFIG>/COLOR_SCHEMES}"  selectedKey="{SB_DDACONFIG>/COLOR_SCHEME}" change="onSemanticColorOptionChange">
+				<items>
+					<core:ListItem key="{SB_DDACONFIG>key}" text="{SB_DDACONFIG>text}" />
+					
+				</items>
+			</Select>
+
+		</CustomListItem>
+	</items>
+</List>
+</items>
+</VBox>
