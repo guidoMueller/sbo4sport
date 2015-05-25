@@ -12,7 +12,7 @@ sap.ui.define(
                 config:    {
                     root:               "uniorg.sapFourSport.apps.financials",
                     oDataServiceConfig: {
-                        serviceUrl:  "http://sbo4sports.uniorg.de:8000/uniorg/bonvendo/uis/ume/userappst/UmeUserManagement.xsodata",
+                        serviceUrl:  applicationContext.applicationEndpointURL,
                         viewBinding: {
                             master: {
                                 LIST: {

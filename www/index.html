@@ -12,7 +12,7 @@
 			data-sap-ui-libs='sap.m, sap.apf, sap.ca.ui, sap.ushell, sap.viz'
 			data-sap-ui-resourceroots='{"uniorg" : "ui/resources/uniorg"}'></script>
 	<script>
-		var appId = "sapUniorgSbo4Sports"; // Change this to app id on server
+		var appId = "sap.uniorg.sbo4Sports"; // Change this to app id on server
 		var applicationContext = null;
 		var smpServerProtocol = "http";
 		var smpServerHost = "mobile-a6bac0da3.hana.ondemand.com";
@@ -79,7 +79,7 @@
 				oContent.placeAt( "canvas" );
 
 			} );
-			openStore();
+			//openStore();
 		}
 
 		function openStore() {
@@ -92,10 +92,9 @@
 				"host": applicationContext.registrationContext.serverHost,
 				"port": applicationContext.registrationContext.serverPort,
 				"https": applicationContext.registrationContext.https,
-				"serviceRoot" :  "https://mobile-a6bac0da3.hana.ondemand.com/sapUniorgSbo4Sports",  //appId,
+				"serviceRoot" :  appId,  //appId,
 				"definingRequests": {
-					"TicketS": "/TicketS",
-					"RoundS": "/RoundS"
+					"Event": "/Event"
 				}
 			};
 

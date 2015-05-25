@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6B4F1029-64B6-4A8F-9A94-9D2ED5977A60</string>
+	<key>IDESourceControlProjectName</key>
+	<string>sbo4Sport</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C8AC2149F1BCBC1353F2CF41A8E1EFF74CA60446</key>
+		<string>https://github.com/xloco/sbo4sport.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/sbo4Sport.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C8AC2149F1BCBC1353F2CF41A8E1EFF74CA60446</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xloco/sbo4sport.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C8AC2149F1BCBC1353F2CF41A8E1EFF74CA60446</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C8AC2149F1BCBC1353F2CF41A8E1EFF74CA60446</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sbo4Sports</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -4,14 +4,15 @@
 	<script src="js/datajs-1.1.2.min.js"></script>
 
 	<script src='uis/clients/flp/bootstrap/uis_fiori.js'></script>
-	<script id='sap-ui-bootstrap' src='uis/open/128/resources/sap-ui-core.js'
+	<script type="text/javascript" src="smp/logon/ui/resources/sap/ui/thirdparty/jquery/jquery-1.10.2.js"></script>
+	<script id='sap-ui-bootstrap' src='uis/open/128/resources/sap-ui-core-nojQuery.js'
 			data-sap-ui-xx-bindingSyntax='complex'
 			data-sap-ui-theme='sap_bluecrystal'
 			data-sap-ui-theme-roots='{"bonvendo" : "ui/themes/bonvendo"}'
 			data-sap-ui-libs='sap.m, sap.apf, sap.ca.ui, sap.ushell, sap.viz'
 			data-sap-ui-resourceroots='{"uniorg" : "ui/resources/uniorg"}'></script>
 	<script>
-		var appId = "sapUniorgSbo4Sports"; // Change this to app id on server
+		var appId = "sap.uniorg.sbo4Sports"; // Change this to app id on server
 		var applicationContext = null;
 		var smpServerProtocol = "http";
 		var smpServerHost = "mobile-a6bac0da3.hana.ondemand.com";
@@ -91,10 +92,9 @@
 				"host": applicationContext.registrationContext.serverHost,
 				"port": applicationContext.registrationContext.serverPort,
 				"https": applicationContext.registrationContext.https,
-				"serviceRoot" :  "https://mobile-a6bac0da3.hana.ondemand.com/sapUniorgSbo4Sports",  //appId,
+				"serviceRoot" :  appId,  //appId,
 				"definingRequests": {
-					"TicketS": "/TicketS",
-					"RoundS": "/RoundS"
+					"Event": "/Event"
 				}
 			};
 

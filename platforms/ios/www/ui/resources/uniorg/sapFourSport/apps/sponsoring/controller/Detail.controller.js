@@ -11,7 +11,15 @@ sap.ui.define( [
                 var mParameters = {};
 
                 DetailController.prototype.onInit.apply( this, [mParameters] );
-                this._oModel = new sap.ui.model.odata.ODataModel( "http://sbo4sports.uniorg.de:8000/uniorg/sbo4sport/sponsor/services/sponsor.xsodata" );
+                var uri = applicationContext.applicationEndpointURL;
+                var user = applicationContext.registrationContext.user;
+                var password = applicationContext.registrationContext.password;
+                var headers = {"X-SMP-APPCID" : applicationContext.applicationConnectionId};
+                this._oModel = new sap.ui.model.odata.ODataModel(uri, true, user, password, headers);
+                var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+                if (iOS) { //unsure why but the first call seems to be to http://sapes1 rather than https which fails.
+                    this._oModel = new sap.ui.model.odata.ODataModel(uri, true, user, password, headers);
+                }
                 this.getView().setModel( this._oModel );
                 this.setTable();
                 this.setSponsoringViz();
